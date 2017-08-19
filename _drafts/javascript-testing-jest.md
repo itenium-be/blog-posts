@@ -2,7 +2,7 @@
 layout: post
 draft: true
 title:  "JavaScript Testing: Jasmine plugins"
-date:   3017-08-08 00:00:00 +0200
+date:   2017-08-08 00:00:00 +0200
 categories: javascript
 tags: [javascript,tutorial,testing,react]
 series: js-testing

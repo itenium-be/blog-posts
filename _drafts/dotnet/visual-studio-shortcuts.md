@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visual Studio: Shortcuts"
-date:   2018-08-15 00:00:00 +0200
+date:   2017-08-15 00:00:00 +0200
 categories: dotnet
 tags: [visual studio,cheat-sheet]
 ---
