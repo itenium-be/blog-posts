@@ -2,6 +2,10 @@
 layout: post
 title:  "JavaScript Testing: Jasmine customization"
 date:   2017-08-06 00:00:00 +0200
+desc: >
+    Customize Jasmine to your project needs with custom matchers, custom equality testers.
+    Test legacy code by providing Jasmine with global variables.
+img: javascript-testing-jasmine-customization.png
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: js-testing
