@@ -89,6 +89,8 @@ Capslock & X::Run, http://www.google.com/search?q=%clipboard%
 
 # Scripting
 
+Creating more advanced hotkey combinations.
+
 
 ## Context sensitive shortcuts
 
@@ -119,3 +121,13 @@ Esc::
 Return
 ```
 
+
+
+TODO: also example with different Prior / Next hotkey
+like Control + T, Control + W
+
+https://stackoverflow.com/questions/1794258/detect-a-double-key-press-in-autohotkey
+https://autohotkey.com/docs/commands/KeyWait.htm#Examples
+https://autohotkey.com/docs/commands/SetTimer.htm#Examples
+
+https://autohotkey.com/board/topic/84052-a-priorhotkey-command/
