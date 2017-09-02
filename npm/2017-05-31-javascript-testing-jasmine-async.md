@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "JavaScript Testing: Jasmine async syntax"
+desc: Test asynchronous code with Jasmine. Includes instructions on how to use ES2017 async/await.
+img: javascript-testing-jasmine-async.png
 date:   2017-05-31 12:00:00 +0200
 categories: javascript
 tags: [javascript,tutorial,testing]

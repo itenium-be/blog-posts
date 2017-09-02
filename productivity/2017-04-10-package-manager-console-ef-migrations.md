@@ -3,7 +3,7 @@ layout: post
 title:  "Package Manager Console Entity Framework 6 Migrations profile"
 date:   2017-04-10 20:22:13 +0200
 categories: productivity
-tags: [net,ef6,powershell,nuget]
+tags: [net,ef6,powershell]
 extras:
   - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/shells/NuGet_profile.ps1
     githubtext: "The full Nuget_profile.ps1"

@@ -2,6 +2,10 @@
 layout: post
 title:  "JavaScript Testing: Jasmine Spies"
 date:   2017-05-30 15:00:00 +0200
+desc: >
+    Spies, the Jasmine version of mocks allow you to check whether methods and/or properties have been called,
+    how many times and with which parameters.
+img: javascript-testing-jasmine-spies.png
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: js-testing
