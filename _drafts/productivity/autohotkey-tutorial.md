@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  "Auothotkey Tutorial"
+title:  "Autohotkey Tutorial"
 date:   2017-04-22 02:00:00 +0200
 categories: productivity
 tags: [autohotkey]
 ---
+
+Perils of Autohotkey
+- Lost forum downloads
+- Branches
+
+
+https://autohotkey.com/docs/Hotstrings.htm
+#Hotstring c r
+
+
+; AltGr+Win: Go directly to special folders
+; +D: Dropbox
+; +W: WWW Folder
+; +T: Temp folder
+; +L: Leeching folder
+<^>!#d::Run C:\Dropbox\Personal
+<^>!#w::Run C:\wamp\www
+<^>!#t::Run C:\temp
+<^>!#l::Run C:\Download
+
 
 There is no one way to do things in Autohotkey.
 It's syntax is pretty loose which might be confusing when starting out
@@ -41,7 +61,6 @@ The installer comes with
 Clipboard
 ---------
 
---> Clipboard separate article for Clipboard stuff with compare tool added
 
 ```ahk
 ; how long to keep trying to access the clipboard

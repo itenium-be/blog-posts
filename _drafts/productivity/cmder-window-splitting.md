@@ -6,6 +6,7 @@ categories: productivity
 tags: [powershell,cmder]
 ---
 
+https://github.com/cmderdev/cmder -> read docs!
 
 <!--more-->
 
