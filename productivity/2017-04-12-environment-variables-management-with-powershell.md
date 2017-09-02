@@ -20,6 +20,8 @@ Something better eventually arrived with Windows 10 but still, PowerShell :)
 
 <!--more-->
 
+If you'd like a GUI instead, try [rix0rrr/WindowsPathEditor](https://github.com/rix0rrr/WindowsPathEditor).
+
 Getting environment variables
 -----------------------------
 
