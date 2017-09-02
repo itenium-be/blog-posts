@@ -35,6 +35,21 @@ x = 5
 x := 5
 
 
+Autohotkey Hotstrings
+=====================
+http://www.autohotkey.com/docs/Hotstrings.htm
+http://irisclasson.com/2015/02/19/autohotkey-hotstrings-and-sending-input/
+
+; Default end characters:
+#Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
+; or use * to trigger with any keypress
+
+
+```
+::btw::by the way
+```
+
+
 <!--more-->
 
 **Versions**:  
