@@ -1,13 +1,15 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Static site generation with Jekyll: A tutorial"
 date:   2018-05-23 12:00:00 +0200
 categories: ruby
 tags: [tutorial,jekyll]
 series: jekyll-tut
+toc:
+    title: Jekyll series: Part 1
+    icon: eye-slash
 ---
-
-{% include toc title="Jekyll series: Part 1" icon="eye-slash" %}
 
 I picked Jekyll to create this site. Not just because of the name, 
 but mostly due to GitHub Pages, which turns a simple `git push` into

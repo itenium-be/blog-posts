@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "NSubstitute tutorial: Moq comparison"
 date:   2017-04-30 12:00:00 +0200
 categories: dotnet
@@ -7,9 +8,10 @@ tags: [net,tutorial,testing]
 extras:
   - githubproject: https://github.com/be-pongit/NSubstituteTutorial
     githubtext: The accompanying github project contains all code as UnitTests
+toc:
+    title: NSubstitute vs Moq
+    icon: dot-circle-o
 ---
-
-{% include toc title="NSubstitute vs Moq" icon="dot-circle-o" %}
 
 [Moq][Moq] is probably the most used mocking framework out there at the moment.
 The creators of [NSubstitute][NSubstitute] however, craved a mocking framework
@@ -36,7 +38,7 @@ ICalculator nsub = Substitute.For<ICalculator>();
 
 
 
-## Basic example
+# Basic example
 
 Notice how NSubstitute dropped all the ceremony code required by Moq.
 
@@ -55,7 +57,7 @@ Assert.AreEqual(3, nsub.Add(1, 2));
 
 
 
-## Matching arguments
+# Matching arguments
 
 **Moq**
 
@@ -77,7 +79,7 @@ nsub.Add(Arg.Any<int>(), Arg.Is<int>(b => b % 2 == 0)).Returns(3);
 
 
 
-## Verification
+# Verification
 
 **Moq**
 
@@ -103,7 +105,7 @@ var requiredAssignmentForCompiler = nsub.DidNotReceive().Mode;
 
 
 
-## Out and ref
+# Out and ref
 
 `ref` works in both frameworks exactly the same as `out`.
 
@@ -134,7 +136,7 @@ Assert.AreEqual(0.4F, remainder);
 
 
 
-## Exceptions
+# Exceptions
 
 **Moq**
 

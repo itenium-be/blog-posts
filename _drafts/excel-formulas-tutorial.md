@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Excels formulas cheat sheet"
 date:   2017-04-26 22:00:00 +0200
 categories: productivity

@@ -1,12 +1,14 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Visual Studio: Debugging Shortcuts"
 date:   2017-08-15 00:00:00 +0200
 categories: dotnet
 tags: [visual studio,debugging,cheat-sheet]
+toc:
+    title: Debugging
+    icon: dot-circle-o
 ---
-
-{% include toc title="Debugging" icon="dot-circle-o" %}
 
 ## The Basics
 

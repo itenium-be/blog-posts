@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Autohotkey Tutorial - defining hotkeys"
 desc: >
     Autohotkey allows you to define hotkeys like ^#D.
@@ -11,8 +12,9 @@ tags: [autohotkey]
 ---
 
 # Example
+{: .hide-from-excerpt}
 
-```ahk
+```autohotkey
 ; Single line hotkey
 ^#D::MsgBox Pressed Control + Win + D
 
@@ -21,6 +23,8 @@ tags: [autohotkey]
 MsgBox Multiball
 Return
 ```
+
+<!--more-->
 
 # Syntax
 
@@ -51,8 +55,6 @@ Numpad:
 
 - Numlock ON: Numpad[0-9],
 - Numlock OFF: NumpadIns, NumpadEnd, NumpadMult, NumpadEnter, ...
-
-<!--more-->
 
 
 Multimedia: Browser_Stop, Media_Next, Volume_Up, Launch_App2, ...
@@ -121,7 +123,14 @@ Esc::
 Return
 ```
 
+; TODO: moregen:
+--> CRM
+--> Jos
+--> Dit
 
+--> Autohotkey: HeidiSql doesn't open in foreground anymore
+
+--> Layout of blogs in site is abysmal...
 
 TODO: also example with different Prior / Next hotkey
 like Control + T, Control + W

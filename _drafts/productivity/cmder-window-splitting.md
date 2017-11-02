@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Window splitting in Cmder"
 date:   2017-04-12 15:00:00 +0200
 categories: productivity

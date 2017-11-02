@@ -1,10 +1,13 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Regular Expressions: tutorial"
 date:   2017-05-30 13:00:00 +0200
 categories: productivity
 tags: [regex,tutorial,cheat-sheet]
 series: regexes
+toc:
+    title: Tutorial
 ---
 
 WIP: we zaten hier...
@@ -13,8 +16,6 @@ WIP: we zaten hier...
 - https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
 - http://www.rexegg.com
 - https://www.debuggex.com/cheatsheet/regex/javascript
-
-{% include toc title="Tutorial" icon="" %}
 
 On how to match stuff.
 

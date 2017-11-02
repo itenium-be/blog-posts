@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Regular Expressions: introduction"
 date:   2017-05-30 12:00:00 +0200
 categories: productivity

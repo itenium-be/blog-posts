@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Create Excels with C# and EPPlus: Miscellaneous"
 date:   2017-05-02 00:00:00 +0000
 categories: dotnet
@@ -7,9 +8,10 @@ tags: [net,excel,tutorial]
 series: epplus
 extras:
   - githubproject: https://github.com/be-pongit/EPPlusTutorial
+toc:
+    title: "Excel series: Part 4"
+    icon: file-excel-o
 ---
-
-{% include toc title="Excel series: Part 4" icon="file-excel-o" %}
 
 # Miscellaneous features
 {: .hide-from-excerpt}

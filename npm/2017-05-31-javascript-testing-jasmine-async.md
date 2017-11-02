@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine async syntax"
 desc: Test asynchronous code with Jasmine. Includes instructions on how to use ES2017 async/await.
 img: javascript-testing-jasmine-async.png
@@ -9,9 +10,10 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Jasmine Async
+    icon: icon-javascript
 ---
-
-{% include toc title="Jasmine Async" icon="icon-javascript" %}
 
 Need to test async code? No problem for Jasmine. 
 There is `done()` to inform Jasmine a test has finished running.

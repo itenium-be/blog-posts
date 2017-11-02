@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "DateStart & DateEnd (And Their Evil Relatives)"
 date:   2017-04-12 15:00:00 +0200
 categories: object-oriented

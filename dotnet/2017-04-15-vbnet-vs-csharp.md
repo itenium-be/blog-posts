@@ -1,12 +1,14 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "VB.NET vs C# Syntax differences"
 date:   2017-04-15 15:00:00 +0200
 categories: dotnet
 tags: [net,cheat-sheet]
+toc:
+    title: Battle
+    icon: dot-circle-o
 ---
-
-{% include toc title="Battle" icon="dot-circle-o" %}
 
 A cheat sheet outlining the syntax differences between VB.NET and C#. This post is written
 specifically for advanced C# developers with little to no VB.NET knowledge who need to do

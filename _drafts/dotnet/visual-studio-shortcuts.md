@@ -1,12 +1,14 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Visual Studio: Shortcuts"
 date:   2017-08-15 00:00:00 +0200
 categories: dotnet
 tags: [visual studio,cheat-sheet]
+toc:
+    title: Shortcuts
+    icon: dot-circle-o
 ---
-
-{% include toc title="Shortcuts" icon="dot-circle-o" %}
 
 Ctrl-K + Ctrl-S is used to surrounded a block of code to an specific block or control.
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine Spies"
 date:   2017-05-30 15:00:00 +0200
 desc: >
@@ -11,9 +12,10 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Jasmine Spies
+    icon: icon-javascript
 ---
-
-{% include toc title="Jasmine Spies" icon="icon-javascript" %}
 
 Spies, the Jasmine implementation for mocks
 featuring `spyOn` and the new `spyOnProperty` aswell as `jasmine.createSpy(Obj)`

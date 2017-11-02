@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Package Manager Console Entity Framework 6 Migrations profile"
 date:   2017-04-10 20:22:13 +0200
 categories: productivity
@@ -7,9 +8,10 @@ tags: [net,ef6,powershell]
 extras:
   - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/shells/NuGet_profile.ps1
     githubtext: "The full Nuget_profile.ps1"
+toc:
+    title: EF6 PMC
+    icon: dot-circle-o
 ---
-
-{% include toc title="EF6 PMC" icon="dot-circle-o" %}
 
 This tutorial is about adding the following functionality to the Entity Framework Migrations CLI:  
 - Execute commands against the project containing the migrations by providing the most likely -Project parameter value

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine customization"
 date:   2017-08-06 00:00:00 +0200
 desc: >
@@ -11,9 +12,10 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Customization
+    icon: icon-javascript
 ---
-
-{% include toc title="Customization" icon="icon-javascript" %}
 
 Make your Jasmine experience even more luscious with custom
 matchers and global convenience methods.  

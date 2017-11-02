@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Managing Environment Variables with PowerShell"
 date:   2017-04-12 15:00:00 +0200
 categories: productivity
@@ -7,9 +8,10 @@ tags: [powershell,windows]
 extras:
   - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/shells/PowerShell/envpath.ps1
     githubtext: The full ps1 source
+toc:
+    title: Environment vars
+    icon: windows
 ---
-
-{% include toc title="Environment vars" icon="windows" %}
 
 Working with environment variables in Windows is as easy as:  
 ```

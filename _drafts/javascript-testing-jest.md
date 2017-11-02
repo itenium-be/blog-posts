@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 draft: true
 title:  "JavaScript Testing: Jasmine plugins"
 date:   2017-08-08 00:00:00 +0200
@@ -8,9 +9,10 @@ tags: [javascript,tutorial,testing,react]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Jest
+    icon: icon-javascript
 ---
-
-{% include toc title="Jest" icon="icon-javascript" %}
 
 Jest has pretty reporting which Jasmine by itself is lacking.
 Even without actually using React.

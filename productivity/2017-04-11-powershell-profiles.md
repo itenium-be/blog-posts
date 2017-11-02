@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "PowerShell profiles"
 date:   2017-04-11 20:00:00 +0200
 categories: productivity

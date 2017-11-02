@@ -1,12 +1,14 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  ".NET Number and Date Formatting"
 date:   2017-04-20 15:00:00 +0200
 categories: dotnet
 tags: [net,cheat-sheet]
+toc:
+    title: Formatting
+    icon: dot-circle-o
 ---
-
-{% include toc title="Formatting" icon="dot-circle-o" %}
 
 A cheat sheet with everything there is to know about 
 formatting the primitive types, `DateTime`s and `TimeSpan`s in .NET.

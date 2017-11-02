@@ -1,12 +1,14 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Advanced Windows Explorer"
 date:   2017-04-22 02:00:00 +0200
 categories: productivity
 tags: [autohotkey,powershell,windows]
+toc:
+    title: Windows Explorer
+    icon: windows
 ---
-
-{% include toc title="Windows Explorer" icon="windows" %}
 
 A listing of handy but less known shortcuts in Windows Explorer
 and some Autohotkey examples on how to add extra functionality.

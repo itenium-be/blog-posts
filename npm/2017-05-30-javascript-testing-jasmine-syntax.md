@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine syntax"
 date:   2017-05-30 12:00:00 +0200
 categories: javascript
@@ -7,9 +8,10 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Jasmine Syntax
+    icon: icon-javascript
 ---
-
-{% include toc title="Jasmine Syntax" icon="icon-javascript" %}
 
 The basic example contains the general test suite structure and the 
 two most used matchers `toBe()` (===) and `toEqual()` (deep compare),

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "Create Excels with C# and EPPlus: Formulas & DataValidation"
 date:   2017-04-27 12:00:00 +0200
 categories: dotnet
@@ -7,9 +8,10 @@ tags: [net,excel,tutorial]
 series: epplus
 extras:
   - githubproject: https://github.com/be-pongit/EPPlusTutorial
+toc:
+    title: "Excel series: Part 2"
+    icon: file-excel-o
 ---
-
-{% include toc title="Excel series: Part 2" icon="file-excel-o" %}
 
 In case your users want to continue working with the Excels after generation.
 

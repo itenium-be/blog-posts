@@ -1,12 +1,14 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "PowerShell and Git for the colorblind"
 date:   2017-04-21 15:00:00 +0200
 categories: productivity
 tags: [powershell,git]
+toc:
+    title: Colorization
+    icon: eye
 ---
-
-{% include toc title="Colorization" icon="eye" %}
 
 My PowerShell, Posh-Git and .gitconfig color configuration because of some red-green troubles
 with the default configurations.

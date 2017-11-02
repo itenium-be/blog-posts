@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Getting started with Jasmine"
 date:   2017-05-29 12:00:00 +0200
 categories: javascript
@@ -7,9 +8,10 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Getting Started
+    icon: icon-javascript
 ---
-
-{% include toc title="Getting Started" icon="icon-javascript" %}
 
 Probably the most widely used JavaScript testing framework.
 

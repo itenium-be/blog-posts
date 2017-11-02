@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine plugins"
 date:   2017-08-07 00:00:00 +0200
 categories: javascript
@@ -7,9 +8,10 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/be-pongit/jasmine-tut
+toc:
+    title: Plugins
+    icon: icon-javascript
 ---
-
-{% include toc title="Plugins" icon="icon-javascript" %}
 
 What would we be without some extra plugins. There
 are over 1000 Jasmine npm packages and we'll cover them all here.
