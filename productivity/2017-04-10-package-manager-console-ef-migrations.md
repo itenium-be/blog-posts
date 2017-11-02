@@ -23,8 +23,8 @@ This tutorial is about adding the following functionality to the Entity Framewor
 
 
 
-Activating your Nuget_profile
------------------------------
+# Activating your Nuget_profile
+
 When opening the Package Manager Console (PMC) in Visual Studio, the profile file is executed.
 
 ```cmd
@@ -43,8 +43,8 @@ Set-Alias unip Uninstall-Package
 * * *
 
 
-Provide most likely -Project parameter
---------------------------------------
+# Provide most likely -Project parameter
+
 There is (unfortunately) no way to configure the "Default project" in the PMC. This workaround creates a Verb-RealNoun
 for each existing cmdlet and adds a short alias to these commands. Which project contains the migrations is by convention,
 as determined by `$isLikelyDbContextProject`.
@@ -87,14 +87,14 @@ Set-Alias lam List-AllMigrations
 * * *
 
 
-Updating the database using a numeric TargetMigration
------------------------------------------------------
+# Updating the database using a numeric TargetMigration
+
 Easily go back to a specific migration using `ud -1` instead of
 ```powershell
 Update-Database -TargetMigration:SecondLastMigrationName
 ```
 
-### Usage
+## Usage
 ```powershell
 # List last 5 migrations:
 # (aliased as List-Migrations or lm)
@@ -121,7 +121,7 @@ Having `Update-RealDatabase -1` go back to the "last *applied* migration - 1" in
 "go to the second last migration added to the project", would require analysing `Get-Migrations`, which would make the whole
 thing considerably slower. (FileSystem vs Sql query)
 
-### Source
+## Source
 ```powershell
 function Get-MigrationsTable {
 	$project = Get-DbContextProject
@@ -169,8 +169,8 @@ function Test-MigrationName($fileName) {
 * * *
 
 
-Open the Package Manager Console in Visual Studio
--------------------------------------------------
+# Open the Package Manager Console in Visual Studio
+
 Menu: Tools > NuGet Package Manager > Package Manager Console  
 Shortcut: Alt + T, N, O  
 Custom shortcut: View.PackageManagerConsole  

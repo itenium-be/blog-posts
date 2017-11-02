@@ -25,7 +25,7 @@ Finally instructions on how to configure Babel for async/await in tests.
 <!--more-->
 
 
-## Example
+# Example
 
 `it`, `beforeEach`, `afterAll`, ... have an additional optional parameter called timeout (ms).
 A test fails for such a block when nor `done()` nor `done.fail()` is called within 
@@ -51,7 +51,7 @@ xit('can fail with a specific message', done => {
 ```
 
 
-## Time Travel
+# Time Travel
 
 ```js
 beforeEach(() => jasmine.clock().install());
@@ -81,7 +81,7 @@ afterEach(() => jasmine.clock().uninstall());
 ```
 
 
-## Async Await
+# Async Await
 
 For the really hip people, and with a little help of `.babelrc`, you can write your tests like:
 ```js

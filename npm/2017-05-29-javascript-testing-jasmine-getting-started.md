@@ -20,7 +20,7 @@ For the Jasmine syntax, see parts 2 to 4!
 
 <!--more-->
 
-## Install
+# Install
 
 Add Jasmine to your project:
 
@@ -36,7 +36,7 @@ If you have no clue how to start, some **working examples** can be created with 
 
 
 
-## Configure
+# Configure
 
 `jasmine init` creates `./spec/support/jasmine.json` where you can configure your testing preferences.
 If you want to put the jasmine.json file somewhere else, you can do so 
@@ -67,7 +67,7 @@ Note that paths in the json are relative to where `jasmine init` was executed.
 
 
 
-## Run
+# Run
 
 Run the tests with a simple `jasmine` or add to your package.json:
 
@@ -87,7 +87,7 @@ And start once with `npm test` or just `npm t`. Or start watching with `npm run 
 `test:alt` and `test:cli` demonstrate the available Jasmine CLI parameters.
 
 
-## Run ES2015+
+# Run ES2015+
 
 As soon as one of your tests hits `import x from` it's a crash. Oh noes!
 Chances are you are already using Babel for older browser support.

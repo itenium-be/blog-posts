@@ -27,7 +27,7 @@ Other Jasmine plugins that you might find useful:
 - [rewire][rewire]: Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time
 
 
-## Proxyquire
+# Proxyquire
 
 Stub imports of the code being tested.
 

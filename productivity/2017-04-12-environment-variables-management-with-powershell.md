@@ -24,8 +24,7 @@ Something better eventually arrived with Windows 10 but still, PowerShell :)
 
 If you'd like a GUI instead, try [rix0rrr/WindowsPathEditor](https://github.com/rix0rrr/WindowsPathEditor).
 
-Getting environment variables
------------------------------
+# Getting environment variables
 
 ```powershell
 # Listing all environment variables
@@ -52,8 +51,7 @@ In cmd.exe, all envs can be listed with `set`.
 * * *
 
 
-Managing environment variables
-------------------------------
+# Managing environment variables
 
 ```powershell
 # Managing current session environment
@@ -111,8 +109,7 @@ function Refresh-Environment {
 * * *
 
 
-$env:PATH helpers
------------------
+# $env:PATH helpers
 
 Use `fp` to list all directories in `$env:path`.
 It accepts a search needle as parameter. ex: `fp node`.
@@ -188,8 +185,7 @@ function Remove-EnvironmentPath {
 * * *
 
 
-Useful environment variables
-----------------------------
+# Useful environment variables
 
 Win + Pause: `Control Panel\System and Security\System`  
 PowerShell: `$env:USERNAME`  

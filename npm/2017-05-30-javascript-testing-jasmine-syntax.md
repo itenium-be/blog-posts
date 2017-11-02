@@ -22,7 +22,7 @@ tests run and how to exclude tests.
 
 <!--more-->
 
-## Basic example
+# Basic example
 
 Time to start writing some real tests with Jasmine!
 
@@ -60,7 +60,7 @@ and access them in your tests.
 
 
 
-## Matchers
+# Matchers
 
 Set expectations with matchers. Usage and differences of `toBe` and `toEqual` are already covered
 in the basic example above. These are the other matchers:
@@ -130,7 +130,7 @@ The [matchers source][jasmine-matchers] for if you'd like to take a peek at the 
 
 
 
-## Workflow
+# Workflow
 
 If you are iterating over the same test(s) you can temporarily run these tests by prefixing
 one or more `describe` and/or `it`s with an f.

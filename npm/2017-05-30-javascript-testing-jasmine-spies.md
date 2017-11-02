@@ -25,7 +25,7 @@ and how to inspect calls made.
 
 
 
-## spyOn
+# spyOn
 
 ```js
 var bar = 0;
@@ -88,7 +88,7 @@ it('create spy object with return values 15 and 18', () => {
 ```
 
 
-## Spy.and
+# Spy.and
 
 ```js
 beforeEach(() => {
@@ -122,7 +122,7 @@ it('or just throw an error', () => {
 
 
 
-## Spy.calls
+# Spy.calls
 
 ```js
 it('knows about arguments, returnValues and more', () => {
@@ -152,7 +152,7 @@ it('knows about arguments, returnValues and more', () => {
 
 
 
-## spyOnProperty
+# spyOnProperty
 
 ```js
 const foop = {

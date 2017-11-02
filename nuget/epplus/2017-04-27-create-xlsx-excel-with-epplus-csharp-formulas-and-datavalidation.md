@@ -20,7 +20,7 @@ an excel, leverage the power of Excel formulas.
 
 <!--more-->
 
-## Formulas
+# Formulas
 
 [The project code][github-project] creates an Excel like this:
 
@@ -70,7 +70,7 @@ using (var package = new ExcelPackage())
 }
 ```
 
-### SUBTOTAL
+## SUBTOTAL
 SUBTOTAL(9,...), as apposed to using SUM directly, will not include other subtotals in their calculation.
 
 ```vba
@@ -95,9 +95,9 @@ Filtered-out rows are always excluded.
 {: .table-code}
 
 
-## DataValidation
+# DataValidation
 
-### Dropdownlists
+## Dropdownlists
 
 ```c#
 using (var package = new ExcelPackage())
@@ -127,7 +127,7 @@ using (var package = new ExcelPackage())
 }
 ```
 
-### Integer & DateTime validation
+## Integer & DateTime validation
 
 ```c#
 using (var package = new ExcelPackage())
