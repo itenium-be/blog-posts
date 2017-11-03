@@ -123,14 +123,11 @@ Esc::
 Return
 ```
 
-; TODO: moregen:
---> CRM
---> Jos
---> Dit
+
+
+TODO: we zaten hier:
 
 --> Autohotkey: HeidiSql doesn't open in foreground anymore
-
---> Layout of blogs in site is abysmal...
 
 TODO: also example with different Prior / Next hotkey
 like Control + T, Control + W
