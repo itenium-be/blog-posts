@@ -263,5 +263,7 @@ using (var package = new ExcelPackage())
 }
 ```
 
-[epplus-nuget]: https://www.nuget.org/packages/EPPlus/
-[github-project]: https://github.com/be-pongit/EPPlusTutorial
+
+[epplus-nuget]: https://www.nuget.org/packages/EPPlus
+[github-epplus]: https://github.com/JanKallman/EPPlus
+[github-project]: https://github.com/itenium-be/EPPlusTutorial
