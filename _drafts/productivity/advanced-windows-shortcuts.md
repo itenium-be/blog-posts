@@ -10,6 +10,7 @@ categories: productivity
 
 http://www.shortcutmania.com/Windows-7-Keyboard-Shortcuts-printable-cheatsheet.htm
 https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts
+https://autohotkey.com/board/topic/1738-comprehensive-list-of-windows-hotkeys/
 
 C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 

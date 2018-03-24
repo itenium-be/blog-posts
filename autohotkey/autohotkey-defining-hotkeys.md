@@ -11,6 +11,11 @@ categories: productivity
 tags: [autohotkey]
 ---
 
+TODO: Add "$"
+$!enter::Msgbox yaye
+somehotkey::Send !{control}
+
+
 # Example
 {: .hide-from-excerpt}
 

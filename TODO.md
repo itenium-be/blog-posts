@@ -1,10 +1,6 @@
 MIKE Script to autotransform tables instead of doing it manually every time :)
 
 
-pongit.be
---> Add links to blog posts I frequently visit (ex: DateTimeFormatting)
-
-
 
 - Put this in source control
 - links to autohotkey script need to be updated

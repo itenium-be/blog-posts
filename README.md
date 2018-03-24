@@ -33,10 +33,15 @@ Place the image(s) in the assets folder of https://github.com/itenium-be/itenium
 - Image used on the itenium.be front page / blog sidebar
 - Size: 360x300 or 600x497 ?
 
-**bigimg**: 
+**bigimg**:  
 
 - Image for a post detail page
 - Needs to be tested/implemented as soon as we create a blog post witch such a big image...
+
+**interesting**:  
+
+Provide links to other resources.  
+This is not yet implemented in the Jekyll project!
 
 
 ```md
@@ -53,8 +58,11 @@ categories: javascript
 tags: [javascript,tutorial,testing]
 series: series-unique-name
 extras:
-  - githubproject: https://github.com/itenium-be/
-  - githubtext: Github link text
+    - githubproject: https://github.com/itenium-be/
+    - githubtext: Github link text
+interesting:
+    - http://www.google.com
+    - http://www.astalavista.com
 toc:
     title: Plugins
     icon: icon-javascript
