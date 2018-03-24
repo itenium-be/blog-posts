@@ -7,7 +7,7 @@ categories: dotnet
 tags: [net,excel,tutorial]
 series: epplus
 extras:
-  - githubproject: https://github.com/be-pongit/EPPlusTutorial
+  - githubproject: https://github.com/itenium-be/EPPlusTutorial
 toc:
     title: "Excel series: Part 2"
     icon: file-excel-o
@@ -162,4 +162,4 @@ using (var package = new ExcelPackage())
 }
 ```
 
-[github-project]: https://github.com/be-pongit/EPPlusTutorial
+[github-project]: https://github.com/itenium-be/EPPlusTutorial

@@ -6,7 +6,7 @@ date:   2017-04-30 12:00:00 +0200
 categories: dotnet
 tags: [net,tutorial,testing]
 extras:
-  - githubproject: https://github.com/be-pongit/NSubstituteTutorial
+  - githubproject: https://github.com/itenium-be/NSubstituteTutorial
     githubtext: The accompanying github project contains all code as UnitTests
 toc:
     title: NSubstitute vs Moq

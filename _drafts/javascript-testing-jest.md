@@ -8,7 +8,7 @@ categories: javascript
 tags: [javascript,tutorial,testing,react]
 series: js-testing
 extras:
-  - githubproject: https://github.com/be-pongit/jasmine-tut
+  - githubproject: https://github.com/itenium-be/jasmine-tut
 toc:
     title: Jest
     icon: icon-javascript

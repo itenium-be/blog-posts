@@ -7,7 +7,7 @@ categories: dotnet
 tags: [net,excel,tutorial]
 series: epplus
 extras:
-  - githubproject: https://github.com/be-pongit/EPPlusTutorial
+  - githubproject: https://github.com/itenium-be/EPPlusTutorial
 toc:
     title: "Excel series: Part 1"
     icon: file-excel-o
@@ -75,9 +75,8 @@ using (var package = new ExcelPackage())
 
 **Boring text ahead**:  
 
-While it's often not easy to find EPPlus examples online, the source code does
+While it's often not easy to find EPPlus examples online, the [official source code][github-epplus] does
 contain a whole bunch of extensive examples. Be sure to check them out.
-<!-- TODO: After EPPlus moved from Codeplex, add a hyperlink to the examples project -->
 
 
 Everything covered works with LibreOffice 5.0. EPPlus covers things that LibreOffice
@@ -200,7 +199,7 @@ using (var package = new ExcelPackage())
 	sheet.Cells["D3"].Value = DateTime.Now;
 
 	// A hyperlink (mailto: works also)
-	sheet.Cells["C25"].Hyperlink = new Uri("http://pongit.be", UriKind.Absolute);
+	sheet.Cells["C25"].Hyperlink = new Uri("http://itenium.be", UriKind.Absolute);
 	sheet.Cells["C25"].Value = "Visit us";
 	sheet.Cells["C25"].Style.Font.Color.SetColor(Color.Blue);
 	sheet.Cells["C25"].Style.Font.UnderLine = true;

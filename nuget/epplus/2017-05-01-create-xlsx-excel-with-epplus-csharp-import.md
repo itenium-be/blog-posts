@@ -7,7 +7,7 @@ categories: dotnet
 tags: [net,excel,tutorial]
 series: epplus
 extras:
-  - githubproject: https://github.com/be-pongit/EPPlusTutorial
+  - githubproject: https://github.com/itenium-be/EPPlusTutorial
 toc:
     title: "Excel series: Part 3"
     icon: file-excel-o

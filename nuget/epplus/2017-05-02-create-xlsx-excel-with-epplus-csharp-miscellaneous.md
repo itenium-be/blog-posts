@@ -7,7 +7,7 @@ categories: dotnet
 tags: [net,excel,tutorial]
 series: epplus
 extras:
-  - githubproject: https://github.com/be-pongit/EPPlusTutorial
+  - githubproject: https://github.com/itenium-be/EPPlusTutorial
 toc:
     title: "Excel series: Part 4"
     icon: file-excel-o
@@ -77,7 +77,7 @@ using (var package = new ExcelPackage())
 	// Also rt.Color, FontName, Size, ...
 
 	// A more extensive example can be found in Sample6.cs::AddComments of the official examples project
-	// TODO: With Codeplex shutting down, once they've moved to GitHub, add url to Sample6 here
+	// https://github.com/JanKallman/EPPlus/blob/master/SampleApp/Sample6.cs
 
 	package.SaveAs(new FileInfo(@""));
 }
@@ -105,4 +105,4 @@ public void ConvertingIndexesAndAddresses()
 - Workbook & sheet protection from user editing
 - A UnitTest to generate excel with a sample LoadFromXXX with a sheet for each TableStyles enum value.
 
-[github-project]: https://github.com/be-pongit/EPPlusTutorial
+[github-project]: https://github.com/itenium-be/EPPlusTutorial
