@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  "Excels formulas cheat sheet"
+title:  "Excel formulas cheat sheet"
 date:   2018-03-28 20:00:00 +0200
 desc: >
   Companion to the EPPlus series, specifically to Part 2: Formulas.  
