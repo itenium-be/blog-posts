@@ -66,6 +66,8 @@ interesting:
 toc:
     title: Plugins
     icon: icon-javascript
+updated:
+    - 2017-08-08: desc
 ---
 
 This will be the excerpt

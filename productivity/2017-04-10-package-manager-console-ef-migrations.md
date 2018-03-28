@@ -11,6 +11,8 @@ extras:
 toc:
     title: EF6 PMC
     icon: dot-circle-o
+updated:
+  - 2018-03-28: Fix for Visual Studio 2017
 ---
 
 This tutorial is about adding the following functionality to the Entity Framework Migrations CLI:  
@@ -54,10 +56,14 @@ as determined by `$isLikelyDbContextProject`.
 $isLikelyDbContextProject = ".DataAccess", ".Back"
 
 function Get-DbContextProject {
-	$dbContextProjects = Get-Project -All | Where-Object { `
-		$isLikelyDbContextProject -match $_.ProjectName.Substring($_.ProjectName.LastIndexOf(".")) `
-	}
-	return $dbContextProjects[0]
+	return Get-Project -All |
+		Where-Object {
+			if ($_.ProjectName.LastIndexOf(".") -gt -1) {
+				return $isLikelyDbContextProject -match $_.ProjectName.Substring($_.ProjectName.LastIndexOf("."))
+			} else {
+				return $false
+			}
+		} | Select -First 1
 }
 
 function Add-RealMigration($name = "test") {
