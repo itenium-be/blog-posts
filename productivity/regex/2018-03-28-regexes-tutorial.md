@@ -2,7 +2,10 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Regular Expressions: tutorial"
-date:   2017-05-30 13:00:00 +0200
+date:   2018-03-28 00:00:00 +0200
+desc: >
+    Regex tutorial
+img: none.png
 categories: productivity
 tags: [regex,tutorial,cheat-sheet]
 series: regexes
@@ -18,6 +21,20 @@ WIP: we zaten hier...
 - https://www.debuggex.com/cheatsheet/regex/javascript
 
 On how to match stuff.
+
+
+book Mastering Regular Expressions
+- starts really slow so it is perfectly readable by someone with even no (or very little) regex experience
+- 
+
+
+
+links
+- rex egg
+- reginfo
+- link from book?
+
+tool regex from book?
 
 <!--more-->
 
@@ -44,12 +61,12 @@ a diagram here... wouldn't that be fun
 | \\$        | Escape character: Match '$' anywhere in the input
 | .          | 
 | [az]       | 'a' or 'z'
-| [0-9]      | A single digit
+| [0-9]      | A single digit | 
 | [a-zA-Z]   |
 | [a-Z]      | This might also include '[]\\^_`'
 | [\n-]      | A newline or a hyphen
 | [^a]       | Everything but 'a'
-| (ab|yz)    | 'ab' or 'yz'. () = group
+| (ab\|yz)   | 'ab' or 'yz'. () = group
 | (?:ab)     | 'ab' but non-capturing group
 {: .table-code}
 

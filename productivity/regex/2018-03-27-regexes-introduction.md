@@ -2,7 +2,10 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Regular Expressions: introduction"
-date:   2017-05-30 12:00:00 +0200
+date:   2018-03-27 00:00:00 +0200
+desc: >
+    Regex intro
+img: none.png
 categories: productivity
 tags: [regex]
 series: regexes
@@ -12,13 +15,17 @@ interesting:
   - https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/ (or another cheat sheet?)
 ---
 
+A regex intro so gentle it doesn't even contain a regex.
+
+<!--more-->
+
 Some people, when confronted with a problem, think 'I know, I'll use regular expressions.' Now they have two problems.  
 ([source: Jeffrey Friedl's Blog][jeffrey-friedl])
 {: .notice .hide-from-excerpt}
 
 Regular Expressions are typically used for user input validation.
-Another good fit is extracting and/or reorganising strings.
-Replace a dozen lines of Substring and IndexOf with one 'pretty' regex!
+Another good fit is extracting, deleting and/or reorganising text.
+Replace a dozen lines of `Substring` and `IndexOf` with one 'pretty' regex!
 
 Other usage in code might be suspect: does the readability really benefit from the regex
 or does it just make things more complex.
@@ -42,7 +49,7 @@ These are the reason this series is posted under the productivity category.
 
 Whenever I fix a bug that was the result of an error that might have happened in other places aswell,
 I might use a regex to find those, even if the other code contains different variables, styling etc it
-would still find them - at least if the regex is bug free.
+would still find them - at least if the regex was written in a way that takes the context into account.
 
 
 **Tooling**

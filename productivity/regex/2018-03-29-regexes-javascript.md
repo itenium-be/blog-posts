@@ -2,7 +2,10 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Regexes: JavaScript syntax"
-date:   2017-05-30 12:00:00 +0200
+date:   2018-03-29 00:00:00 +0200
+desc: >
+    Regex in JavaScript
+img: none.png
 categories: productivity
 tags: [regex,cheat-sheet,javascript]
 series: regexes
