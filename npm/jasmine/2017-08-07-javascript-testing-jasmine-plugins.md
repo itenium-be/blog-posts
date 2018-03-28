@@ -4,6 +4,9 @@ author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine plugins"
 date:   2017-08-07 00:00:00 +0200
 img: javascript-testing-jasmine-customization.png
+desc: >
+  What would we be without some extra plugins. There
+  are over 1000 Jasmine npm packages and we'll cover them all here.
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: js-testing

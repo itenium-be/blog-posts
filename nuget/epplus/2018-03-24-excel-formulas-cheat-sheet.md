@@ -3,6 +3,9 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Excels formulas cheat sheet"
 date:   2018-03-28 20:00:00 +0200
+desc: >
+  Companion to the EPPlus series, specifically to Part 2: Formulas.  
+  Covering the EPPlus syntax and implemented functions.
 img: epplus-excel.png
 categories: dotnet
 tags: [net,excel,tutorial]
