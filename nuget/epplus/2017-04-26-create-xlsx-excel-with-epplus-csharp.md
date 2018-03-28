@@ -263,7 +263,28 @@ using (var package = new ExcelPackage())
 }
 ```
 
+**Conditional formatting**:  
+
+Example from [official Wiki][official-wiki].
+
+```
+ExcelAddress cfAddress1 = new ExcelAddress("B4:B9");
+var cfRule1 = sheet.ConditionalFormatting.AddTwoColorScale(cfAddress1);
+
+cfRule1.LowValue.Type = eExcelConditionalFormattingValueObjectType.Num;
+cfRule1.LowValue.Value = 0;
+cfRule1.LowValue.Color = Color.Green;
+
+cfRule1.HighValue.Type = eExcelConditionalFormattingValueObjectType.Formula;
+cfRule1.HighValue.Formula = "MAX(B4:B9)";
+cfRule1.HighValue.Color = Color.Red;
+
+cfRule1.StopIfTrue = true;
+cfRule1.Style.Font.Bold = true;
+```
+
 
 [epplus-nuget]: https://www.nuget.org/packages/EPPlus
 [github-epplus]: https://github.com/JanKallman/EPPlus
 [github-project]: https://github.com/itenium-be/EPPlusTutorial
+[official-wiki]: https://github.com/JanKallman/EPPlus/wiki/Conditional-formatting
