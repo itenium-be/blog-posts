@@ -3,6 +3,7 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Excels formulas cheat sheet"
 date:   2018-03-28 20:00:00 +0200
+img: epplus-excel.png
 categories: dotnet
 tags: [net,excel,tutorial]
 series: epplus
