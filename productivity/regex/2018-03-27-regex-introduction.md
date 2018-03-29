@@ -1,21 +1,23 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  "Regular Expressions: introduction"
+title:  "Regular Expressions: Introduction"
 date:   2018-03-27 00:00:00 +0200
 desc: >
     Regex intro
 img: none.png
 categories: productivity
 tags: [regex]
-series: regexes
+series: regex
 interesting:
   - http://www.rexegg.com
   - http://www.regular-expressions.info
   - https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/ (or another cheat sheet?)
+  - https://regexone.com (interactive tutorial)
 ---
 
-A regex intro so gentle it doesn't even contain a regex.
+A regex intro so gentle it doesn't even contain a regex.  
+If you'd like to get to the nitty gritty, skip to Part 2.
 
 <!--more-->
 
@@ -52,10 +54,29 @@ I might use a regex to find those, even if the other code contains different var
 would still find them - at least if the regex was written in a way that takes the context into account.
 
 
+TODO: need more/better examples here
+
+
 **Tooling**
 
 Don't forget about tooling.
 Having direct feedback on what your regex is matching on your data set as you type it.. It's the best :)
+
+TODO: Add some links to regex online tools + downloadable tool?
+
+**Implementations**
+
+As if they are not confusing enough in themselves, there are different implementations of regex.
+TODO: refer to part 3 implementations
+
+**Other resources**
+
+TODO: put the interesting yaml front matter links here.
+
+**Mastering Regular Expressions**
+
+If though the name of the book is [Mastering Regular Expressions][mastering-regex-book]
+it still starts really slow and is perfectly readable by someone with even no (or very little) regex experience.
 
 
 **Moving on**
@@ -66,3 +87,4 @@ to change often? Don't be shy to write them, even if they are the only ones in y
 
 [parse-html-with-regex]: https://stackoverflow.com/a/1732454/540352
 [jeffrey-friedl]: http://regex.info/blog/2006-09-15/247
+[mastering-regex-book]: https://www.amazon.com/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124
