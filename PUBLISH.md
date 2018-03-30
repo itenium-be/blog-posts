@@ -22,8 +22,21 @@ git push
 ```
 
 
-Update social media:  
+## Update social media
 
-- Twitter
-- LinkedIn
-- Facebook
+**LinkedIn**:  
+
+[LinkedIn Company page][linkedin] > Manage page > post
+
+**Twitter**:  
+
+[Twitter Company page][twitter] > Tweet
+
+**Facebook**:  
+
+[Facebook Company page][facebook] > Post
+
+
+[linkedin][https://www.linkedin.com/company/itenium]
+[facebook][https://www.facebook.com/itenium.be]
+[twitter][https://twitter.com/itenium_be]
