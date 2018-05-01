@@ -1,19 +1,32 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  "Autohotkey Tutorial - defining hotkeys"
+title:  "Autohotkey Tutorial - hotkeys"
 desc: >
     Autohotkey allows you to define hotkeys like ^#D.
     But what does it mean?
 img: autohotkey.png
-date:   2017-09-02 00:00:00 +0200
+date:   2018-05-01 00:00:00 +0200
 categories: productivity
 tags: [autohotkey]
+series: autohotkey
+extras:
+  - githubproject: 
+toc:
+    title: "Autohotkey series: Hotkeys"
+    icon: car
 ---
 
-TODO: Add "$"
-$!enter::Msgbox yaye
-somehotkey::Send !{control}
+First we'll cover the basic Autohotkey syntax.
+
+After adding your first x Autohotkey hotkeys, it will become harder and harder
+to think of new key combinations that are somehow still memorable.
+--> TODO: We'll probably better split this in two posts?
+
+We'll cover
+- The basic hotkey bindings
+- Some gotchas within those basics
+- And some creative hotkey combinations
 
 
 # Example
@@ -38,13 +51,14 @@ Return
 
 | Shorthand | Full            | Desc
 |-----------|-----------------|----------
+| +         | Shift
 | ^         | Control or Ctrl |
 | #         | Win             | Windows
-| +         | Shift
-| !         | Alt
 | <#        | LWin            | Left Windows
 | #>        | RWin            | Right Windows
+| !         | Alt
 | <^>!      | AltGr
+| AppsKey   | 
 |-----------|-----------------|
 {: .table-code}
 

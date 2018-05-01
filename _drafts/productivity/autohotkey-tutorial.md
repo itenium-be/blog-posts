@@ -2,7 +2,7 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Autohotkey Tutorial"
-date:   2017-04-22 02:00:00 +0200
+date:   2018-05-01 00:00:00 +0200
 categories: productivity
 tags: [autohotkey]
 ---
