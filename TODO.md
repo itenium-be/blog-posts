@@ -11,10 +11,6 @@ ounces vs grams
 miles vs meters
 
 
-Put in better syntax highlighter?
-https://github.com/isagalaev/highlight.js
-https://github.com/PrismJS/prism
-
 Articles for:
 - Visual Studio: Debugging shortcuts & know how (Stackify, Moles, Visualizers, ...?)
 - Surviving VIM (open file, create file, save file as sudo, basic cursor movement/editing/search) multiple files open? copy from one to the other?

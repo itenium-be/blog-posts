@@ -31,7 +31,7 @@ differentiate between long(ish) key presses or mouse clicks. And more...
 # Example
 {: .hide-from-excerpt}
 
-```ahk
+```autohotkey
 ; Single line hotkey
 ^#D::MsgBox Pressed Control + Win + D (%A_ThisHotKey%)
 
@@ -39,7 +39,7 @@ differentiate between long(ish) key presses or mouse clicks. And more...
 ^#C::
 Run, notepad.exe
 WinWait, Untitled - Notepad, , 3
-Send Dear sir,{enter}{enter}
+Send, Dear sir,{enter}{enter}
 Return
 ```
 
@@ -105,10 +105,10 @@ You can also let Autohotkey itself do the figuring out for you. Its builtin comm
 
 Prefix a hotkey with `~` to not block the native function.  
 ```ahk
-#IfWinActive, ahk_class CabinetWClass|ExploreWClass
+#IfWinActive, ahk_class CabinetWClass
 ; Control + Shift + 6: Details View in Windows Explorer
 ; Resize columns so that filenames are completely visible
-~^+6::Send {Control Down}{NumpadAdd}{Control Up}
+~^+6::Send, {Control Down}{NumpadAdd}{Control Up}
 #IfWinActive
 ```
 
