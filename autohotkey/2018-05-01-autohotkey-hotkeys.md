@@ -5,7 +5,7 @@ title:  "Autohotkey Tutorial - hotkeys"
 desc: >
     Autohotkey allows you to define hotkeys like ^#D.
     But what does it mean?
-img: autohotkey.png
+img: hotkeys.jpg
 date:   2018-05-03 00:00:00 +0200
 categories: productivity
 tags: [autohotkey]
