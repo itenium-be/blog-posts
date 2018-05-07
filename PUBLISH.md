@@ -37,6 +37,6 @@ git push
 [Facebook Company page][facebook] > Post
 
 
-[linkedin][https://www.linkedin.com/company/itenium]
-[facebook][https://www.facebook.com/itenium.be]
-[twitter][https://twitter.com/itenium_be]
+[linkedin]: https://www.linkedin.com/company/itenium
+[facebook]: https://www.facebook.com/itenium.be
+[twitter]: https://twitter.com/itenium_be
