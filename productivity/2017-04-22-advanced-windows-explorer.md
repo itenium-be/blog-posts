@@ -218,11 +218,10 @@ But when you want to close it after Windows annoyed you, this scrips allows you
 to you to do so by hitting Esc hard, twice.
 
 ```ahk
-Esc::
+~Esc::
 If (A_PriorHotKey = A_ThisHotKey and A_TimeSincePriorHotkey < 500)
 	WinClose
-Else
-	Send, {Esc}
+
 Return
 ```
 (I guess I just didn't know about Control + W before this post:)
