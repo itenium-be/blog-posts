@@ -227,7 +227,7 @@ as a hotkey. The value of `A_PriorHotkey` will be exactly as the hotkey is defin
 
 <br>
 **Follow a hotkey up with an additional keypress**  
-```ah
+```ahk
 ; AltGr + C: Change the case of the selected text
 ; Follow up with (U)PPER, l(ower) or T(itle)
 <^>!c::
