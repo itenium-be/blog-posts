@@ -157,10 +157,10 @@ Assert.Throws<ArgumentException>(() => moq.Object.SetMode("HEX"));
 ```c#
 using NSubstitute.ExceptionExtensions;
 
-nsub.Add(1, 1).Throws(new Exception());
+nsub.Add(1, 1).Throws(new InvalidOperationException());
 Assert.Throws<InvalidOperationException>(() => nsub.Add(1, 1));
 
-nsub.When(x => x.SetMode("HEX")).Throw<Exception>();
+nsub.When(x => x.SetMode("HEX")).Throw<ArgumentException>();
 Assert.Throws<ArgumentException>(() => nsub.SetMode("HEX"));
 
 // The extension method syntax is much cleaner
