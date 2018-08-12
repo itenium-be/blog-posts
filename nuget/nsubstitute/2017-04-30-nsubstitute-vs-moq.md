@@ -1,10 +1,14 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  "NSubstitute tutorial: Moq comparison"
+title:  "NSubstitute vs Moq"
 date:   2017-04-30 12:00:00 +0200
 categories: dotnet
+desc: >
+    NSubstitute vs Moq syntax comparison.
+img: nsubstitute-alt.png
 tags: [net,tutorial,testing]
+series: nsubstitute
 extras:
   - githubproject: https://github.com/itenium-be/NSubstituteTutorial
     githubtext: The accompanying github project contains all code as UnitTests
@@ -13,11 +17,8 @@ toc:
     icon: dot-circle-o
 ---
 
-[Moq][Moq] is probably the most used mocking framework out there at the moment.
-The creators of [NSubstitute][NSubstitute] however, craved a mocking framework
-with comparable capabilities but with a shorter, more succinct syntax.
-
-They have not failed to do so and I loved the NSubstitute syntax right away.
+Comparing [NSubstitute][NSubstitute] syntax with [Moq][Moq],
+probably the most used mocking framework out there at the moment.
 
 <!--more-->
 
@@ -32,7 +33,10 @@ public interface ICalculator
 	void SetMode(string mode);
 }
 
+// Moq
 Mock<ICalculator> moq = new Mock<ICalculator>();
+
+// NSubstitute
 ICalculator nsub = Substitute.For<ICalculator>();
 ```
 
@@ -168,8 +172,6 @@ nsub.When(x => x.SetMode("HEX")).Do(x => { throw new ArgumentException(); });
 
 
 # Summary
-
-So I like NSubstitute.
 
 I find Moqs `Func<T1, T2, ...>` overloads they have provided for `.Return` very useful.
 NSubstitute requires some more typing to achieve the same `.Return` capabilities but 
