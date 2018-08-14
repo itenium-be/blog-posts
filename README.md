@@ -1,6 +1,6 @@
 Blog posts
 ==========
-for http://itenium.be
+for https://itenium.be
 
 ## Kramdown helpers
 
