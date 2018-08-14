@@ -24,6 +24,8 @@ git push
 
 ## Update social media
 
+Create short(er) url with: [bitly](https://bitly.com)
+
 **LinkedIn**:  
 
 [LinkedIn Company page][linkedin] > Manage page > post

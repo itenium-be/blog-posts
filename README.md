@@ -57,6 +57,7 @@ bigimg: ???
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: series-unique-name
+url-short: https://bitly.com/
 extras:
     - githubproject: https://github.com/itenium-be/
     - githubtext: Github link text
