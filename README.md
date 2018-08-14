@@ -85,7 +85,7 @@ Full article
 
 - Do not prefix with fa to use font-awewome
 - Any from [font-mfizz](http://fizzed.com/oss/font-mfizz)
-- Site has also loaded a set from [FlatIcon](http://itenium.be/vendor/flat-icon/flaticon.html)
+- Site has also loaded a set from [FlatIcon](https://itenium.be/vendor/flat-icon/flaticon.html)
 
 
 ## TODO
