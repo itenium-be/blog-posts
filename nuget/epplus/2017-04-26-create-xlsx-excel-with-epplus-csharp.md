@@ -199,7 +199,7 @@ using (var package = new ExcelPackage())
 	sheet.Cells["D3"].Value = DateTime.Now;
 
 	// A hyperlink (mailto: works also)
-	sheet.Cells["C25"].Hyperlink = new Uri("http://itenium.be", UriKind.Absolute);
+	sheet.Cells["C25"].Hyperlink = new Uri("https://itenium.be", UriKind.Absolute);
 	sheet.Cells["C25"].Value = "Visit us";
 	sheet.Cells["C25"].Style.Font.Color.SetColor(Color.Blue);
 	sheet.Cells["C25"].Style.Font.UnderLine = true;
