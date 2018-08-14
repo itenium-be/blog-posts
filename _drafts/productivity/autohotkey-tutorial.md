@@ -2,7 +2,7 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Autohotkey Tutorial"
-date:   2017-04-22 02:00:00 +0200
+date:   2018-05-01 00:00:00 +0200
 categories: productivity
 tags: [autohotkey]
 ---
@@ -10,6 +10,25 @@ tags: [autohotkey]
 Perils of Autohotkey
 - Lost forum downloads
 - Branches
+
+
+Do a post on debugging:
+https://autohotkey.com/docs/FAQ.htm#Debug
+https://autohotkey.com/docs/Scripts.htm#debug
+
+
+https://github.com/Pulover/PuloversMacroCreator
+
+
+Context sensitive hotkeys
+--> This part also applies hotstrings
+--> And probably deserves its own part in the series
+https://autohotkey.com/docs/commands/_IfWinActive.htm
+https://autohotkey.com/docs/commands/_If.htm
+https://autohotkey.com/docs/misc/WinTitle.htm
+https://autohotkey.com/docs/commands/SetTitleMatchMode.htm
+--> Then refer to it in the autohotkey-hotkeys part..
+https://autohotkey.com/docs/commands/WinWait.htm
 
 
 https://autohotkey.com/docs/Hotstrings.htm

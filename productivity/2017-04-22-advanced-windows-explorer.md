@@ -144,7 +144,7 @@ Execute shortcut code only when Windows Explorer is active:
 ```
 
 **Some of the scripts use the following methods.
-They are defined in [windowsexplorer.ahk][github-ahk-utility].**
+They are defined in [windows-explorer-util.ahk][github-ahk-utility].**
 
 ```ahk
 ; Get the currently active path
@@ -187,7 +187,7 @@ Return
 
 DeselectSelectedFiles()
 {
-	; Explorer_GetSelected is defined in utilities/windowsexplorer.ahk
+	; Explorer_GetSelected is defined in utilities/windows-explorer-util.ahk
 	selectedFiles := Explorer_GetSelected()
 	if selectedFiles
 	{
@@ -218,11 +218,10 @@ But when you want to close it after Windows annoyed you, this scrips allows you
 to you to do so by hitting Esc hard, twice.
 
 ```ahk
-Esc::
+~Esc::
 If (A_PriorHotKey = A_ThisHotKey and A_TimeSincePriorHotkey < 500)
 	WinClose
-Else
-	Send, {Esc}
+
 Return
 ```
 (I guess I just didn't know about Control + W before this post:)
@@ -237,7 +236,7 @@ According to [AlternativeTo Windows Explorer][alternatives], many people like To
 
 
 
-[github-ahk]: https://github.com/itenium-be/Mi-Ke/blob/master/scripts/windowsexplorer.ahk
-[github-ahk-zip]: https://github.com/itenium-be/Mi-Ke/blob/master/scripts/zip-directory.ahk
-[github-ahk-utility]: https://github.com/itenium-be/Mi-Ke/blob/master/utilities/windowsexplorer.ahk
+[github-ahk]: https://github.com/itenium-be/Mi-Ke/tree/master/scripts-windows-explorer
+[github-ahk-zip]: https://github.com/itenium-be/Mi-Ke/blob/master/scripts-windows-explorer/windows-explorer-zip-directory.ahk
+[github-ahk-utility]: https://github.com/itenium-be/Mi-Ke/blob/master/scripts-windows-explorer/windows-explorer-util.ahk
 [alternatives]: http://alternativeto.net/software/windows-explorer

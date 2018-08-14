@@ -67,7 +67,8 @@ toc:
     title: Plugins
     icon: icon-javascript
 updated:
-    - 2017-08-08: desc
+    - date: 2017-08-08
+      desc: feedback
 ---
 
 This will be the excerpt
@@ -79,6 +80,13 @@ Not in excerpt
 
 Full article
 ```
+
+## toc.icon
+
+- Do not prefix with fa to use font-awewome
+- Any from [font-mfizz](http://fizzed.com/oss/font-mfizz)
+- Site has also loaded a set from [FlatIcon](http://itenium.be/vendor/flat-icon/flaticon.html)
+
 
 ## TODO
 
