@@ -44,6 +44,8 @@ Provide links to other resources.
 This is not yet implemented in the Jekyll project!
 
 
+## Front Matter template
+
 ```md
 ---
 layout: post
