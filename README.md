@@ -1,6 +1,6 @@
 Blog posts
 ==========
-for http://itenium.be
+for https://itenium.be
 
 ## Kramdown helpers
 
@@ -57,6 +57,7 @@ bigimg: ???
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: series-unique-name
+url-short: https://bitly.com/
 extras:
     - githubproject: https://github.com/itenium-be/
     - githubtext: Github link text
@@ -85,7 +86,7 @@ Full article
 
 - Do not prefix with fa to use font-awewome
 - Any from [font-mfizz](http://fizzed.com/oss/font-mfizz)
-- Site has also loaded a set from [FlatIcon](http://itenium.be/vendor/flat-icon/flaticon.html)
+- Site has also loaded a set from [FlatIcon](https://itenium.be/vendor/flat-icon/flaticon.html)
 
 
 ## TODO
