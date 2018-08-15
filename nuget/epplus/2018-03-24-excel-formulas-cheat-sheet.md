@@ -8,7 +8,7 @@ desc: >
   Covering the EPPlus syntax and implemented functions.
 img: epplus-excel.png
 categories: dotnet
-tags: [net,excel,tutorial]
+tags: [excel,cheat-sheet]
 series: epplus
 extras:
   - githubproject: https://github.com/itenium-be/EPPlusTutorial

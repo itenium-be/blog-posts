@@ -8,6 +8,7 @@ desc: >
     If there was no such thing as JavaScript,
     Yaml could've been the Xml killer.
 img: yaml.png
+url-short: https://bit.ly/2BaGoF9
 tags: [tutorial]
 toc:
     title: Yaml Tutorial

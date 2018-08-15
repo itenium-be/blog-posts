@@ -10,6 +10,7 @@ desc: >
 img: nsubstitute-alt.png
 tags: [net,tutorial,testing]
 series: nsubstitute
+url-short: https://bit.ly/2MdZf7n
 extras:
   - githubproject: https://github.com/itenium-be/NSubstituteTutorial
     githubtext: The accompanying github project contains all code as UnitTests
