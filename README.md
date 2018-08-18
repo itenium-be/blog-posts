@@ -56,6 +56,7 @@ desc: >
     This will be displayed for the post on the itenium.be front page
 img: javascript-testing-jasmine-customization.png
 bigimg: ???
+draft: true
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: series-unique-name

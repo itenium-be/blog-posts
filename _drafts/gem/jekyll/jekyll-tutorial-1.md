@@ -11,6 +11,11 @@ toc:
     icon: eye-slash
 ---
 
+https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+https://learn.cloudcannon.com/jekyll-cheat-sheet/
+https://bl.ocks.org/roachhd/2909c695979764498922
+https://jekyllrb.com/docs/templates/#filters
+
 I picked Jekyll to create this site. Not just because of the name, 
 but mostly due to GitHub Pages, which turns a simple `git push` into
 'put the latest version online'. Which is awesome.

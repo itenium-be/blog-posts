@@ -2,12 +2,13 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Visual Studio: Debugging Shortcuts"
-date:   2018-08-14 00:00:00 +0200
+date:   2018-08-15 00:00:00 +0200
+draft: true
 img: debugging.png
 desc: >
     We obviously never encounter bugs in our code.
     Still, should you ever need to debug, use these
-    shortcuts so that it will be over soon.
+    shortcuts so that it may be over soon.
 categories: dotnet
 tags: [visual studio,debugging,cheat-sheet]
 toc:
