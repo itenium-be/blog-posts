@@ -14,9 +14,6 @@ toc:
     icon: 
 ---
 
-TODO: -p: Search for this directly? how to use with git?
-
-TODO: passing -P to tailer the prompt!!!!
 
 Your current configuration:  
 ```
@@ -32,8 +29,12 @@ for git are omitted.
 **TL&DR**:  
 
 Configure something sensible:  
-```
-git config --global core.pager "less -eFiJM~ -j3"
+```sh
+# Short version
+git config --global core.pager "less -eFiJM~ -j3 --tabs=3"
+
+# Not so short version
+git config --global core.pager "less --LONG-PROMPT --tabs=3 --quit-at-eof --quit-if-one-screen --tilde --jump-target=3 --ignore-case --status-column"
 ```
 
 {% include kbd k="h" l="See all less commands." %}
@@ -44,29 +45,34 @@ Add a link to the [man page][less-man-page] and this topic is hereby extensively
 
 # Parameters for core.pager
 
+Git defaults to `less FRSX`.
+
 ## Display
 
 Default cursor is just a `:`
-{% include kbd k="-m" l="Show # bytes passed" %}
-{% include kbd k="-M" l="Show current lines displayed (ex: 1-57)" %}
+{% include kbd k="-m, --long-prompt" l="Show # bytes passed" %}
+{% include kbd k="-M, --LONG-PROMPT" l="Show current lines displayed (ex: 1-57)" %}
 
 <br>
-{% include kbd k="-N" l="Display line numbers" %}
-{% include kbd k="-s" l="Fold multiple empty lines to just one (doesn't fold empty + or - lines though)" %}
-{% include kbd k="-S" l="Truncate long lines instead of wrapping" %}
+{% include kbd k="-N, --LINE-NUMBERS" l="Display line numbers" %}
+{% include kbd k="-s, --squeeze-blank-lines" l="Fold multiple empty lines to just one (doesn't fold empty + or - lines though)" %}
+{% include kbd k="-S, --chop-long-lines" l="Truncate long lines instead of wrapping" %}
+{% include kbd k="-x, --window=x" l="Set default window line size to x for PgUp/PgDown" %}
+
 
 ## Searching
 
-{% include kbd k="-I" l="Case insensitive search" %}
-{% include kbd k="-i" l="Case insensitive search unless uppercase characters are found in the search pattern" %}
-{% include kbd k="-jX" l="with X a number: Show search result X lines from the top of the screen" %}
-{% include kbd k="-J" l="Place * on lines with search results" %}
+{% include kbd k="-I, --IGNORE-CASE" l="Case insensitive search" %}
+{% include kbd k="-i, --ignore-case" l="Case insensitive search unless uppercase characters are found in the search pattern" %}
+{% include kbd k="-jX, --jump-target=X" l="with X a number: Show search result X lines from the top of the screen" %}
+{% include kbd k="-J, --status-column" l="Place * on lines with search results" %}
 
 ## Quitting
 
-{% include kbd k="-e" l="Exits less when reached end twice" %}
-{% include kbd k="-E" l="Exits less when first reached end" %}
-{% include kbd k="-F" l="Exits when output is less than 1 page" %}
+{% include kbd k="-e, --quit-at-eof" l="Exits less when reached end twice" %}
+{% include kbd k="-E, --QUIT-AT-EOF" l="Exits less when first reached end" %}
+{% include kbd k="-F, --quit-if-one-screen" l="Exits when output is less than 1 page" %}
+{% include kbd k="-~, --tilde" l="Lines after end of file are blank, not ~" %}
 
 
 # Moving around
@@ -112,6 +118,7 @@ See searching parameters above for configuring case sensitivity.
 
 ## Other
 
+{% include kbd k="s + filename" l="Save to file and inspect with your weapon of choice" %}
 {% include kbd k="(, ), {, }, [, ]" l="When the character presed is on top of the page, scroll to its counterpart" %}
 {% include kbd k="xp, x%" l="Go to x% position in document" %}
 
@@ -132,10 +139,5 @@ See searching parameters above for configuring case sensitivity.
 
 After a few years of just using `PgUp` and `PgDown` I guess this research
 was way overdue.
-
-If you still don't like it:
-{% include kbd k="s filename" l="Save to file and inspect with your weapon of choice" %}
-
-
 
 [less-man-page]: https://linux.die.net/man/1/less
