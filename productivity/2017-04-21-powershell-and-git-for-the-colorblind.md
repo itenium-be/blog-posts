@@ -7,7 +7,7 @@ categories: productivity
 tags: [powershell,git]
 toc:
     title: Colorization
-    icon: eye
+    icon: icon-git
 ---
 
 My PowerShell, Posh-Git and .gitconfig color configuration because of some red-green troubles

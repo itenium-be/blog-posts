@@ -11,7 +11,7 @@ categories: productivity
 tags: [git]
 toc:
     title: Less Pager
-    icon: 
+    icon: icon-git
 ---
 
 
