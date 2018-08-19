@@ -21,6 +21,7 @@ A new post will be published when:
 
 - The filename starts with a date
 - The front matter date is not in the future
+- The draft front matter is not set to true
 - The submodule of the Jekyll project is updated to include the new post(s)
 - The Jekyll project is pushed to Github
 
@@ -31,7 +32,7 @@ Place the image(s) in the assets folder of https://github.com/itenium-be/itenium
 **img**:  
 
 - Image used on the itenium.be front page / blog sidebar
-- Size: 360x300 or 600x497 ?
+- Size: 360x300
 
 **bigimg**:  
 
