@@ -6,8 +6,8 @@ date:   2017-04-10 20:22:13 +0200
 categories: productivity
 tags: [net,powershell]
 extras:
-  - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/shells/NuGet_profile.ps1
-    githubtext: "The full Nuget_profile.ps1"
+  - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/nuget/ef.ps1
+    githubtext: "The EF nuget profile"
 toc:
     title: EF6 PMC
     icon: dot-circle-o
