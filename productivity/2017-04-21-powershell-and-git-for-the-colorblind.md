@@ -101,7 +101,7 @@ git config --list | Where-Object {$_ -Like "color*"}
 Available colors: normal, black, red, green, yellow, blue, magenta, cyan, or white  
 Second optional color param values: bold, dim, ul (underline), blink, and reverse (swap foreground and background)
 
-```git
+```ini
 [color "branch"]
 	current = yellow
 	local = white

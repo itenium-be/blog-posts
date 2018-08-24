@@ -3,8 +3,8 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Autohotkey Tutorial - hotkeys"
 desc: >
-    Autohotkey allows you to define hotkeys like ^#D.
-    But what does it mean?
+  Autohotkey allows you to define hotkeys like ^#D.
+  But what does it mean?
 img: hotkeys.jpg
 date:   2018-05-03 00:00:00 +0200
 categories: productivity
@@ -13,8 +13,15 @@ series: autohotkey
 extras:
   - githubproject: https://github.com/itenium-be/Mi-Ke
 toc:
-    title: "Autohotkey series: Hotkeys"
-    icon: car
+  title: "Autohotkey series: Hotkeys"
+  icon: car
+interesting:
+  - desc: Official Hotkeys documentation
+    url: https://www.autohotkey.com/docs/Hotkeys.htm
+  - desc: List of Keys (Keyboard, Mouse and Joystick)
+    url: https://autohotkey.com/docs/KeyList.htm
+updates:
+  - date: 2018-08-25 00:56:00 +0200
 ---
 
 First we'll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for

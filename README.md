@@ -66,8 +66,8 @@ extras:
   - githubproject: https://github.com/itenium-be/
   - githubtext: Github link text
 interesting:
-  - http://www.google.com
-  - http://www.astalavista.com
+  - desc: Research
+    url: http://www.google.com
 toc:
   title: Plugins
   icon: icon-javascript

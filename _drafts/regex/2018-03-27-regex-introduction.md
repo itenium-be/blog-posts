@@ -10,10 +10,10 @@ categories: productivity
 tags: [regex]
 series: regex
 interesting:
-  - http://www.rexegg.com
-  - http://www.regular-expressions.info
-  - https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/ (or another cheat sheet?)
-  - https://regexone.com (interactive tutorial)
+  - url: http://www.rexegg.com
+  - url: http://www.regular-expressions.info
+  - url: https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/ (or another cheat sheet?)
+  - url: https://regexone.com (interactive tutorial)
 ---
 
 A regex intro so gentle it doesn't even contain a regex.  

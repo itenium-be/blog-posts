@@ -16,7 +16,8 @@ toc:
     title: "Excel series: Part 5"
     icon: file-excel-o
 interesting:
-    - https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188
+    - desc: "Official documentation: list of all Excel functions"
+      url: https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188
 ---
 
 Companion to the EPPlus series, specifically to Part 2: Formulas.  

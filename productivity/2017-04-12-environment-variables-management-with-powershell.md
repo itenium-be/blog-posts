@@ -23,13 +23,15 @@ After which you get a tiny, unresizable, form where you can view and manage them
 Something better eventually arrived with Windows 10 but still, PowerShell :)
 
 Use Autohotkey to open the window with `Left Alt + Pause`:  
-```auothotkey
+```autohotkey
 LAlt & Pause::Run % "rundll32 sysdm.cpl,EditEnvironmentVariables"
 ```
 
 <!--more-->
 
-If you'd like a GUI instead, try [rix0rrr/WindowsPathEditor](https://github.com/rix0rrr/WindowsPathEditor).
+If you'd like a GUI instead you could try:
+{% include github-stars.html url="rix0rrr/WindowsPathEditor" %}
+
 
 # Getting environment variables
 
