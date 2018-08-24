@@ -151,15 +151,17 @@ $#e::
 ; Send Control + C => Copy text
 Send, ^c
 ClipWait, 1
-if (clipboard) {
+fileExists := FileExist(clipboard)
+if (fileExists = "D") {
     ; Open explorer in path on clipboard
-    Run, % "explorer /select," clipboard
-    Sleep 400
-    Send {Enter}
+    Run % "explorer.exe /root," clipboard
+
+} else if (fileExists) {
+    ; Open explorer with file selected
+    Run % "explorer.exe /select," clipboard
+
 } else {
-    ; Got here if no text was selected.
-    ; This Win + E should open explorer
-    ; and not execute this script again
+    ; No path on clipboard, just open explorer
     Send #e
 }
 Return
