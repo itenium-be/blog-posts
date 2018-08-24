@@ -6,11 +6,13 @@ date:   2017-04-12 15:00:00 +0200
 categories: productivity
 tags: [powershell,windows]
 extras:
-  - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/shells/PowerShell/envpath.ps1
+  - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/envpath.ps1
     githubtext: The full ps1 source
 toc:
-    title: Environment vars
-    icon: windows
+  title: Environment vars
+  icon: windows
+updates:
+  - date: 2018-08-25 00:00:00 +0200
 ---
 
 Working with environment variables in Windows is as easy as:  
@@ -19,6 +21,11 @@ Win + Pause > "Advanced system settings" > "Environment Variables..."
 ```
 After which you get a tiny, unresizable, form where you can view and manage them.
 Something better eventually arrived with Windows 10 but still, PowerShell :)
+
+Use Autohotkey to open the window with `Left Alt + Pause`:  
+```auothotkey
+LAlt & Pause::Run % "rundll32 sysdm.cpl,EditEnvironmentVariables"
+```
 
 <!--more-->
 
@@ -104,6 +111,8 @@ function Refresh-Environment {
 	$Env:PATH = "$machinePath;$userPath"
 }
 ```
+
+If you have chocolatey installed, `RefreshEnv` will also work.
 
 
 * * *
