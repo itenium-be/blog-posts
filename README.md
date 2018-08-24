@@ -56,15 +56,17 @@ date:   2017-08-07 00:00:00
 desc: >
   This will be displayed for the post on the itenium.be front page
 img: javascript-testing-jasmine-customization.png
-bigimg: ???
+bigimg: ??? # This is actually implemented... Just never used...
 draft: true
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: series-unique-name
-url-short: https://bitly.com/
+url-short: https://bitly.com/ # Retired!
 extras:
   - githubproject: https://github.com/itenium-be/
-  - githubtext: Github link text
+    githubtext: Github link text
+  - url: 
+    desc: 
 interesting:
   - desc: Research
     url: http://www.google.com
