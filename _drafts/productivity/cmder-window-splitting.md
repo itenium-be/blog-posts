@@ -37,6 +37,10 @@ powershell -new_console:d:"C:\projects\Digipolis\Note\App":t:"Note.App"
 powershell -new_console:d:"C:\projects\Digipolis\Note\Service":t:"Note.Service"
 
 
+
+https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/console/powershell.exe-command-line-help?view=powershell-6
+
+
 >cmd /k ""%ConEmuDir%\..\init.bat" & nodemon" -cur_console:n:d:"C:\projects\Digipolis\Container":t:"Focus-Nodemon"
 cmd /k ""%ConEmuDir%\..\init.bat" & gulp" -cur_console:s1TVn:d:"C:\projects\Digipolis\Container":t:"Focus-gulp"
 cmd /k ""%ConEmuDir%\..\init.bat" & gulp" -cur_console:s1THn:d:"C:\projects\Digipolis\Wtm\App\Focus.Wtm.App":t:"Wtm-gulp"
@@ -49,10 +53,7 @@ Setting up tasks
 
 PsReadLine Integration
 ----------------------
-Rename-Tab -> Another post with Posh-Git, PsReadLine
-
-
-
+RenameTab -> Another post with Posh-Git, PsReadLine
 
 
 
