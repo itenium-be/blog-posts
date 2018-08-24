@@ -6,8 +6,11 @@ date:   2017-04-21 15:00:00 +0200
 categories: productivity
 tags: [powershell,git]
 toc:
-    title: Colorization
-    icon: icon-git
+  title: Colorization
+  icon: icon-git
+updates:
+  - date: 2018-08-22
+    desc: Update for Posh-Git v1
 ---
 
 My PowerShell, Posh-Git and .gitconfig color configuration because of some red-green troubles
@@ -42,17 +45,44 @@ $host.PrivateData.ErrorForegroundColor = 'Yellow' # or: "DarkMagenta"
 
 Posh-Git
 ========
-List current colors
+
+List current configuration
 ```powershell
-$global:GitPromptSettings |
-	Get-Member |
-	Where-Object { $_.Name.Contains("Color") }
+$GitPromptSettings
 ```
+### v0.x
 
 My changes
 ```powershell
 $global:GitPromptSettings.WorkingForegroundColor = [ConsoleColor]::Yellow
 $global:GitPromptSettings.BranchForegroundColor = [ConsoleColor]::Green
+```
+
+Get possible colors  
+```powershell
+[ConsoleColor].GetEnumNames()
+```
+
+- Gray, Blue, Green, Cyan, Red, Magenta, Yellow, White
+- Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, DarkGray
+
+### v1.x
+
+Some breaking changes...  
+```powershell
+$GitPromptSettings.DefaultPromptPath.ForegroundColor = 'White'
+
+$GitPromptSettings.LocalWorkingStatusSymbol.ForegroundColor = 'Yellow'
+$GitPromptSettings.WorkingColor.ForegroundColor = 'Yellow'
+
+$GitPromptSettings.BranchAheadStatusSymbol.ForegroundColor = 'Green'
+$GitPromptSettings.BranchBehindStatusSymbol.ForegroundColor = 'DarkMagenta'
+$GitPromptSettings.BranchBehindAndAheadStatusSymbol.ForegroundColor = 'Yellow'
+```
+
+Colors are interpreted with  
+```powershell
+System.Drawing.ColorTranslator.FromHtml()
 ```
 
 
