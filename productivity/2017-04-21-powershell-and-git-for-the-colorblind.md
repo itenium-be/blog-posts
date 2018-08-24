@@ -9,7 +9,7 @@ toc:
   title: Colorization
   icon: icon-git
 updates:
-  - date: 2018-08-22
+  - date: 2018-08-22 00:00:00 +0200
     desc: Update for Posh-Git v1
 ---
 

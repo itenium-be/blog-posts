@@ -9,10 +9,11 @@ extras:
   - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/nuget/ef.ps1
     githubtext: "The EF nuget profile"
 toc:
-    title: EF6 PMC
-    icon: dot-circle-o
-updated:
-  - 2018-03-28: Fix for Visual Studio 2017
+  title: EF6 PMC
+  icon: dot-circle-o
+updates:
+  - date: 2018-03-28 00:00:00 +0200
+    desc: Fix for Visual Studio 2017
 ---
 
 This tutorial is about adding the following functionality to the Entity Framework Migrations CLI:  

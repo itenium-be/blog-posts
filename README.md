@@ -54,7 +54,7 @@ author: Wouter Van Schandevijl
 title:  ""
 date:   2017-08-07 00:00:00
 desc: >
-    This will be displayed for the post on the itenium.be front page
+  This will be displayed for the post on the itenium.be front page
 img: javascript-testing-jasmine-customization.png
 bigimg: ???
 draft: true
@@ -63,17 +63,17 @@ tags: [javascript,tutorial,testing]
 series: series-unique-name
 url-short: https://bitly.com/
 extras:
-    - githubproject: https://github.com/itenium-be/
-    - githubtext: Github link text
+  - githubproject: https://github.com/itenium-be/
+  - githubtext: Github link text
 interesting:
-    - http://www.google.com
-    - http://www.astalavista.com
+  - http://www.google.com
+  - http://www.astalavista.com
 toc:
-    title: Plugins
-    icon: icon-javascript
-updated:
-    - date: 2017-08-08
-      desc: feedback
+  title: Plugins
+  icon: icon-javascript
+updates:
+  - date: 2018-08-22 00:00:00 +0200
+    desc: Update for Posh-Git v1
 ---
 
 This will be the excerpt
@@ -91,9 +91,3 @@ Full article
 - Do not prefix with fa to use font-awewome
 - Any from [font-mfizz](http://fizzed.com/oss/font-mfizz)
 - Site has also loaded a set from [FlatIcon](https://itenium.be/vendor/flat-icon/flaticon.html)
-
-
-## TODO
-
-There is a front matter `desc` and also the excerpt.
-Should those be merged?
