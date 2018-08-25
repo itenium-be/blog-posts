@@ -5,15 +5,21 @@ title:  "Less for your git pager"
 date:   2018-08-19 00:00:00 +0200
 img: less.png
 desc: >
-    How to navigate git diffs, logs, ...
-    on the CLI with less
+  How to navigate git diffs, logs, ...
+  on the CLI with less
 categories: productivity
 tags: [git]
 toc:
-    title: Less Pager
-    icon: icon-git
+  title: Less Pager
+  icon: icon-git
 ---
 
+A `git diff` or `git log` starts the less program. Perhaps not the
+fanciest tool but more powerful than you might expect.
+
+This post details the arguments that can be passed to `less`
+and also how to navigate once less is running. Things not relevant
+for git are omitted.
 
 Your current configuration:  
 ```
@@ -21,10 +27,6 @@ git config --get core.pager
 ```
 
 If this returns nothing, there is room for improvement there!
-
-This post details the parameters that can be passed to `less`
-and also how to navigate once less is running. Things not relevant
-for git are omitted.
 
 **TL&DR**:  
 
