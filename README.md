@@ -4,15 +4,25 @@ for https://itenium.be
 
 ## Kramdown helpers
 
-Notices: {: .notice}, {: .notice--info}, {: .notice--danger}  
+```markdown
+# Notices
+{: .notice}, {: .notice--info}, {: .notice--danger}  
 
-Hide from excerpt: {: .hide-from-excerpt}
+# Hide from excerpt:
+{: .hide-from-excerpt}
 
-Table formatting: {: .table-code}, {: .table-margin}, {: .table-excel}
+# Table formatting
+{: .table-code}, {: .table-margin}, {: .table-excel}
 
-Styling: {: style="margin-top: 10"}
+# Styling
+{: style="margin-top: 10"}
 
- {% include kbd k="Win+E" l="" %}
+# Shortcut
+{% include kbd k="Win+E" l="" %}
+
+# Github Stars link
+{% include github-stars.html url="Laoujin/dotfiles" %}
+```
 
 
 ## New post template
@@ -20,6 +30,7 @@ Styling: {: style="margin-top: 10"}
 A new post will be published when: 
 
 - The filename starts with a date
+- The file is not in the `_drafts` folder
 - The front matter date is not in the future
 - The submodule of the Jekyll project is updated to include the new post(s)
 - The Jekyll project is pushed to Github
@@ -37,12 +48,6 @@ Place the image(s) in the assets folder of https://github.com/itenium-be/itenium
 
 - Image for a post detail page
 - Needs to be tested/implemented as soon as we create a blog post witch such a big image...
-
-**interesting**:  
-
-Provide links to other resources.  
-This is not yet implemented in the Jekyll project!
-
 
 ## Front Matter template
 
@@ -65,6 +70,8 @@ extras:
     githubtext: Github link text
   - url: 
     desc: 
+  - git: Laoujin/dotfiles
+    desc:
 interesting:
   - desc: Research
     url: http://www.google.com

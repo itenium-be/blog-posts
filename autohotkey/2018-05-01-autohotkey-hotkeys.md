@@ -20,6 +20,10 @@ interesting:
     url: https://www.autohotkey.com/docs/Hotkeys.htm
   - desc: List of Keys (Keyboard, Mouse and Joystick)
     url: https://autohotkey.com/docs/KeyList.htm
+  - desc: Hold down a key to send a different key
+    git: babin101/DevKeyboard
+  - desc: Morse code by Laszlo
+    url: https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns/
 updates:
   - date: 2018-08-25 00:56:00 +0200
 ---
