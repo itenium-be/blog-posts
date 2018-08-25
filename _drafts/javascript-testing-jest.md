@@ -1,7 +1,6 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-draft: true
 title:  "JavaScript Testing: Jasmine plugins"
 date:   2017-08-08 00:00:00 +0200
 categories: javascript

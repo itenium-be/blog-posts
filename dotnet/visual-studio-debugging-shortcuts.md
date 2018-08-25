@@ -3,7 +3,6 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Visual Studio: Debugging Shortcuts"
 date:   2018-08-15 00:00:00 +0200
-draft: true
 img: debugging.png
 desc: >
     We obviously never encounter bugs in our code.

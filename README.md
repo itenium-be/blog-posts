@@ -21,7 +21,6 @@ A new post will be published when:
 
 - The filename starts with a date
 - The front matter date is not in the future
-- The draft front matter is not set to true
 - The submodule of the Jekyll project is updated to include the new post(s)
 - The Jekyll project is pushed to Github
 
@@ -57,7 +56,6 @@ desc: >
   This will be displayed for the post on the itenium.be front page
 img: javascript-testing-jasmine-customization.png
 bigimg: ??? # This is actually implemented... Just never used...
-draft: true
 categories: javascript
 tags: [javascript,tutorial,testing]
 series: series-unique-name
