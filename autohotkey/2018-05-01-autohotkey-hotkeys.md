@@ -76,6 +76,7 @@ Return
 {: .table-code}
 
 **Others**:  
+
 - F[1-24], Tab, Space, Enter/Return, Backspace/BS
 - Left, Up, Down, Right
 - Esc, Ins, Delete/Del, Home, End, PgUp, PgDn
@@ -84,21 +85,25 @@ Return
 
 <br>
 **Numpad**:  
+
 - Numlock ON: Numpad[0-9],
 - Numlock OFF: NumpadIns, NumpadEnd, NumpadMult, NumpadEnter, ...
 
 <br>
 **Multimedia**:  
+
 - Browser_Stop, Media_Next, Volume_Up, Launch_App2, ...
 
 <br>
 **Mouse**:  
+
 - LButton, RButton, MButton
 - XButton1 (Browser_Back), XButton2 (Browser_Forward)
 - WheelUp, WheelDown, WheelLeft, WheelRight
 
 <br>
 **Joystick**:  
+
 - JoyX, JoyPOV, JoyInfo, ...
 
 [JoystickTest](https://autohotkey.com/docs/scripts/JoystickTest.htm): A simple script 
@@ -110,11 +115,12 @@ If your keyboard has keys that are not in the full keylist,
 [it might still be possible to map them to a script](https://autohotkey.com/docs/KeyList.htm#SpecialKeys).
 
 You can also let Autohotkey itself do the figuring out for you. Its builtin command
-`KeyHistory` opens a window where you can figure which is which.
+`KeyHistory` opens a window where you can figure out which is which.
 
 ## Native function
 
 Prefix a hotkey with `~` to not block the native function.  
+
 ```ahk
 #IfWinActive, ahk_class CabinetWClass
 ; Control + Shift + 6: Details View in Windows Explorer
@@ -139,7 +145,8 @@ Capslock & X::Run, http://www.google.com/search?q=%clipboard%
 
 ## Other
 
-Add `UP` to a hotkey combination to run the script on key release rather than on keypress.
+Add `UP` to a hotkey combination to run the script on key release rather than on keypress.  
+
 ```ahk
 AppsKey::ToolTip Press < or > to cycle through tabs.
 AppsKey Up::ToolTip
@@ -150,6 +157,7 @@ AppsKey Up::ToolTip
 
 <br>
 `*` acts as a key modifier wildcard.
+
 ```ahk
 *#c::Msgbox Triggered by Win+C, Shift+Win+C, Ctrl+Win+C, etc
 ```
@@ -157,6 +165,7 @@ AppsKey Up::ToolTip
 
 <br>
 `$` is necessary when you need to send the same hotkey and not execute your script again.
+
 ```ahk
 $#e::
 ; Send Control + C => Copy text
@@ -190,6 +199,7 @@ Control in which applications a hotkey is (not) active with the
 keywords 
 [`IfWinActive`](https://autohotkey.com/docs/commands/WinActive.htm), 
 `IfWinExist`, `IfWinNotActive` and `IfWinNotExist`.
+
 
 ```ahk
 #IfWinActive, ahk_class Notepad
@@ -226,6 +236,7 @@ which comes bundled with Autohotkey itself.
 ## Combining 2 hotkeys
 
 **Check if a hotkey combination is pressed twice**  
+
 ```ahk
 ~Esc::
 ; Esc twice to close an application
@@ -240,6 +251,7 @@ as a hotkey. The value of `A_PriorHotkey` will be exactly as the hotkey is defin
 
 <br>
 **Follow a hotkey up with an additional keypress**  
+
 ```ahk
 ; AltGr + C: Change the case of the selected text
 ; Follow up with (U)PPER, l(ower) or T(itle)
@@ -291,6 +303,7 @@ or [more info on the forum](https://autohotkey.com/board/topic/51354-singlepress
 
 <br>
 **Long middle mouse click with [`GetKeyState`](https://autohotkey.com/docs/commands/GetKeyState.htm)**  
+
 ```ahk
 ~MButton::
 HowLong = 0
@@ -308,6 +321,7 @@ IfLess, HowLong, 20, Return
 
 <br>
 **Triple, quadruple etc keypresses**  
+
 ```autohotkey
 ; Example #3: Detection of single, double, and triple-presses of a hotkey. This
 ; allows a hotkey to perform a different operation depending on how many times
@@ -378,13 +392,13 @@ Else
   MsgBox Press pattern %p%
 Return
 ```
-
+# Other
 
 ## Waiting for something
 
 Wait for something to happen with [`SetTimer`](https://autohotkey.com/docs/commands/SetTimer.htm)
 
-```
+```ahk
 ; Example #2: Wait for a certain window to appear and then alert the user:
 #Persistent
 SetTimer, Alert1, 500
@@ -405,7 +419,7 @@ return
 
 ## Suspension
 
-```
+```autohotkey
 ; Toggle script suspension
 ^#s:: ; Control + Win + S
 Suspend
