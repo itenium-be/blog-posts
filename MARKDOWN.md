@@ -4,8 +4,7 @@ Github Markdown
 Image
 -----
 
-![desc](/assets/.png)
-
+![desc](/assets/.png){: .img-responsive}
 
 Links
 -----
