@@ -26,7 +26,8 @@ git push
 
 **LinkedIn**:  
 
-[LinkedIn Company page][linkedin] > Manage page > post
+[LinkedIn Company page][linkedin] > Manage page > post  
+Direct ook zelf sharen!
 
 **Twitter**:  
 
