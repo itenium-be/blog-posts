@@ -7,7 +7,7 @@ categories: dotnet
 desc: >
     MongoDb tutorial
 img: mongo-likes-candy.png
-img-desc: Mongo likes candy from Blazing Saddles (1974, Mel Brooks), a satirical western.
+imgdesc: Mongo likes candy from Blazing Saddles (1974, Mel Brooks), a satirical western.
 tags: [net,tutorial,database]
 extras:
   - githubproject: https://github.com/itenium-be/MongoDBTutorial

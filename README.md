@@ -60,6 +60,7 @@ date:   2017-08-07 00:00:00
 desc: >
   This will be displayed for the post on the itenium.be front page
 img: javascript-testing-jasmine-customization.png
+imgdesc: 
 bigimg: ??? # This is actually implemented... Just never used...
 categories: javascript
 tags: [javascript,tutorial,testing]
