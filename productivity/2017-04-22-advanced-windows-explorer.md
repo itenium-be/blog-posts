@@ -6,8 +6,11 @@ date:   2017-04-22 02:00:00 +0200
 categories: productivity
 tags: [autohotkey,powershell,windows]
 toc:
-    title: Windows Explorer
-    icon: windows
+  title: Windows Explorer
+  icon: windows
+updates:
+  - date: 2018-08-30 19:23:30 +0200
+    desc: Hijacking Windows + E
 ---
 
 A listing of handy but less known shortcuts in Windows Explorer
@@ -112,24 +115,6 @@ Get-ChildItem $path | Select-Object `
 
 
 
-
-<!--
- * * *
-
-
-Configuration
-=============
-Registry edits for:
-- TODO: Open (admin) prompt here ==> need folded pre block
-- TODO: Manage ContextMenu and NewMenu 
-
-https://blogs.msdn.microsoft.com/andrew_richards/2017/03/01/enhancing-the-open-command-prompt-here-shift-right-click-context-menu-experience/
--->
-
-* * *
-
-
-
 Autohotkey Extensions
 =====================
 
@@ -154,6 +139,39 @@ Explorer_GetPath()
 Explorer_GetSelected()
 ```
 
+## Hijacking Windows + E
+
+If the selected text while pressing Windows E is a path,
+open Windows Explorer in that specific path.
+
+```autohotkey
+~#e::
+; Save clipboard
+oldClip := clipboard
+; Send Control+C
+Send, ^c
+ClipWait, 3
+clipVal := clipboard
+
+; Does the copied text contain a path?
+fileExists := FileExist(clipVal)
+if (fileExists = "D") {
+    ; Open explorer in specific directory
+    Run % "explorer.exe /root," clipVal
+
+} else if (fileExists) {
+    ; Open explorer with file selected
+    Run % "explorer.exe /select," clipVal
+
+} else {
+    ; Simply open explorer
+    Send #e
+}
+
+; Restore the clipboard
+clipboard := oldClip
+Return
+```
 
 
 ## Zip directory
@@ -200,8 +218,24 @@ DeselectSelectedFiles()
 
 ## Other
 
+**Change extension dialog**:  
+Windows doesn't offer an option to not show a confirmation dialog
+when changing the extension of a file. The best we can do is wait
+and whenever one pops up click it away?
+
+```autohotkey
+While, 1
+{
+    WinWaitActive, Rename ahk_class #32770
+    Send y
+}
+```
+
+
+<br>
+**Details View**:  
 While `Control + Shift + 6` is probably very useful, pesky Windows
-might truncate longer filenames.
+might truncate longer filenames with the switch to Details View.
 
 ```ahk
 ; Control + Shift + 6: Details View
@@ -212,7 +246,8 @@ Send {Control Down}{NumpadAdd}{Control Up}
 Return
 ```
 
-
+<br>
+**Closing**:  
 Closing an Explorer window can be done with Alt+F4 or with Control+W.
 But when you want to close it after Windows annoyed you, this scrips allows you
 to you to do so by hitting Esc hard, twice.
