@@ -62,7 +62,7 @@ desc: >
 img: javascript-testing-jasmine-customization.png
 imgdesc: 
 bigimg: ??? # This is actually implemented... Just never used...
-categories: javascript
+categories: javascript # Adding a new category? Update blog.yml to set the icon!
 tags: [javascript,tutorial,testing]
 series: series-unique-name
 url-short: https://bitly.com/ # Retired!
