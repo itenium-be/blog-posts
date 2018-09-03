@@ -5,6 +5,9 @@ title:  "PowerShell profiles"
 date:   2017-04-11 20:00:00 +0200
 categories: productivity
 tags: [powershell,windows]
+updates:
+  - date: 2018-09-04 01:04:05 +0200
+    desc: Updated locations for PowerShell Core
 ---
 
 Where to find and how to reload the different PowerShell profiles.
@@ -15,6 +18,18 @@ Reload PowerShell profile
 ```powershell
 . $profile
 ```
+
+
+# PowerShell Core
+
+The default location changed in PowerShell Core to  
+```powershell
+$home\Documents\PowerShell
+```
+
+
+# PowerShell
+
 
 Profile locations
 ```powershell
