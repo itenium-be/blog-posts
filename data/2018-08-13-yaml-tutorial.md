@@ -3,7 +3,7 @@ layout: post
 author: Wouter Van Schandevijl
 title:  Yaml tutorial
 date:   2018-08-13 20:00:00 +0200
-categories: data
+categories: productivity
 desc: >
     If there was no such thing as JavaScript,
     Yaml could've been the Xml killer.
