@@ -2,23 +2,24 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "PowerShell profiles"
+desc:   Where to find and how to reload the different PowerShell profiles.
 date:   2017-04-11 20:00:00 +0200
 categories: productivity
 tags: [powershell,windows]
+toc:
+  title: PowerShell Profiles
+  icon: icon-shell
 updates:
   - date: 2018-09-04 01:04:05 +0200
     desc: Updated locations for PowerShell Core
 ---
-
-Where to find and how to reload the different PowerShell profiles.
-
-<!--more-->
 
 Reload PowerShell profile
 ```powershell
 . $profile
 ```
 
+<!--more-->
 
 # PowerShell Core
 
