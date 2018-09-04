@@ -1,0 +1,51 @@
+Angular Road Trip
+
+Today I want to blog about my trip with Angular.
+
+I’ve started with Angular 2 more than 2 years ago, when it was still in bèta. Before that I did more than 3 years of dekstop development and had little web development experience.
+
+Back then the landscape was a lot more raw, it was an everyday struggle in a warzone full of enemies. You had to cling on on every little piece of progress to pull your self upon and to want to live to see the next day. I remember people not making it. When they died they saw their whole life flashing before their eyes. Static HTML, ASP.NET Pages, ASP.NET WebForms, MVC, Jquery, Ajax, Angular Js, ..
+
+I’m a “tiny bit” exaggerating here. But the landscape was a lot harder then today.
+
+We did not have Angular-cli yet, we had to do the packing and configuration ourselves.
+We did not have a lot of documentation, and the one we had was often out of date and misleading. 
+Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet. 
+The intellisense was often lacking, you had to write import statements yourself (can you believe it?), and so on.. 
+We got Release Candidates that contained major breaking changes.
+Npm equaled pain. In this world SemVer is just a “wild west concept” everyone misuses.
+“expression has changed after it was checked”
+
+One of the interviewing questions I ask candidates is if they know this error message that would pop up in the console window in development mode. For me it’s a measurement indicator of their experience with Angular. If you have never received this error you have never went through hell and back. 
+
+In the beginning it was still suggested to use SystemJs back then iso WebPack.
+And then it went silent around SystemJs. The community was dying to hear from the angular team what they’d choose next as the preferred packing mechanism. 
+
+I remember asking the question myself to Igor Minar, one of the Angular project leads, on the first ng-be conference ever. His eyes rolled to the back of his head. Apparently wherever he went people would ask that question and he got tired of it, especially because he could not give a clear answer yet. I thought I’d be smart and asked what google is using theirselves? Apparently they used their own mechanism. Making a possible answer even more complicated. It was not decided that day. But later on the choice was made clear it would be webpack.
+
+What was more important to us was the Speaking session of Todd Moto.
+He came talking about forms in Angular. A session we welcomed because we had quite a struggle of our own. Soon we realised that for business applications (with heavy forms and validations) Reactive Forms would be the way to go in most cases. But how do you implement it when you have a tree of components who all contain a part of the form and you have only one save button at the bottom of the page? I have a solid idea now, but only because it’s the logical result of a road full of trial & error.
+
+
+
+
+As of today:
+
+I’m still glad I can work with Angular every day.
+
+I think it’s a great framework. Especially for full stack developers who can not fully dedicate their time to frontend development. 
+It’s a rich and mature framework, still under heavy development and bringing great updates each release.
+
+The editors matured as well. Giving (almost) full support to latest Angular version.
+
+Flux implementations(ngrx, ngxs, ..) made it a lot cleaner to manage your data and have a single source of truth on your frontend.
+
+You can aim for a minimal startup time and preload lazy loaded modules in the background with a little bit of configuration.
+
+Angular supports different configurations for different environments.
+
+Your code is minimized, uglified, and three-shaken. => to check
+
+
+
+
