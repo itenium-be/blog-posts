@@ -4,6 +4,7 @@ author: Wouter Van Schandevijl
 title:  "PowerShell profiles"
 desc:   Where to find and how to reload the different PowerShell profiles.
 date:   2017-04-11 20:00:00 +0200
+img: powershell-profiles.png
 categories: productivity
 tags: [powershell,windows]
 toc:

@@ -3,6 +3,7 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Package Manager Console Entity Framework 6 Migrations profile"
 date:   2017-04-10 20:22:13 +0200
+img: powershell-migrations-profile.jpg
 categories: productivity
 tags: [net,powershell]
 extras:

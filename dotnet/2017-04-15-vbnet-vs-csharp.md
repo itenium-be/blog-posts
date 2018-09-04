@@ -4,6 +4,7 @@ author: Wouter Van Schandevijl
 title:  "VB.NET vs C# Syntax differences"
 date:   2017-04-15 15:00:00 +0200
 categories: dotnet
+img: csharp-vs-vbnet.png
 tags: [net,cheat-sheet]
 toc:
     title: Battle

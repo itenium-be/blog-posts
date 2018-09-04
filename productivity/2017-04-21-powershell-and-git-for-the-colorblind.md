@@ -4,6 +4,7 @@ author: Wouter Van Schandevijl
 title:  "PowerShell and Git for the colorblind"
 date:   2017-04-21 15:00:00 +0200
 categories: productivity
+img: colorblind.png
 tags: [powershell,git]
 toc:
   title: Colorization

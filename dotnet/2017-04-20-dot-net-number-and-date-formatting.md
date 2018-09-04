@@ -4,6 +4,7 @@ author: Wouter Van Schandevijl
 title:  ".NET Number and Date Formatting"
 date:   2017-04-20 15:00:00 +0200
 categories: dotnet
+img: datetime-formatting.png
 tags: [net,cheat-sheet]
 toc:
     title: Formatting
