@@ -7,7 +7,7 @@ bliki-posts is a submodule of itenium-website.
 
 A `desc: >` front matter.
 
-An `img` front matter which should point to existing file in itenium-website `assets/` folder
+An `img` front matter which should point to existing file in itenium-website `assets/blog-images/` folder
 (img size: 360x300)
 
 

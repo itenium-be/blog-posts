@@ -202,4 +202,4 @@ https://msdn.microsoft.com/en-us/library/zayyhzts.aspx?f=255&MSPPError=-21472173
 # New in Visual Studio 2017
 
 **Run to click**:  
-![Run to click](/assets/visual-studio-debugging-run-to-click.png)
+![Run to click](/assets/blog-images/visual-studio-debugging-run-to-click.png)
