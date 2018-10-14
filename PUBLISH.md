@@ -27,11 +27,12 @@ git push
 **LinkedIn**:  
 
 [LinkedIn Company page][linkedin] > Manage page > post  
-Direct ook zelf sharen!
+Direct ook zelf sharen! (Refresh the Company LinkedIn pagina en dan staat er daar een share button op de nieuwe post)
 
 **Twitter**:  
 
-[Twitter Company page][twitter] > Tweet
+[Twitter Company page][twitter] > Tweet  
+(Ingelogd in Firefox)
 
 **Facebook**:  
 
