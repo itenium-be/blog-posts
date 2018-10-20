@@ -1,4 +1,28 @@
-Angular Road Trip
+---
+layout: post
+author: Steven Robijns
+title:  "Angular Road Trip"
+date:   2018-10-20 00:00:00
+desc: >
+  This will be displayed for the post on the itenium.be front page
+img: javascript-testing-jasmine-customization.png
+imgdesc:
+categories: javascript
+tags: [javascript,angular,war-story]
+extras:
+  - githubproject: https://github.com/itenium-be/
+    githubtext: Github link text
+  - url:
+    desc:
+  - git: Laoujin/dotfiles
+    desc:
+interesting:
+  - desc: Research
+    url: http://www.google.com
+toc:
+  title: Angular Road Trip
+  icon: icon-javascript
+---
 
 Today I want to blog about my trip with Angular.
 
@@ -9,17 +33,17 @@ Back then the landscape was a lot more raw, it was an everyday struggle in a war
 I’m a “tiny bit” exaggerating here. But the landscape was a lot harder then today.
 
 We did not have Angular-cli yet, we had to do the packing and configuration ourselves.
-We did not have a lot of documentation, and the one we had was often out of date and misleading. 
-Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet. 
-The intellisense was often lacking, you had to write import statements yourself (can you believe it?), and so on.. 
+We did not have a lot of documentation, and the one we had was often out of date and misleading.
+Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet.
+The intellisense was often lacking, you had to write import statements yourself (can you believe it?), and so on..
 We got Release Candidates that contained major breaking changes.
 Npm equaled pain. In this world SemVer is just a “wild west concept” everyone misuses.
 “expression has changed after it was checked”
 
-One of the interviewing questions I ask candidates is if they know this error message that would pop up in the console window in development mode. For me it’s a measurement indicator of their experience with Angular. If you have never received this error you have never went through hell and back. 
+One of the interviewing questions I ask candidates is if they know this error message that would pop up in the console window in development mode. For me it’s a measurement indicator of their experience with Angular. If you have never received this error you have never went through hell and back.
 
 In the beginning it was still suggested to use SystemJs back then iso WebPack.
-And then it went silent around SystemJs. The community was dying to hear from the angular team what they’d choose next as the preferred packing mechanism. 
+And then it went silent around SystemJs. The community was dying to hear from the angular team what they’d choose next as the preferred packing mechanism.
 
 I remember asking the question myself to Igor Minar, one of the Angular project leads, on the first ng-be conference ever. His eyes rolled to the back of his head. Apparently wherever he went people would ask that question and he got tired of it, especially because he could not give a clear answer yet. I thought I’d be smart and asked what google is using theirselves? Apparently they used their own mechanism. Making a possible answer even more complicated. It was not decided that day. But later on the choice was made clear it would be webpack.
 
@@ -33,7 +57,7 @@ As of today:
 
 I’m still glad I can work with Angular every day.
 
-I think it’s a great framework. Especially for full stack developers who can not fully dedicate their time to frontend development. 
+I think it’s a great framework. Especially for full stack developers who can not fully dedicate their time to frontend development.
 It’s a rich and mature framework, still under heavy development and bringing great updates each release.
 
 The editors matured as well. Giving (almost) full support to latest Angular version.
