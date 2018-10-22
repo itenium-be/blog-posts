@@ -15,6 +15,8 @@ interesting:
     desc: Angular
   - url: https://cli.angular.io/
     desc: Angular CLI
+  - desc: TypeScript
+    url: https://www.typescriptlang.org/
   - desc: SemVer
     url: https://semver.org/
 toc:
@@ -31,9 +33,9 @@ After 3 years of desktop development I’ve started with Angular 2+ in july 2016
 
 Back then the landscape was a lot more difficult than it is today.
 <!--more-->
-- We did not have Angular-cli yet, we had to do the packing and configuration ourselves.
+- We did not have [Angular-cli](https://cli.angular.io/) yet, we had to do the packing and configuration ourselves.
 - We did not have a lot of documentation, and the one we had was often out of date and misleading.
-- Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet. The intellisense was often lacking, you had to write import statements yourself (can you believe it?), and so on..
+- Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet. The intellisense was often lacking, inline templates support was lacking, and so on..
 - We got Release Candidates that contained major breaking changes. *"WTF? [Semver](https://semver.org) much?"*
 - Npm equaled pain. Back then even more than now. Packages were often not versioned in a way that made sense. 
 
@@ -41,7 +43,7 @@ Back then the landscape was a lot more difficult than it is today.
 
 “expression has changed after it was checked”
 One of the interviewing questions I ask candidates is if they know this error message that would pop up in the console window in development mode. 
-For me it’s an indicator of their experience with Angular. If you have never received this error you have never went through hell and back.
+For me it’s an indicator of their experience with Angular. If you have never seen this error you've never gone through hell and back ;)
 
 <br/>
 
@@ -68,7 +70,7 @@ I have a solid idea now, but only because it’s the logical result of a road fu
 # As of today
 I’m still glad I can work with Angular every day.
 
-- The framework embraces TypeScript which is a revelation compared to JavaScript.
+- The framework embraces [TypeScript](https://www.typescriptlang.org/) which is a revelation compared to JavaScript.
 - I think it’s a great framework. Especially for full stack developers who can not fully dedicate their time to frontend development.
 - It’s a rich and mature framework, still actively developed and each update comes with a lot of nice new features.
 - The editors matured as well. Giving (almost) full support to the latest Angular versions.
