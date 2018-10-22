@@ -57,7 +57,7 @@ It was not decided that day. But later it was made clear that Webpack would be e
 
 <br/>
 
-The most important session at NB-BE for me was the session of Todd Moto.
+For me, the most important session at NB-BE was the one given by Todd Moto.
 He talked about forms in Angular. A session we welcomed because we had quite a struggle with that. So many possibilities and so little answers. 
 Soon we realised that for business applications heavily depending on forms and validations Reactive Forms would be the way to go in most cases. 
 But how do you implement it when you have a tree of components who all contain a part of the form and you have only one save button at the bottom of the page? 
