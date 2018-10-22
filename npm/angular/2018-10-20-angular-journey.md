@@ -53,7 +53,7 @@ And then things became silent around SystemJs. The community was dying to hear f
 I remember asking the question to Igor Minar myself, one of the Angular project leads, on the first NG-BE conference ever. His eyes rolled to the back of his head. 
 Apparently wherever he went people would ask that question and he got tired of it, especially because he could not give a clear answer yet. 
 I thought I’d be smart and asked what google is using theirselves? Apparently they used their own mechanism. Making a possible answer even more complicated. 
-It was not decided that day. But later on the choice was made clear it webpack would be ambraced as the preferred packaging mechanism.
+It was not decided that day. But later it was made clear that Webpack would be embraced as the preferred packaging mechanism.
 
 <br/>
 
