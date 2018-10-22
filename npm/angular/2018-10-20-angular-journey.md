@@ -35,7 +35,7 @@ Back then the landscape was a lot more difficult than it is today.
 - We did not have a lot of documentation, and the one we had was often out of date and misleading.
 - Editors(VSCode, Webstorm, VS..) did not cope well with Angular yet. The intellisense was often lacking, you had to write import statements yourself (can you believe it?), and so on..
 - We got Release Candidates that contained major breaking changes. *"WTF? [Semver](https://semver.org) much?"*
-- Npm equaled pain. Back then even more then now. Packages were often not versioned in a way that made sense. 
+- Npm equaled pain. Back then even more than now. Packages were often not versioned in a way that made sense. 
 
 <br/>
 
