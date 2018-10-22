@@ -45,7 +45,7 @@ For me it’s an indicator of their experience with Angular. If you have never r
 
 <br/>
 
-In the beginning it was still suggested to use SystemJs back then instead of WebPack.
+In the beginning it was still suggested to use SystemJs instead of WebPack.
 And then things became silent around SystemJs. The community was dying to hear from the Angular team what they’d choose next as the preferred packing mechanism.
 
 <br/>
