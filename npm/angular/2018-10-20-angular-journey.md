@@ -73,7 +73,7 @@ I’m still glad I can work with Angular every day.
 - It’s a rich and mature framework, still actively developed and each update comes with a lot of nice new features.
 - The editors matured as well. Giving (almost) full support to the latest Angular versions.
 - Flux implementations(ngrx, ngxs, ..) made it a lot cleaner to manage your data and have a single source of truth.
-- You can aim for a minimal startup time and preload lazy loaded modules in the background with only little of configuration.
+- You can aim for a minimal startup time and preload lazy loaded modules in the background with just a little configuration.
 - Angular supports different configurations for different environments.
 - Your code is minimized, uglified, and three-shaken.
 - Angular-CLI gets you going within seconds. You can have a basic shell application built with the Angular framework and thus starting point for your newest project.
