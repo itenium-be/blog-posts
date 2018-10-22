@@ -24,7 +24,7 @@ toc:
 
 Today I want to blog about my Angular(2 - 6) experiences the past years.
 
-After 3 years of desktop development I’ve started with Angular 2+ in july 2016, when it was still in bèta. 
+After 3 years of desktop development I’ve started with Angular 2+ in july 2016, when it was still in beta. 
 
 # Back then
 {: .hide-from-excerpt}
