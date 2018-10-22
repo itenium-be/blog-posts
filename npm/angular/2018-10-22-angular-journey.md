@@ -2,7 +2,7 @@
 layout: post
 author: Steven Robijns
 title:  "Angular Road Trip"
-date:   2018-10-20 00:00:00
+date:   2018-10-22 21:00:00
 desc: >
     2+ years of Angular: The good, the bad and the ugly
 img: angular.png
