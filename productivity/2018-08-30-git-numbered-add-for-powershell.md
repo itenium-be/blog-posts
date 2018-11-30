@@ -33,14 +33,15 @@ to stage the files by index.
 Displays the output of `git status --short` together with fabricated indexes like so
 
 ![Git-NumberedStatus](/assets/blog-images/git-add-numbered-status.png){: .img-responsive}
- 
+
 Working directory color codes:
 - Yellow: <span style="color: #CDCB7D">**M**</span>odified (file0 to file3)
 - DarkMagenta: <span style="color: #8C5998">**D**</span>eleted (file4)
 - Blue: <span style="color: #0480EF">**A**</span>dded (file5)
 
 <br>
-Configure the colors by modifying `$global:gitStatusNumbers`.
+Git-NumberedStatus accepts extra CLI arguments. Example: `gs -u` to see all `--untracked-files`.  
+Configure the color output by modifying `$global:gitStatusNumbers`.
 
 ## With Numstat
 
@@ -94,6 +95,12 @@ M       file0
 M       file1
 M       file2
 D       file4
+```
+
+# Other functions
+
+```powershell
+Git-GetFileNameByIndex 2
 ```
 
 # Alternatives
