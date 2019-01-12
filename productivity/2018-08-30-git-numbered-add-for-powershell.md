@@ -11,7 +11,7 @@ categories: productivity
 tags: [git,powershell]
 extras:
   - githubproject: https://github.com/itenium-be/Git-NumberedAdd
-    githubtext: Git-NumberedStatus, Add, Diff and Reset ps1 source
+    githubtext: Git-NumberedStatus, Add, Diff, etc ps1 source
 interesting:
   - desc: Similar implementation in Bash
     git: scmbreeze/scm_breeze
@@ -20,13 +20,22 @@ interesting:
 toc:
   title: Numbered Add
   icon: icon-git
+updates:
+  - date: 2019-01-12 00:00:00 +0200
+    desc: More actions and utilities + bugfixes
 ---
 
 After copying file paths from `git status` output and pasting them after a `git add` quite a few times
 by now, I've written a small [PowerShell script](https://github.com/itenium-be/Git-NumberedAdd)
-to stage the files by index.
+to manipulate the working directory and staging area with fabricated indexes.
 
 <!--more-->
+
+# Git-NumberedHelp <small>(alias: gnh)</small>
+
+All these aliases to save time but who can remember all that?  
+Use `gnh` to display all actions available by Git-NumberedAdd with description and alias.
+
 
 # Git-NumberedStatus <small>(alias: gs)</small>
 
@@ -45,7 +54,7 @@ Configure the color output by modifying `$global:gitStatusNumbers`.
 
 ## With Numstat
 
-If `$global:gitStatusNumbers.includeNumstat` is true, Git-NumberedStatus will also
+If `$global:gitStatusNumbers.includeNumstat` is true (=by default), Git-NumberedStatus will also
 execute a `git diff --numstat` and add lines added/deleted to the output.
 
 ![Git-NumberedStatus with --numstat](/assets/blog-images/git-add-numbered-status-numstat.png){: .img-responsive}
@@ -97,10 +106,54 @@ M       file2
 D       file4
 ```
 
-# Other functions
+# All actions
+
+Wrappers for all your basic git commands
 
 ```powershell
-Git-GetFileNameByIndex 2
+# Manipulate working directory:
+Git-NumberedAdd # Alias: ga
+Git-NumberedAddPatch # Alias: gap
+Git-NumberedDiff # Alias: gd
+Git-NumberedDiffCached # Alias: gdc
+Git-NumberedCheckout # Alias: gco
+
+# Manipulate the staging area:
+Git-NumberedReset # Alias: grs
+```
+
+## Git-Assuming
+
+Unfamiliar with "assume unchanged"?
+Check the docs on [`git update-index --assume-unchanged`](https://git-scm.com/docs/git-update-index).
+
+After a `Git-NumberedStatus`, assume a file in the working directory with `Git-NumberedAssumed` (alias: gas)
+
+Unassume files later on:
+
+```powershell
+# List all currently assumed files
+Git-ListAssumed # alias: gasl
+
+# and follow with:
+# git update-index --no-assume-unchanged
+Git-NumberedUnassumed # alias: gnoas
+```
+
+
+## Utilities
+
+```powershell
+# Get the full path of a file
+Git-GetFileNameByIndex 2 # alias: gn
+
+# Delete file with index 2
+rm (gn 2)
+
+
+# Change current path to single index location
+Git-NumberedSetLocation # Alias: gsl
+# Use Pop-Location (alias: popd) to go back to where you came from
 ```
 
 # Alternatives
