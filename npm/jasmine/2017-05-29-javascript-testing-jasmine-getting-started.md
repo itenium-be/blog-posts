@@ -12,6 +12,9 @@ extras:
 toc:
     title: Getting Started
     icon: icon-javascript
+updates:
+  - date: 2019-01-18 00:00:00 +0200
+    desc: Upgraded blog post and project code to Jasmine v3.3 and Babel 7
 ---
 
 Probably the most widely used JavaScript testing framework.
@@ -88,29 +91,29 @@ And start once with `npm test` or just `npm t`. Or start watching with `npm run 
 `test:alt` and `test:cli` demonstrate the available Jasmine CLI parameters.
 
 
-# Run ES2015+
+# Transpile
 
-As soon as one of your tests hits `import x from` it's a crash. Oh noes!
-Chances are you are already using Babel for older browser support.
-The very same [Babel][babel-setup] to the rescue here!
+Node can handle most syntax you throw at it, but if you do use
+something too fancy, [Babel][babel-setup] to the rescue!
 
 ```sh
-npm install --save-dev babel-register
+npm install --save-dev @babel/cli @babel/core @babel/node
 
 # Add all the presets/plugins you're using
-npm install --save-dev babel-preset-es2015
+npm install --save-dev @babel/preset-env @babel/polyfill core-js
 ```
 
 Add all the presets/plugins to your `.babelrc`
 ```json
 {
-	"presets": ["es2015"]
+	"presets": ["@babel/preset-env"]
 }
 ```
 
-And add a `package.json` script: `babel-node run.js`
+File `run-jasmine.js`:  
 ```js
-// run.js
+import '@babel/polyfill';
+import 'core-js/shim';
 import Jasmine from 'jasmine';
 
 const jasmine = new Jasmine();
@@ -118,6 +121,25 @@ jasmine.loadConfigFile('./spec/support/jasmine.json');
 jasmine.execute();
 ```
 
+The accompanying code has a working example for Babel transpilation in the `babel` folder.
 
+## Building and watching
+
+`package.json` scripts:  
+```json
+"scripts": {
+    // Clean generated files (requires npm i -D del-cli)
+    "babel:clean": "del-cli dist",
+
+    // Transpile to dist directory
+    "babel:build": "babel babel --out-dir dist --ignore generated/",
+
+    // Clean, build and run jasmine
+    "babel": "npm run babel:clean && npm run babel:build && node babel/dist/run-jasmine.js",
+
+    // Watch for changes
+    "babel:w": "nodemon --exec \"npm run babel\" --ignore babel/dist/"
+}
+```
 
 [babel-setup]: http://babeljs.io/docs/setup

@@ -12,6 +12,9 @@ extras:
 toc:
     title: Jasmine Syntax
     icon: icon-javascript
+updates:
+  - date: 2019-01-18 00:00:00 +0200
+    desc: Upgraded blog post and project code to Jasmine v3.3
 ---
 
 The basic example contains the general test suite structure and the 
@@ -29,23 +32,23 @@ Time to start writing some real tests with Jasmine!
 
 ```js
 describe('basic example', () => {
-	beforeEach(() => {
-		this.result = 1;
-	});
+    beforeEach(() => {
+        this.result = 1;
+    });
 
-	it('can hardly fail', () => {
-		// toBe() uses ===
-		expect(this.result).toBe(1);
+    it('can hardly fail', () => {
+        // toBe() uses ===
+        expect(this.result).toBe(1);
 
-		// For primitive types, toEqual
-		// behaves the same way as toBe
-		// toEqual goes further however
-		// by deeply comparing objects.
-		expect({a: {}}).toEqual({a: {}});
-		expect([0, {a: 1}]).toEqual([0, {a: 1}]);
-	});
+        // For primitive types, toEqual
+        // behaves the same way as toBe
+        // toEqual goes further however
+        // by deeply comparing objects.
+        expect({a: {}}).toEqual({a: {}});
+        expect([0, {a: 1}]).toEqual([0, {a: 1}]);
+    });
 
-	afterAll(() => {});
+    afterAll(() => {});
 });
 ```
 
@@ -68,60 +71,69 @@ in the basic example above. These are the other matchers:
 
 ```js
 it('can negate any matcher with .not', () => {
-	expect(1).not.toBe(0);
+    expect(1).not.toBe(0);
 });
 
 it('knows about regexes', () => {
-	expect('some bar').toMatch(/bar$/);
-	expect('some bar').toMatch('\\sbar');
+    expect('some bar').toMatch(/bar$/);
+    expect('some bar').toMatch('\\sbar');
 });
 
 it('can check numbers', () => {
-	expect(5).toBeLessThan(10); // .toBeLessThanOrEqual(5);
-	expect(5).toBeGreaterThan(1); // .toBeGreaterThanOrEqual(5);
+    expect(5).toBeLessThan(10); // .toBeLessThanOrEqual(5);
+    expect(5).toBeGreaterThan(1); // .toBeGreaterThanOrEqual(5);
 
-	const precision = 3;
-	expect(Math.PI).toBeCloseTo(3.142, precision);
+    const precision = 3;
+    expect(Math.PI).toBeCloseTo(3.142, precision);
 });
 
 it('has some special matchers', () => {
-	expect(1).toBeTruthy();
-	expect('').toBeFalsy();
-	expect().toBeUndefined();
-	// .toBeNull(); .toBeDefined(); .toBeNaN();
-});
+    expect(1).toBeTruthy();
+    expect('').toBeFalsy();
+    expect().toBeUndefined();
+    // .toBeNull(); .toBeDefined(); .toBeNaN();
+    // .toBeNegativeInfinity(); .toBePositiveInfinity();
+    // .toHaveClass(domEl): contains the class
+    // .withContext('show this on failure');
+    
 
 it('gets funky with partial matchers', () => {
-	expect(['a', {b: {}}]).toContain({b: {}});
-	expect('some string').toContain('some');
+    expect(['a', {b: {}}]).toContain({b: {}});
+    expect('some string').toContain('some');
 
-	expect({bar: 'baz', ack: 'yaye'}).toEqual(jasmine.objectContaining({bar: 'baz'}));
-	expect([1, 2, 3]).not.toEqual(jasmine.arrayContaining([1, 6]));
-	expect({foo: 'foobarbaz'}).toEqual({foo: jasmine.stringMatching('baz$')});
+    expect({bar: 'baz', ack: 'yaye'}).toEqual(jasmine.objectContaining({bar: 'baz'}));
+    expect([1, 2, 3]).not.toEqual(jasmine.arrayContaining([1, 6]));
+    expect({foo: 'foobarbaz'}).toEqual({foo: jasmine.stringMatching('baz$')});
+
+    // jasmine.arrayWithExactContents()
+    // .empty(); .notEmpty();
+    // .truthy(); .falsy();
 });
 
 it('can check for errors', () => {
-	const foo = () => {
-		throw new TypeError('foo bar baz');
-	};
+    const foo = () => {
+        throw new TypeError('foo bar baz');
+    };
 
-	expect(foo).toThrow();
+    expect(foo).toThrow();
 
-	// Error message must be exact match in order to pass
-	expect(foo).toThrowError('foo bar baz');
-	expect(foo).toThrowError(/bar/);
-	expect(foo).toThrowError(TypeError);
-	expect(foo).toThrowError(TypeError, 'foo bar baz');
+    // Error message must be exact match in order to pass
+    expect(foo).toThrowError('foo bar baz');
+    expect(foo).toThrowError(/bar/);
+    expect(foo).toThrowError(TypeError);
+    expect(foo).toThrowError(TypeError, 'foo bar baz');
+
+    expect(foo).toThrowMatching(err => err.message.includes('baz'));
 });
 
 it('jasmine.any', () => {
-	expect({}).toEqual(jasmine.any(Object));
-	// Number, Boolean, Date, String, Array
-	// Or 'YourType'
+    expect({}).toEqual(jasmine.any(Object));
+    // Number, Boolean, Date, String, Array
+    // Or 'YourType'
 });
 
 it('jasmine.anything', () => {
-	expect(1).toEqual(jasmine.anything());
+    expect(1).toEqual(jasmine.anything());
 });
 
 ```
@@ -143,9 +155,9 @@ to temporarily disable a describe/it by prefixing it with an x.
 ```js
 // f = focused
 fdescribe('only my its will run', () => {
-	it('which is me', () => {});
-	it('and me', () => {});
-	xit('but not me', () => {});
+    it('which is me', () => {});
+    it('and me', () => {});
+    xit('but not me', () => {});
 });
 
 xit('I will not run, even if the fdescribe above is removed', () => {});

@@ -15,6 +15,9 @@ extras:
 toc:
     title: Plugins
     icon: icon-javascript
+updates:
+  - date: 2019-01-17 00:00:00 +0200
+    desc: Added reporter plugins
 ---
 
 What would we be without some extra plugins. There
@@ -24,12 +27,56 @@ are over 1000 Jasmine npm packages and we'll cover them all here.
 <!--more-->
 
 
-Or apparently just [`proxyquire`][proxyquire] ;)
+Or apparently just [`jasmine-console-reporter`][jasmine-console-reporter] and [`proxyquire`][proxyquire] ;)
 
 Other Jasmine plugins that you might find useful:
 - [nock][nock]: Test Http requests
 - [rewire][rewire]: Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time
 
+
+# Jasmine Console Reporter
+
+**Prettier output**
+```
+npm install jasmine-console-reporter --save-dev
+```
+
+Create a `spec/helpers/reporter.js` file with the following content:
+```
+const JasmineConsoleReporter = require('jasmine-console-reporter');
+const myReporter = new JasmineConsoleReporter({
+  colors: 1,           // (0|false)|(1|true)|2
+  cleanStack: 1,       // (0|false)|(1|true)|2|3
+  verbosity: 4,        // (0|false)|1|2|(3|true)|4
+  listStyle: 'indent', // "flat"|"indent"
+  timeUnit: 'ms',      // "ms"|"ns"|"s"
+  timeThreshold: { ok: 500, warn: 1000, ouch: 3000 }, // Object|Number
+  activity: false,     // boolean or string ("dots"|"star"|"flip"|"bouncingBar"|...)
+  emoji: true,
+  beep: true,
+});
+jasmine.getEnv().clearReporters();
+jasmine.getEnv().addReporter(myReporter);
+```
+
+## Jasmine Spec Reporter
+
+Alternatively, there is also [jasmine-spec-reporter][jasmine-spec-reporter]:  
+```
+npm install jasmine-spec-reporter --save-dev
+```
+
+Usage:  
+```js
+const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+
+jasmine.getEnv().clearReporters();
+jasmine.getEnv().addReporter(new SpecReporter({
+  spec: {
+    displayPending: true
+  }
+}));
+```
 
 # Proxyquire
 
@@ -78,3 +125,5 @@ describe('fake the api call', function() {
 [nock]: https://github.com/node-nock/nock
 [proxyquire]: https://github.com/thlorenz/proxyquire
 [rewire]: https://github.com/jhnns/rewire
+[jasmine-spec-reporter]: https://github.com/bcaudan/jasmine-spec-reporter
+[jasmine-console-reporter]: https://github.com/bcaudan/jasmine-console-reporter

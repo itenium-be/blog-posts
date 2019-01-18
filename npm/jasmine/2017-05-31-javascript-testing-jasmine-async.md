@@ -13,6 +13,9 @@ extras:
 toc:
     title: Jasmine Async
     icon: icon-javascript
+updates:
+  - date: 2019-01-18 00:00:00 +0200
+    desc: await/async is pretty standard now. Added expectAsync examples.
 ---
 
 Need to test async code? No problem for Jasmine. 
@@ -32,21 +35,27 @@ A test fails for such a block when nor `done()` nor `done.fail()` is called with
 `jasmine.DEFAULT_TIMEOUT_INTERVAL` which defaults to 5000 (ms).
 
 ```js
+it('can use async/await', async () => {
+    const pie = await Promise.resolve(3.14);
+    expect(pie).toBe(3.14);
+});
+
+
 beforeAll(done => {
-	// The same construct can be used for
-	// beforeEach, afterEach and afterAll
-	done();
+    // The same construct can be used for
+    // beforeEach, afterEach and afterAll
+    done();
 }, customTimeout);
 
 it('has an optional "done" parameter', done => {
-	Promise.resolve()
-		.then(() => expect(true).toBeTruthy())
-		.then(done)
-		.catch(done.fail);
+    Promise.resolve()
+        .then(() => expect(true).toBeTruthy())
+        .then(done)
+        .catch(done.fail);
 });
 
 xit('can fail with a specific message', done => {
-	Promise.reject().catch(done.fail.bind(this, 'done.fail("with your error message")'));
+    Promise.reject().catch(done.fail.bind(this, 'done.fail("with your error message")'));
 }, customTimeout);
 ```
 
@@ -80,27 +89,23 @@ it('can hijack new Date', () => {
 afterEach(() => jasmine.clock().uninstall());
 ```
 
+# expectAsync
 
-# Async Await
-
-For the really hip people, and with a little help of `.babelrc`, you can write your tests like:
 ```js
-it("'s async/await, it's so 2017!", done => {
-	(async () => {
-		const pie = await Promise.resolve(3.14);
-		expect(pie).toBeCloseTo(3, 0);
-		done();
-	})().catch(done.fail);
+it('can check for resolved', () => {
+    const pie = Promise.resolve(3.14);
+    expectAsync(pie).toBeResolved();
+    return expectAsync(pie).toBeResolvedTo(3.14);
+});
+
+it('can check for rejected', () => {
+    const pie = Promise.reject('reasons');
+    expectAsync(pie).toBeRejected();
+    expectAsync(pie).toBeRejectedWith('reasons');
+});
+
+it('can pass context - which will show on failure', () => {
+    const pie = Promise.resolve(42);
+    expectAsync(pie).withContext('test').toBeResolved();
 });
 ```
-
-You'll need these Babel plugins:
-```
-npm i -D babel-plugin-syntax-async-functions
-npm i -D babel-plugin-transform-async-to-generator
-
-// .babelrc:
-plugins: ["syntax-async-functions", "transform-async-to-generator"]
-```
-
-The accompanying code has a working example for async/await in the `es2015` folder.

@@ -165,8 +165,9 @@ it('has default timeout of 5000ms', function() {
 });
 
 it('can change the pretty printing limits', function() {
-  expect(jasmine.MAX_PRETTY_PRINT_ARRAY_LENGTH).toBe(100);
-  expect(jasmine.MAX_PRETTY_PRINT_DEPTH).toBe(40);
+  expect(jasmine.MAX_PRETTY_PRINT_ARRAY_LENGTH).toBe(50);
+  expect(jasmine.MAX_PRETTY_PRINT_DEPTH).toBe(8);
+  expect(jasmine.MAX_PRETTY_PRINT_CHARS).toBe(1000);
 });
 
 it('has its own jasmine.getEnv()', function() {
