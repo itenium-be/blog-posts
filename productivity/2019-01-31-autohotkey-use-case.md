@@ -2,7 +2,7 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Autohotkey Use Case: Submitting a Form"
-date:   2019-01-19 00:00:00
+date:   2019-01-31 00:00:00
 desc: >
   Wait, how did you just fill in that form?
   Autohotkey, that's how!
@@ -19,7 +19,7 @@ toc:
 ---
 
 A simple Autohotkey use case you can start using in your application right away:  
-Filling in an entire form with a predefined values.
+Filling in an entire form with predefined values.
 
 <!--more-->
 
