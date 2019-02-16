@@ -12,9 +12,6 @@ extras:
 toc:
     title: Getting Started
     icon: icon-javascript
-updates:
-  - date: 2019-01-18 00:00:00 +0200
-    desc: Upgraded blog post and project code to Jasmine v3.3 and Babel 7
 ---
 
 Probably the most widely used JavaScript testing framework.

@@ -79,6 +79,7 @@ interesting:
 toc:
   title: Plugins
   icon: icon-javascript
+lastUpdate: 2018-08-22 00:00:00 +0200
 updates:
   - date: 2018-08-22 00:00:00 +0200
     desc: Update for Posh-Git v1

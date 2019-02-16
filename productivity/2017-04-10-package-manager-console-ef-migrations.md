@@ -12,6 +12,7 @@ extras:
 toc:
   title: EF6 PMC
   icon: dot-circle-o
+lastUpdate: 2018-03-28 00:00:00 +0200
 updates:
   - date: 2018-03-28 00:00:00 +0200
     desc: Fix for Visual Studio 2017

@@ -12,6 +12,7 @@ extras:
 toc:
   title: Environment vars
   icon: windows
+lastUpdate: 2018-08-25 00:00:00 +0200
 updates:
   - date: 2018-08-25 00:00:00 +0200
 ---

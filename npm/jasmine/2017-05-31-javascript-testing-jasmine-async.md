@@ -13,6 +13,7 @@ extras:
 toc:
     title: Jasmine Async
     icon: icon-javascript
+lastUpdate: 2019-01-18 00:00:00 +0200
 updates:
   - date: 2019-01-18 00:00:00 +0200
     desc: await/async is pretty standard now. Added expectAsync examples.

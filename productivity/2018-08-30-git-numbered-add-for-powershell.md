@@ -20,6 +20,7 @@ interesting:
 toc:
   title: Numbered Add
   icon: icon-git
+lastUpdate: 2019-01-12 00:00:00 +0200
 updates:
   - date: 2019-01-12 00:00:00 +0200
     desc: More actions and utilities + bugfixes
