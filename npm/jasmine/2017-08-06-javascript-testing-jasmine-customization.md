@@ -12,6 +12,11 @@ tags: [javascript,tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut
+interesting:
+  - git: JamieMason/Jasmine-Matchers
+    desc: A whole bunch of generic custom matchers
+  - git: mjeanroy/jasmine-utils
+    desc: Set of custom matchers for Jasmine Test Framework
 toc:
     title: Customization
     icon: icon-javascript
