@@ -124,7 +124,7 @@ Add missing stuff yourself with Autohotkey.
 Find [the source for the Autohotkey scripts here][github-ahk]
 
 Execute shortcut code only when Windows Explorer is active:
-```ahk
+```autohotkey
 #IfWinActive ahk_class CabinetWClass
 ; Your kewl code here
 #IfWinActive
@@ -133,7 +133,7 @@ Execute shortcut code only when Windows Explorer is active:
 **Some of the scripts use the following methods.
 They are defined in [windows-explorer-util.ahk][github-ahk-utility].**
 
-```ahk
+```autohotkey
 ; Get the currently active path
 Explorer_GetPath()
 
@@ -187,7 +187,7 @@ the current directory or the currently selected files.
 One creates a new directory with Control + Shift + N but there is not really one for
 creating a new file.
 
-```ahk
+```autohotkey
 ; Control + Shift + F: New file
 ^+f::
 DeselectSelectedFiles()
@@ -239,7 +239,7 @@ While, 1
 While `Control + Shift + 6` is probably very useful, pesky Windows
 might truncate longer filenames with the switch to Details View.
 
-```ahk
+```autohotkey
 ; Control + Shift + 6: Details View
 ; ~ = Do not block native function
 ~^+6::
@@ -254,7 +254,7 @@ Closing an Explorer window can be done with Alt+F4 or with Control+W.
 But when you want to close it after Windows annoyed you, this scrips allows you
 to you to do so by hitting Esc hard, twice.
 
-```ahk
+```autohotkey
 ~Esc::
 If (A_PriorHotKey = A_ThisHotKey and A_TimeSincePriorHotkey < 500)
 	WinClose

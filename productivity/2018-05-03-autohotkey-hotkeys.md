@@ -122,7 +122,7 @@ You can also let Autohotkey itself do the figuring out for you. Its builtin comm
 
 Prefix a hotkey with `~` to not block the native function.  
 
-```ahk
+```autohotkey
 #IfWinActive, ahk_class CabinetWClass
 ; Control + Shift + 6: Details View in Windows Explorer
 ; Resize columns so that filenames are completely visible
@@ -139,7 +139,7 @@ They are called prefix keys.
 
 
 Example: Search google for text on the clipboard by pressing Capslock and X.
-```ahk
+```autohotkey
 Capslock & X::Run, http://www.google.com/search?q=%clipboard%
 ```
 
@@ -148,7 +148,7 @@ Capslock & X::Run, http://www.google.com/search?q=%clipboard%
 
 Add `UP` to a hotkey combination to run the script on key release rather than on keypress.  
 
-```ahk
+```autohotkey
 AppsKey::ToolTip Press < or > to cycle through tabs.
 AppsKey Up::ToolTip
 ~AppsKey & <::Send ^+{tab}
@@ -159,7 +159,7 @@ AppsKey Up::ToolTip
 <br>
 `*` acts as a key modifier wildcard.
 
-```ahk
+```autohotkey
 *#c::Msgbox Triggered by Win+C, Shift+Win+C, Ctrl+Win+C, etc
 ```
 
@@ -167,7 +167,7 @@ AppsKey Up::ToolTip
 <br>
 `$` is necessary when you need to send the same hotkey and not execute your script again.
 
-```ahk
+```autohotkey
 $#e::
 ; Send Control + C => Copy text
 Send, ^c
@@ -202,7 +202,7 @@ keywords
 `IfWinExist`, `IfWinNotActive` and `IfWinNotExist`.
 
 
-```ahk
+```autohotkey
 #IfWinActive, ahk_class Notepad
 ^a::MsgBox You pressed Ctrl-A while Notepad is active. Pressing Ctrl-A in any other window will pass the Ctrl-A keystroke to that window.
 #c::MsgBox You pressed Win-C while Notepad is active.
@@ -238,7 +238,7 @@ which comes bundled with Autohotkey itself.
 
 **Check if a hotkey combination is pressed twice**  
 
-```ahk
+```autohotkey
 ~Esc::
 ; Esc twice to close an application
 If (A_PriorHotKey = A_ThisHotKey and A_TimeSincePriorHotkey < 500)
@@ -253,7 +253,7 @@ as a hotkey. The value of `A_PriorHotkey` will be exactly as the hotkey is defin
 <br>
 **Follow a hotkey up with an additional keypress**  
 
-```ahk
+```autohotkey
 ; AltGr + C: Change the case of the selected text
 ; Follow up with (U)PPER, l(ower) or T(itle)
 <^>!c::
@@ -278,7 +278,7 @@ return
 
 ## Double, triple and long key presses
 
-```ahk
+```autohotkey
 #c::
 DoubleClickTime := DllCall("GetDoubleClickTime") ; in milliseconds
 
@@ -305,7 +305,7 @@ or [more info on the forum](https://autohotkey.com/board/topic/51354-singlepress
 <br>
 **Long middle mouse click with [`GetKeyState`](https://autohotkey.com/docs/commands/GetKeyState.htm)**  
 
-```ahk
+```autohotkey
 ~MButton::
 HowLong = 0
 Loop
@@ -363,7 +363,7 @@ return
 
 The [forum thread on hold patterns](https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns).
 
-```ahk
+```autohotkey
 Morse(timeout = 400) {
    tout := timeout/1000
    key := RegExReplace(A_ThisHotKey,"[\*\~\$\#\+\!\^]")
@@ -399,7 +399,7 @@ Return
 
 Wait for something to happen with [`SetTimer`](https://autohotkey.com/docs/commands/SetTimer.htm)
 
-```ahk
+```autohotkey
 ; Example #2: Wait for a certain window to appear and then alert the user:
 #Persistent
 SetTimer, Alert1, 500

@@ -97,7 +97,7 @@ Clipboard
 ---------
 
 
-```ahk
+```autohotkey
 ; how long to keep trying to access the clipboard
 ; when the first attempt fails
 #ClipboardTimeout 2000
