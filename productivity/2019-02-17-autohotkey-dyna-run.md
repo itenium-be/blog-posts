@@ -28,7 +28,9 @@ single.. Autohotkey hotkey.
 
 Some blog posts that have Autohotkey scripts for you to test out right away!
 
+<!-- []({percent post_url 2019-01-31-autohotkey-use-case percent}) -->
 <!-- Jekyll Deprecation warnings: Apparently open issue on Github (auto closed) when working with subdirectories in _posts -->
+<!-- And didn't build on Github pages? -->
 - [Fill in an entire form with a few keystrokes](/blog/productivity/autohotkey-use-case)
 - [Customize Windows Explorer](/blog/productivity/advanced-windows-explorer)
 - [Hotkeys tutorial](/blog/productivity/autohotkey-hotkeys)
