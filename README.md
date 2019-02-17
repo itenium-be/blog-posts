@@ -22,6 +22,9 @@ for https://itenium.be
 
 # Github Stars link
 {% include github-stars.html url="Laoujin/dotfiles" %}
+
+# <hr>
+* * *
 ```
 
 

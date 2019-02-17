@@ -39,6 +39,7 @@ Direct ook zelf sharen! (Refresh the Company LinkedIn pagina en dan staat er daa
 [Facebook Company page][facebook] > Post
 
 
-[linkedin]: https://www.linkedin.com/company/itenium
+[linkedin]: https://www.linkedin.com/company/18213386/admin/
+[linkedin-old]: https://www.linkedin.com/company/itenium
 [facebook]: https://www.facebook.com/itenium.be
 [twitter]: https://twitter.com/itenium_be
