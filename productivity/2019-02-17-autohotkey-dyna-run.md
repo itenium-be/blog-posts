@@ -29,9 +29,9 @@ single.. Autohotkey hotkey.
 Some blog posts that have Autohotkey scripts for you to test out right away!
 
 <!-- Jekyll Deprecation warnings: Apparently open issue on Github (auto closed) when working with subdirectories in _posts -->
-- [Fill in an entire form with a few keystrokes]({% post_url 2019-01-31-autohotkey-use-case %})
-- [Customize Windows Explorer]({% post_url 2017-04-22-advanced-windows-explorer %})
-- [Hotkeys tutorial]({% post_url 2018-05-03-autohotkey-hotkeys %})
+- [Fill in an entire form with a few keystrokes](/blog/productivity/autohotkey-use-case)
+- [Customize Windows Explorer](/blog/productivity/advanced-windows-explorer)
+- [Hotkeys tutorial](/blog/productivity/autohotkey-hotkeys)
 
 
 # The DynaRun script
