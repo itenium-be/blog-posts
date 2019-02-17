@@ -28,11 +28,20 @@ are over 1000 Jasmine npm packages and we'll cover them all here.
 <!--more-->
 
 
-Or apparently just [`jasmine-console-reporter`][jasmine-console-reporter] and [`proxyquire`][proxyquire] ;)
 
-Other Jasmine plugins that you might find useful:
-- [nock][nock]: Test Http requests
-- [rewire][rewire]: Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time
+Or apparently just
+{% include github-stars.html url="thlorenz/proxyquire" %}
+
+<br>
+and some custom reporters:  
+{% include github-stars.html url="onury/jasmine-console-reporter" %}
+{% include github-stars.html url="bcaudan/jasmine-spec-reporter" %}
+
+<br>
+Other Jasmine plugins you might find useful:
+
+{% include github-stars.html url="node-nock/nock" desc="Test Http requests" %}
+{% include github-stars.html url="jhnns/rewire" desc="Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time" %}
 
 
 # Jasmine Console Reporter
@@ -127,4 +136,4 @@ describe('fake the api call', function() {
 [proxyquire]: https://github.com/thlorenz/proxyquire
 [rewire]: https://github.com/jhnns/rewire
 [jasmine-spec-reporter]: https://github.com/bcaudan/jasmine-spec-reporter
-[jasmine-console-reporter]: https://github.com/bcaudan/jasmine-console-reporter
+[jasmine-console-reporter]: https://github.com/onury/jasmine-console-reporter

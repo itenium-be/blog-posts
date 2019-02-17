@@ -9,6 +9,11 @@ img: javascript-testing-jasmine-customization.png
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut
+interesting:
+  - url: https://jasmine.github.io/api/edge/matchers.html
+    desc: "Jasmine documentation: Matchers"
+  - git: jasmine/jasmine
+  - git: svi3c/jasmine-ts
 toc:
     title: Getting Started
     icon: icon-javascript
@@ -90,6 +95,8 @@ And start once with `npm test` or just `npm t`. Or start watching with `npm run 
 
 # Transpile
 
+## Babel
+
 Node can handle most syntax you throw at it, but if you do use
 something too fancy, [Babel][babel-setup] to the rescue!
 
@@ -120,7 +127,7 @@ jasmine.execute();
 
 The accompanying code has a working example for Babel transpilation in the `babel` folder.
 
-## Building and watching
+### Building and watching
 
 `package.json` scripts:  
 ```json
@@ -129,7 +136,7 @@ The accompanying code has a working example for Babel transpilation in the `babe
     "babel:clean": "del-cli dist",
 
     // Transpile to dist directory
-    "babel:build": "babel babel --out-dir dist --ignore generated/",
+    "babel:build": "babel babel --out-dir dist --ignore some-generated-dir/",
 
     // Clean, build and run jasmine
     "babel": "npm run babel:clean && npm run babel:build && node babel/dist/run-jasmine.js",
@@ -138,5 +145,51 @@ The accompanying code has a working example for Babel transpilation in the `babe
     "babel:w": "nodemon --exec \"npm run babel\" --ignore babel/dist/"
 }
 ```
+
+
+
+## TypeScript
+
+There is a package for that!  
+Make sure you change your `jasmine.json` file extensions to `.ts`.
+
+```
+npm install --save-dev jasmine-ts @types/jasmine typescript node-ts
+```
+
+`jasmine.json` content:  
+```
+{
+  "spec_dir": "spec",
+  "spec_files": [
+    "**/*[sS]pec.ts"
+  ],
+  "helpers": [
+    "helpers/**/*.ts"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true,
+  "reporters": [
+    {
+      "name": "jasmine-spec-reporter#SpecReporter",
+      "options": {
+        "displayStacktrace": "all"
+      }
+    }
+  ]
+}
+```
+
+
+`package.json` scripts:  
+```json
+"scripts": {
+    "test": "jasmine-ts",
+
+    // -e ts: reload on file extension ts
+    "test:w": "nodemon -e ts --exec \"npm test\""
+}
+```
+
 
 [babel-setup]: http://babeljs.io/docs/setup
