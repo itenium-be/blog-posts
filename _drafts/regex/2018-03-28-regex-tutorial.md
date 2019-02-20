@@ -24,6 +24,11 @@ On how to match stuff.
 
 tool regex from book?
 
+
+lookahead: /aa(?=bb)/
+lookbehind: /(?<=aa)bb/
+from the position parsed so far look ahead/behind
+
 <!--more-->
 
 
