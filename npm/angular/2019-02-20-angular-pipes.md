@@ -4,11 +4,12 @@ author: Wouter Van Schandevijl
 title:  "Angular Pipes"
 date:   2019-02-20 00:00:00
 desc: >
-    Built in and custom Angular pipes tutorial.
+    Cheat-sheet covering pretty much everything relevant
+    on Angular Pipes.
 img: angular-pipes.png
 imgdesc:
 categories: javascript
-tags: [javascript,angular]
+tags: [javascript,angular,cheat-sheet,tutorial]
 extras:
   - githubproject: https://github.com/itenium-be/Angular-Series
 interesting:
@@ -30,10 +31,13 @@ toc:
 
 This post covers:  
 - All Builtin Angular pipes (json, async, string, array)
-- How to install different locales (currency, decimal, date)
-- How create, implement, use and test custom pipes
-- Some examples of custom pipes (ngx-pipes and angular-pipes)
+- How to install different locales (currency, decimal, date, percent)
+- How to generate, implement and test your custom pipes
+- Some examples of custom pipes ([ngx-pipes](https://github.com/danrevah/ngx-pipes) and [angular-pipes](https://github.com/fknop/angular-pipes))
 
+
+<br>
+An example:  
 ```html
 <!-- This does exactly what you'd think -->
 {% raw %}{{ value | uppercase }}{% endraw %}
@@ -196,12 +200,12 @@ May 1, 2019 => {{ Date.parse('2019-05-01') | date }}
 
 More options for the format:  
 - Escape characters by placing them inside single quotes
-- Week of year: w=7, ww=07
-- Week day: E=Tue, EEEE=Tuesday, EEEEE=T, EEEEEE=Tu
-- Month standalone: LLLL=September
-- Period: a=am/pm
-- Hour 1-12: h=1, hh=01
-- Zone: z=GMT-8, Z=-0800
+- **Week of year**: w=7, ww=07
+- **Week day**: E=Tue, EEEE=Tuesday, EEEEE=T, EEEEEE=Tu
+- **Month** standalone: LLLL=September
+- **Period**: a=am/pm
+- **Hour 1-12**: h=1, hh=01
+- **Zone**: z=GMT-8, Z=-0800
 - Or named: short, medium, long, full; shortDate, mediumDate (default), longTime, ...
 
 
@@ -238,7 +242,7 @@ More options for the format:
 [KeyValuePipe API](https://angular.io/api/common/KeyValuePipe)
 {: style="float: right"}
 
-Works with Objects and Maps.
+Works on Objects and Maps.
 
 ```html
 <div *ngFor="let item of object | keyvalue:compareFn">
@@ -246,7 +250,7 @@ Works with Objects and Maps.
 </div>
 ```
 
-The optional `compareFn` parameter signature defined in the component ts file:
+The optional `compareFn` parameter signature defined in `component.ts`:
 ```typescript
 export class AppComponent {
     object = {key1: 1, key2: 2};
@@ -316,10 +320,8 @@ Options:
 - `--export=false`: Add to module declarations and exports?
 - `--flat=true`: Write at the top level of the project
 - `--lintFix=false`
-- `--module=`
-- `--project=`
-- `--skipImport=false`
-- `--skipTests=false`
+- `--module=` and `--project=`
+- `--skipImport=false` and `--skipTests=false`
 
 ## Example
 
