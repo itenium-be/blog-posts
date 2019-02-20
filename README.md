@@ -38,9 +38,13 @@ A new post will be published when:
 - The submodule of the Jekyll project is updated to include the new post(s)
 - The Jekyll project is pushed to Github
 
-**Front matter img:**  
+**Conventions:**  
 
-Place the image(s) in the assets folder of https://github.com/itenium-be/itenium-be.github.io
+- Place image(s) and other resources in the `assets/blog-images` folder of https://github.com/itenium-be/itenium-be.github.io  
+- New tag? Assign it an icon in `_date/blog.yml`  
+- `lastUpdate` frontmatter needs to be kept in sync manually because sorting on `(updates | last).date` turned out to not be very easy.
+- A `autohotkey` code block makes a notice appear about DynaRun
+
 
 **img**:  
 
