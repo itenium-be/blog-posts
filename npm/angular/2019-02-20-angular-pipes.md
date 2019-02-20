@@ -346,6 +346,8 @@ export class HoursPipe implements PipeTransform {
 
 ## Installation
 
+If you dind't use `ng generate`.
+
 ```typescript
 @NgModule({
   declarations: [AppComponent, CustomPipe],
