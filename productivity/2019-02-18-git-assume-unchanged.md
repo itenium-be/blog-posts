@@ -18,10 +18,9 @@ toc:
   icon: icon-git
 ---
 
-While usually configuration files either have sensible defaults for the developers
-or they can create a gitignored file with their custom config values.  
-When you do have to change a version controlled file just to match your local development setup,
-"assume unchanged" / "skip worktree" can be used to avoid checking it in accidently.
+Ideally one would create a new gitignored file to configure an application to fit his local development
+environment but when you do have to revert to modifying a committed configuration file, at least there is
+"git assume unchanged" to avoid committing these files accidently.
 
 
 # Assume Unchanged
