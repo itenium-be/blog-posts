@@ -8,7 +8,7 @@ desc: >
 img: angular.png
 imgdesc:
 categories: javascript
-tags: [javascript,typescript,angular]
+tags: [javascript,angular]
 extras:
 interesting:
   - url: https://angular.io/
@@ -21,7 +21,7 @@ interesting:
     url: https://semver.org/
 toc:
   title: Angular Road Trip
-  icon: icon-javascript
+  icon: icon-angular
 ---
 
 Today I want to blog about my Angular(2 - 6) experiences the past years.
