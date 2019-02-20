@@ -13,7 +13,7 @@ toc:
 
 <!--more-->
 
-
+https://jekyllrb.com/docs/permalinks/#placeholders
 
 - full _config.yml
 

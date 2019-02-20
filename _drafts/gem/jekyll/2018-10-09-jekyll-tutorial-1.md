@@ -2,9 +2,19 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Static site generation with Jekyll: A tutorial"
-date:   2018-05-23 12:00:00 +0200
+date:   2018-10-09 12:00:00 +0200
 categories: ruby
 tags: [tutorial,jekyll]
+desc: >
+  
+img: Jekyll.png
+interesting:
+  - desc: 
+    url: 
+  - desc: 
+    url: 
+  - desc: 
+    url: 
 series: jekyll-tut
 toc:
     title: Jekyll series: Part 1
@@ -26,7 +36,7 @@ which can be a bit daunting at first.
 
 <!--more-->
 
-## Quick setup
+# Quick setup
 
 ```sh
 # Install
@@ -51,9 +61,9 @@ Processing is done for files with front matter, all other files are copied strai
 
 
 
-## Site configuration
+# Site configuration
 
-The generated `_config.yml` is a [YAML][yaml-wiki] file containing global configuration
+The generated `_config.yml` is a [YAML][YAML-Post] file containing global configuration
 that is used in all pages, posts etc. All other files can define page specific
 configuration called front matter. The same YAML syntax is used for the front matter.
 
@@ -68,10 +78,10 @@ theme: minima
 ```
 
 You can add any variables you'd like and access them in a file containing front matter like `{{ site.title }}`.
-Any changes to `_config.yml` require a restart of `bundle exec jekyll serve`.
+Any change to `_config.yml` requires a restart of `bundle exec jekyll serve`.
 
-See [part 2: Front Matter][part-2] for the YAML syntax.
-See [Part 3: _config.yml][part-3] for available options.
+<!-- See [part 2: Front Matter][part-2] for the YAML syntax.
+See [Part 3: _config.yml][part-3] for available options. -->
 
 
 The generated file `about.md` has the following front matter
@@ -86,66 +96,98 @@ Show _config.yml var: {{ site.theme }}
 Show front matter var: {{ page.permalink }}
 ```
 
-See [Part 4: Kramdown][part-4] for the md syntax
-See [Part 5: Liquid][part-5] for Shopify's Liquid syntax
+The default Markdown renderer is [kramdown](https://kramdown.gettalong.org/).
 
 
-## Themes
+<!-- See [Part 4: kramdown][part-4] for the md syntax
+See [Part 5: Liquid][part-5] for Shopify's Liquid syntax -->
+
+
+# Themes
 
 By default, the [minima theme][theme-minima] is used. This is defined as `theme: minima` in your `_config.yml`.
 
 For a quick start, you can pick any of the [existing themes][awesome-jekyll-themes]. 
 Be sure to check [minimal-mistakes][minimal-mistakes] if you decide to not start from scratch.
 
-To install a theme
+To switch themes, update your `./Gemfile ` and `./_config.yml` 
 ```
-TODO: actually put this here: gem vs non-gem?
+# Replace
+gem "minima", "~> 2.0"
+# With your-theme
+gem "jekyll-theme-minimal"
 ```
+And run `bundle update`.
+
+**Some themes:**
+
+{% include github-stars.html url="jekyll/minima" %}
+{% include github-stars.html url="mmistakes/minimal-mistakes" %}
+{% include github-stars.html url="beautiful-jekyll" %}
+{% include github-stars.html url="pages-themes/minimal" %}
+{% include github-stars.html url="pages-themes/cayman" %}
+{% include github-stars.html url="pages-themes/slate" %}
+{% include github-stars.html url="johno/pixyll" %}
+{% include github-stars.html url="jeromelachaud/freelancer-theme" %}
+{% include github-stars.html url="poole/hyde" %}
+
 
 Once a theme has been chosen, all roads are still open, as you can override anything and everything.
 `bundle show minima` outputs the path to all files of the theme. Copy any file there to your jekyll
-directory and that file will be used instead.
+directory respecting the relative path and that file will be used instead.
 
-All files in the `_layouts` folder can be used in front matter as the 
+# Layouts
+
+All files in the `_layouts` folder can be used in the `layout` front matter.
 
 `_layouts\default.html`: The base layout used by home.html, page.html and post.html.
 
------> make a diagram with the minima layout of the layouts/components...
+## Assets
 
-```
-_layouts\
-	default.html: 
-	home.html: 
-	page.html: 
-	post.html: 
-```
+Any file in `/assets` will be copied to the resulting site. If the file has front matter,
+the file will be rendered. --> Already saying above that anything gets copied
+
+assets: https://jekyllrb.com/docs/themes/#assets
 
 
-## Posts and pages
+- stylesheets: https://jekyllrb.com/docs/themes/#stylesheets
 
 
 
-## Conventions and technologies
 
-### Front Matter
+[Official Jekyll Themes docs](https://jekyllrb.com/docs/themes/)
 
-### Kramdown
+# Conventions and technologies
 
-frontmatter, html
-markdown or textile?
+-- keep this as short as possible --> quickest way to publishing your first post...
+
+Add Where to put normal pages
+
+Put kramdown posts or articles in `_posts`
+
+Collections, Posts and pages
+Liquid
+plugins
+
+--> deliver rough... the other parts go more in depth
+Idea was to do an article about Liquid remember?
+
+--> But first VISUG... :p
+
+## GitHub Pages
+
+Goto the Settings of your project to activate [GitHub Pages](https://pages.github.com/)
+for free hosting (also with custom domain name!)
+
+Ruby plugins are not possible here.  
+- [The list of usable themes](https://pages.github.com/themes/)
+- [The list of usable plugins](https://pages.github.com/versions/)
+
+If you do want other plugins, you can still build your site yourself and push the html
+(ie the `_site` folder) to, for example, the `gh-pages` branch.
 
 
-### Liquid
-
-### Ruby and gem plugins
-
-### GitHub Pages
-
-- cname
-- Plugins issues: push jekyll with allowed plugins or build site locally
-
-
-[yaml-wiki]: https://en.wikipedia.org/wiki/YAML
+[YAML-Post]: yaml-tutorial
 [part-2]: jekyll-tutorial-2-front-matter
 [part-3]: jekyll-tutorial-3-config-yml
 [theme-minima]: https://github.com/jekyll/minima
