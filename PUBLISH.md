@@ -24,6 +24,8 @@ git push
 
 ## Update social media
 
+Add picture manually to the post for LinkedIn & Twitter as these platforms don't do it automatically.
+
 **LinkedIn**:  
 
 [LinkedIn Company page][linkedin] > Manage page > post  
@@ -37,6 +39,10 @@ Direct ook zelf sharen! (Refresh the Company LinkedIn pagina en dan staat er daa
 **Facebook**:  
 
 [Facebook Company page][facebook] > Post
+
+**Slack**:  
+
+Share in the `knowledge-sharing` channel.
 
 
 [linkedin]: https://www.linkedin.com/company/18213386/admin/
