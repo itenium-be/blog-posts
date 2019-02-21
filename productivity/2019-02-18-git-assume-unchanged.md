@@ -4,8 +4,8 @@ author: Wouter Van Schandevijl
 title:  "Git Assume Unchanged"
 date:   2019-02-18 00:00:00
 desc: >
-  Assume unchanged files that you do not want
-  to commit/push accidently.
+  "git assume unchanged" any (configuration) file you need to modify 
+  but also want to avoid committing/pushing accidently.
 img: git-assume-unchanged.jpg
 imgdesc: ""
 interesting:
