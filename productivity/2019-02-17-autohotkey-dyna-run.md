@@ -98,6 +98,10 @@ DynaRun(TempScript, pipename="")
 
 Or download [dyna-run-capslock-f5.ahk](/assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk)
 
+
+<!-- This block exists three times: autohotkey-dyna-run.md, autohotkey-use-case.md and autohotkey-login-form.html -->
+<!-- ATTN: Some slight variations in install instructions!-->
+
 # Installing the script
 
 - Download and [install Autohotkey](https://www.autohotkey.com/download) (Pick Autohotkey 1.1)
@@ -106,8 +110,28 @@ Or download [dyna-run-capslock-f5.ahk](/assets/blog-images/autohotkey-dyna-run-c
 - Double click your newly created file to activate the script
 - Select some Authotkey text and press `Capslock + F5`
 
-<br>
-Mega test script:  
+
+## To start with Windows
+
+To start your Autohotkey script with Windows put a file shortcut in your startup folder. 
+
+To get to this directory:
+
+- Press `Windows + E`
+- Press `Control + L`
+- Type `shell:startup`
+- Press `Enter`
+
+Usually something like:
+
+`C:\Users\your_user_name\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+
+With `your_user_name`: `$env:USERNAME` (PS1) or `%USERNAME%` (CMD)
+
+
+
+# Mega test script
+
 ```autohotkey
 MsgBox Will it work?
 ```

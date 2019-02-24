@@ -47,6 +47,8 @@ Type `lma` (Short for `Login Mega App`?) while the cursor is in the email input
 to fill in the form and submit it.
 
 
+<!-- This block exists three times: autohotkey-dyna-run.md, autohotkey-use-case.md and autohotkey-login-form.html -->
+<!-- ATTN: Some slight variations in install instructions!-->
 
 # Autohotkey installation
 
@@ -55,6 +57,23 @@ to fill in the form and submit it.
 - Paste the Autohotkey code from above in the file
 - Double click your newly created file to activate the hotstring
 - Press **lma** while the cursor is in the email input on [the test page](/assets/blog-images/autohotkey-login-form.html)
+
+## To start with Windows
+
+To start your Autohotkey script with Windows put a file shortcut in your startup folder. 
+
+To get to this directory:
+
+- Press `Windows + E`
+- Press `Control + L`
+- Type `shell:startup`
+- Press `Enter`
+
+Usually something like:
+
+`C:\Users\your_user_name\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+
+With `your_user_name`: `$env:USERNAME` (PS1) or `%USERNAME%` (CMD)
 
 
 # More info
