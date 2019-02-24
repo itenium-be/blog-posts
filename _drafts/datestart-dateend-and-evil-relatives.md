@@ -10,6 +10,10 @@ tags: [design patterns]
 
 <!--more-->
 
+- MoneyAmount, MoneyCurrency.
+- PartnerName, PartnerBirthDate, PartnerGender, Partner...
+
+
 or one of their equally evil brothers: “DateStart & TimeSpan” or “Day/Month only in DateTime”, etc.
 
 > This is the case for the ValueObject

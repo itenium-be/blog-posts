@@ -20,6 +20,9 @@ toc:
 Comparing [NSubstitute][NSubstitute] syntax with [Moq][Moq],
 probably the most used mocking framework out there at the moment.
 
+{% include github-stars.html url="moq/moq4" %}
+{% include github-stars.html url="nsubstitute/nsubstitute" %}
+
 <!--more-->
 
 

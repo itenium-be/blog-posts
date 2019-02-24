@@ -215,9 +215,11 @@ and [parsers are available for all languages][yaml-org].
 It's not all [moonshine and roses][yaml-sucks] though as the implementations
 tend to yield different results for more exotic inputs (and sometimes also for not so exotic input).
 
-<br>
 
-For .NET, there is [YamlDotNet][YamlDotNet]  
+
+**YamlDotNet**  
+{% include github-stars.html url="aaubry/YamlDotNet" desc="For .NET, there is YamlDotNet" %}
+
 ```c#
 Install-Package YamlDotNet
 
@@ -229,9 +231,9 @@ using (var file = File.OpenText("_config.yml"))
 }
 ```
 
-<br>
+**js-yaml**  
+{% include github-stars.html url="nodeca/js-yaml" desc="For Node, there is js-yaml" %}
 
-For Node, there is [js-yaml][js-yaml]  
 ```js
 npm install js-yaml
 
@@ -244,7 +246,5 @@ try {
 ```
 
 [yaml-org]: http://yaml.org
-[YamlDotNet]: https://github.com/aaubry/YamlDotNet
-[js-yaml]: https://github.com/nodeca/js-yaml
 [yaml-sucks]: https://github.com/cblp/yaml-sucks
 [json2yaml]: https://www.json2yaml.com/

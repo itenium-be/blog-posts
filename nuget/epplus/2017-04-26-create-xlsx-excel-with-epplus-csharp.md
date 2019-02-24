@@ -29,6 +29,9 @@ The blog posts will only cover the most important functionality.
 
 Quickstart
 ==========
+
+{% include github-stars.html url="JanKallman/EPPlus" %}
+
 **Install**:  
 ```
 Install-Package EPPlus

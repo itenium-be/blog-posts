@@ -132,8 +132,4 @@ describe('fake the api call', function() {
 });
 ```
 
-[nock]: https://github.com/node-nock/nock
-[proxyquire]: https://github.com/thlorenz/proxyquire
-[rewire]: https://github.com/jhnns/rewire
 [jasmine-spec-reporter]: https://github.com/bcaudan/jasmine-spec-reporter
-[jasmine-console-reporter]: https://github.com/onury/jasmine-console-reporter
