@@ -16,7 +16,7 @@ interesting:
   - url: http://2ality.com/
     desc: "2ality.com: Blogging on ES proposals"
   - url: http://es6-features.org
-    desc: "es6features.org: Overview and Comparison"
+    desc: "es6-features.org: Overview and Comparison"
   - url: https://stackoverflow.com/a/200614/540352
     desc: "StackOverflow: Jon Skeet on why there is no forEach in Linq"
   - url: https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
