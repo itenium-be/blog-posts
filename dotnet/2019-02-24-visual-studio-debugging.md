@@ -208,7 +208,7 @@ Not open source:
 
 - Promises "significant" performance improvements in stepping
 - Yipiee, they added search to Autos, Locals and Watch windows! (Options > Debugging > Search)
-
+- They also managed to cut 25px from the title bar and still make it look [pretty slick](/assets/blog-images/visual-studio-2019-look.png).
 
 [DebuggerStepThroughAttribute]: https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggerstepthroughattribute?view=netcore-3.0
 [DebuggerHiddenAttribute]: https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debuggerhiddenattribute
