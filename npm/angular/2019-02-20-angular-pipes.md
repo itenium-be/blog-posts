@@ -82,7 +82,7 @@ export class AppComponent {
 }
 ```
 
-## String Pipes
+## String Casing Pipes
 
 [UpperCasePipe](https://angular.io/api/common/UpperCasePipe)
 , [LowerCasePipe](https://angular.io/api/common/LowerCasePipe)
@@ -124,7 +124,7 @@ export class AppModule { }
 
 
 
-### Currency Pipe
+### CurrencyPipe
 
 [CurrencyPipe API](https://angular.io/api/common/CurrencyPipe)
 {: style="float: right"}
@@ -346,7 +346,7 @@ export class HoursPipe implements PipeTransform {
 
 ## Installation
 
-If you dind't use `ng generate`.
+If you didn't use `ng generate`.
 
 ```typescript
 @NgModule({
