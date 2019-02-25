@@ -18,7 +18,7 @@ interesting:
 series: ecmascript-versions
 toc:
     title: ECMAScript2015 (ES6)
-    icon: eye-javascript
+    icon: icon-javascript
 ---
 
 

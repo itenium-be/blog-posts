@@ -151,7 +151,7 @@ Other standard numeric formats:
 | ,         | Thousands separator                                |
 | \         | Escape next character                              |
 | 'string'  | Escape entire string                               |
-{: .table-margin}
+{: .table-base}
 
 ```c#
 // Explicitly show the +/- sign
@@ -253,7 +253,7 @@ var dto = new DateTimeOffset(dt, TimeSpan.FromHours(2));
 | 'literal' | String literal
 | "literal" | String literal
 | \         | Escape character
-{: .table-margin}
+{: .table-base}
 
 
 ```c#
@@ -280,7 +280,7 @@ var span = new TimeSpan(31, 22, 15, 59);
 | c         | [d'.']hh':'mm':'ss['.'fffffff]  | 31.22:15:59
 | g         | [-][d':']h':'mm':'ss[.FFFFFFF]  | 31:22:15:59
 | G         | [-]d':'hh':'mm':'ss.fffffff     | 31:22:15:59.0000000
-{: .table-margin}
+{: .table-base}
 
 The square brackets will omit the part if not significant. They are not valid as custom format.
 

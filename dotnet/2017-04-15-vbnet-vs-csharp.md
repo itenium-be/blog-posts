@@ -178,7 +178,7 @@ so `Conversion.Int(x)` is available as `Int(x)` without Import.
 | Concatenation: &                | +
 | Escape quote: ""                | \\"
 | vbCrLf, vbTab, ...              | \r\n, \t, ...
-{: .table-margin}
+{: .table-base}
 
 
 All logical comparisons in VB.NET are typically done with `AndAlso` and `OrElse`.
