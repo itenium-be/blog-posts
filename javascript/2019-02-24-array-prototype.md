@@ -13,6 +13,8 @@ extras:
   - githubproject: https://github.com/itenium-be/Array.prototype
     githubtext: Github source code as UnitTests
 interesting:
+  - git: msn0/mdn-polyfills
+    desc: Include polyfills for your favourite functions that are not (yet) implemented by your browser(s).
   - url: http://2ality.com/
     desc: "2ality.com: Blogging on ES proposals"
   - url: http://es6-features.org

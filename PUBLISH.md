@@ -24,7 +24,8 @@ git push
 
 ## Update social media
 
-Add picture manually to the post for LinkedIn & Twitter as these platforms don't do it automatically.
+- LinkedIn & Twitter: Add picture manually.
+- LinkedIn & Twitter: Add hashtags
 
 **LinkedIn**:  
 
@@ -42,7 +43,7 @@ Direct ook zelf sharen! (Refresh the Company LinkedIn pagina en dan staat er daa
 
 **Slack**:  
 
-Share in the `knowledge-sharing` channel.
+Share in the itenium `knowledge-sharing` channel.
 
 
 [linkedin]: https://www.linkedin.com/company/18213386/admin/

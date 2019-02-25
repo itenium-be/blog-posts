@@ -167,7 +167,7 @@ One of my favourite bloggers, [Phil Haack created the Visual Studio visualizer E
 
 
 <br>
-**DataTable Visualizer**: ([download](https://marketplace.visualstudio.com/items?itemName=ShineTools.DataTableVisualizer))  
+**DataTable Visualizer** ([download](https://marketplace.visualstudio.com/items?itemName=ShineTools.DataTableVisualizer))  
 {% include github-stars.html url="MgSam/DataTableVisualizer" desc="A non-modal, dockable, searchable DataTable visualizer" %}
 
 
