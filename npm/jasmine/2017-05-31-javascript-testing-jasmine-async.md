@@ -6,7 +6,7 @@ desc: Test asynchronous code with Jasmine. Includes instructions on how to use E
 img: javascript-testing-jasmine-async.png
 date:   2017-05-31 12:00:00 +0200
 categories: javascript
-tags: [javascript,tutorial,testing]
+tags: [tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut

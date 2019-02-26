@@ -9,7 +9,7 @@ desc: >
 img: angular-pipes.png
 imgdesc:
 categories: javascript
-tags: [javascript,angular,cheat-sheet,tutorial]
+tags: [angular,cheat-sheet,tutorial]
 extras:
   - githubproject: https://github.com/itenium-be/Angular-Series
 interesting:

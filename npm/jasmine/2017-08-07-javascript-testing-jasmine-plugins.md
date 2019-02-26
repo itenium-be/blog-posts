@@ -8,7 +8,7 @@ desc: >
   What would we be without some extra plugins. There
   are over 1000 Jasmine npm packages and we'll cover them all here.
 categories: javascript
-tags: [javascript,tutorial,testing]
+tags: [tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut

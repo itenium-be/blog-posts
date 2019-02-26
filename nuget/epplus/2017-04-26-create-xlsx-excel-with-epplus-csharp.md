@@ -4,7 +4,7 @@ author: Wouter Van Schandevijl
 title:  "Create Excels with C# and EPPlus: A tutorial"
 date:   2017-04-26 22:00:00 +0200
 categories: dotnet
-tags: [net,excel,tutorial]
+tags: [excel,tutorial]
 img: epplus-excel.png
 series: epplus
 extras:

@@ -4,7 +4,7 @@ author: Wouter Van Schandevijl
 title:  "What's new in C# 7.0"
 date:   2018-10-09 12:00:00 +0200
 categories: dotnet
-tags: [tutorial,net]
+tags: [tutorial]
 desc: >
   
 img: .png

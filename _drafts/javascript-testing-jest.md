@@ -4,7 +4,7 @@ author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine plugins"
 date:   2017-08-08 00:00:00 +0200
 categories: javascript
-tags: [javascript,tutorial,testing,react]
+tags: [tutorial,testing,react]
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut

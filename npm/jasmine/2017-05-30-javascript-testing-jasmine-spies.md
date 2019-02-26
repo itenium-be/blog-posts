@@ -8,7 +8,7 @@ desc: >
     how many times and with which parameters.
 img: javascript-testing-jasmine-spies.png
 categories: javascript
-tags: [javascript,tutorial,testing]
+tags: [tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut

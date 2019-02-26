@@ -8,7 +8,7 @@ desc: >
 img: Array.prototype.png
 imgdesc: ""
 categories: javascript
-tags: [javascript,cheat-sheet,tutorial]
+tags: [cheat-sheet,tutorial]
 extras:
   - githubproject: https://github.com/itenium-be/Array.prototype
     githubtext: Github source code as UnitTests

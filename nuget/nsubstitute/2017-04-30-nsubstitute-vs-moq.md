@@ -7,7 +7,7 @@ categories: dotnet
 desc: >
     NSubstitute vs Moq syntax comparison.
 img: nsubstitute-alt.png
-tags: [net,tutorial,testing]
+tags: [tutorial,testing]
 series: nsubstitute
 extras:
   - githubproject: https://github.com/itenium-be/NSubstituteTutorial

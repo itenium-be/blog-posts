@@ -8,7 +8,7 @@ desc: >
     Test legacy code by providing Jasmine with global variables.
 img: javascript-testing-jasmine-customization.png
 categories: javascript
-tags: [javascript,tutorial,testing]
+tags: [tutorial,testing]
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut

@@ -4,7 +4,7 @@ author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Getting started with Jasmine"
 date:   2017-05-29 12:00:00 +0200
 categories: javascript
-tags: [javascript,tutorial,testing]
+tags: [tutorial,testing]
 img: javascript-testing-jasmine-customization.png
 series: js-testing
 extras:
