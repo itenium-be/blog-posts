@@ -157,11 +157,11 @@ Add inline style with `{: style="margin-left: 20px"}`.
 
 **Github Stars**: 
 
-{% include github-stars.html url="Laoujin/dotfiles" %}
+{% include github-stars.html url="Laoujin/dotfiles" desc="Windows dotfiles" %}
 
 ```
 {% raw %}{% include github-stars.html url="Laoujin/dotfiles" %}
-{% include github-stars.html url="" %}{% endraw %}
+{% include github-stars.html url="" desc="" %}{% endraw %}
 ```
 
 
