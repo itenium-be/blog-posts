@@ -90,7 +90,7 @@ updates:
 {: .notice--info}
 
 {% raw %}
-{% include github-stars.html url="" %}
+{% include github-stars.html url="" desc="" %}
 {% include kbd k="" l="" %}
 {% endraw %}
 
@@ -328,3 +328,17 @@ not even }} {{ or %} {%
 {{ var }}
 -->
 
+
+# Plugins
+
+## jemoji
+
+{% include github-stars.html url="jekyll/jemoji" desc="I give this plugin two :+1:!" %}
+
+
+Copy ✂️ Paste 📋
+
+╯‵Д′)╯彡┻━┻   angry guy flipping a table
+
+- [Full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html)
+- [Smaller list](https://gist.github.com/endolith/157796#file-unicode-official-emojis-txt)
