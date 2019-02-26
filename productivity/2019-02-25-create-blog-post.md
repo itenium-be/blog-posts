@@ -179,8 +179,10 @@ Create a `<hr>`:
 
 <!-- Reference -->
 [description][ref]
-
 [ref]: url
+
+<!-- Anchor -->
+[create an anchor](#anchors-in-markdown)
 ```
 
 
