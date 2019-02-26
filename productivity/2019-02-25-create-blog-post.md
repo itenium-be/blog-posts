@@ -331,6 +331,8 @@ not even }} {{ or %} {%
 
 # Plugins
 
+Some new shiny things to try out in future blog posts:
+
 ## jemoji
 
 {% include github-stars.html url="jekyll/jemoji" desc="I give this plugin two :+1:!" %}
@@ -342,3 +344,13 @@ Copy ✂️ Paste 📋
 
 - [Full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html)
 - [Smaller list](https://gist.github.com/endolith/157796#file-unicode-official-emojis-txt)
+
+
+## jekyll-gist
+
+{% include github-stars.html url="jekyll/jekyll-gist" desc="" %}
+
+
+<!-- Boxstarter ID: 12f5d2f76d51ee6c0a49 -->
+<!-- https://gist.github.com/Laoujin/12f5d2f76d51ee6c0a49 -->
+{% gist 9b0b360b0c0cb39143990e92fa3adcef %}
