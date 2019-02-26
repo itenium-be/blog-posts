@@ -85,12 +85,14 @@ See [Part 3: _config.yml][part-3] for available options. -->
 
 
 The generated file `about.md` has the following front matter
+
+<!-- ATTN: Doing the three dashes for front matter here breaks jekyll-paginate -->
 ```
----
+
 layout: page
 title: About
 permalink: /about/
----
+
 # About page content starts here
 Show _config.yml var: {{ site.theme }}
 Show front matter var: {{ page.permalink }}
