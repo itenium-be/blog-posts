@@ -23,3 +23,4 @@ A new post will be published when:
 - New category? Update `blog.yml` to set the icon!
 - `lastUpdate` frontmatter needs to be kept in sync manually because sorting on `(updates | last).date` turned out to not be very easy.
 - A `autohotkey` code block makes a notice appear about DynaRun
+- Posts with first tag "meta" are not included in the search results (`blog/search.json`)

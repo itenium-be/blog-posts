@@ -27,7 +27,7 @@ data serialization language.
 
 # YAML Ain't Markup Language
 
-Before we dive into the 'code':
+Before we dive into the "code":
 
 - Extensions: `.yaml`, `.yml`
 - Indenting with spaces. (no tabs!)
@@ -36,7 +36,7 @@ Before we dive into the 'code':
     - For arrays, the `-` counts as indentation
 - Keys may contain spaces, and pretty much anything when enclosed within single quotes
 
-<br>
+
 When unsure what something does exactly, try it online: [json <-> yaml][json2yaml]!
 
 ## Scalars

@@ -27,6 +27,7 @@ This is something for me (or anyone else really)
 because I keep forgetting all this stuff.
 
 **Diving right in**:  
+{: .hide-from-excerpt}
 
 Use `{: .hide-from-excerpt}` to do just that.
 {: .hide-from-excerpt}

@@ -119,7 +119,6 @@ nsub.Received(2).Add(Arg.Is(0), Arg.Is<int>(x => x <= 2));
 // (providing 0 directly results in an AmbiguousArgumentsException)
 ```
 
-<br>
 **Did not receive calls:**
 
 ```c#
@@ -236,7 +235,7 @@ nsub.Add(2, 2);
 Assert.AreEqual(counter, 2);
 ```
 
-<br>
+
 **Make voids do something**:  
 
 ```c#
@@ -249,7 +248,7 @@ sub.SetMode("HEX");
 Assert.True(called);
 ```
 
-<br>
+
 **Do something with arguments passed**:  
 
 ```c#

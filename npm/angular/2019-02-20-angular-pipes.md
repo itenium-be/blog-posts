@@ -36,7 +36,6 @@ This post covers:
 - Some examples of custom pipes ([ngx-pipes](https://github.com/danrevah/ngx-pipes) and [angular-pipes](https://github.com/fknop/angular-pipes))
 
 
-<br>
 An example:  
 ```html
 <!-- This does exactly what you'd think -->

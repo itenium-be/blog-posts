@@ -35,7 +35,6 @@ Unix & Mac OS X: LF, \n, 0A, 10, Newline
 Macintosh (OS 9): CR, \r, 0D, 13
 ```
 
-<br>
 **Programming**:  
 - Parameters vs Arguments: **A**rguments are **A**ctual
 
@@ -46,18 +45,15 @@ Macintosh (OS 9): CR, \r, 0D, 13
 - `.shift`: Makes it smaller. Shorter word than .unshift
 
 
-<br>
 **JavaScript:**  
 - `.call`: Pass arguments as **c**olumns - `fn.call(this, arg1, arg2, ...)`
 - `.apply` Pass arguments as an **a**rray - `fn.call(this, [arg1, arg2, ...])`
 
 
-<br>
 **Markdown:**  
 - "squared circle" aka `[]()` aka `[word](http://link)`
 
 
-<br>
 **Regex flags:**  
 - `/s`: Allows `.*` to **Slurp** up numerous lines
 - `/m`: Allows `^` and `$` to match in the **Middle** of the string

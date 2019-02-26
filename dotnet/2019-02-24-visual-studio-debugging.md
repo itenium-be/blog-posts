@@ -78,7 +78,6 @@ Debug.Assert(true, "Conditional break");
 - [`DebuggerHiddenAttribute`][DebuggerHiddenAttribute]: Hide the member from the debugger
 - [`DebuggerNonUserCodeAttribute`][DebuggerNonUserCodeAttribute]: Combine the two above
 
-<br>
 When you need to do some calculations for your assertions
 put it in a method decorated with the [`ConditionalAttribute("DEBUG")`][ConditionalAttribute].
 

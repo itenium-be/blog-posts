@@ -42,7 +42,6 @@ The Autohotkey script:
 :*:lma::admin@mega-app.com{tab}my_super_secret_pwd{tab}{space}{tab}{enter}
 ```
 
-<br>
 Type `lma` (Short for `Login Mega App`?) while the cursor is in the email input
 to fill in the form and submit it.
 

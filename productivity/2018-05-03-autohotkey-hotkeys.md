@@ -84,25 +84,21 @@ Return
 - PrintScreen, ScrollLock, CtrlBreak
 - Sleep, Pause
 
-<br>
 **Numpad**:  
 
 - Numlock ON: Numpad[0-9],
 - Numlock OFF: NumpadIns, NumpadEnd, NumpadMult, NumpadEnter, ...
 
-<br>
 **Multimedia**:  
 
 - Browser_Stop, Media_Next, Volume_Up, Launch_App2, ...
 
-<br>
 **Mouse**:  
 
 - LButton, RButton, MButton
 - XButton1 (Browser_Back), XButton2 (Browser_Forward)
 - WheelUp, WheelDown, WheelLeft, WheelRight
 
-<br>
 **Joystick**:  
 
 - JoyX, JoyPOV, JoyInfo, ...
@@ -146,6 +142,7 @@ Capslock & X::Run, http://www.google.com/search?q=%clipboard%
 
 ## Other
 
+**Key Down and Up**  
 Add `UP` to a hotkey combination to run the script on key release rather than on keypress.  
 
 ```autohotkey
@@ -156,15 +153,14 @@ AppsKey Up::ToolTip
 ```
 
 
-<br>
+**Wildcard**  
 `*` acts as a key modifier wildcard.
 
 ```autohotkey
 *#c::Msgbox Triggered by Win+C, Shift+Win+C, Ctrl+Win+C, etc
 ```
 
-
-<br>
+**Resending**  
 `$` is necessary when you need to send the same hotkey and not execute your script again.
 
 ```autohotkey
@@ -320,7 +316,6 @@ IfLess, HowLong, 20, Return
 ; Do stuff when middle mouse button was pressed longer than 20ms
 ```
 
-<br>
 **Triple, quadruple etc keypresses**  
 
 ```autohotkey

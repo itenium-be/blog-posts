@@ -49,7 +49,6 @@ Working directory color codes:
 - DarkMagenta: <span style="color: #8C5998">**D**</span>eleted (file4)
 - Blue: <span style="color: #0480EF">**A**</span>dded (file5)
 
-<br>
 Git-NumberedStatus accepts extra CLI arguments. Example: `gs -u` to see all `--untracked-files`.  
 Configure the color output by modifying `$global:gitStatusNumbers`.
 
@@ -77,7 +76,6 @@ The same can be achieved with:
 - `Git-NumberedAdd -3`
 - `Git-NumberedAdd 012` (but only if there is a max of 10 files in the git status)
 
-<br>
 `Git-NumberedAdd +3` would add file4 and file5 in the above scenario.
 
 

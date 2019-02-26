@@ -234,7 +234,6 @@ While, 1
 ```
 
 
-<br>
 **Details View**:  
 While `Control + Shift + 6` is probably very useful, pesky Windows
 might truncate longer filenames with the switch to Details View.
@@ -248,7 +247,7 @@ Send {Control Down}{NumpadAdd}{Control Up}
 Return
 ```
 
-<br>
+
 **Closing**:  
 Closing an Explorer window can be done with Alt+F4 or with Control+W.
 But when you want to close it after Windows annoyed you, this scrips allows you
