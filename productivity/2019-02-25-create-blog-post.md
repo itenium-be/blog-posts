@@ -331,6 +331,8 @@ not even }} {{ or %} {%
 
 # Plugins
 
+[Github pages supported plugins](https://pages.github.com/versions)
+
 Some new shiny things to try out in future blog posts:
 
 ## jemoji
@@ -350,7 +352,20 @@ Copy ✂️ Paste 📋
 
 {% include github-stars.html url="jekyll/jekyll-gist" desc="" %}
 
-
 <!-- Boxstarter ID: 12f5d2f76d51ee6c0a49 -->
 <!-- https://gist.github.com/Laoujin/12f5d2f76d51ee6c0a49 -->
 {% gist 9b0b360b0c0cb39143990e92fa3adcef %}
+
+
+```
+{% raw %}{% gist 9b0b360b0c0cb39143990e92fa3adcef %}{% endraw %}
+```
+
+
+## jekyll-avatar
+
+{% include github-stars.html url="benbalter/jekyll-avatar" %}
+{% avatar fabpot %}
+```
+{% raw %}{% avatar fabpot %}{% endraw %}
+```
