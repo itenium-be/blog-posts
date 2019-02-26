@@ -34,7 +34,7 @@ toc:
 {% include kbd k="Shift+F11" l="Step out" %}
 {% include kbd k="Control+F10" l="Run to cursor" %}
 {% include kbd k="Control+Shift+F10" l="Set next statement" %}
-{% include kbd k="Alt+Num \*" l="See current statement" %}
+{% include kbd k="Alt+Num *" l="See current statement" %}
 
 
 <br>
