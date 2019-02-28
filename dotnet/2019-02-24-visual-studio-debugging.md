@@ -9,7 +9,7 @@ desc: >
   Still, should you ever need to debug, use these
   shortcuts so that it may be over soon.
 categories: dotnet
-tags: [tutorial,cheat-sheet]
+tags: [tutorial,cheat-sheet,debugging]
 interesting:
   - url: https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour
     desc: Official Visual Studio Debugger Tutorial
