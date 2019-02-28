@@ -92,9 +92,11 @@ updates:
 {% raw %}
 {% include github-stars.html url="" desc="" %}
 {% include kbd k="" l="" %}
+{% include post/image.html file="" alt="" title="" desc="" maxWidth="360px" %}
+{% include post/youtube.html id="youtubeId" desc="" %}
 {% endraw %}
 
-![](/assets/blog-images/ ""){: .img-responsive}
+![alt](/assets/blog-images/ "title"){: .img-responsive}
 
 [description][ref]
 [ref]: url
@@ -162,6 +164,20 @@ Add inline style with `{: style="margin-left: 20px"}`.
 ```
 {% raw %}{% include github-stars.html url="Laoujin/dotfiles" %}
 {% include github-stars.html url="" desc="" %}{% endraw %}
+```
+
+**Youtube**:
+
+```
+{% raw %}{% include post/youtube.html id="youtubeId" desc="text below clip" %}
+{% include post/youtube.html id="" desc="" %}{% endraw %}
+```
+
+**Images**:  
+TODO: Should probably make this clickable to open gallery and/or show full screen?
+
+```
+{% raw %}{% include post/image.html file="" alt="" title="" desc="" maxWidth="360px" %}{% endraw %}
 ```
 
 
