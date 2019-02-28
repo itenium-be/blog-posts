@@ -125,8 +125,10 @@ Find [the source for the Autohotkey scripts here][github-ahk]
 
 Execute shortcut code only when Windows Explorer is active:
 ```autohotkey
-#IfWinActive ahk_class CabinetWClass
-; Your kewl code here
+SetTitleMatchMode Regex
+#IfWinActive ahk_class CabinetWClass|ExploreWClass|Progman|WorkerW
+; "ahk_class CabinetWClass|ExploreWClass" executes in Windows Explorer
+; "ahk_class Progman|WorkerW" executes on Desktop
 #IfWinActive
 ```
 
