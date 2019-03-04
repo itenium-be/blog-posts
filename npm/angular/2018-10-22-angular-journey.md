@@ -8,7 +8,7 @@ desc: >
 img: angular.png
 imgdesc:
 categories: javascript
-tags: [angular]
+tags: [angular,war-story]
 extras:
 interesting:
   - url: https://angular.io/

@@ -62,7 +62,7 @@ img: # 360x300
 imgdesc: 
 imgurl: 
 categories: productivity | dotnet | javascript
-tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows]
+tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story]
 series: series-unique-name
 extras:
   - githubproject: https://github.com/itenium-be/

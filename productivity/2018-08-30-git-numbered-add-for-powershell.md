@@ -8,7 +8,7 @@ desc: >
   Despair no more for <code>Git-NumberedAdd</code> is here!
 img: git-add-numbered-add.jpg
 categories: productivity
-tags: [git,powershell]
+tags: [git,powershell,product]
 extras:
   - githubproject: https://github.com/itenium-be/Git-NumberedAdd
     githubtext: Git-NumberedStatus, Add, Diff, etc ps1 source
