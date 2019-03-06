@@ -382,6 +382,13 @@ Copy ✂️ Paste 📋
 - [Full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html)
 - [Smaller list](https://gist.github.com/endolith/157796#file-unicode-official-emojis-txt)
 
+Find on CLI with
+{% include github-stars.html url="sindresorhus/emoj" desc="Doesn't work on Windows though" %}
+```
+npm install --global emoj
+emoj [text]
+```
+
 
 ## jekyll-gist
 
