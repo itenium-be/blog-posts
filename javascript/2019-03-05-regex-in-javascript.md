@@ -125,7 +125,7 @@ Returns `null` or the first match and its capturing groups.
 The result is an array with additional fields
 (groups, index and input). `exec` 
 
-<small>(Hence the weird toEqual array syntax in the below...)</small>
+<small>(Hence the weird toEqual array syntax in the code below...)</small>
 
 ```javascript
 const match = '0abaa'.match(/a(?<theB>b?)/);
@@ -246,12 +246,12 @@ But also possible to split on regex matches.
 [RegExp.prototype.lastIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex)
 {: style="float: right"}
 
-Used by `exec` with the global (`g`) flag and for any of the above when using the sticky (`y`) flag.
+Used by `exec`, `test`, ... with the global (`g`) flag and for any of the above functions when using the sticky (`y`) flag.
 
 ```javascript
-const regex = /a/y;
 const input = 'aab';
-regex.test(input); // true
-regex.test(input); // true
-regex.test(input); // false
+const regex = /a/g;
+regex.test(input); // Returns true. lastIndex is now 1
+regex.test(input); // Returns true. lastIndex is now 2
+regex.test(input); // Returns false. lastIndex is reset to 0
 ```
