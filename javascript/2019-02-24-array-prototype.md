@@ -6,7 +6,6 @@ date:   2019-02-24 00:00:00
 desc: >
   A guide on learning JavaScript `Array.prototype` by comparing it to C# Linq.
 img: Array.prototype.png
-imgdesc: ""
 categories: javascript
 tags: [cheat-sheet,tutorial]
 extras:
@@ -14,7 +13,7 @@ extras:
     githubtext: Github source code as UnitTests
 interesting:
   - git: msn0/mdn-polyfills
-    desc: Include polyfills for your favourite functions that are not (yet) implemented by your browser(s).
+    desc: "Include polyfills for your favourite functions that are not (yet) implemented by your browser(s)."
   - url: http://2ality.com/
     desc: "2ality.com: Blogging on ES proposals"
   - url: http://es6-features.org

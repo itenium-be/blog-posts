@@ -2,7 +2,7 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Chrome Extension: Starify Github project links"
-date:   2019-03-04 00:00:00
+date:   2019-03-07 00:00:00
 desc: >
   Automatically add Github stars badges to all Github project links.
   Runs automatically on google, stackoverflow and github. Activate with
@@ -23,6 +23,8 @@ toc:
   title: Starifyication
   icon: icon-javascript
 ---
+
+TODO: wait for it to be published in chrome web store
 
 A [free and open source Chrome Extension](https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig)
 that adds Github stars badges to all links on a web page.

@@ -50,7 +50,9 @@ Create a new file in a folder in `_posts`:
 
 ## Template
 
-```md
+`img` size must be 360x300.
+
+```yaml
 ---
 layout: post
 author: Wouter Van Schandevijl
@@ -58,9 +60,10 @@ title:  ""
 date:   2019-03-01 00:00:00
 desc: >
   
-img: # 360x300
+img: 
 imgdesc: 
 imgurl: 
+imgtitle:
 categories: productivity | dotnet | javascript
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story]
 series: series-unique-name
@@ -77,10 +80,6 @@ interesting:
 toc:
   title: 
   icon: icon-javascript | dot-circle-o (net) | icon-shell (ps1) | eye-slash (c#) | icon-angular | windows | icon-git | car (ahk) | icon-mssql | file-excel-o | icon-mongodb
-lastUpdate: 2019-03-01 00:00:00
-updates:
-  - date: 2019-03-01 00:00:00
-    desc: ""
 ---
 
 {: .hide-from-excerpt}
@@ -100,6 +99,25 @@ updates:
 
 [description][ref]
 [ref]: url
+```
+
+Some additional, optional front-matter:  
+```yaml
+---
+lastUpdate: 2019-03-01 00:00:00
+updates:
+  - date: 2019-03-01 00:00:00
+    desc: ""
+todo:
+  - reason: Followup|
+    url: http://github.com/tc39/proposal-string-matchall
+    desc: 
+---
+
+Add API links:  
+{% raw %}[String.prototype.match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+{: style="float: right"}
+{% endraw %}
 ```
 
 ## Values
@@ -331,6 +349,7 @@ not even }} {{ or %} {%
 
 - `\|` for not starting a new column in a table
 - `\*` for not starting bold
+- ``` ``$` `` ```: Use double (or triple, ...) \` when displaying \` inside an inline code block. May not start/end with such backtick.
 - `{` doesn't have to be escaped
 - `{{ "{{ '{{' " }}}}` for displaying a literal `{{ '{{' }}` (or `&#123;` when not in a code block)
 - `{{ "{{ '' " }}}}}}` for displaying a literal `{{ '' }}}}` (or `&#125;` when not in a code block))

@@ -7,7 +7,6 @@ desc: >
   Run any Autohotkey script on the web with a
   single.. Autohotkey hotkey.
 img: autohotkey-dyna-run.jpg
-imgdesc: ""
 extras:
   - desc: autohotkey-dyna-run-capslock-f5.ahk
     url: /assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk

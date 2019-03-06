@@ -9,11 +9,11 @@ desc: >
   
 img: .png
 interesting:
-  - desc: Kangax Compat Tables
+  - desc: "Kangax Compat Tables"
     url: http://kangax.github.io/compat-table/
-  - desc: Overview and Comparison of all new features in ES2015 (ES6)
+  - desc: "Overview and Comparison of all new features in ES2015 (ES6)"
     url: http://es6-features.org/
-  - desc: 
+  - desc: ""
     url: 
 series: ecmascript-versions
 toc:

@@ -12,7 +12,7 @@ categories: dotnet
 tags: [tutorial,cheat-sheet,debugging]
 interesting:
   - url: https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour
-    desc: Official Visual Studio Debugger Tutorial
+    desc: "Official Visual Studio Debugger Tutorial"
 toc:
   title: Debugging
   icon: bug

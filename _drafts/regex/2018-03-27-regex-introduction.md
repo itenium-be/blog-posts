@@ -19,6 +19,9 @@ interesting:
 A regex intro so gentle it doesn't even contain a regex.  
 If you'd like to get to the nitty gritty, skip to Part 2.
 
+100 problems: https://xkcd.com/1171/
+I know regular expressions: https://xkcd.com/208/
+
 <!--more-->
 
 Some people, when confronted with a problem, think 'I know, I'll use regular expressions.' Now they have two problems.  
