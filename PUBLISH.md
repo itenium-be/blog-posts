@@ -43,7 +43,8 @@ Direct ook zelf sharen! (Refresh the Company LinkedIn pagina en dan staat er daa
 
 **Slack**:  
 
-Share in the itenium `knowledge-sharing` channel.
+Share in the itenium `knowledge-sharing` channel.  
+Tell office colleagues to also share the LinkedIn post.  
 
 
 [linkedin]: https://www.linkedin.com/company/18213386/admin/
