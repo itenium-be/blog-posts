@@ -37,11 +37,11 @@ todo:
 
 A cheat sheet for the regex syntax in JavaScript.
 
- 
+
 [MDN RegExp Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 {: style="float: right"}
 
-**TL&DR**  
+**TL&DR**
 ```javascript
 ''.test(/^$/);
 'ok'.replace(/(.)(.)/g, '$2$1'); // $$, $&, $`, $'
@@ -49,9 +49,9 @@ A cheat sheet for the regex syntax in JavaScript.
 const matchG = 'aaa'.match(/a/g);
 matchG == ['a', 'a', 'a'];
 
-const matchNoG = 'str'.match(/str/);
-matchNoG == Object.assign(['str', 'b'], {groups: undefined, index: 0, input: 'str'});
-matchNoG == /str/.exec('str');
+const matchNoG = 'str'.match(/(st)r/);
+matchNoG == Object.assign(['str', 'st'], {groups: undefined, index: 0, input: 'str'});
+matchNoG == /(st)r/.exec('str');
 ```
 
 <!--more-->
