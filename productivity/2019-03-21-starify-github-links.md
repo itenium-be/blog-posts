@@ -24,8 +24,6 @@ toc:
   icon: icon-javascript
 ---
 
-TODO: wait for it to be published in chrome web store
-
 A [free and open source Chrome Extension](https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig)
 that adds Github stars badges to all links on a web page.
 
