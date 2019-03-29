@@ -12,6 +12,8 @@ extras:
 toc:
     title: Jasmine Syntax
     icon: icon-javascript
+package-versions:
+  jasmine: 3.3.0
 ---
 
 The basic example contains the general test suite structure and the 

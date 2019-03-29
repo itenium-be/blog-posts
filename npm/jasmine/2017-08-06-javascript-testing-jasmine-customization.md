@@ -20,6 +20,8 @@ interesting:
 toc:
     title: Customization
     icon: icon-javascript
+package-versions:
+  jasmine: 3.3.0
 ---
 
 Make your Jasmine experience even more luscious with custom

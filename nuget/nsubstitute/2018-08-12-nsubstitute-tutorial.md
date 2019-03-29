@@ -17,6 +17,8 @@ extras:
 toc:
     title: NSubstitute Tutorial
     icon: dot-circle-o
+package-versions:
+  NSubstitute: 2.0.3
 ---
 
 The creators of [NSubstitute][NSubstitute] craved a mocking framework

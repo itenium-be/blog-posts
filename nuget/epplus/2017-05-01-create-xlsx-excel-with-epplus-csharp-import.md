@@ -12,6 +12,8 @@ extras:
 toc:
     title: "Excel series: Part 3"
     icon: file-excel-o
+package-versions:
+  EPPlus: 4.1.0
 ---
 
 # IEnumerable objects

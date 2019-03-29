@@ -19,6 +19,8 @@ interesting:
 toc:
     title: Getting Started
     icon: icon-javascript
+package-versions:
+  jasmine: 3.3.0
 ---
 
 Probably the most widely used JavaScript testing framework.

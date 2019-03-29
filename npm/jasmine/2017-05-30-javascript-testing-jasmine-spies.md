@@ -15,6 +15,8 @@ extras:
 toc:
     title: Jasmine Spies
     icon: icon-javascript
+package-versions:
+  jasmine: 3.3.0
 ---
 
 Spies, the Jasmine implementation for mocks
