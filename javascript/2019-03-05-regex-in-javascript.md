@@ -93,10 +93,10 @@ Without the `g` flag, only the first match is replaced. (which makes no differen
 'dog The'.replace(/(dog) (The)/g, '$2 $1');
 ```
 
-| Replacement | Description
-|-------------|------------
-| `$$`        | A literal $
-| `$&`        | The matched string
+| Replacement   | Description
+|---------------|------------
+| `$$`          | A literal $
+| `$&`          | The matched string
 | ``$` ``       | Portion before the match
 | `$'`          | Portion after the match
 | `$n`          | With `n < 100`: the nth captured group (!! 1 indexed !!)

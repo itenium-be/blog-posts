@@ -38,7 +38,7 @@ that adds Github stars badges to all links on a web page.
 Runs automatically on certain pages like Google search results, StackExchange questions,
 on Github itself and on Package Manager registries.
 
-{% include kbd k="Control+Alt+G" l="Activate on ay other page" %}
+{% include kbd k="Control+Alt+G" l="Activate on any other page" %}
 
 
 # More Examples
