@@ -3,7 +3,9 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine async syntax"
 desc: Test asynchronous code with Jasmine. Includes instructions on how to use ES2017 async/await.
-img: javascript-testing-jasmine-async.png
+img: jasmine3.jpg
+imgdesc: Photo by Irina Iriser
+imgurl: https://unsplash.com/photos/vB4_CtsfaZ0
 date:   2017-05-31 12:00:00 +0200
 categories: javascript
 tags: [tutorial,testing]
