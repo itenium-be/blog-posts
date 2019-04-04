@@ -19,7 +19,7 @@ toc:
 
 Ideally one would create a new gitignored file to configure an application to fit his local development
 environment but when you do have to revert to modifying a committed configuration file, at least there is
-"git assume unchanged" to avoid committing these files accidently.
+"git assume unchanged" to avoid committing your changes in these files accidently.
 
 
 # Assume Unchanged
