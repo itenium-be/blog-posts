@@ -57,7 +57,7 @@ Create a new file in a folder in `_posts`:
 layout: post
 author: Wouter Van Schandevijl
 title:  ""
-date:   2019-03-01 00:00:00
+date:   2019-04-01 00:00:00
 desc: >
   
 img: 
@@ -104,14 +104,16 @@ toc:
 Some additional, optional front-matter:  
 ```yaml
 ---
-lastUpdate: 2019-03-01 00:00:00
+lastUpdate: 2019-04-01 00:00:00
 updates:
-  - date: 2019-03-01 00:00:00
+  - date: 2019-04-01 00:00:00
     desc: ""
 todo:
   - reason: Followup|
-    url: http://github.com/tc39/proposal-string-matchall
+    url: 
     desc: 
+package-versions:
+  moment: 5.2
 ---
 
 Add API links:  
