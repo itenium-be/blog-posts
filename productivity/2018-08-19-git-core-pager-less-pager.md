@@ -9,6 +9,9 @@ desc: >
   on the CLI with less
 categories: productivity
 tags: [git]
+interesting:
+  - url: https://itenium.be/blog/productivity/exotic-git-recipes/#locking-out-package-lockjson
+    desc: "Blog post on how to skip uninteresting files in the diffs, logs, ..."
 toc:
   title: Less Pager
   icon: icon-git
