@@ -5,7 +5,9 @@ title:  "Create Excels with C# and EPPlus: Miscellaneous"
 date:   2017-05-02 00:00:00 +0000
 categories: dotnet
 tags: [excel,tutorial]
-img: epplus-excel.png
+img: excel-print.jpg
+imgurl: https://unsplash.com/photos/Tzm3Oyu_6sk
+imgdesc: Photo by Bank Phrom
 series: epplus
 extras:
   - githubproject: https://github.com/itenium-be/EPPlusTutorial

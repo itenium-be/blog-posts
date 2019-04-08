@@ -5,7 +5,9 @@ title:  "JavaScript Testing: Jasmine syntax"
 date:   2017-05-30 12:00:00 +0200
 categories: javascript
 tags: [tutorial,testing]
-img: jasmine-boring.png
+img: jasmine-tea.jpg
+imgurl: https://unsplash.com/photos/dPkn4562j3E
+imgdesc: Photo by Carolyn V
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut
