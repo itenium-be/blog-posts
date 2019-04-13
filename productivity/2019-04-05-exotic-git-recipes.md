@@ -53,6 +53,11 @@ Page upon page of uninteresting changes.
 git diff -- ':!*package-lock.json' ':!*yarn.lock'
 ```
 
+Or as a `~/.gitconfig` alias:
+```
+df = "!f() { git diff --ignore-all-space -- $1 ':(exclude)*yarn.lock' ':!**package-lock.json'; }; f"
+```
+
 
 <br>
 # Deleting merged branches
