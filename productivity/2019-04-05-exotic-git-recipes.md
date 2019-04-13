@@ -43,7 +43,7 @@ git filter-branch --prune-empty --subdirectory-filter src master
 ```
 
 
-
+<br>
 # Locking out package-lock.json
 
 These days each `npm install` makes a `git diff` on frontend projects a real drag.
@@ -54,7 +54,7 @@ git diff -- ':!*package-lock.json' ':!*yarn.lock'
 ```
 
 
-
+<br>
 # Deleting merged branches
 
 **Locally**:  
@@ -79,7 +79,7 @@ git my-merged-remote-branches | % { git push --no-verify origin $_ }
 ```
 
 
-
+<br>
 # Filename case renaming
 
 Pesky Windows.  
@@ -89,7 +89,8 @@ git mv -f OldFileNameCase newfilenamecase
 ```
 
 
-
+<br>
+<br>
 # Other blog posts
 
 - [git assume unchanged](https://itenium.be/blog/productivity/git-assume-unchanged/)
