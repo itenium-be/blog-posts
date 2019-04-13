@@ -12,8 +12,6 @@ imgdesc: Photo by Simon Rae
 categories: productivity
 tags: [git]
 interesting:
-  - git: typicode/husky
-    desc: Git hooks made easy
   - url: https://git-scm.com/docs/githooks
     desc: Official githooks documentation
 toc:
