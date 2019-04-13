@@ -55,11 +55,20 @@ git diff -- ':!*package-lock.json' ':!*yarn.lock'
 
 
 
-# Deleting remote branches
+# Deleting merged branches
+
+**Locally**:  
+`~/.gitconfig` aliases. `(develop|master)`: Do not delete these branches even if merged with current branch.
+```ini
+merged-branches = !git branch --merged | egrep -v \"(\\*| ) (develop|master)\" | xargs -n 1
+dm = !git merged-branches git branch -d
+```
+
+**Remote**:  
 
 Somehow a CI server always seems to be amassing feature branches. A simple cleanup script to the rescue!
 
-A `~/.gitconfig` alias:  
+Replace `name-comitter` (author filter) and `origin` (remote filter) and add as a `~/.gitconfig` alias:  
 ```ini
 my-merged-remote-branches = !git for-each-ref --format='%(authorname):%(refname)' | egrep \"name-comitter\" | egrep \"refs/remotes\" | sed -e \"s/^.*:refs\\/remotes\\/origin\\//:/\"
 ```
@@ -71,6 +80,17 @@ git my-merged-remote-branches | % { git push --no-verify origin $_ }
 
 
 
+# Filename case renaming
+
+Pesky Windows.  
+Also note the [`core.ignorecase`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase) configuration value.
+```
+git mv -f OldFileNameCase newfilenamecase
+```
+
+
+
 # Other blog posts
 
 - [git assume unchanged](https://itenium.be/blog/productivity/git-assume-unchanged/)
+- [git hooks with Husky](https://itenium.be/blog/productivity/git-hooks-with-husky/)
