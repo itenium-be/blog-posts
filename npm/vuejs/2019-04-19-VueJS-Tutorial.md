@@ -28,9 +28,11 @@ package-versions:
   vue-cli: 3.5.3
 ---
 
+{% include github-stars.html url="vuejs/vue" desc="Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web." %}
 
 #### Why Vue
 
+- `100k+ ⭐`: So many people can't be wrong
 - Declarative rendering with a cool, terse syntax
 - Low learning curve
 - Reactive and composable view components
@@ -44,7 +46,6 @@ package-versions:
 
 
 #### Official Projects
-{% include github-stars.html url="vuejs/vue" desc="Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web." %}
 {% include github-stars.html url="vuejs/vue-router" desc="The official router for Vue.js. " %}
 {% include github-stars.html url="vuejs/vuex" desc="Centralized State Management for Vue.js." %}
 {% include github-stars.html url="vuejs/vue-cli" desc="Standard Tooling for Vue.js Development" %}
