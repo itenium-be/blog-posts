@@ -2,7 +2,7 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Git Hooks with Husky"
-date:   2019-04-05
+date:   2019-04-13
 desc: >
   Lint, test and try a production build before pushing changes
   with git hooks and Husky.

@@ -24,6 +24,8 @@ interesting:
 toc:
   title: Angular Pipes
   icon: icon-angular
+package-versions:
+  angular: 7.2.5
 ---
 
 **Pipes**: Chainable, declarative display-value transformations to use in your Html.

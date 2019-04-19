@@ -121,6 +121,7 @@ package-versions:
 Add API links:  
 {% raw %}[String.prototype.match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 {: style="float: right"}
+{: .title-url}
 {% endraw %}
 ```
 

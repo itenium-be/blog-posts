@@ -22,6 +22,8 @@ interesting:
 toc:
   title: Angular Road Trip
   icon: icon-angular
+package-versions:
+  angular: 6
 ---
 
 Today I want to blog about my Angular(2 - 6) experiences the past years.
