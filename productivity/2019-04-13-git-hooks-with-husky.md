@@ -6,6 +6,10 @@ date:   2019-04-13
 desc: >
   Lint, test and try a production build before pushing changes
   with git hooks and Husky.
+bigimg:
+  url: git-hooks-husky-big.png
+  desc: Photo by Chris Scott
+  origin: https://unsplash.com/photos/NEc3YEN1FFw
 img: git-hooks-husky.jpg
 imgurl: https://unsplash.com/photos/jY_2XG-6HU0
 imgdesc: Photo by Simon Rae

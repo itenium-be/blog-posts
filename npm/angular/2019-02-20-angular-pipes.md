@@ -6,6 +6,10 @@ date:   2019-02-20 00:00:00
 desc: >
     Cheat-sheet covering pretty much everything relevant
     on Angular Pipes.
+bigimg:
+  url: angular-pipes-big.png
+  desc: Photo by Kelly McCrimmon
+  origin: https://unsplash.com/photos/Xf3FNjXvcv0
 img: angular-pipes.png
 imgdesc:
 categories: javascript

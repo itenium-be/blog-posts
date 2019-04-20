@@ -5,6 +5,10 @@ title:  "Vue.js Tutorial"
 date:   2019-04-19
 desc: >
   Learning Vue.js basics with mostly code examples.
+bigimg:
+  url: vue-tutorial-big.png
+  desc: Photo by Jacky Lo
+  origin: https://unsplash.com/photos/LjX-m_UXQGM
 img: vue-tutorial.jpg
 imgdesc: "What a Vue!"
 imgurl: https://unsplash.com/photos/-GwHS2piM_U

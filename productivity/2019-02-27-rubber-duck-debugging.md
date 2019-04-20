@@ -5,6 +5,10 @@ title:  "Rubber Duck Debugging"
 date:   2019-02-27 00:00:00
 desc: >
   Don't confront someone with your problem right away, Talk to the Duck™ first.
+bigimg:
+  url: rubber-duck-programming-big.png
+  desc: Photo by Mpho Mojapelo
+  origin: https://unsplash.com/photos/nJVBdCk6YWc
 img: rubber-duck-programming-duck-slippers.jpg
 imgdesc: "I own one of these! :)"
 categories: productivity

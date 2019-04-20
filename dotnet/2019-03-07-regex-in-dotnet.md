@@ -4,7 +4,11 @@ author: Wouter Van Schandevijl
 title:  ".NET Regex Tutorial"
 date:   2019-04-19 01:00:00
 desc: >
-  Quick cheat sheet 
+  Basic .NET Regex cheat sheet
+bigimg:
+  url: regex-water-big.png
+  desc: Unsplash picture by Àlex Folguera
+  origin: https://unsplash.com/photos/eSfsjp6xuYU
 img: regex-matches.jpg
 imgdesc: Picture by Devin Avery
 imgurl: https://unsplash.com/photos/ZsgPd6ovNag

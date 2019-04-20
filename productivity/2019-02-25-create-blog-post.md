@@ -62,6 +62,10 @@ title:  ""
 date:   2019-04-01 00:00:00
 desc: >
   
+bigimg:
+  url: 
+  desc: ""
+  origin: 
 img: 
 imgdesc: 
 imgurl: 
@@ -122,6 +126,8 @@ Add API links:
 {% raw %}[String.prototype.match](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 {: style="float: right"}
 {: .title-url}
+
+{{ '/assets/blog-assets/some-resource.html' | relative_url }}
 {% endraw %}
 ```
 
@@ -131,11 +137,13 @@ Add API links:
 - `desc`: Multiline.
     - Displayed on the main page and in the post details aside.
     - In other places the excerpt is displayed. Which is everything before `<!--more-->`.
+- `bigimg`: 1400x262 pixels
+    - `url`: Located in `/assets/blog-images/`
+    - Optional `desc` and `origin`
 - `img`:
-    - 360x300 pixels
+    - `img`: 360x300 pixels
     - Located in `/assets/blog-images/`
-    - Optional `imgdesc`
-    - `imgurl`: Not in use.
+    - Optional `imgdesc`, `imgtitle` and `imgurl`
 - `categories`:
     - Only three categories: `productivity`, `dotnet` and `javascript`.
     - A new one might be for ex: `ux`, `devops`, `architecture` or `agility`.
@@ -155,7 +163,6 @@ Add API links:
 
 **Legacy**  
 
-- `bigimg`: Never used. Partially implemented?
 - `url-short`: Retired.
 
 
