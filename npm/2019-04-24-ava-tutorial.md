@@ -354,5 +354,5 @@ test.afterEach.cb('This stuff also works for hooks', t => {
 });
 
 
-console.log('Currently runing', test.meta.file);
+console.log('Currently running', test.meta.file);
 ```

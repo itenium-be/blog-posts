@@ -2,12 +2,39 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Getting PowerShell help"
-date:   2017-04-12 15:00:00 +0200
+date:   2019-02-26 15:00:00
 categories: productivity
 tags: [powershell]
+img: 
+extras:
+  - url: https://learnxinyminutes.com/docs/powershell/
+    desc: Learn Powershell in Y minutes
+toc:
+  title: PowerShell Help
+  icon: icon-shell
 ---
 
-Get-Alias -Definition Get-ChildItem
+https://www.sconstantinou.com/useful-powershell-commands/
+
+To see the examples, type: "get-help Get-ChildItem -examples".
+For more information, type: "get-help Get-ChildItem -detailed".
+For technical information, type: "get-help Get-ChildItem -full".
+For online help, type: "get-help Get-ChildItem -online"
+
+
+```powershell
+# Download the help (run as admin)
+Update-Help
+
+# Shows: Syntax, description, parameters
+# Alias: man
+help Get-Process
+
+Get-Help Get-Process -Examples
+
+# Alternatively
+Get-Process -?
+```
 
 Get-Members
 Get-Help
@@ -16,9 +43,39 @@ help about_*
 
 <!--more-->
 
+```
+# alias help, man
+Get-Help
+
+
+```
+
+
+# Aliases
+
+Aliases are displayed with `Get-Help`
+
+```powershell
+Get-Alias dir
+Get-Alias -Definition Get-ChildItem
+```
+
+
 Get-Command
 
+```powershell
+# Find commands
+Get-Command about_* # alias: gcm
+Get-Command -Verb Add
 
+
+Get-Help ps | less # alias: help
+ps | Get-Member # alias: gm
+
+Show-Command Get-EventLog # Display GUI to fill in the parameters
+
+
+```
 
 
 function Git-NumberedHelp() {

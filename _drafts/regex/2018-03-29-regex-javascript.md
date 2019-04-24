@@ -19,14 +19,11 @@ TODO: rename file
 <!--more-->
 
 
-regexes-javascript
-regexes-dotnet --> add example of IgnoreWhiteSpace flag
+TODO: Also in PowerShell examples in .NET tutorial
+TODO: Or just call this regexes in other langs? :)
 
-
-TODO: Also in .NET and PowerShell
 
 # Perl
-
 
 ```
 $input = <STDIN>;
