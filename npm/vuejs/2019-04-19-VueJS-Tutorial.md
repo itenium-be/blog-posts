@@ -81,7 +81,7 @@ package-versions:
 
   <!-- Conditionals -->
   <div>
-    <!-- Falsey will not include in DOM -->
+    <!-- Falsy will not include in DOM -->
     <p v-if="inventory > 10">In Stock</p>
     <p v-else-if="inventory">Almost sold out</p>
     <p v-else>Out of Stock</p>
@@ -215,7 +215,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 {: .title-url}
 ## Conditions
 ```html
-{% raw %}<!-- Falsey values will not render -->
+{% raw %}<!-- Falsy values will not render -->
 <p v-if="inventory > 10">In Stock</p>
 <p v-else-if="inventory">Almost sold out</p>
 <p v-else>Out of Stock</p>
@@ -227,7 +227,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
     <div>...</div>
 </template>
 
-<!-- Falsey values render with display: none -->
+<!-- Falsy values render with display: none -->
 <!-- Less DOM changes === better performance -->
 <!-- There is no v-else-show and it does not work with templates -->
 <p v-show="inventory">In Stock</p>{% endraw %}
@@ -284,8 +284,8 @@ Like `v-if` you can use a template to render a block of multiple elements.
 ```
 
 #### Event Modifiers
-- Stackable: `.mod1.mod2`
-- `@keyup.enter`: `.enter` is called a [Key Modifier](https://vuejs.org/guide/events.html#Event-Modifiers)
+- `@keyup.enter`: `.enter` is called a [Key Modifier](https://vuejs.org/guide/events.html#Key-Modifiers)
+- Modifiers are stackable: `.mod1.mod2`
 - `@keyup.page-down="onPageDown"`
 - `.prevent` == `event.preventDefault()`
 - `.stop` == `event.stopPropagation()`: Shorthand `~`.
