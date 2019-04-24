@@ -324,7 +324,7 @@ In your `package.json`:
 
 
 
-# Additional Features
+# Async Support
 
 ```javascript
 test('Promise support', t => {
