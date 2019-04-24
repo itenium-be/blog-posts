@@ -1,6 +1,0 @@
-- WebApi
-- ASP.NET MVC
-- WinForms
-- WPF
-- ConsoleApp
-- UnitTests?

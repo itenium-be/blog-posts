@@ -22,6 +22,12 @@ toc:
     icon: eye-slash
 ---
 
+TODO: If posted, the create-blog-post should move to a new meta category
+TODO: Only create-blog-post should be omitted from the search.json (frontmatter: hideFromSearch?)
+
+
+
+
 https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 https://learn.cloudcannon.com/jekyll-cheat-sheet/
 https://bl.ocks.org/roachhd/2909c695979764498922

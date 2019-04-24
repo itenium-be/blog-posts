@@ -4,22 +4,19 @@ author: Wouter Van Schandevijl
 title:  "Regular Expressions: Flavors"
 date:   2018-03-29 00:00:00 +0200
 desc: >
-    Regex in JavaScript
+    Regexes in PowerShell and Perl
 categories: javascript
 tags: [regex,perl,powershell]
-series: regex
 toc:
     title: Regex Flavors
     icon: icon-javascript
 ---
 
-TODO: rename file
-
 <!--more-->
 
+# PowerShell
 
-TODO: Also in PowerShell examples in .NET tutorial
-TODO: Or just call this regexes in other langs? :)
+
 
 
 # Perl
