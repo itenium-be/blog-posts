@@ -45,7 +45,8 @@ and some custom reporters:
 <br>
 Other Jasmine plugins you might find useful:
 
-{% include github-stars.html url="node-nock/nock" desc="Test Http requests" %}
+{% include github-stars.html url="node-nock/nock" desc="HTTP server mocking and expectations library for Node.js" %}
+{% include github-stars.html url="visionmedia/supertest" desc="Super-agent driven library for testing node.js HTTP servers using a fluent API." %}
 {% include github-stars.html url="jhnns/rewire" desc="Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time" %}
 
 
