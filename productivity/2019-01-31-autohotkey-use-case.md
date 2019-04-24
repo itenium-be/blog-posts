@@ -6,8 +6,9 @@ date:   2019-01-31 00:00:00
 desc: >
   Wait, how did you just fill in that form?
   Autohotkey, that's how!
-img: productivity.jpg
-imgdesc: "Automate repetitive tasks with Autohotkey!"
+img:
+  url: productivity.jpg
+  desc: "Automate repetitive tasks with Autohotkey!"
 extras:
   - desc: Test Form Html Page
     url: /assets/blog-images/autohotkey-login-form.html

@@ -5,9 +5,10 @@ title:  "Create Excels with C# and EPPlus: Import"
 date:   2017-05-01 12:00:00 +0200
 categories: dotnet
 tags: [excel,tutorial]
-img: excel-import.jpg
-imgurl: https://unsplash.com/photos/fN603qcEA7g
-imgdesc: Photo by chuttersnap
+img:
+  url: excel-import.jpg
+  origin: https://unsplash.com/photos/fN603qcEA7g
+  desc: Photo by chuttersnap
 series: epplus
 extras:
   - githubproject: https://github.com/itenium-be/EPPlusTutorial

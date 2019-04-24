@@ -3,7 +3,8 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Debugging in Visual Studio"
 date:   2019-02-24 00:00:00
-img: debugging.png
+img:
+  url: debugging.png
 desc: >
   We obviously never encounter bugs in our code.
   Still, should you ever need to debug, use these

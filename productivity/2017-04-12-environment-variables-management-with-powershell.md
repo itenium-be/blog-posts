@@ -3,7 +3,8 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Managing Environment Variables with PowerShell"
 date:   2017-04-12 15:00:00 +0200
-img: environment-variables.jpg
+img:
+  url: environment-variables.jpg
 categories: productivity
 tags: [powershell,windows]
 extras:

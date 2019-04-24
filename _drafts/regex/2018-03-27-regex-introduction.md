@@ -5,9 +5,10 @@ title:  "Regular Expressions: Introduction"
 date:   2018-03-27 00:00:00 +0200
 desc: >
     Regex intro
-img: regex-first-is-water-so-all-of-them.jpg
-imgdesc: Unsplash picture by Àlex Folguera
-imgurl: https://unsplash.com/photos/eSfsjp6xuYU
+img:
+  url: regex-first-is-water-so-all-of-them.jpg
+  desc: Unsplash picture by Àlex Folguera
+  origin: https://unsplash.com/photos/eSfsjp6xuYU
 categories: productivity
 tags: [regex]
 series: regex

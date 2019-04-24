@@ -6,7 +6,8 @@ date:   2019-02-18 00:00:00
 desc: >
   "git assume unchanged" any (configuration) file you need to modify 
   but also want to avoid committing/pushing accidently.
-img: git-assume-unchanged.jpg
+img:
+  url: git-assume-unchanged.jpg
 interesting:
   - desc: "Stackoverflow: --assume-unchanged vs --skip-worktree"
     url: https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree

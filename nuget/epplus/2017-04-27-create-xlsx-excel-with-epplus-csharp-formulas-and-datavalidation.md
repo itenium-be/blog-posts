@@ -5,9 +5,10 @@ title:  "Create Excels with C# and EPPlus: Formulas & DataValidation"
 date:   2017-04-27 12:00:00 +0200
 categories: dotnet
 tags: [excel,tutorial]
-img: excel-misc.jpg
-imgurl: https://unsplash.com/photos/mcSDtbWXUZU
-imgdesc: Photo by Lukas Blazek
+img:
+  url: excel-misc.jpg
+  origin: https://unsplash.com/photos/mcSDtbWXUZU
+  desc: Photo by Lukas Blazek
 series: epplus
 extras:
   - githubproject: https://github.com/itenium-be/EPPlusTutorial

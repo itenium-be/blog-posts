@@ -5,7 +5,6 @@ title:  "Regular Expressions: Tutorial"
 date:   2018-03-28 00:00:00 +0200
 desc: >
     Regex tutorial
-img: none.png
 categories: productivity
 tags: [regex,tutorial,cheat-sheet]
 series: regex

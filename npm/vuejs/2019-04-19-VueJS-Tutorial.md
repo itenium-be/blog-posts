@@ -9,9 +9,10 @@ bigimg:
   url: vue-tutorial-big.png
   desc: Photo by Jacky Lo
   origin: https://unsplash.com/photos/LjX-m_UXQGM
-img: vue-tutorial.jpg
-imgdesc: "What a Vue!"
-imgurl: https://unsplash.com/photos/-GwHS2piM_U
+img:
+  url: vue-tutorial.jpg
+  desc: "What a Vue!"
+  origin: https://unsplash.com/photos/-GwHS2piM_U
 imgtitle: Photo by Fezbot2000
 categories: javascript
 tags: [tutorial]

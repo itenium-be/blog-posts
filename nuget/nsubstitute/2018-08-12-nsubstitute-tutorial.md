@@ -7,7 +7,8 @@ categories: dotnet
 desc: >
     Tutorial for the mocking framework with
     the prettiest, most succinct syntax.
-img: nsubstitute-alt.png
+img:
+  url: nsubstitute-alt.png
 tags: [tutorial,testing]
 series: nsubstitute
 url-short: https://bit.ly/2MdZf7n

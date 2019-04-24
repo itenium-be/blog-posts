@@ -5,9 +5,10 @@ title:  "Programming Mnemonics"
 date:   2019-01-12 00:00:00
 desc: >
   Mnemonics: aiding or designed to aid the memory. For Developers. Yeah.
-img: mnemonics-xkcd.png
-imgdesc: "XKCD Presents: Some New Science Mnemonics"
-imgurl: https://xkcd.com/992/
+img:
+  url: mnemonics-xkcd.png
+  desc: "XKCD Presents: Some New Science Mnemonics"
+  origin: https://xkcd.com/992/
 interesting:
   - desc: "XKCD Presents: Some New Science Mnemonics"
     url: "https://xkcd.com/992/"

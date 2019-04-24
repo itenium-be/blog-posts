@@ -10,8 +10,8 @@ bigimg:
   url: angular-pipes-big.png
   desc: Photo by Kelly McCrimmon
   origin: https://unsplash.com/photos/Xf3FNjXvcv0
-img: angular-pipes.png
-imgdesc:
+img:
+  url: angular-pipes.png
 categories: javascript
 tags: [angular,cheat-sheet,tutorial]
 extras:

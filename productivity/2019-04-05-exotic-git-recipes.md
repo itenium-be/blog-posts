@@ -5,9 +5,10 @@ title:  "Exotic Git Snippets"
 date:   2019-04-05 00:00:00 GMT-2
 desc: >
   Some not-so-often used git commands.
-img: git-snippets.jpg
-imgurl: https://unsplash.com/photos/Bb_X4JgSqIM
-imgdesc: Photo by Brine Blum
+img:
+  url: git-snippets.jpg
+  origin: https://unsplash.com/photos/Bb_X4JgSqIM
+  desc: Photo by Brine Blum
 categories: productivity
 tags: [git]
 interesting:

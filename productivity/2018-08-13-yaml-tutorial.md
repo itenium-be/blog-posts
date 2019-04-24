@@ -7,7 +7,8 @@ categories: productivity
 desc: >
     If there was no such thing as JavaScript,
     Yaml could've been the Xml killer.
-img: yaml.png
+img:
+  url: yaml.png
 url-short: https://bit.ly/2BaGoF9
 tags: [tutorial]
 toc:

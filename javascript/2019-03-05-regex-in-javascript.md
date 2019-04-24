@@ -5,9 +5,10 @@ title:  "JavaScript RegExp Tutorial"
 date:   2019-03-05 00:00:00
 desc: >
   A tutorial and cheat-sheet on RegExp testing, matching and replacing in JavaScript.
-img: when-searching-regular-expressions-on-unsplash.jpg
-imgdesc: Unsplash picture by Aga Putra
-imgurl: https://unsplash.com/photos/7MBgGXQ2Rqg
+img:
+  url: when-searching-regular-expressions-on-unsplash.jpg
+  desc: Unsplash picture by Aga Putra
+  origin: https://unsplash.com/photos/7MBgGXQ2Rqg
 categories: javascript
 tags: [cheat-sheet,regex]
 interesting:

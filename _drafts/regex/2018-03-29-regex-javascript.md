@@ -5,7 +5,6 @@ title:  "Regular Expressions: Flavors"
 date:   2018-03-29 00:00:00 +0200
 desc: >
     Regex in JavaScript
-img: none.png
 categories: javascript
 tags: [regex,perl,powershell]
 series: regex

@@ -4,7 +4,8 @@ author: Wouter Van Schandevijl
 title:  "Advanced Windows Explorer"
 date:   2017-04-22 02:00:00 +0200
 categories: productivity
-img: explorer.gif
+img:
+  url: explorer.gif
 tags: [autohotkey,powershell,windows]
 toc:
   title: Windows Explorer

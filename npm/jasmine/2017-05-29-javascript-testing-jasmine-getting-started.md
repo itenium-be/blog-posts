@@ -5,9 +5,10 @@ title:  "JavaScript Testing: Getting started with Jasmine"
 date:   2017-05-29 12:00:00 +0200
 categories: javascript
 tags: [tutorial,testing]
-img: jasmine.jpg
-imgdesc: Photo by Helena Munoz
-imgurl: https://unsplash.com/photos/WbiDCxOnytg
+img:
+  url: jasmine.jpg
+  desc: Photo by Helena Munoz
+  origin: https://unsplash.com/photos/WbiDCxOnytg
 series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut

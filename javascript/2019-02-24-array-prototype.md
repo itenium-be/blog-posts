@@ -5,7 +5,8 @@ title:  "Array.prototype for .NET developers"
 date:   2019-02-24 00:00:00
 desc: >
   A guide on learning JavaScript `Array.prototype` by comparing it to C# Linq.
-img: Array.prototype.png
+img:
+  url: Array.prototype.png
 categories: javascript
 tags: [cheat-sheet,tutorial]
 extras:

@@ -5,8 +5,8 @@ title:  "Angular Road Trip"
 date:   2018-10-22 21:00:00
 desc: >
     2+ years of Angular: The good, the bad and the ugly
-img: angular.png
-imgdesc:
+img:
+  url: angular.png
 categories: javascript
 tags: [angular,war-story]
 extras:

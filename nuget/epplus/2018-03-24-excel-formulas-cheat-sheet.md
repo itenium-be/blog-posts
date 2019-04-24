@@ -6,9 +6,10 @@ date:   2018-03-28 20:00:00 +0200
 desc: >
   Companion to the EPPlus series, specifically to Part 2: Formulas.  
   Covering the EPPlus syntax and implemented functions.
-img: excel-math.jpg
-imgdesc: "Photo by Roman Mager"
-imgurl: https://unsplash.com/photos/5mZ_M06Fc9g
+img:
+  url: excel-math.jpg
+  desc: "Photo by Roman Mager"
+  origin: https://unsplash.com/photos/5mZ_M06Fc9g
 categories: dotnet
 tags: [excel,cheat-sheet]
 series: epplus

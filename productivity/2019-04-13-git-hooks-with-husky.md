@@ -10,9 +10,10 @@ bigimg:
   url: git-hooks-husky-big.png
   desc: Photo by Chris Scott
   origin: https://unsplash.com/photos/NEc3YEN1FFw
-img: git-hooks-husky.jpg
-imgurl: https://unsplash.com/photos/jY_2XG-6HU0
-imgdesc: Photo by Simon Rae
+img:
+  url: git-hooks-husky.jpg
+  origin: https://unsplash.com/photos/jY_2XG-6HU0
+  desc: Photo by Simon Rae
 categories: productivity
 tags: [git]
 interesting:

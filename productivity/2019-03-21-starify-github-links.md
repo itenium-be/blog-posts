@@ -7,8 +7,9 @@ desc: >
   Automatically add Github stars badges to all Github project links.
   Runs automatically on google, stackoverflow and github. Activate with
   Control + Alt + G on any other webpage.
-img: starify-github-links.png
-imgurl: https://github.com/sindresorhus/awesome-nodejs#mad-science
+img:
+  url: starify-github-links.png
+  origin: https://github.com/sindresorhus/awesome-nodejs#mad-science
 categories: javascript
 tags: [product]
 extras:

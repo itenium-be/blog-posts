@@ -9,8 +9,9 @@ bigimg:
   url: rubber-duck-programming-big.png
   desc: Photo by Mpho Mojapelo
   origin: https://unsplash.com/photos/nJVBdCk6YWc
-img: rubber-duck-programming-duck-slippers.jpg
-imgdesc: "I own one of these! :)"
+img:
+  url: rubber-duck-programming-duck-slippers.jpg
+  desc: "I own one of these! :)"
 categories: productivity
 tags: [debugging]
 interesting:

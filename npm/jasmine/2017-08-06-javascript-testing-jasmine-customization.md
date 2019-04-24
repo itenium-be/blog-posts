@@ -6,9 +6,10 @@ date:   2017-08-06 00:00:00 +0200
 desc: >
     Customize Jasmine to your project needs with custom matchers, custom equality testers.
     Test legacy code by providing Jasmine with global variables.
-img: jasmine4.jpg
-imgurl: https://unsplash.com/photos/qGhYl8-ktz8
-imgdesc: Photo by David Brooke Martin
+img:
+  url: jasmine4.jpg
+  origin: https://unsplash.com/photos/qGhYl8-ktz8
+  desc: Photo by David Brooke Martin
 categories: javascript
 tags: [tutorial,testing]
 series: js-testing

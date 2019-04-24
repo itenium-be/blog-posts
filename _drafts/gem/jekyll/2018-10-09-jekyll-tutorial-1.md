@@ -7,7 +7,8 @@ categories: ruby
 tags: [tutorial,jekyll]
 desc: >
   
-img: Jekyll.png
+img:
+  url: Jekyll.png
 interesting:
   - desc: 
     url: 

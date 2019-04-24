@@ -6,7 +6,8 @@ date:   2019-02-17 00:00:00
 desc: >
   Run any Autohotkey script on the web with a
   single.. Autohotkey hotkey.
-img: autohotkey-dyna-run.jpg
+img:
+  url: autohotkey-dyna-run.jpg
 extras:
   - desc: autohotkey-dyna-run-capslock-f5.ahk
     url: /assets/blog-images/autohotkey-dyna-run-capslock-f5.ahk

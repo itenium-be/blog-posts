@@ -6,7 +6,8 @@ date:   2017-04-30 12:00:00 +0200
 categories: dotnet
 desc: >
     NSubstitute vs Moq syntax comparison.
-img: nsubstitute-alt.png
+img:
+  url: nsubstitute-alt.png
 tags: [tutorial,testing]
 series: nsubstitute
 extras:

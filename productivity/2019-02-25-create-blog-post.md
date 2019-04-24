@@ -6,9 +6,10 @@ date:   2019-02-25 00:00:00
 desc: >
   How to create a new blog post on this site :)
   Very meta.
-img: meta-create-blog-post.png
-imgdesc: Photo by Tom Sodoge
-imgurl: https://unsplash.com/photos/Qeqg7F9pfuU
+img:
+  url: meta-create-blog-post.png
+  desc: Photo by Tom Sodoge
+  origin: https://unsplash.com/photos/Qeqg7F9pfuU
 interesting:
   - desc: "Font Awesome (for toc.icon)"
     url: https://fontawesome.com/icons
@@ -66,10 +67,12 @@ bigimg:
   url: 
   desc: ""
   origin: 
-img: 
-imgdesc: 
-imgurl: 
-imgtitle:
+img:
+  url: 
+  desc: 
+  origin: 
+  title: 
+  linkUrl: 
 categories: productivity | dotnet | javascript
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta]
 series: series-unique-name
@@ -141,9 +144,9 @@ Add API links:
     - `url`: Located in `/assets/blog-images/`
     - Optional `desc` and `origin`
 - `img`:
-    - `img`: 360x300 pixels
+    - `url`: 360x300 pixels
     - Located in `/assets/blog-images/`
-    - Optional `imgdesc`, `imgtitle` and `imgurl`
+    - Optional `desc`, `title`, `origin` and `linkUrl`
 - `categories`:
     - Only three categories: `productivity`, `dotnet` and `javascript`.
     - A new one might be for ex: `ux`, `devops`, `architecture` or `agility`.

@@ -9,9 +9,10 @@ bigimg:
   url: regex-water-big.png
   desc: Unsplash picture by Àlex Folguera
   origin: https://unsplash.com/photos/eSfsjp6xuYU
-img: regex-matches.jpg
-imgdesc: Picture by Devin Avery
-imgurl: https://unsplash.com/photos/ZsgPd6ovNag
+img:
+  url: regex-matches.jpg
+  desc: Picture by Devin Avery
+  origin: https://unsplash.com/photos/ZsgPd6ovNag
 categories: dotnet
 tags: [cheat-sheet,regex]
 interesting:

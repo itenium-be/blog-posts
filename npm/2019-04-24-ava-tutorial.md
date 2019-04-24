@@ -7,9 +7,10 @@ desc: >
   The unicorn JavaScript testing framework by Sindre Sorhus.
 bigimg:
   url: ava-big.png
-img: ava.jpg
-imgdesc: Photo by Marco Secchi
-imgurl: https://unsplash.com/photos/yjq31QGOnSY
+img:
+  url: ava.jpg
+  desc: Photo by Marco Secchi
+  origin: https://unsplash.com/photos/yjq31QGOnSY
 categories: javascript
 tags: [testing,tutorial]
 interesting:

@@ -6,7 +6,8 @@ date:   2018-08-30 15:00:00
 desc: >
   Tired of copying <code>git status</code> output for <code>git add</code> input for the millionth time?
   Despair no more for <code>Git-NumberedAdd</code> is here!
-img: git-add-numbered-add.jpg
+img:
+  url: git-add-numbered-add.jpg
 categories: productivity
 tags: [git,powershell,product]
 extras:

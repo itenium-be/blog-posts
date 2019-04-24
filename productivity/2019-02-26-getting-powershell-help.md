@@ -5,7 +5,8 @@ title:  "Getting PowerShell help"
 date:   2019-02-26 15:00:00
 categories: productivity
 tags: [powershell]
-img: 
+img:
+  url: 
 extras:
   - url: https://learnxinyminutes.com/docs/powershell/
     desc: Learn Powershell in Y minutes

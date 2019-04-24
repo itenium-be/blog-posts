@@ -3,9 +3,10 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine plugins"
 date:   2017-08-07 00:00:00 +0200
-img: jasmine2.jpg
-imgdesc: Photo by Aliis Sinisalu
-imgurl: https://unsplash.com/photos/yOh9lWBDjP4
+img:
+  url: jasmine2.jpg
+  desc: Photo by Aliis Sinisalu
+  origin: https://unsplash.com/photos/yOh9lWBDjP4
 desc: >
   What would we be without some extra plugins. There
   are over 1000 Jasmine npm packages and we'll cover them all here.

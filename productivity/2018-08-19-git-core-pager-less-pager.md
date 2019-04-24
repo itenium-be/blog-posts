@@ -3,7 +3,8 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Less for your git pager"
 date:   2018-08-19 00:00:00 +0200
-img: less.png
+img:
+  url: less.png
 desc: >
   How to navigate git diffs, logs, ...
   on the CLI with less
