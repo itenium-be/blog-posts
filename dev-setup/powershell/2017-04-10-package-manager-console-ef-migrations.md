@@ -5,7 +5,7 @@ title:  "Package Manager Console Entity Framework 6 Migrations profile"
 date:   2017-04-10 20:22:13 +0200
 img:
   url: powershell-migrations-profile.jpg
-categories: productivity
+categories: dev-setup
 tags: [powershell]
 extras:
   - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/nuget/ef.ps1
@@ -17,6 +17,7 @@ lastUpdate: 2018-03-28 00:00:00 +0200
 updates:
   - date: 2018-03-28 00:00:00 +0200
     desc: Fix for Visual Studio 2017
+redirect_from: /blog/productivity/package-manager-console-ef-migrations
 ---
 
 This tutorial is about adding the following functionality to the Entity Framework Migrations CLI:  

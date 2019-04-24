@@ -46,7 +46,7 @@ Create a new file in a folder in `_posts`:
     - `nuget`: .NET libraries and frameworks
 - `javascript`: Everything EcmaScript, TypeScript, Node, etc.
     - `npm`: On specific npm packages
-
+- `dev-setup`: PowerShell, git, CLI, ...
 
 
 # Front Matter
@@ -73,7 +73,7 @@ img:
   origin: 
   title: 
   linkUrl: 
-categories: productivity | dotnet | javascript
+categories: productivity | dotnet | javascript | dev-setup
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta]
 series: series-unique-name
 extras:
@@ -123,6 +123,7 @@ todo:
     desc: 
 package-versions:
   moment: 5.2
+redirect_from: /blog/
 ---
 
 Add API links:  

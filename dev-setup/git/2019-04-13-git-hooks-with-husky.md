@@ -14,7 +14,7 @@ img:
   url: git-hooks-husky.jpg
   origin: https://unsplash.com/photos/jY_2XG-6HU0
   desc: Photo by Simon Rae
-categories: productivity
+categories: dev-setup
 tags: [git]
 interesting:
   - url: https://git-scm.com/docs/githooks
@@ -27,6 +27,7 @@ todo:
    url: https://github.com/lerna/lerna
 package-versions:
   husky: 1.3.1
+redirect_from: /blog/productivity/git-hooks-with-husky/
 ---
 
 Avoid pushing changes that break the build with githooks and Husky.

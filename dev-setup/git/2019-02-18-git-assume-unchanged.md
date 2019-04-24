@@ -11,11 +11,12 @@ img:
 interesting:
   - desc: "Stackoverflow: --assume-unchanged vs --skip-worktree"
     url: https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree
-categories: productivity
+categories: dev-setup
 tags: [git]
 toc:
   title: Assume Unchanged
   icon: icon-git
+redirect_from: /blog/productivity/git-assume-unchanged
 ---
 
 Ideally one would create a new gitignored file to configure an application to fit his local development

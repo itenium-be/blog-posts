@@ -5,7 +5,7 @@ title:  "Managing Environment Variables with PowerShell"
 date:   2017-04-12 15:00:00 +0200
 img:
   url: environment-variables.jpg
-categories: productivity
+categories: dev-setup
 tags: [powershell,windows]
 extras:
   - githubproject: https://github.com/Laoujin/dotfiles/blob/master/config/PowerShell/scripts/envpath.ps1
@@ -16,6 +16,7 @@ toc:
 lastUpdate: 2018-08-25 00:00:00 +0200
 updates:
   - date: 2018-08-25 00:00:00 +0200
+redirect_from: /blog/productivity/environment-variables-management-with-powershell/
 ---
 
 Working with environment variables in Windows is as easy as:  

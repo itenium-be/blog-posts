@@ -8,7 +8,7 @@ img:
 desc: >
   How to navigate git diffs, logs, ...
   on the CLI with less
-categories: productivity
+categories: dev-setup
 tags: [git]
 interesting:
   - url: https://itenium.be/blog/productivity/exotic-git-recipes/#locking-out-package-lockjson
@@ -16,6 +16,7 @@ interesting:
 toc:
   title: Less Pager
   icon: icon-git
+redirect_from: /blog/productivity/git-core-pager-less-pager
 ---
 
 A `git diff` or `git log` starts the less program. Perhaps not the

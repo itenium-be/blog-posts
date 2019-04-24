@@ -8,7 +8,7 @@ desc: >
   Despair no more for <code>Git-NumberedAdd</code> is here!
 img:
   url: git-add-numbered-add.jpg
-categories: productivity
+categories: dev-setup
 tags: [git,powershell,product]
 extras:
   - githubproject: https://github.com/itenium-be/Git-NumberedAdd
@@ -25,6 +25,7 @@ lastUpdate: 2019-01-12 00:00:00 +0200
 updates:
   - date: 2019-01-12 00:00:00 +0200
     desc: More actions and utilities + bugfixes
+redirect_from: /blog/productivity/git-numbered-add-for-powershell/
 ---
 
 After copying file paths from `git status` output and pasting them after a `git add` quite a few times

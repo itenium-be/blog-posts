@@ -3,7 +3,7 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "PowerShell and Git for the colorblind"
 date:   2017-04-21 15:00:00 +0200
-categories: productivity
+categories: dev-setup
 img:
   url: colorblind.png
 tags: [powershell,git]
@@ -14,6 +14,7 @@ lastUpdate: 2018-08-22 00:00:00 +0200
 updates:
   - date: 2018-08-22 00:00:00 +0200
     desc: Update for Posh-Git v1
+redirect_from: /blog/productivity/powershell-and-git-for-the-colorblind/
 ---
 
 My PowerShell, Posh-Git and .gitconfig color configuration because of some red-green troubles

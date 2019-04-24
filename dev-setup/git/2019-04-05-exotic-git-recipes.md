@@ -9,7 +9,7 @@ img:
   url: git-snippets.jpg
   origin: https://unsplash.com/photos/Bb_X4JgSqIM
   desc: Photo by Brine Blum
-categories: productivity
+categories: dev-setup
 tags: [git]
 interesting:
   - url: https://stackoverflow.com/a/21079437/540352
@@ -17,6 +17,7 @@ interesting:
 toc:
   title: Git Recipes
   icon: icon-git
+redirect_from: /blog/productivity/exotic-git-recipes
 ---
 
 Some git commands and scripts that come in handy from time to time.

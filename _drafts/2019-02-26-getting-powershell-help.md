@@ -3,7 +3,7 @@ layout: post
 author: Wouter Van Schandevijl
 title:  "Getting PowerShell help"
 date:   2019-02-26 15:00:00
-categories: productivity
+categories: dev-setup
 tags: [powershell]
 img:
   url: 
