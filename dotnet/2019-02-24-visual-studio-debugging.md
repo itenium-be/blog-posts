@@ -14,6 +14,8 @@ tags: [tutorial,cheat-sheet,debugging]
 interesting:
   - url: https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour
     desc: "Official Visual Studio Debugger Tutorial"
+  - url: https://devblogs.microsoft.com/visualstudio/7-more-lesser-known-debugging-tactics-for-visual-studio
+    desc: "7 More Lesser-known Debugging Tactics for Visual Studio"
 toc:
   title: Debugging
   icon: bug
