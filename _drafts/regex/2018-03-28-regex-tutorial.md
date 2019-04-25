@@ -130,4 +130,50 @@ this(?!must not be after)
 
 <(backreference)>\w*</\1>
 
+
+
+
+Change import { Module } -> {Module}
+/(import (?:.+)?\{)(?:\s*)(.*)(?:\s+)(\} from ')/ Replace with $1$2$3
+
+
+
+Take the "(?<=/)(([^\\/:*?""<>|]+) (?2))(?=/) example for lookbehind/ahead..
+
+
+Tel: 000-000-000
+
+Tel:\S\d\d\d-
+
+(?:non capturing)
+
+this(?=must be after) = lookahead
+this(?!must not be after)
+
+(?<=must be before)this = lookbehind
+(?<!must not be before)this
+
+<(backreference)>\w*</\1>
+
+<Name>MyName</Name><LastName>MyLastName</LastName>
+<Name>OtherName</Name><LastName>OtherLastName</LastName>
+<Name>ThatName</Name>
+<Name>MoreName</Name>
+<Name>YouKnow</Name>
+<Name>EvenMore</Name>
+<Name>Name</Name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [advanced-cheat-sheet]: https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/

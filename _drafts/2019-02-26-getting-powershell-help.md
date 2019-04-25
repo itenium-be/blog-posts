@@ -79,6 +79,53 @@ Show-Command Get-EventLog # Display GUI to fill in the parameters
 ```
 
 
+
+
+
+
+
+
+# Metadata
+Get-Alias, New-Alias
+Get-Alias -Definition Get-Process
+
+$PSVersionTable
+$PSScriptRoot
+$env:psmodulepath
+$env:path
+$pshome
+
+$PSDefaultParameterValues
+
+$Get-PSRepository, ...
+
+# Built in variables
+# TODO: $NULL, $false, ...
+
+# Built in help
+Get-Help *log* -Full
+Get-Help about_*
+Get-Command -Noun *event*
+(Get-Command Get-Eventlog | select -ExpandProperty parameters).computername.aliases
+Show-Command Get-Eventlog # Display GUI to fill in the parameters
+Get-Service | Get-Member
+
+Update-Help # Run as admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function Git-NumberedHelp() {
     $table = Get-Command -Name "Git-*" | ? { $_.CommandType -eq 'Function' } | % {
         $name = $_.name

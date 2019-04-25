@@ -95,3 +95,132 @@ module.exports = function(msg, statusCode) {
   err.statusCode = 500 || statusCode;
   return err;
 };
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+
+
+
+// bluebird
+// http://bluebirdjs.com/docs/api-reference.html
+// Promises/A+
+
+var Promise = require('bluebird');
+
+// Promisifying
+var request = Promise.promisify(require('request'));
+var fs = Promise.promisifyAll(require('fs'));
+var pg = require('pg');
+Promise.promisifyAll(pg, {
+  filter: function(methodName) {
+    return methodName === 'connect';
+  },
+  multiArgs: true
+});
+// Promisify rest of pg normally
+Promise.promisifyAll(pg);
+
+Promise.config({
+  longStackTraces: true,
+  warnings: true
+});
+
+
+
+// Return values
+Promise.resolve('whee')
+.then(function(value) {
+  console.log('whee', value);
+  return ['val1', Promise.resolve('val2'), 'val3'];
+})
+.spread(function(val1, val2, val3) {
+  console.log('spread: ', val1, val2, val3);
+})
+.then(function(value) {
+  console.log('value undefined', typeof value);
+  return ['val1', Promise.resolve('val2'), 'val3'];
+})
+.all() // need to resolve the Promise(s) returned
+// or: return Promise.all(['val1', Promise.resolve('val2'), 'val3'])
+.then(function([val1, val2, val3]) {
+  console.log('spread: ', val1, val2, val3);
+});
+Promise.resolve($.get('http://www.google.com'));
+
+
+
+// Finally and bind
+Promise.resolve().bind({})
+.then(function() {
+  this.id = 5;
+  throw new Error('oh noes');
+})
+.then(function() {
+  console.log('not printed');
+})
+.finally(function() {
+  console.log('printed finally');
+})
+.then(function() {
+  console.log('not printed');
+})
+.catch(function(e) {
+  console.log('catched', e);
+  console.log('for id', this.id);
+});
+
+
+
+// Error handling
+Promise.reject(new TypeError('oepsie'))
+.catch(TypeError, function(e) {
+  console.log('TypeError', e);
+})
+.catch(SyntaxError, RangeError, function(e) {
+  console.log('InternalError, RangeError', e);
+})
+.catch({code: 'ENOENT'}, function(e) {
+  console.log('file not found: ' + e.path);
+})
+.catch(function(e) {
+  console.log('Error', e);
+});
+
+function getUserById(id) {
+  return Promise.try(function() {
+    if (typeof id !== 'number') {
+      throw new Error('id must be a number');
+    }
+    return db.getUserById(id);
+  });
+}
+
+MyClass.prototype.method = Promise.method(function(input) {
+  if (!this.isValid(input)) {
+    throw new TypeError('input is not valid');
+  }
+
+  if (this.cache(input)) {
+    return this.someCachedValue;
+  }
+
+  return db.queryAsync(input).bind(this).then(function(value) {
+    this.someCachedValue = value;
+    return value;
+  });
+});
+
+
+
+// Coordination
+Promise.join(getPictures(), getComments(), getTweets(), function(pics, comments, tweets) {
+  // do something with em
+});
+
+
