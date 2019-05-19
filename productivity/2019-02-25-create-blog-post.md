@@ -74,7 +74,7 @@ img:
   title: 
   linkUrl: 
 categories: productivity | dotnet | javascript | dev-setup
-tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta]
+tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk]
 series: series-unique-name
 extras:
   - githubproject: https://github.com/itenium-be/
@@ -209,6 +209,8 @@ Add inline style with `{: style="margin-left: 20px"}`.
 
 **Images**:  
 TODO: Should probably make this clickable to open gallery and/or show full screen?
+
+Will look for the file in `/assets/blog-images/`
 
 ```
 {% raw %}{% include post/image.html file="" alt="" title="" desc="" maxWidth="360px" %}{% endraw %}
