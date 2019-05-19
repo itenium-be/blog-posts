@@ -4,7 +4,7 @@ author: Wouter Van Schandevijl
 title:  "Google I/O '19: WebAssembly for Web Developers"
 date:   2019-05-19 00:00:00
 desc: >
-  Google I/O talk on why you would ever need WebAssembly.
+  Google I/O '19 talk on why you would ever need WebAssembly.
 bigimg:
   url: webassembly-big.png
   desc: Photo by Vlad Tchompalov
@@ -36,6 +36,9 @@ toc:
 
 
 # Emscripten
+
+{% include github-stars.html url="emscripten-core/emscripten" desc="An LLVM-to-Web Compiler" %}
+
 
 Brings your existing C/C++ applications to the web (ex: Autocad, Game Engines like Unity).
 Provides a drop-in replacement: Whatever you wrote, it should just work on the web.
