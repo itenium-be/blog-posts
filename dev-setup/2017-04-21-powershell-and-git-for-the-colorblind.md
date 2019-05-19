@@ -125,3 +125,8 @@ Second optional color param values: bold, dim, ul (underline), blink, and revers
 	old = magenta bold
 	new = green bold
 ```
+
+
+# Advantages
+
+![Nailed it!](/assets/blog-assets/colorblind-ididit.png)
