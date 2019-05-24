@@ -12,9 +12,7 @@ Perils of Autohotkey
 - Branches
 
 
-Do a post on debugging:
-https://autohotkey.com/docs/FAQ.htm#Debug
-https://autohotkey.com/docs/Scripts.htm#debug
+https://www.autohotkey.com/docs/scripts/KeyboardOnScreen.htm
 
 
 https://github.com/Pulover/PuloversMacroCreator

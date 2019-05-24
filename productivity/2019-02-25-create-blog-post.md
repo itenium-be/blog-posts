@@ -60,10 +60,10 @@ Create a new file in a folder in `_posts`:
 layout: post
 author: Wouter Van Schandevijl
 title:  ""
-date:   2019-04-01 00:00:00
+date:   2019-05-
 desc: >
   
-bigimg:
+bigimg: 1400x262
   url: 
   desc: ""
   origin: 
@@ -99,7 +99,7 @@ toc:
 
 {% raw %}
 {% include github-stars.html url="" desc="" %}
-{% include kbd k="" l="" %}
+{% include kbd k="Control+O,Control+F" l="" %}
 {% include post/image.html file="" alt="" title="" desc="" maxWidth="360px" %}
 {% include post/youtube.html id="youtubeId" desc="" %}
 {% endraw %}
@@ -141,11 +141,11 @@ Add API links:
 - `desc`: Multiline.
     - Displayed on the main page and in the post details aside.
     - In other places the excerpt is displayed. Which is everything before `<!--more-->`.
-- `bigimg`: 1400x262 pixels
+- **`bigimg`: 1400x262 pixels**
     - `url`: Located in `/assets/blog-images/`
     - Optional `desc` and `origin`
 - `img`:
-    - `url`: 360x300 pixels
+    - **`url`: 360x300 pixels**
     - Located in `/assets/blog-images/`
     - Optional `desc`, `title`, `origin` and `linkUrl`
 - `categories`:
