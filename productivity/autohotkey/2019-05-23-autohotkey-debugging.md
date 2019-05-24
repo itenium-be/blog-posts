@@ -1,11 +1,11 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  "Autohotkey Development & Debugging"
+title:  "Autohotkey Debugging"
 date:   2019-05-23
 desc: >
-  Some interesting things to use during Autohotkey development.
-  And how to get out of a pinch while debugging.
+  How to speed up and perhaps also help you get out of a pinch
+  while debugging your Authotkey scripts...
 bigimg: 
   url: autohotkey-development-debugging-big.png
   desc: "Photo by Jason D"
@@ -25,8 +25,8 @@ interesting:
   - git: itenium-be/Mi-Ke
     desc: "Mi-Ke contains most stuff in this blog post, and then some."
 toc:
-  title: 🔑 Autohotkey Development
-  icon:
+  title: 🐛 To The Trenches
+  icon: 
 todo:
   - Setting the default editor for "Edit This Script" tray menu item
   - Interactive debugging?
@@ -48,10 +48,6 @@ Check our [Github README](https://github.com/itenium-be/Yunit) for a screenshot 
 
 
 # Builtin functionality
-
-[`A_ScriptHwnd`](https://www.autohotkey.com/docs/Variables.htm#ScriptHwnd)
-contains the unique ID (HWND) of the script's hidden main window.
-
 
 ## MsgBox
 
@@ -304,6 +300,9 @@ Script to [open Autohotkey.chm instead](https://www.autohotkey.com/docs/scripts/
 
 
 ## Other
+
+[`A_ScriptHwnd`](https://www.autohotkey.com/docs/Variables.htm#ScriptHwnd)
+contains the unique ID (HWND) of the script's hidden main window.
 
 - [An object TreeViewer](https://autohotkey.com/board/topic/85201-array-deep-copy-treeview-viewer-and-more/) and more
 - [Array_Gui](https://www.autohotkey.com/boards/viewtopic.php?f=6&t=35124&p=162979): Show arrays as an interactive TreeView.
