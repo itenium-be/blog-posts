@@ -9,7 +9,7 @@ bigimg:
   url: robocode-big.png
 img:
   url: robocode-pew-pew.png
-categories: productivity
+categories: design
 tags: [fun]
 series: robocode
 extras:
@@ -37,6 +37,7 @@ package-versions:
 # Game Physics
 
 ![BattleFieldWidth and BattleFieldHeight](/assets/blog-images/robocode-battleground.gif "BattleFieldWidth and BattleFieldHeight"){: .img-responsive}{: style="max-width: 500px"}
+
 
 - Default grid for 1v1: 800x600
 - Time is measured in ticks = turns.

@@ -11,7 +11,7 @@ img:
   url: robocode.png
   desc: "Photo by Ray Rui"
   origin: https://unsplash.com/photos/SyzQ5aByJnE
-categories: productivity
+categories: design
 tags: [fun]
 series: robocode
 extras:
