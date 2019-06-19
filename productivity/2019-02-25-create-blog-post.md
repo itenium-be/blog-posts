@@ -59,8 +59,9 @@ Create a new file in a folder in `_posts`:
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  ""
-date:   2019-05-
+title: ""
+subTitle: ""
+date: 2019-05-
 desc: >
   
 bigimg: 1400x262
@@ -69,12 +70,12 @@ bigimg: 1400x262
   origin: 
 img:
   url: 
-  desc: 
+  desc: ""
   origin: 
-  title: 
+  title: ""
   linkUrl: 
-categories: productivity | dotnet | javascript | dev-setup
-tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk]
+categories: productivity | dotnet | javascript | dev-setup | object-oriented
+tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,design]
 series: series-unique-name
 extras:
   - githubproject: https://github.com/itenium-be/
@@ -94,6 +95,8 @@ toc:
 {: .hide-from-excerpt}
 
 <!--more-->
+
+> "" — Koen Koenen
 
 {: .notice--info}
 
