@@ -36,9 +36,7 @@ package-versions:
 
 # Game Physics
 
-![BattleFieldWidth and BattleFieldHeight](/assets/blog-images/robocode-battleground.gif "BattleFieldWidth and BattleFieldHeight")
-{: .img-responsive}
-{: style="max-width: 500px"}
+![BattleFieldWidth and BattleFieldHeight](/assets/blog-images/robocode-battleground.gif "BattleFieldWidth and BattleFieldHeight"){: .img-responsive}{: style="max-width: 500px"}
 
 - Default grid for 1v1: 800x600
 - Time is measured in ticks = turns.
