@@ -24,6 +24,7 @@ toc:
   title: 🎇 Tutorial
 package-versions:
   robocode: 1.9.3.3
+redirect_from: /blog/productivity/robocode-tutorial/
 ---
 
 {% include github-stars.html url="robo-code/robocode" desc="Build the best - destroy the rest!" %}
