@@ -1,8 +1,8 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title:  "Create a new blog post"
-date:   2019-02-25 00:00:00
+title: "Create a new blog post"
+date: 2019-02-25
 desc: >
   How to create a new blog post on this site :)
   Very meta.
@@ -29,13 +29,13 @@ toc:
 This is something for me (or anyone else really)
 because I keep forgetting all this stuff.
 
-**Diving right in**:  
-{: .hide-from-excerpt}
+- Use `{: .hide-from-excerpt}` to do just that.
+- `img` size must be 360x300. `bigimg` is 1400x262.
+- A `—`
 
-Use `{: .hide-from-excerpt}` to do just that.
-{: .hide-from-excerpt}
 
 <!--more-->
+
 
 # New blog post
 
@@ -46,14 +46,15 @@ Create a new file in a folder in `_posts`:
     - `nuget`: .NET libraries and frameworks
 - `javascript`: Everything EcmaScript, TypeScript, Node, etc.
     - `npm`: On specific npm packages
-- `dev-setup`: PowerShell, git, CLI, ...
+- `dev-setup`: PowerShell, git, CLI, IDE, ...
+- `design`: Software Design, Architecture. Currently no UI/UX Design.
 
 
 # Front Matter
 
 ## Template
 
-`img` size must be 360x300.
+`img` size must be 360x300. `bigimg` is 1400x262.
 
 ```yaml
 ---
@@ -74,8 +75,8 @@ img:
   origin: 
   title: ""
   linkUrl: 
-categories: productivity | dotnet | javascript | dev-setup | object-oriented
-tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,design]
+categories: productivity | dotnet | javascript | dev-setup | design
+tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun]
 series: series-unique-name
 extras:
   - githubproject: https://github.com/itenium-be/
@@ -116,9 +117,9 @@ toc:
 Some additional, optional front-matter:  
 ```yaml
 ---
-lastUpdate: 2019-04-01 00:00:00
+lastUpdate: 2019-07-01
 updates:
-  - date: 2019-04-01 00:00:00
+  - date: 2019-07-01
     desc: ""
 todo:
   - reason: Followup|
