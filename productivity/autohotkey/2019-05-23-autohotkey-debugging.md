@@ -179,9 +179,9 @@ MsgBox I will run even when the script is suspended
 Return
 ```
 
-By default the script can also be paused/suspended via it's [tray icon menu](https://autohotkey.com/docs/commands/Menu.htm#Icon)
+By default the script can also be paused/suspended via its [tray icon menu](https://autohotkey.com/docs/commands/Menu.htm#Icon)
 and a different tray icon is shown when toggled. Nothing is worse as you thinking
-your code doesn't work as expected when it's not even running :)
+your code doesn't work as expected when its not even running :)
 
 
 ### Exit & ExitApp

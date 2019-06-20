@@ -21,7 +21,7 @@ Because some things are just so similar but still confusingly different in VB.NE
 
 Along the way we'll make some amazing discoveries like:
 - There are things VB.NET just can't do (pointers, ...)
-- There are a few cases where VB.NET code is *shorter* than it's C# counterpart (gasp!)
+- There are a few cases where VB.NET code is *shorter* than its C# counterpart (gasp!)
 - VB.NET defaults are not what you might expect from a strongly typed language due to its VB6 legacy (Option Strict, Explicit)
 - There is some VB.NET only stuff that comes in handy from time to time
 
