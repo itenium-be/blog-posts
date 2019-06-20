@@ -6,13 +6,8 @@ date:   2019-06-20
 desc: >
   Don't let the "Blog" title fool you.
   This really is a "Bliki".
-bigimg:
-  url: 
-  desc: 
-  origin: 
 img:
   url: intro-post.png
-  desc: ""
 categories: productivity
 tags: [pragmatic-tips]
 toc:
