@@ -53,7 +53,7 @@ using (var package = new ExcelPackage())
 	// Setting & getting values
 	ExcelRange firstCell = sheet.Cells[1, 1];
 	firstCell.Value = "will it work?";
-	sheet.Cells["A2"].Formula = "CONCATENATE(A1,\" ... Ofcourse it will!\")";
+	sheet.Cells["A2"].Formula = "CONCATENATE(A1,\" ... Of course it will!\")";
 	Assert.That(firstCell.Text, Is.EqualTo("will it work?"));
 
 	// Numbers

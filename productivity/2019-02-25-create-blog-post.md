@@ -32,14 +32,14 @@ because I keep forgetting all this stuff.
 - Use `{: .hide-from-excerpt}` to do just that.
 - `img` size must be 360x300. `bigimg` is 1400x262.
 - A `—`
-
+- [Pragmatic Tips](http://www.ccs.neu.edu/home/lieber/courses/csg110/sp08/Pragmatic%20Quick%20Reference.htm)
 
 <!--more-->
 
 
 # New blog post
 
-Create a new file in a folder in `_posts`:  
+Create a new file in a folder in `_posts`:
 - `_drafts`: Not published.
 - `productivity`: Most things end up here apparently.
 - `dotnet`: Everything c#, .NET Core, Visual Studio, etc.

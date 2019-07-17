@@ -111,9 +111,9 @@ Scans for other robots.
 
 # Battling other robots
 
-The best way to debug your robot is, ofcourse battling others!
+The best way to debug your robot is, of course battling others!
 
-- [Sample Bots](http://robowiki.net/wiki/Sample_Bots): Packaged with Robocode. Practise against these first :)
+- [Sample Bots](http://robowiki.net/wiki/Sample_Bots): Packaged with Robocode. Practice against these first :)
 - [Super Sample Bots](http://robowiki.net/wiki/Category:Super_Sample_Bots): The next step.
 - [How to download other Robots](http://robowiki.net/wiki/Robocode/Learning_from_Robots)
 - [Some Super Robots](http://robowiki.net/wiki/Robocode/Downloading_Robots#Robots_to_download)
@@ -140,4 +140,4 @@ The best way to debug your robot is, ofcourse battling others!
 
 - [Programming Games: Robocode // Patrick Cupka](https://www.youtube.com/watch?v=oTjjkXebCAY)
 - [Introduction to Robocode // Philip Johnson](https://www.youtube.com/watch?v=wJzJ57ZC1sc)
-- [Walkthough of testing code for robocode // Philip Johnson](https://www.youtube.com/watch?v=dHrupYhq7sI)
+- [Walk-through of testing code for robocode // Philip Johnson](https://www.youtube.com/watch?v=dHrupYhq7sI)

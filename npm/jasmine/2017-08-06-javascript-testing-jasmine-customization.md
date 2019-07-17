@@ -74,11 +74,11 @@ beforeEach(function() {
           var result = {pass: (actual % expected) === 0};
           if (!result.pass) {
             // failure message
-            result.message = `${actual} is not divisable by ${expected} (mod: ${actual % expected})`;
+            result.message = `${actual} is not divisible by ${expected} (mod: ${actual % expected})`;
           } else {
             // failure message - when .not.toBeDivisibleBy() fails
             // if a negativeCompare function is provided, this message will never be displayed
-            result.message = `${actual} is divisable by ${expected} (mod: ${actual % expected})`;
+            result.message = `${actual} is divisible by ${expected} (mod: ${actual % expected})`;
           }
           return result;
         },

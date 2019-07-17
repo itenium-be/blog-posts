@@ -75,9 +75,9 @@ dm = !git merged-branches git branch -d
 
 Somehow a CI server always seems to be amassing feature branches. A simple cleanup script to the rescue!
 
-Replace `name-comitter` (author filter) and `origin` (remote filter) and add as a `~/.gitconfig` alias:  
+Replace `name-committer` (author filter) and `origin` (remote filter) and add as a `~/.gitconfig` alias:  
 ```ini
-my-merged-remote-branches = !git for-each-ref --format='%(authorname):%(refname)' | egrep \"name-comitter\" | egrep \"refs/remotes\" | sed -e \"s/^.*:refs\\/remotes\\/origin\\//:/\"
+my-merged-remote-branches = !git for-each-ref --format='%(authorname):%(refname)' | egrep \"name-committer\" | egrep \"refs/remotes\" | sed -e \"s/^.*:refs\\/remotes\\/origin\\//:/\"
 ```
 
 Followed by PowerShell:  

@@ -5,7 +5,7 @@ title:  "Git Assume Unchanged"
 date:   2019-02-18 00:00:00
 desc: >
   "git assume unchanged" any (configuration) file you need to modify 
-  but also want to avoid committing/pushing accidently.
+  but also want to avoid committing/pushing accidentally.
 img:
   url: git-assume-unchanged.jpg
 interesting:
@@ -21,7 +21,7 @@ redirect_from: /blog/productivity/git-assume-unchanged
 
 Ideally one would create a new gitignored file to configure an application to fit his local development
 environment but when you do have to revert to modifying a committed configuration file, at least there is
-"git assume unchanged" to avoid committing your changes in these files accidently.
+"git assume unchanged" to avoid committing your changes in these files accidentally.
 
 
 # Assume Unchanged

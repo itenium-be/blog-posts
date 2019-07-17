@@ -111,7 +111,7 @@ for often sought after functionality, all scattered around the codebase, some pe
 getting duplicated by different programmers or even for different UserStories.
 
 Some of these helper methods would be much better off being members of a `ValueObject`
-instead. We get better IDE dicoverability and rather than having to pass some or all properties of an entity into an algorithm,
+instead. We get better IDE discoverability and rather than having to pass some or all properties of an entity into an algorithm,
 we invoke a well-named method on the ValueObject in true [TellDontAsk](https://pragprog.com/articles/tell-dont-ask) style.
 
 And isn't that what Object Oriented Design is all about? 😇
@@ -199,7 +199,7 @@ class Person {
     // This simply does not get out of sync
     // Otherwise each day is trying to remember if the
     // FullName starts or ends with the FirstName
-    // + You have less state to manage, so huray!
+    // +You have less state to manage, so hurray!
     public string FullName => $"{FirstName} {LastName}";
 }
 ```

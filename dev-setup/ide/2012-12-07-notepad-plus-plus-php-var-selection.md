@@ -26,7 +26,7 @@ Built-in in Notepad++ since 2016:
 
 <!--more-->
 
-# Old, Broken and Obsolete Authotkey solution
+# Old, Broken and Obsolete Autohotkey solution
 
 My previous editor Code-Genie already selected the $ sign along with the variable name when I double clicked somewhere
 on a word. When I upgraded to Notepad++, I was confused this was no longer happening as it seemed pretty obvious to me that

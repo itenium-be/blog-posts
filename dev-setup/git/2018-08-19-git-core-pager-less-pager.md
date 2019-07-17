@@ -121,12 +121,12 @@ See searching parameters above for configuring case sensitivity.
 {% include kbd k="?" l="Search up" %}
 {% include kbd k="n" l="Goto next match" %}
 {% include kbd k="N" l="Goto previous match" %}
-{% include kbd k="&" l="Seach and show only the matching lines" %}
+{% include kbd k="&" l="Search and show only the matching lines" %}
 
 ## Other
 
 {% include kbd k="s + filename" l="Save to file and inspect with your weapon of choice" %}
-{% include kbd k="(, ), {, }, [, ]" l="When the character presed is on top of the page, scroll to its counterpart" %}
+{% include kbd k="(, ), {, }, [, ]" l="When the character pressed is on top of the page, scroll to its counterpart" %}
 {% include kbd k="xp, x%" l="Go to x% position in document" %}
 
 <br>

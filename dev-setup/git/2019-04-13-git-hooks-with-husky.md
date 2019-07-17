@@ -39,7 +39,7 @@ Avoid pushing changes that break the build with githooks and Husky.
 # Hooks
 
 > **git hooks**  
-> Run a program before certain points in git's execution.
+> Run a program before certain points in gits execution.
 
 They are defined in `.git\hooks`. <!-- (config: `core.hooksPath`) -->  
 You can find some example files in that directory. Remove their `.sample` suffix

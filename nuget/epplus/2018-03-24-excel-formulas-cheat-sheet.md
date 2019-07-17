@@ -108,7 +108,7 @@ Criteria possibilities for these xxxIF functions:
 | SIGN(number)                             | Returns 1 or -1
 | PRODUCT(range...)                        | Returns arg1 * arg2 * ...
 | POWER(base, exponent)                    | Or base^exp. Also: SQRT
-| MOD(divident, divisor)                   | Modulo. Also: QUOTIENT
+| MOD(dividend, divisor)                   | Modulo. Also: QUOTIENT
 | RAND()                                   | Between 0 and 1
 | RANDBETWEEN(low, high)                   | Both params inclusive
 | LARGE(range, xth)                        | Returns xth largest number

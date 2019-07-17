@@ -23,7 +23,7 @@ package-versions:
 ---
 
 Spies, the Jasmine implementation for mocks
-featuring `spyOn` and the new `spyOnProperty` aswell as `jasmine.createSpy(Obj)`
+featuring `spyOn` and the new `spyOnProperty` as well as `jasmine.createSpy(Obj)`
 and how to inspect calls made.
 
 <!--more-->

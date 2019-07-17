@@ -350,7 +350,7 @@ Assert.That(nsub.Add(1, 3), Is.EqualTo(4));
 
 # Summary
 
-So I like NSubstitute. Like alot. That's it.
+So I like NSubstitute. Like a lot. That's it.
 
 For more examples - as UnitTests - check the [Github source][github-source].
 

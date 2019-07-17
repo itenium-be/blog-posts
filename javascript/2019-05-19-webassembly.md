@@ -60,7 +60,7 @@ JavaScript can easily fall off the "fast path" while WebAssembly will not.
 {% include post/image.html file="webassembly-v8-js-vs-wasm.png" desc="Inside V8" maxWidth="700px" %}
 
 - `js` input
-    - Ignition: Interpretes the JS text and runs it. While running, collects analytics data about how the code is behaving before TurboFan kicks in.
+    - Ignition: Interprets the JS text and runs it. While running, collects analytics data about how the code is behaving before TurboFan kicks in.
     - TurboFan: The optimizing compiler.
 - `wasm` input
     - Liftoff: The streaming WebAssembly compiler which generates machine code.

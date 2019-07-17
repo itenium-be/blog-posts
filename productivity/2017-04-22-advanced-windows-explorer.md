@@ -19,7 +19,7 @@ updates:
 A listing of handy but less known shortcuts in Windows Explorer
 and some Autohotkey examples on how to add extra functionality.
 
-Open Windows Exporer, the most direct way:  
+Open Windows Explorer, the most direct way:  
 {: style="display: inline"}
 {% include kbd k="Win+E" l="Open Windows Explorer" %}
 

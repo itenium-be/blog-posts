@@ -120,11 +120,11 @@ When mapping to an object without code block, you need to wrap your object betwe
 ## Where, Distinct = filter
 
 `Where` and [`filter`][filter] behave pretty much exactly alike.
-Linq's `Distinct` we'll need to implement ourselves.
+Linqs `Distinct` we'll need to implement ourselves.
 
 ```javascript
 const input = [0, 0, 1, 5, 5];
-// Equals true when the first occurence of the value is the current value
+// Equals true when the first occurrence of the value is the current value
 const result = input.filter((element, index, array) => array.indexOf(element) === index);
 // Or: [...new Set(input)];
 expect(result).toEqual([0, 1, 5]);
