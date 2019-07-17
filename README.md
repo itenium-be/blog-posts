@@ -2,6 +2,11 @@ Blog posts
 ==========
 for [https://itenium.be]
 
+Jasmine with Node  
+--> Skip the jasmine-ts package?  
+--> Switch node-ts with ts-node!!!  
+Script: `ts-node node_modules/jasmine/bin/jasmine`
+
 [Instructions on how to create a post and what is available](https://itenium.be/blog/productivity/create-blog-post/)
 
 [Github pages supported plugins](https://pages.github.com/versions)
