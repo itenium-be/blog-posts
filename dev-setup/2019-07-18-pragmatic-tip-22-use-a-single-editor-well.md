@@ -33,6 +33,8 @@ package-versions:
 todo:
   - desc: "Record Macro's"
     url: https://github.com/Microsoft/vscode/issues/4490
+  - desc: "Bug with Markdown All in one extension and Autohotkey hotstrings (workaround {Sleep 250})"
+    url: https://github.com/yzhang-gh/vscode-markdown/issues/200
 ---
 
 > Pragmatic Tip 22:
@@ -374,9 +376,9 @@ project I used Vue on, well... the VSCode plugins were just superb while ST3 fai
 Usually all you have to do is open a new file extension and VSCode will jump to the opportunity
 to have you install yet a few more extensions 😃
 
+
 {% include kbd k="Control+Shift+X" l="Search Extensions in Marketplace" %}
 
-<br>
 The builtin search functionality is pretty slick. You will usually be able to find what you want.
 Type a `@` to get a list of filters on category, enabled/disabled, recommended, to sort etc.
 
@@ -392,7 +394,6 @@ Click to configure it :)
 
 {% include kbd k="Control+K,Control+T" l="Preferences: Color Theme (Search: @category:themes)" %}
 
-<br>
 Also: `Preferences: File Icon Theme`
 
 
@@ -438,19 +439,29 @@ And all linters, formatters etc you can think of...
 ```
 
 
-# Conclusions
+# Conclusion
 
 Very glad I made the switch. It was quite the effort but I'm pretty content already.
 Still need to configure linting, formatting, languages setup and also fix the occasional
 kink in my setup but the overall experience is already way beyond Sublime Text.
 
-It's the plugins that really do it. Not only the quality offered but also the ease of
-actually finding them in the marketplace and their configuration afterwards.
+Aside from being a pretty great IDE out of the box, it's the plugins that really make VSCode shine.
+Not only the quality offered but also the ease of actually finding them in the marketplace and their
+configuration afterwards.
 
-Promise to self: If I ever need to change again because of slowed down development
+**Final score**: 👍 👍 👍 🌈 🌈
+{: style="text-align: center; margin-top: 32px; font-size: 23px;"}
+
+<br>
+Next up: [VSCode: Editor Configuration and Shortcuts]({{ '/blog/dev-setup/vscode-editor' | relative_url}})
+<br>
+
+* * * *
+
+#### Promise to self
+
+If I ever need to change again because of slowed down development
 or a dying community, it will be for an editor that will (hopefully!) outlive them all,
 you know, something like Vim.
 
 ![Sublime Text? Real Americans Use Vim](/assets/blog-images/vscode-use-vim.jpg)
-
-Next up: [Editor Configuration and Shortcuts]({{ '/blog/dev-setup/vscode-editor' | relative_url}})

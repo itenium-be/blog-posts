@@ -64,6 +64,10 @@ Custom shortcuts:
 
 ```javascript
 // settings.json
+// There is (extensive) intellisense for each setting key and its valid values!
+// Some Control Shift P actions:
+// Preferences: Open Settings (JSON)
+// Preferences: Open Default Settings (JSON)
 {
     "files.encoding": "utf8",
     "files.autoGuessEncoding": false,
@@ -210,16 +214,18 @@ Custom shortcut:
 
 # Multi Cursor
 
+{% include kbd k="Control+Alt+Up/Down" l="Add Cursor Above/Below" %}
+{% include kbd k="Shift+Alt+I" l="Add Cursors to Line Ends" %}
+
+<br>
 {% include kbd k="Control+D" l="Add Selection To Next Find Match" %}
 {% include kbd k="Control+U" l="Soft Undo (Undo last cursor operation)" %}
 {% include kbd k="Control+K,Control+D" l="Move Last Selection To Next Find Match" %}
 {% include kbd k="Control+Shift+L" l="Select All Occurrences of Find Match" %}
 
-<br>
-{% include kbd k="Control+Alt+Up/Down" l="Add Cursor Above/Below" %}
-{% include kbd k="Shift+Alt+I" l="Add Cursors to Line Ends" %}
 
-<br>
+#### Mouse Multi Cursor
+
 {% include kbd k="Alt+Click" l="Insert Cursor" %}
 {% include kbd k="Shift+Alt+Drag" l="Column (box) selection" %}
 
@@ -249,6 +255,9 @@ Custom shortcut:
 
 # Editor Groups
 
+{: style="margin-bottom: 12px;"}
+{% include kbd k="Control+Enter" l="In Side Bar Explorer: Open to the Side (Or: Alt + Click)" %}
+
 {% include kbd k="Control+K,Arrow" l="View: Move Editor Group" %}
 {% include kbd k="Control+K,Control+Left/Right" l="View: Focus Left/Right Editor Group" %}
 {% include kbd k="Control+Alt+Left/Right" l="View: Move Editor into Prev/Next Group" %}
@@ -257,6 +266,18 @@ Custom shortcut:
 {% include kbd k="Shift+Alt+à" l="View: Toggle Vertical/Horizontal Editor Layout" oem="0" %}
 {% include kbd k="Control+1 / 2 / 3" l="View: Focus 1st / 2nd / 3rd Editor Group" %}
 
+
+#### Closing them
+
+{% include kbd k="Control+K,Control+W" l="View: Close All Editors" %}
+{% include kbd k="Control+K,Control+Shift+W" l="View: Close All Editor Groups" %}
+
+
+<br>
+Custom shortcuts:
+- View: Grid Editor Layout (2x2)
+- View: Split Editor
+- View: Two/Three Rows/Columns Editor Layout
 
 ```javascript
 // settings.json
@@ -268,21 +289,6 @@ Custom shortcut:
     "workbench.editor.tabSizing": "shrink",
 }
 ```
-
-<br>
-From Explorer:
-{% include kbd k="Control+Enter" l="Open to the Side (Or: Alt + Click)" %}
-
-<br>
-Custom shortcuts:
-- View: Grid Editor Layout (2x2)
-- View: Split Editor
-- View: Two/Three Rows/Columns Editor Layout
-
-#### Closing them
-
-{% include kbd k="Control+K,Control+W" l="View: Close All Editors" %}
-{% include kbd k="Control+K,Control+Shift+W" l="View: Close All Editor Groups" %}
 
 
 # Formatting
@@ -309,11 +315,12 @@ Custom shortcuts:
 
 # Markdown
 
-I guess this is here because I've done mostly markdown writing these :)
+I guess this is here because I've done mostly markdown - writing this :)
 
 {% include kbd k="Control+K,V" l="Markdown: Open Preview to the Side" %}
 {% include kbd k="Control+Shift+V" l="Markdown: Open Preview" %}
 
+<br>
 {% include github-stars.html url="yzhang-gh/vscode-markdown" desc="Add intuitive keyboard shortcuts, TOC, table formatter, autocompletion and more!" %}
 {% include github-stars.html url="davidanson/vscode-markdownlint" desc="Markdown linting and style checking" %}
 
