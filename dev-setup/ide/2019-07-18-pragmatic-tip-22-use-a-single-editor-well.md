@@ -37,6 +37,10 @@ todo:
     url: https://github.com/yzhang-gh/vscode-markdown/issues/200
 ---
 
+
+![VSCode Editor](/assets/blog-images/vscode-screenshot.png){: .webfeedsFeaturedVisual }
+
+
 > Pragmatic Tip 22:
 > The editor should be an extension of your hand;
 > make sure your editor is configurable, extensible,

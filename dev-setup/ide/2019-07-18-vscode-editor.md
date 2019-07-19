@@ -29,6 +29,9 @@ package-versions:
   vscode: 1.36.0
 ---
 
+![VSCode Editor](/assets/blog-images/vscode-editor.png){: .webfeedsFeaturedVisual.hide-from-excerpt }
+
+
 > Pragmatic Tip 22:
 > The editor should be an extension of your hand;
 > make sure your editor is configurable, extensible,
