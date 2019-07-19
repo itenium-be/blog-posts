@@ -6,6 +6,7 @@ date: 2019-07-18 00:01:00 +0200
 desc: >
   The VSCode Editor shortcuts I should memorize, somehow.
   (preferably this year)
+image: /assets/blog-images/vscode-editor.png
 bigimg:
   url: vscode-editor-big.png
   desc: "Photo by Adi Goldstein"
@@ -19,7 +20,7 @@ categories: dev-setup
 tags: [cheat-sheet,tutorial,pragmatic-tips]
 series: vscode
 interesting:
-  - url:
+  - url: 
     desc: ""
 toc:
   title: Visual Studio Code
