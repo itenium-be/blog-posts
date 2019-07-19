@@ -10,7 +10,7 @@ tags: [powershell,git]
 toc:
   title: Colorization
   icon: icon-git
-lastUpdate: 2018-08-22 00:00:00 +0200
+last_modified_at: 2018-08-22 00:00:00 +0200
 updates:
   - date: 2018-08-22 00:00:00 +0200
     desc: Update for Posh-Git v1

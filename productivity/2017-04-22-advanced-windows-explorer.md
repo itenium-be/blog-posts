@@ -10,7 +10,7 @@ tags: [autohotkey,powershell,windows]
 toc:
   title: Windows Explorer
   icon: windows
-lastUpdate: 2018-08-30 19:23:30 +0200
+last_modified_at: 2018-08-30 19:23:30 +0200
 updates:
   - date: 2018-08-30 19:23:30 +0200
     desc: Hijacking Windows + E

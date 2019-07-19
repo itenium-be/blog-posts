@@ -117,7 +117,7 @@ toc:
 Some additional, optional front-matter:  
 ```yaml
 ---
-lastUpdate: 2019-07-01
+last_modified_at: 2019-07-01
 updates:
   - date: 2019-07-01
     desc: ""
@@ -167,7 +167,7 @@ Add API links:
     - Site has also loaded a set from [FlatIcon](https://itenium.be/vendor/flat-icon/flaticon.html)
 - `updates`: Add only substantial updates
     - The last x updates will be displayed on the blog
-    - `lastUpdate`: Because Liquid
+    - `last_modified_at`: Because Liquid
 
 **Legacy**  
 

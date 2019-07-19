@@ -11,7 +11,7 @@ tags: [powershell,windows]
 toc:
   title: PowerShell Profiles
   icon: icon-shell
-lastUpdate: 2018-09-04 01:04:05 +0200
+last_modified_at: 2018-09-04 01:04:05 +0200
 updates:
   - date: 2018-09-04 01:04:05 +0200
     desc: Updated locations for PowerShell Core

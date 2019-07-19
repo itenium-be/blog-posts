@@ -18,7 +18,7 @@ extras:
 toc:
     title: Plugins
     icon: icon-javascript
-lastUpdate: 2019-01-17 00:00:00 +0200
+last_modified_at: 2019-01-17 00:00:00 +0200
 updates:
   - date: 2019-01-17 00:00:00 +0200
     desc: Added reporter plugins

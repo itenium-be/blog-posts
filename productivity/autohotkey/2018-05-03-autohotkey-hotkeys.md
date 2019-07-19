@@ -25,7 +25,7 @@ interesting:
     git: babin101/DevKeyboard
   - desc: Morse code by Laszlo
     url: https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns/
-lastUpdate: 2018-08-25 00:56:00 +0200
+last_modified_at: 2018-08-25 00:56:00 +0200
 updates:
   - date: 2018-08-25 00:56:00 +0200
 ---

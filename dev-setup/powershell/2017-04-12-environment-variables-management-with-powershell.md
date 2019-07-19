@@ -13,7 +13,7 @@ extras:
 toc:
   title: Environment vars
   icon: windows
-lastUpdate: 2018-08-25 00:00:00 +0200
+last_modified_at: 2018-08-25 00:00:00 +0200
 updates:
   - date: 2018-08-25 00:00:00 +0200
 redirect_from: /blog/productivity/environment-variables-management-with-powershell/
