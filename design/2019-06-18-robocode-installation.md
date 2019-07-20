@@ -15,7 +15,7 @@ categories: design
 tags: [fun]
 series: robocode
 extras:
-  - githubproject: https://github.com/itenium-be/itenium-be.github.io
+  - githubproject: https://github.com/itenium-be/Robocode
     githubtext: "Example Eclipse and Visual Studio Robocode projects"
 interesting:
   - url: https://robocode.sourceforge.io/
@@ -129,7 +129,7 @@ Download the [.NET plug-in for Robocode](https://sourceforge.net/projects/roboco
 and **install in the same directory as Robocode itself**!
 
 Create a .NET Framework project and reference `libs\robocode.dll`.
-See [`dotnet-bots`](https://github.com/itenium-be/itenium-be.github.io) for a minimal example. 
+See [`dotnet-bots`](https://github.com/itenium-be/Robocode) for a minimal example. 
 
 
 #### Robocode UI
