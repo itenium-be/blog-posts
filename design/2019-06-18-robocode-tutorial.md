@@ -44,7 +44,7 @@ redirect_from: /blog/productivity/robocode-tutorial/
 - Time is measured in ticks = turns.
 - 1 distance unit = 1 pixel unless the game scaled down the battlefield to fit on the screen.
 - Acceleration (a): Robots accelerate at 1px/turn and decelerate at 2px/turn.
-- Velocity (v): Max: 8px/turn. Direction of the `GunHeading`.
+- Velocity (v): Max: 8px/turn. The robot movies in the direction of the `GunHeading`.
 - Distance (d): distance = velocity * time.
 
 [Wiki](http://robowiki.net/wiki/Robocode/Game_Physics)
