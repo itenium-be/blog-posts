@@ -34,7 +34,7 @@ interesting:
   - url: https://www.youtube.com/watch?v=LDW0QWie21s&feature=youtu.be&t=1926
     desc: "Video: Greg Young — A Decade of DDD, CQRS, Event Sourcing - Frameworks :("
 toc:
-  title: CQRS + CRUD = 💩
+  title: CQRS + CRUD # = 💩
 ---
 
 # A ramble against CQRS
@@ -131,18 +131,18 @@ there is that one field... in which entity was it again?
 - The CreateHandler for entity 1 will look very much like the one for entity 2.
 - The CreateRequest and UpdateRequest for an entity will also very much look alike.
 - All DeleteRequests and GetByIdRequests will look exactly the same.
-- The mapping from the CreateModel and the UpdateModel to the persistance model.
+- The mapping from the CreateModel and the UpdateModel to the persistence model...
 
 
 
 ## Confusion on the frontend
 
-An update screen is usually populated with existing values. You have different models for
+An update screen is usually populated with existing values. You have a different model for
 the Read. So you need to map the Read to the Update model before you can populate the controls...
 Or you need to also create a Get for the Update model. Either way, yes, you'll need to write more code.
 
 
-(perhaps I can't pin the next one entirely on CQRS but there is no stopping now)
+(perhaps I can't pin the next one entirely on CQRS but there is no stopping now 🔨 🔨 🔨)
 
 For simple entities we obviously need to only fetch what we really need on the frontend. So
 we create a `ListModel` and an `FullModel`. When we need to show just a few fields, we also
@@ -160,7 +160,8 @@ Additionally it becomes harder to reuse components. Yeah, I would really like to
 the cool `ModalModelPopupComponent` but what I have is a `ListModel` and the `ModalModel` doesn't have
 that one property. The horror!
 
-_Disclaimer_: as always, "it depends": for entities with many children it might be too heavy
+<br>
+_Disclaimer_: as always, "[it depends](https://codepen.io/rachsmith/details/YweZbG/)": for entities with many children it might be too heavy
 to work with just one representation. <small>(each heading should probably have a disclaimer)</small>
 
 
@@ -201,25 +202,22 @@ class UpdateUserRequest : CreateUserRequest {
 }
 
 class FullUserViewModel : UpdateUserRequest {
+    // perhaps this one is a stretch 😅
     DateTime CreatedOn;
     string CreatedBy;
-    // perhaps this one is a stretch 😅
 }
 ```
 
 The most striking, but perhaps also a non-issue, is that this is a Liskov Substitution Principle violation.
-Your `UpdateUserRequestHandler` is going to accept the `CreateUserRequest` but it will probably not do what you'd
-hope from a create request. A non issue because the execution chain is probably auto-wired.
+Your `CreateUserRequestHandler` is going to accept the `UpdateUserRequest` but it will probably not do what you'd
+hope. A non issue because the execution chain is probably auto-wired.
 
 Then there is reduced readability: in order to see what an entity contains you need to drill down the inheritance
 chain and puzzle it together mentally.
 
-Okay, so we are back to copy/paste? Now it's reduced maintainability: all property changes need to be done x times.
-And surprise 🎉, most maintenance includes exactly that: add this one field, rename that field, delete that field.
-Even class and property documentation needs to be duplicated.
-
-There just isn't a good solution to avoiding duplicating properties when your Read, Update and Create models are only
-marginally different from each other.
+So we are back to copy/paste? Now it's reduced maintainability: all property changes need to be done x times.
+And 🎉, most maintenance includes exactly that: add this one field, rename that field, delete that field.
+Even in-code class and property documentation needs to be duplicated.
 
 
 ## Generic Base Classes
@@ -229,7 +227,7 @@ request handler code duplication.
 
 We end up with the same amount of "Handlers" but now they do not contain any code
 they only inherit a base, provide some options with generic parameters and a have constructor passing
-a bunch of dependencies.
+a bunch of dependencies. The same may happen at every layer / branch in the application.
 
 ```typescript
 class CreateModelHandlerBase<TReadModel, TCreateModel, TUpdateModel, TReturnModel> {
@@ -314,8 +312,10 @@ What did applying CQRS bring to table that starts really paying off months/years
 For those of you who have not yet noticed, what bothers me most about CQRS is that for everything
 you do, it always means more code, usually in the form of new classes.
 
-And isn't that exactly what the Open-Closed Principle advocates? Well yes... true... I rest my case
+And isn't that exactly what the Open-Closed Principle advocates? Well yes... true... I rest my case,
 all hail CQRS.  
+
+<br>
 If the most common types of feature requests can be handled in an Open-Closed way, then 👍 for the team!
 Unfortunately for CQRS this is only the case when creating new Entities or new ways to Create/Update existing entities.
 Even long before you've gotten to 🎺 🎉 v1 🎉 🎺, no more new entities will be added and since it's still very much a CRUD
@@ -362,6 +362,8 @@ If he made 7 radically different wireframes: 2 Creates, 3 Updates and 2 Reads - 
 
 ## Mitigation
 
+If despite all this, it is CQRS or the highway:
+
 Create code snippets, perhaps even a little generator to mitigate the pain. (you mean, write even more code? 😀)
 
 Good documentation would help a lot but well, you know how it goes 😃
@@ -376,7 +378,7 @@ workaround for properties being "all over the place".
 
 UnitTest the heck out of those pretty "BaseHandlers" and you'll be fine!
 
-
+<small>Or, you know, just abstract it away with a pretty meta-CQRS-CRUD design ;)</small>
 
 
 # Conclusions
@@ -386,7 +388,7 @@ UnitTest the heck out of those pretty "BaseHandlers" and you'll be fine!
 
 [THINK!](https://itenium.be/blog/productivity/pragmatic-tip-2-think-about-your-work/) Does it make sense to use CQRS or not!?
 
-THINK! If so, will it be helpful to do for all parts of the application and for all entities?
+If so, will it be helpful to do for all parts of the application and for all entities?
 
 
 ## The Cure Is Worse Than The Disease
