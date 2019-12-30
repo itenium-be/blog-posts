@@ -18,6 +18,10 @@ toc:
   title: Git Recipes
   icon: icon-git
 redirect_from: /blog/productivity/exotic-git-recipes
+last_modified_at: 2019-12-29 00:00:00 +0200
+updates:
+  - date: 2019-12-30 00:00:00 +0200
+    desc: PS script to remap remote urls
 ---
 
 Some git commands and scripts that come in handy from time to time.
@@ -40,7 +44,7 @@ tell me why a particular algorithm was written the way it was.
 
 Turns out git allows you to have your cake and eat it too!
 
-```
+```bash
 git filter-branch --prune-empty --subdirectory-filter src master
 ```
 
@@ -49,17 +53,19 @@ git filter-branch --prune-empty --subdirectory-filter src master
 # Locking out package-lock.json
 
 These days each `npm install` makes a `git diff` on frontend projects a real drag.
-Page upon page of uninteresting changes.
+Page upon page of uninteresting changes.  
 
-```
+```bash
 git diff -- ':!*package-lock.json' ':!*yarn.lock'
 ```
 
 Or as a `~/.gitconfig` alias:
-```
+```bash
 df = "!f() { git diff --ignore-all-space -- $1 ':(exclude)*yarn.lock' ':!**package-lock.json'; }; f"
 ```
 
+Important note: If you use the `git df` alias, `git df package-lock.json` will **never** show anything.
+You'll have to use plain old `git diff` for checking the excluded files!
 
 <br>
 # Deleting merged branches
@@ -91,8 +97,30 @@ git my-merged-remote-branches | % { git push --no-verify origin $_ }
 
 Pesky Windows.  
 Also note the [`core.ignorecase`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase) configuration value.
-```
+```bash
 git mv -f OldFileNameCase newfilenamecase
+```
+
+
+<br>
+# Remapping remote urls
+
+When the remote url changes for all your repositories.
+
+```ps
+$paths = Get-ChildItem "c:\git-repos" | ? { $_.PSIsContainer }
+foreach ($path in $paths) {
+    $gitPath = Join-Path $path.FullName "\.git"
+    if (Test-Path -Path $gitPath -PathType Container) {
+        Write-Host $path.FullName " -> " $gitPath
+        $url = "https://new-base-url.com/$($path.Name)"
+        Write-Host "Remap to $url"
+        Push-Location $path.FullName
+        git remote set-url origin $url
+        Write-Host " "
+        Pop-Location
+    }
+}
 ```
 
 
