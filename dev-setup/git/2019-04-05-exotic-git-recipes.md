@@ -21,7 +21,7 @@ redirect_from: /blog/productivity/exotic-git-recipes
 last_modified_at: 2019-12-29 00:00:00 +0200
 updates:
   - date: 2019-12-30 00:00:00 +0200
-    desc: PS script to remap remote urls
+    desc: PS scripts to remap remote urls & create a PR
 ---
 
 Some git commands and scripts that come in handy from time to time.
@@ -122,6 +122,30 @@ foreach ($path in $paths) {
     }
 }
 ```
+
+
+<br>
+# Create PR in browser
+
+From your current branch.
+
+```ps
+function Create-PullRequest() {
+	$urlTemplate += "{base-url}/pullrequestcreate?sourceRef={source-branch}&targetRef={target-branch}"
+
+	$baseUrl = git remote get-url origin
+	$sourceBranch = git rev-parse --abbrev-ref HEAD
+	# $targetBranch = "develop"
+	$targetBranch = "master"
+
+	git push -u origin $sourceBranch
+	start $urlTemplate.Replace("{base-url}", $baseUrl).Replace("{source-branch}", [uri]::EscapeDataString($sourceBranch)).Replace("{target-branch}", $targetBranch)
+}
+
+Set-Alias pr Create-PullRequest
+```
+
+
 
 
 <br>
