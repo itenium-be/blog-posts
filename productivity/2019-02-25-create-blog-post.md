@@ -168,6 +168,7 @@ Add API links:
 - `updates`: Add only substantial updates
     - The last x updates will be displayed on the blog
     - `last_modified_at`: Because Liquid
+    - Sort entries descending on date (latest update first)
 
 **Legacy**  
 
