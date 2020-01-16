@@ -42,7 +42,7 @@ to manipulate the working directory and staging area with fabricated indexes.
 
 # PowerShell Gallery
 
-Now available on the [PowerShell Gallery](https://github.com/itenium-be/Git-NumberedAdd)!
+Now available on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Git-NumberedAdd/1.1)!
 
 ```ps
 Install-Module -Name Git-NumberedAdd

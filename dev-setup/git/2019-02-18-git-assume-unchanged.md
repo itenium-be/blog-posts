@@ -8,14 +8,14 @@ desc: >
   but also want to avoid committing/pushing accidentally.
 img:
   url: git-assume-unchanged.jpg
+categories: dev-setup
+tags: [git]
 extras:
   - desc: "Or use our PowerShell module Git-NumberedAdd"
     url: https://itenium.be/blog/dev-setup/git-numbered-add-for-powershell/
 interesting:
   - desc: "Stackoverflow: --assume-unchanged vs --skip-worktree"
     url: https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree
-categories: dev-setup
-tags: [git]
 toc:
   title: Assume Unchanged
   icon: icon-git
