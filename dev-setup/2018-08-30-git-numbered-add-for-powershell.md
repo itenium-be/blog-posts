@@ -13,6 +13,10 @@ tags: [git,powershell,product]
 extras:
   - githubproject: https://github.com/itenium-be/Git-NumberedAdd
     githubtext: Git-NumberedStatus, Add, Diff, etc ps1 source
+  - desc: "PowerShell Gallery"
+    url: https://www.powershellgallery.com/packages/Git-NumberedAdd
+  - desc: "itenium article with git aliases for --assume-unchanged and --skip-worktree"
+    url: https://itenium.be/blog/dev-setup/git-assume-unchanged/
 interesting:
   - desc: Similar implementation in Bash
     git: scmbreeze/scm_breeze
@@ -21,9 +25,11 @@ interesting:
 toc:
   title: Numbered Add
   icon: icon-git
-last_modified_at: 2019-01-12 00:00:00 +0200
+last_modified_at: 2020-01-16 00:00:00 +0200
 updates:
-  - date: 2019-01-12 00:00:00 +0200
+  - date: 2020-01-16 00:00:00 +0200
+    desc: "Published to the PowerShell Gallery"
+  - date: 2020-01-12 00:00:00 +0200
     desc: More actions and utilities + bugfixes
 redirect_from: /blog/productivity/git-numbered-add-for-powershell/
 ---
@@ -33,6 +39,14 @@ by now, I've written a small [PowerShell script](https://github.com/itenium-be/G
 to manipulate the working directory and staging area with fabricated indexes.
 
 <!--more-->
+
+# PowerShell Gallery
+
+Now available on the [PowerShell Gallery](https://github.com/itenium-be/Git-NumberedAdd)!
+
+```ps
+Install-Module -Name Git-NumberedAdd
+```
 
 # Git-NumberedHelp <small>(alias: gnh)</small>
 
@@ -76,10 +90,19 @@ add 'file2'
 The same can be achieved with:  
 - `Git-NumberedAdd 0-2`
 - `Git-NumberedAdd -3`
-- `Git-NumberedAdd 012` (but only if there is a max of 10 files in the git status)
+- `Git-NumberedAdd 012` (as long as index 12 does not exist!)
 
 `Git-NumberedAdd +3` would add file4 and file5 in the above scenario.
 
+
+## And Commit
+
+Provide a final string argument to continue and commit the staged files:
+
+```ps
+gs
+ga 0 1 2 "commit: files 0, 1 and 2"
+```
 
 
 # Git-NumberedDiff <small>(alias: gd)</small>
@@ -139,6 +162,13 @@ Git-ListAssumed # alias: gasl
 # and follow with:
 # git update-index --no-assume-unchanged
 Git-NumberedUnassumed # alias: gnoas
+```
+
+There are now also aliases for `git update-index --skip-worktree` with `Git-NumberedHidden` (alias: ghide)
+
+```powershell
+Git-ListHidden  # alias: glh
+
 ```
 
 

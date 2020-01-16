@@ -8,6 +8,9 @@ desc: >
   but also want to avoid committing/pushing accidentally.
 img:
   url: git-assume-unchanged.jpg
+extras:
+  - desc: "Or use our PowerShell module Git-NumberedAdd"
+    url: https://itenium.be/blog/dev-setup/git-numbered-add-for-powershell/
 interesting:
   - desc: "Stackoverflow: --assume-unchanged vs --skip-worktree"
     url: https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree
@@ -25,6 +28,7 @@ environment but when you do have to revert to modifying a committed configuratio
 
 
 # Assume Unchanged
+
 {: .hide-from-excerpt}
 
 ```powershell
