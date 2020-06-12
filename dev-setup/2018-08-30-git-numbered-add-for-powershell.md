@@ -169,6 +169,8 @@ There are now also aliases for `git update-index --skip-worktree` with `Git-Numb
 ```powershell
 Git-ListHidden  # alias: glh
 
+# and follow with:
+Git-NumberedHidden # alias: ghide
 ```
 
 
