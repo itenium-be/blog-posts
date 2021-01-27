@@ -18,7 +18,7 @@ categories: design
 tags: [fun,war-story]
 extras:
   - githubproject: https://github.com/Laoujin/first-hack
-    githubtext: "First security hole in exploited in a game :)"
+    githubtext: "First security hole exploited in a game :)"
 toc:
   title: 〠 First Hack
 ---
