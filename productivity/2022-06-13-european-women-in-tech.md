@@ -37,14 +37,14 @@ Within the 20 years of working as a woman in IT, I am used to being part of the 
 
 Did this trigger the urge of visiting the European women in Technology event in Amsterdam? Yeah… slightly afraid of being the only one in the conference…
 
-After some issues finding the correct building in the Amsterdam RAI (Don’t start with the typical: “Yeah, woman and orientation..” Because I worked so closely with men for over more than 2 decades, I know this is not gender related ;-) )  I was amazed by the quantity of female attendees.
+After some issues finding the correct building in the Amsterdam RAI (Don’t start with the typical: “Yeah, woman and orientation...” Because I worked so closely with men for over more than 2 decades, I know this is not gender related ;-) )  I was amazed by the quantity of female attendees.
 
 The second thing I was amazed of was the number of keynote, deep dives and workshops that were given by, yes: Only female leaders.
 
 
 # “Diversity and Inclusion (D&I) should be embedded in the WHOLE company, not only HR”
 
-The biggest topic of the conference was Diversity and Inclusion. This is all about the value of having gender, race and age diversity within your company.  Gillian Tans, former Ceo of booking.com phrased this very well by stating “Diversity drives more innovation and more creativity in your company. It should be embedded in the whole company, not only in recruiting new employees. “
+The biggest topic of the conference was Diversity and Inclusion. This is all about the value of having gender, race and age diversity within your company.  Gillian Tans, former Ceo of booking.com phrased this very well by stating “Diversity drives more innovation and more creativity in your company. It should be embedded in the whole company, not only in recruiting new employees.“
 
 Why do we need this focus? To be able to represent a more realistic diversity, a diversity more in balance with the real world’s population.
 
@@ -71,9 +71,9 @@ Another topic that really got my attention was from Aurelija Pletiene, Director 
 
 If you ever worked in, or with, an IT team you will for sure relate to the drama that can be created by communication issues: The IT team thinks they work so hard to develop and support a service and business doesn’t understand a word of what they are exactly doing.
 
-When including business in the team, Vinted learned the issues of communication gaps decreased severely. Even in the Infrastructure team they added a business representative and ended up with: Work hard, Have fun, No drama.
+When including business in the team, Vinted learned that the issues in communication decreased severely. Even in the Infrastructure team they added a business representative and ended up with: Work hard, Have fun, No drama.
 
-This approach fully supports my idea of what a best performing agile product team should look like: able to design and develop a product without the need of ‘business stakeholders’. Business should be included in the team. Stakeholders are the customers / end users.
+This approach fully supports my idea of what a best performing agile product team should look like: able to design and develop a product without the need of a crowd of ‘business stakeholders’. Business should be included in the team. Stakeholders are the customers / end users.
 
 “Get into the heart of the onion to understand the value of your project”
 Rita Kaur, EMAE sales leader of Tiktok, enriched us all in her topic “What Could I Possibly Learn From Salespeople” with 3 great tips to enhance your career as a woman in Tech.
@@ -94,16 +94,16 @@ If you can communicate on the value, business will understand at last what you a
 
 The third main focus was Empathy: One of the major values you bring in the company when hiring more women than a handful of outliers. (A side note to this was stated: also don’t switch the balance: You really don’t want to have 90% of women in the company.)
 
-Some great deepdive was given by Claudia Vicol - director Of Engineering at A.P Moller - Maersk - How to kill your darlings
+Some great deepdive was given by Claudia Vicol - director Of Engineering at A.P Moller - Maersk - "How to kill your darlings"
 
 We all know someone that created this great tool, a long time ago, that became the backbone of the company, and that single person is keeping the tool alive. If you are lucky enough, the tool is kept alive by a team, not a single person. A good leader should, if it’s only one person keeping the tool alive, have big red alerts all over the place and create a way this support would be taken over by a support team. Reducing risks has a high value towards the business.
 
 ‘Keeping the tool alive’ is not always the best solution: If the tool doesn’t have any reason or value to stay alive: Kill it with fire!
 
-But be aware and conscious about the risk it’s someone else's baby: For this person/team this is personal. Don’t make the mistake of assessing the value by yourself: involve the team/person, so they understand they matter, also without the tool they supported for a long time, quantified with the number of empty pizza boxes and hours late at night. They will feel appreciated and have energy to move forward to the next great product with more value for the company.
+But be aware and conscious about the risk it’s someone else's baby: For this person/team this is personal. Don’t make the mistake of assessing the value by yourself: Involve the team/person, so they understand they matter, also without the tool they supported for a long time quantified with the number of empty pizza boxes and hours late at night. They will feel appreciated and have energy to move forward to the next great product with more value for the company.
 
 # “Yes, I will”
 
-I didn’t manage to follow all the sessions and for sure I forgot to mention half of the great inspiring talks, as they were with so many in a very short timeframe. Also very interesting topics about the value of the new web 3.0: the Metaverse and all topics related to products, gaming and observability instead of monitoring reached my brains on 30min/topic. Time to process these wonderful new insights for some days.
+I didn’t manage to follow all the sessions and for sure I forgot to mention half of the great inspiring talks, as they were with so many in a very short timeframe. Also very interesting topics about the value of the new web 3.0: the Metaverse and all topics related to products, gaming and observability instead of monitoring reached my brains in 30min/topic. Time to process these wonderful new insights for some days.
 
 Am I willing to dive again into the European Women in Technology summit next year? Hell yeah, Girl power in tech rules!
