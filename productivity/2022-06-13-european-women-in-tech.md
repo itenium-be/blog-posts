@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Sofie Vink
+author: Sofie Vinck
 title: "European Women in Tech 2022"
 subTitle: "Products built by only men will represent 50% of the world’s population."
 date: 2022-06-13
