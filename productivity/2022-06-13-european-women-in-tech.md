@@ -37,7 +37,9 @@ Within the 20 years of working as a woman in IT, I am used to being part of the 
 
 Did this trigger the urge of visiting the European women in Technology event in Amsterdam? Yeah… slightly afraid of being the only one in the conference…
 
-After some issues finding the correct building in the Amsterdam RAI (Don’t start with the typical: “Yeah, woman and orientation...” Because I worked so closely with men for over more than 2 decades, I know this is not gender related ;-) )  I was amazed by the quantity of female attendees.
+{% include post/image.html file="WomenInTech-Building.jpg" alt="Conference Building" title="" desc="The conference building" maxWidth="360px" %}
+
+After some issues finding the correct building in the Amsterdam RAI (Don’t start with the typical: “Yeah, woman and orientation...” Because I worked so closely with men for over more than 2 decades, I know this is not gender related ;-) ) I was amazed by the quantity of female attendees.
 
 The second thing I was amazed of was the number of keynote, deep dives and workshops that were given by, yes: Only female leaders.
 
@@ -107,3 +109,5 @@ But be aware and conscious about the risk it’s someone else's baby: For this p
 I didn’t manage to follow all the sessions and for sure I forgot to mention half of the great inspiring talks, as they were with so many in a very short timeframe. Also very interesting topics about the value of the new web 3.0: the Metaverse and all topics related to products, gaming and observability instead of monitoring reached my brains in 30min/topic. Time to process these wonderful new insights for some days.
 
 Am I willing to dive again into the European Women in Technology summit next year? Hell yeah, Girl power in tech rules!
+
+{% include post/image.html file="WomenInTech-Believe.png" alt="Believe in yourself" title="" desc="" maxWidth="360px" %}
