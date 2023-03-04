@@ -1,3 +1,4 @@
+---
 layout: post
 author: Tim De Belder
 title: "Xamarin.Forms vs .NET MAUI"
@@ -20,3 +21,6 @@ interesting:
   desc: "Steven Levithan: Fun with .NET Regex Balancing Groups"
   toc:
   title: 🔥 .NET Regex
+---
+
+Xamarin.Forms vs .Net Maui
