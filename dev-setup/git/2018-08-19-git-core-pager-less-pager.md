@@ -11,7 +11,7 @@ desc: >
 categories: dev-setup
 tags: [git]
 interesting:
-  - url: https://itenium.be/blog/productivity/exotic-git-recipes/#locking-out-package-lockjson
+  - url: https://itenium.be/blog/dev-setup/exotic-git-recipes/#locking-out-package-lockjson
     desc: "Blog post on how to skip uninteresting files in the diffs, logs, ..."
 toc:
   title: Less Pager
