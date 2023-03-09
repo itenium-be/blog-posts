@@ -26,8 +26,9 @@ interesting:
 toc:
   title: Array.prototype
   icon: icon-javascript
+last_modified_at: 2023-03-08 00:00:00 +0200
 updates:
-  - date: 2023-03-09
+  - date: 2023-03-08 00:00:00 +0200
     desc: "Added Distinct, flatMap"
 ---
 
