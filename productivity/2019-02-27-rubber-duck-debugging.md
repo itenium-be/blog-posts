@@ -56,7 +56,7 @@ The most magnificent duck I've received so far:
 
 Warning: This stuff is hilarious.
 
-{% include post/youtube.html id="f5d8pVg3Qtg" desc="Not at all relevant to rubber duck debugging but still very funny!" %}
+{% include post/youtube.html id="uYOmtEcZ1lk" desc="Not at all relevant to rubber duck debugging but still very funny!" %}
 
 
 # Further Reading
