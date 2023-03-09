@@ -26,6 +26,9 @@ interesting:
 toc:
   title: Array.prototype
   icon: icon-javascript
+updates:
+  - date: 2023-03-09
+    desc: "Added Distinct, flatMap"
 ---
 
 The [`Array.prototype`][prototype] functions have been available for a long time but
@@ -67,7 +70,7 @@ Do note that the deferred execution we know from Linq does not apply to `Array.p
 | Select()                        | <b>map</b>((cur, index, array): any)           | [map][map]
 | Where()                         | <b>filter</b>((cur): boolean)                  | [filter][filter]
 | Contains()                      | <b>includes</b>(value, fromIndex)              | [includes][includes]
-| FirstOrDefault()                | <b>find</b>((cur): boolean): undefined \| any  | [find][find]
+| FirstOrDefault()                | <b>find</b>((cur): boolean): undefined \| any  | [find][find] / [findLast][findLast]
 | All()                           | <b>every</b>((cur): boolean): boolean          | [every][every]
 | Any()                           | <b>some</b>((cur): boolean): boolean           | [some][some]
 | Concat()                        | <b>concat</b>(arr: any[]): any[]               | [concat][concat]
@@ -75,6 +78,8 @@ Do note that the deferred execution we know from Linq does not apply to `Array.p
 | string.Join()                   | <b>join</b>(separator = ',')                   | [join][join]
 | Array.IndexOf()                 | <b>findIndex</b>((cur): boolean): -1 \| number | [findIndex][findIndex]
 | Count()                         | <b>length</b>: number                          | [length][length]
+| SelectMany()                    | <b>flatMap</b>(fn)                             | [flatMap][flatMap]
+| Distinct()                      | <b>filter</b>((el, i, arr) => arr.indexOf(el) === i)
 | Extension method                | forEach((cur): void): void                     | [forEach][forEach]
 | 
 | **Mutating in JS**              | These are [in place][in-place] operations      |
@@ -273,3 +278,5 @@ for (let itm of input) {
 [length]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
 [sort]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 [join]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+[flatMap]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap
+[findLast]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast
