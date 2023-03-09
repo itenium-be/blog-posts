@@ -97,7 +97,7 @@ return
 ```
 
 
-## Using a hotstring instead
+## Using a hotkey instead
 
 The same could also be triggered by pressing `Control + Windows + L` for example
 
