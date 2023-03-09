@@ -28,8 +28,8 @@ environment but when you do have to revert to modifying a committed configuratio
 
 
 # Assume Unchanged
-
 {: .hide-from-excerpt}
+
 
 ```powershell
 # Git assume a file
