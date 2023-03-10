@@ -16,8 +16,26 @@ toc:
     title: "Excel series: Part 1"
     icon: file-excel-o
 package-versions:
-  EPPlus: 4.1.0
+  EPPlus: 4.5.3.3
+  EPPlus-Commerical: 6.1.3
+last_modified_at: 2023-03-10 00:00:00 +0200
+updates:
+  - date: 2023-03-10 00:00:00 +0200
+    desc: EPPlus is no longer free for commercial use!
 ---
+
+
+**Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.**  
+See [some alternatives](/blog/dotnet/epplus-pay-to-play/) if that is a dealbreaker for you!
+{: .notice--danger}
+
+<!--more-->
+
+<br>
+<hr>
+<br>
+
+# That's fine!
 
 Quick tutorial about creating xlsx Excels with
 C# and the [EPPlus nuget package][epplus-nuget].
@@ -27,7 +45,6 @@ C# and the [EPPlus nuget package][epplus-nuget].
 Also, before writing any loops, you might want to check out the `LoadFromXXX` methods.
 They are explained in depth in part 3 Import.
 
-<!--more-->
 
 The blog posts will only cover the most important functionality.
 [More extensive code examples][github-project] can be found in the GitHub project.
@@ -35,14 +52,38 @@ The blog posts will only cover the most important functionality.
 Quickstart
 ==========
 
-{% include github-stars.html url="JanKallman/EPPlus" %}
 
-**Install**:  
+## Without license
+
+{% include github-stars.html url="JanKallman/EPPlus" desc="The free one" %}
+
+```sh
+Install-Package EPPlus -Version 4.5.3.3
 ```
+
+
+## With license
+
+{% include github-stars.html url="EPPlusSoftware/EPPlus" desc="The not so free one" %}
+
+
+```sh
 Install-Package EPPlus
 ```
 
-**Use**:  
+**...and ACTIVATE!**
+
+```cs
+ExcelPackage.LicenseContext = LicenseContext.Commercial;
+ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+```
+
+Key stored in `EPPlus:ExcelPackage.LicenseContext`.
+
+
+
+## Usage
+
 ```c#
 using OfficeOpenXml;
 
