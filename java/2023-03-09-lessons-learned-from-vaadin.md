@@ -10,7 +10,6 @@ img:
   url: vaadin.png
 toc:
   title: Lessons learned from vaadin
-  icon:
 ---
 
 
