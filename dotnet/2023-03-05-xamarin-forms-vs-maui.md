@@ -9,12 +9,13 @@ img:
   url: xamarin-vs-maui-img.jpg
   desc: Picture by Olaf Val
   origin: https://unsplash.com/photos/UTk9cXzYWAg
-tags: [MAUI, XAMARIN]
+tags: [MAUI, DESKTOP-APP, MOBILE]
 interesting:
   - url: https://devblogs.microsoft.com/dotnet/dotnet-maui-dotnet-7/
     desc: ".Net Maui and .NET 7 by David Ortinau"
 toc:
   title: XAMARIN vs MAUI
+  icon: mobile
 ---
 
 On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi-platform App UI). In this blogpost we will investigate the differences between Xamarin.Forms and its successor. What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.
@@ -39,7 +40,7 @@ With the introduction of Xamarin and Xamarin.Forms out of the way, we can now lo
 
 The biggest difference is the project structure, as Xamarin.Forms has multiple projects .NET MAUI has only one project. As you can see in the underlying example.
 
-{% include post/image.html file="xamarin-vs-maui-project-tree.jpg" alt="Conference Building" title="" desc="The conference building" maxWidth="360px" %}
+{% include post/image.html file="xamarin-vs-maui-project-tree.jpg" alt="project tree" title="" desc=".Net Maui and Xamarin project tree" maxWidth="360px" %}
 
 ### More target platforms are supported
 
@@ -57,7 +58,7 @@ dotnet new maui
 
 ### .NET 7
 
-As Maui is build in in .Net 7, it takes advantage of it. It does not only support xaml hot reload, but also .Net hot reload. It enables faster app startup through improved memory usage.
+As Maui is build in inside .Net 7, it takes advantage of it. It does not only support xaml hot reload, but also .Net hot reload. It enables faster app startup through improved memory usage.
 
 ### Controls with handlers
 
