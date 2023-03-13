@@ -5,6 +5,10 @@ title: "Xamarin.Forms vs .NET MAUI"
 date: 2023-03-05 00:00:00
 desc: >
   After 2 decades Xamarin.Forms becomes .NET MAUI. Why a new name? Is there really a big difference? We are going to look at the differences and similarities between them.
+bigimg:
+  url: xamarin-vs-maui-bigimg.jpg
+  desc: Picture by Olaf Val
+  origin: https://unsplash.com/photos/UTk9cXzYWAg
 img:
   url: xamarin-vs-maui-img.jpg
   desc: Picture by Olaf Val
