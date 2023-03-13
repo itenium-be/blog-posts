@@ -5,10 +5,11 @@ title: "Lessons learned from Vaadin"
 subTitle: "A look at my journey with Vaadin"
 date: 2023-03-09
 categories: java
-tags: [tech-talk]
+tags: [war-story]
 img:
   url: vaadin.png
 toc:
+  icon: icon-java
   title: Lessons learned from vaadin
 ---
 
