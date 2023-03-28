@@ -285,17 +285,17 @@ Bootstrap 3: `.img-responsive`, `.img-rounded`, `.img-thumbnail`, `.img-circle`.
 
 ## Tables
 
-Can use emphasis and inline code blocks inside tabel cells.
+Can use emphasis and inline code blocks inside table cells.
 
 **table-code**
 
 ```md
 | Header1    | Header2                                                 | Remarks |
 |------------|---------------------------------------------------------|---------|
-|            | 
-|            | 
-|            | 
-|            | 
+|            |
+|            |
+|            |
+|            |
 {: .table-code}
 ```
 
@@ -303,9 +303,9 @@ Can use emphasis and inline code blocks inside tabel cells.
 | Header1    | Header2                                                 | Remarks |
 |------------|:-------------------------------------------------------:|--------:|
 | Left       | Center                                                  | Right   |
-|            | 
-|            | 
-|            | 
+|            |
+|            |
+|            |
 {: .table-code}
 
 
