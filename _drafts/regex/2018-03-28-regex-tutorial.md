@@ -20,6 +20,15 @@ WIP: we zaten hier...
 
 On how to match stuff.
 
+Don'ts:
+- Do not use regex for
+- Html: Use a Html parser
+- Xml: Use an xml parser instead
+
+You could still use regex if you just want a small part from the html or xml
+and you know how the html/xml will look like *exactly* (for example when it is
+generated from a tool and not hand written)
+
 
 tool regex from book?
 

@@ -47,7 +47,7 @@ You'll need them whenever requirements change or bugs need to be fixed.
 Even with this seemingly limited applicability - if you don't want to shoot yourself in the foot that is -
 Regexes are still a very useful tool as they can be used in many one time actions.
 - Find in (all project) files in your IDE
-- Quickly find the interesting stuff in big files (think logs, data dumps etc)
+- Quickly find the interesting stuff in big files (think logs, data dumps, csvs, etc)
 - Convert data that came from A to what B likes
 - Many a CLI tool or its parameters understand regex
 
@@ -62,13 +62,21 @@ would still find them - at least if the regex was written in a way that takes th
 
 TODO: need more/better examples here
 
+EMPLI;TRAVI;PAIDD;PAIFD;REAVC;REMUI;ANNUC;MODUI;IMSTC;PREPN;TYPAC;BASEC;BASEV;INDEX;ORREI;JO99N;JFO9N;RESERVE;BASEV;;
+867;77;20211201;20211231;1;0235;2;01;0000000;gMMO;1;1;17,44;000000;90;2C;0{;000;174400;;
+867;77;20211201;20211231;2;0236;2;01;0000000;gMMO;1;1;17,44;000000;16;2C;0{;000;174400;;
+867;77;20211201;20211231;2;0236;2;05;0000000;gMMO;1;1;17,44;000000;16;0{;0{;000;174400;;
+
+^(\d+);(\d+);\d+;(\d+);(?:[^;]+;){8}([^;]+);.*
+$1;$2;$3;$4
+
 
 **Tooling**
 
 Don't forget about tooling.
 Having direct feedback on what your regex is matching on your data set as you type it.. It's the best :)
 
-TODO: Add some links to regex online tools + downloadable tool?
+TODO: Add some links to regex online tools + downloadable tool? Visual Studio Code also has this
 
 **Implementations**
 
@@ -81,7 +89,7 @@ TODO: put the interesting yaml front matter links here.
 
 **Mastering Regular Expressions**
 
-If though the name of the book is [Mastering Regular Expressions][mastering-regex-book]
+Even though the name of the book is [Mastering Regular Expressions][mastering-regex-book]
 it still starts really slow and is perfectly readable by someone with even no (or very little) regex experience.
 
 
