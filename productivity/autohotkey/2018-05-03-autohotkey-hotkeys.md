@@ -27,9 +27,9 @@ interesting:
     url: https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns/
 last_modified_at: 2023-03-28 00:00:00 +0200
 updates:
-  - date: 2018-08-25 00:56:00 +0200
   - date: 2023-03-28 00:00:00 +0200
     desc: "Added double keypress hotkey example"
+  - date: 2018-08-25 00:56:00 +0200
 ---
 
 First we'll cover the basic Autohotkey hotkey syntax. Which is arguably already pretty confusing for
