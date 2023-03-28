@@ -251,7 +251,7 @@ Custom shortcuts:
 ## Panels
 
 {% include kbd k="Control+J" l="View: Toggle Panel" %}
-{% include kbd k="Control+shift+Y" l="View: Debug Console" %}
+{% include kbd k="Control+Shift+Y" l="View: Debug Console" %}
 {% include kbd k="Control+ù" l="View: Toggle Integrated Terminal" oem="backtick" %}
 {% include kbd k="Control+Shift+U" l="View: Toggle Output" %}
 
