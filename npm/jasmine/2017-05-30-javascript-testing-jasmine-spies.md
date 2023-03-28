@@ -4,8 +4,8 @@ author: Wouter Van Schandevijl
 title:  "JavaScript Testing: Jasmine Spies"
 date:   2017-05-30 15:00:00 +0200
 desc: >
-    Spies, the Jasmine version of mocks allow you to check whether methods and/or properties have been called,
-    how many times and with which parameters.
+  Spies, the Jasmine version of mocks allow you to check whether methods and/or properties have been called,
+  how many times and with which parameters.
 img:
   url: jasmine-spies.jpg
   origin: https://unsplash.com/photos/ew3-7k3sl-g
@@ -16,14 +16,17 @@ series: js-testing
 extras:
   - githubproject: https://github.com/itenium-be/jasmine-tut
 toc:
-    title: Jasmine Spies
-    icon: icon-javascript
+  title: Jasmine Spies
+  icon: icon-javascript
+updates:
+  - date: 2023-03-28 05:00:00 +0200
+    desc: Updated to Jasmine 4.3.0.
 package-versions:
-  jasmine: 3.3.0
+  jasmine: 4.3.0
 ---
 
 Spies, the Jasmine implementation for mocks
-featuring `spyOn` and the new `spyOnProperty` as well as `jasmine.createSpy(Obj)`
+featuring `spyOn` &amp; `spyOnProperty` as well as `jasmine.createSpy(Obj)`
 and how to inspect calls made.
 
 <!--more-->
@@ -35,60 +38,62 @@ and how to inspect calls made.
 ```js
 var bar = 0;
 const foo = {
-	setBar(value, times) {
-		bar = value * (times || 1);
-		return bar;
-	}
+  setBar(value, times) {
+    bar = value * (times || 1);
+    return bar;
+  }
 };
 
 beforeEach(() => {
-	const theSpy = spyOn(foo, 'setBar');
-	expect(theSpy.and.identity()).toBe('setBar');
+  const theSpy = spyOn(foo, 'setBar');
+  expect(theSpy.and.identity()).toBe('setBar');
 
-	foo.setBar(1);
-	foo.setBar(2, 10);
+  foo.setBar(1);
+  foo.setBar(2, 10);
 });
 
 it('can check if called', () => {
-	expect(foo.setBar).toHaveBeenCalled();
-	expect(foo.setBar.calls.any()).toBe(true);
+  expect(foo.setBar).toHaveBeenCalled();
+  expect(foo.setBar.calls.any()).toBe(true);
 });
 
 it('how many times', () => {
-	expect(foo.setBar).toHaveBeenCalledTimes(2);
-	expect(foo.setBar.calls.count()).toBe(2);
+  expect(foo.setBar).toHaveBeenCalledTimes(2);
+  expect(foo.setBar.calls.count()).toBe(2);
 });
 
 it('and with which parameters', () => {
-	expect(foo.setBar).toHaveBeenCalledWith(1);
-	expect(foo.setBar).toHaveBeenCalledWith(2, 10);
+  expect(foo.setBar).toHaveBeenCalledWith(1);
+  expect(foo.setBar).toHaveBeenCalledWith(2, 10);
 });
 
 // Also:
 // toHaveBeenCalledBefore(anotherSpy)
 
 it('but does not execute the function', () => {
-	expect(bar).toBe(0);
+  expect(bar).toBe(0);
 });
 ```
 
 Or create your own spies:
-```
+
+```js
 it('create bare spy without implementation', () => {
-	const spy = jasmine.createSpy().and.returnValue(true);
-	expect(spy()).toBe(true);
+  const spy = jasmine.createSpy().and.returnValue(true);
+  expect(spy()).toBe(true);
 });
 
 it('create spy object with spy functions action1 and action2', () => {
-	const spyObj = jasmine.createSpyObj('id', ['action1', 'action2']);
-	spyObj.action1();
-	expect(spyObj.action1).toHaveBeenCalled();
-	expect(spyObj.action2).not.toHaveBeenCalled();
+  const spyObj = jasmine.createSpyObj('id', ['action1', 'action2']);
+  spyObj.action1();
+  expect(spyObj).toHaveSpyInteractions();
+  expect(spyObj.action1).toHaveBeenCalled();
+  expect(spyObj.action2).not.toHaveBeenCalled();
 });
 
 it('create spy object with return values 15 and 18', () => {
-	const spyObj = jasmine.createSpyObj('id', {action1: 15, action2: 18});
-	expect(spyObj.action1()).toBe(15);
+  const spyObj = jasmine.createSpyObj('id', {action1: 15, action2: 18});
+  expect(spyObj.action1()).toBe(15);
 });
 ```
 
@@ -97,31 +102,31 @@ it('create spy object with return values 15 and 18', () => {
 
 ```js
 beforeEach(() => {
-	this.foo = foo;
+  this.foo = foo;
 });
 
 it('can actually execute the function', () => {
-	spyOn(this.foo, 'setBar').and.callThrough();
-	foo.setBar(2, 10);
-	expect(bar).toBe(2 * 10);
+  spyOn(this.foo, 'setBar').and.callThrough();
+  foo.setBar(2, 10);
+  expect(bar).toBe(2 * 10);
 });
 
 it('or do something else', () => {
-	spyOn(this.foo, 'setBar').and.callFake(value => value + 1);
-	const calced = foo.setBar(5);
-	expect(calced).toBe(6);
+  spyOn(this.foo, 'setBar').and.callFake(value => value + 1);
+  const calced = foo.setBar(5);
+  expect(calced).toBe(6);
 });
 
 it('allows returning canned values', () => {
-	spyOn(this.foo, 'setBar').and.returnValue(1);
-	//.and.returnValues('first call result', 'second');
-	const canned = foo.setBar();
-	expect(canned).toBe(1);
+  spyOn(this.foo, 'setBar').and.returnValue(1);
+  //.and.returnValues('first call result', 'second');
+  const canned = foo.setBar();
+  expect(canned).toBe(1);
 });
 
 it('or just throw an error', () => {
-	spyOn(this.foo, 'setBar').and.throwError('quux');
-	expect(foo.setBar).toThrowError('quux');
+  spyOn(this.foo, 'setBar').and.throwError('quux');
+  expect(foo.setBar).toThrowError('quux');
 });
 ```
 
@@ -131,27 +136,27 @@ it('or just throw an error', () => {
 
 ```js
 it('knows about arguments, returnValues and more', () => {
-	const spie = jasmine.createSpy('identity').and.callFake(v => v * 5);
-	spie(1);
-	spie(2, 'arg');
+  const spie = jasmine.createSpy('identity').and.callFake(v => v * 5);
+  spie(1);
+  spie(2, 'arg');
 
-	// spie.calls.any() and spie.calls.count()
+  // spie.calls.any() and spie.calls.count()
 
-	// Full callData
-	expect(spie.calls.first()).toBe(spie.calls.all()[0]);
-	expect(spie.calls.mostRecent()).toEqual({
-		object: jasmine.any(Object),
-		args: [2, 'arg'],
-		returnValue: 10,
-		invocationOrder: jasmine.any(Number)
-	});
+  // Full callData
+  expect(spie.calls.first()).toBe(spie.calls.all()[0]);
+  expect(spie.calls.mostRecent()).toEqual({
+    object: jasmine.any(Object),
+    args: [2, 'arg'],
+    returnValue: 10,
+    invocationOrder: jasmine.any(Number)
+  });
 
-	// Just the arguments
-	expect(spie.calls.argsFor(0)).toEqual([1]);
-	expect(spie.calls.allArgs()).toEqual([[1], [2, 'arg']]);
+  // Just the arguments
+  expect(spie.calls.argsFor(0)).toEqual([1]);
+  expect(spie.calls.allArgs()).toEqual([[1], [2, 'arg']]);
 
-	spie.calls.reset();
-	expect(spie).not.toHaveBeenCalled();
+  spie.calls.reset();
+  expect(spie).not.toHaveBeenCalled();
 });
 ```
 
@@ -161,18 +166,18 @@ it('knows about arguments, returnValues and more', () => {
 
 ```js
 const foop = {
-	get value() {},
-	set value(v) {}
+  get value() {},
+  set value(v) {}
 };
 
 it('can spy on getter', () => {
-	spyOnProperty(foop, 'value', 'get').and.returnValue(1);
-	expect(foop.value).toBe(1);
+  spyOnProperty(foop, 'value', 'get').and.returnValue(1);
+  expect(foop.value).toBe(1);
 });
 
 it('and on setters', () => {
-	const spiez = spyOnProperty(foop, 'value', 'set');
-	foop.value = true;
-	expect(spiez).toHaveBeenCalled();
+  const spiez = spyOnProperty(foop, 'value', 'set');
+  foop.value = true;
+  expect(spiez).toHaveBeenCalled();
 });
 ```

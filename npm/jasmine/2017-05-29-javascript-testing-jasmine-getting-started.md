@@ -16,12 +16,15 @@ interesting:
   - url: https://jasmine.github.io/api/edge/matchers.html
     desc: "Jasmine documentation: Matchers"
   - git: jasmine/jasmine
-  - git: svi3c/jasmine-ts
 toc:
-    title: Getting Started
-    icon: icon-javascript
+  title: Getting Started
+  icon: icon-javascript
+last_modified_at: 2023-03-28 00:00:00 +0200
+updates:
+  - date: 2023-03-28 05:00:00 +0200
+    desc: jasmine-ts is deprecated. Updated to Jasmine 4.3.0.
 package-versions:
-  jasmine: 3.3.0
+  jasmine: 4.3.0
 ---
 
 Probably the most widely used JavaScript testing framework.
@@ -55,13 +58,13 @@ by providing a value for the environment variable `JASMINE_CONFIG_PATH`.
 
 ```json
 {
-	"spec_dir": "spec",
-	"spec_files": [
-		"**/*[sS]pec.js"
-	],
-	"helpers": [
-		"helpers/**/*.js"
-	]
+  "spec_dir": "spec",
+  "spec_files": [
+    "**/*[sS]pec.js"
+  ],
+  "helpers": [
+    "helpers/**/*.js"
+  ]
 }
 ```
 
@@ -84,10 +87,10 @@ Run the tests with a simple `jasmine` or add to your package.json:
 
 ```json
 "scripts": {
-	"test": "jasmine",
-	"test:w": "nodemon --exec \"npm test\"",
-	"test:alt": "jasmine JASMINE_CONFIG_PATH=spec/support/jasmine-alt.json",
-	"test:cli": "jasmine --filter=\"describe and/or it\" --stop-on-failure=true --no-color --random=true -seed=7337"
+  "test": "jasmine",
+  "test:w": "nodemon --exec \"npm test\"",
+  "test:alt": "jasmine JASMINE_CONFIG_PATH=spec/support/jasmine-alt.json",
+  "test:cli": "jasmine --filter=\"describe and/or it\" --stop-on-failure=true --no-color --random=true -seed=7337"
 },
 ```
 
@@ -115,11 +118,12 @@ npm install --save-dev @babel/preset-env @babel/polyfill core-js
 Add all the presets/plugins to your `.babelrc`
 ```json
 {
-	"presets": ["@babel/preset-env"]
+  "presets": ["@babel/preset-env"]
 }
 ```
 
 File `run-jasmine.js`:  
+
 ```js
 import '@babel/polyfill';
 import 'core-js/shim';
@@ -135,19 +139,20 @@ The accompanying code has a working example for Babel transpilation in the `babe
 ### Building and watching
 
 `package.json` scripts:  
+
 ```json
 "scripts": {
-    // Clean generated files (requires npm i -D del-cli)
-    "babel:clean": "del-cli dist",
+  // Clean generated files (requires npm i -D del-cli)
+  "babel:clean": "del-cli dist",
 
-    // Transpile to dist directory
-    "babel:build": "babel babel --out-dir dist --ignore some-generated-dir/",
+  // Transpile to dist directory
+  "babel:build": "babel babel --out-dir dist --ignore some-generated-dir/",
 
-    // Clean, build and run jasmine
-    "babel": "npm run babel:clean && npm run babel:build && node babel/dist/run-jasmine.js",
+  // Clean, build and run jasmine
+  "babel": "npm run babel:clean && npm run babel:build && node babel/dist/run-jasmine.js",
 
-    // Watch for changes
-    "babel:w": "nodemon --exec \"npm run babel\" --ignore babel/dist/"
+  // Watch for changes
+  "babel:w": "nodemon --exec \"npm run babel\" --ignore babel/dist/"
 }
 ```
 
@@ -155,15 +160,17 @@ The accompanying code has a working example for Babel transpilation in the `babe
 
 ## TypeScript
 
-There is a package for that!  
+
+`ts-node` to the rescue!  
 Make sure you change your `jasmine.json` file extensions to `.ts`.
 
-```
-npm install --save-dev jasmine-ts @types/jasmine typescript node-ts
+```sh
+npm install --save-dev jasmine @types/jasmine typescript ts-node cross-env
 ```
 
 `jasmine.json` content:  
-```
+
+```json
 {
   "spec_dir": "spec",
   "spec_files": [
@@ -187,12 +194,13 @@ npm install --save-dev jasmine-ts @types/jasmine typescript node-ts
 
 
 `package.json` scripts:  
+
 ```json
 "scripts": {
-    "test": "jasmine-ts",
+  "test": "cross-env NODE_OPTIONS=--loader=ts-node/esm jasmine",
 
-    // -e ts: reload on file extension ts
-    "test:w": "nodemon -e ts --exec \"npm test\""
+  // -e ts: reload on file extension ts
+  "test:w": "nodemon -e ts --exec \"npm test\""
 }
 ```
 
