@@ -12,8 +12,10 @@ toc:
     title: "Excel series: EPPlus Commercial"
     icon: ban
 package-versions:
-  EPPlus: 4.5.3.3
-  EPPlus-Commerical: 5.0.3
+  - package: EPPlus
+    version: 4.5.3.3
+  - package: EPPlus-Commerical
+    version: 5.0.3
 ---
 
 

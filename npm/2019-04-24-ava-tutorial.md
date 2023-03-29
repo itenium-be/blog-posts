@@ -19,7 +19,8 @@ interesting:
 toc:
   title: 👓 AVA Tutorial
 package-versions:
-  ava: 1.4.1
+  - package: ava
+    version: 1.4.1
 todo:
   - "t.snapshot()"
   - "CLI: `--update-snapshots`, `-u`: Update snapshots"

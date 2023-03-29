@@ -26,7 +26,8 @@ toc:
   title: Visual Studio Code
   icon:
 package-versions:
-  vscode: 1.36.0
+  - package: vscode
+    version: 1.36.0
 ---
 
 ![VSCode Editor](/assets/blog-images/vscode-editor.png){: .webfeedsFeaturedVisual }

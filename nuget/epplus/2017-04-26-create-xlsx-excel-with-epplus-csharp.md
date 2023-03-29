@@ -16,8 +16,10 @@ toc:
     title: "Excel series: Part 1"
     icon: file-excel-o
 package-versions:
-  EPPlus: 4.5.3.3
-  EPPlus-Commerical: 6.1.3
+  - package: EPPlus
+    version: 4.5.3.3
+  - package: EPPlus-Commerical
+    version: 6.1.3
 last_modified_at: 2023-03-10 00:00:00 +0200
 updates:
   - date: 2023-03-10 00:00:00 +0200

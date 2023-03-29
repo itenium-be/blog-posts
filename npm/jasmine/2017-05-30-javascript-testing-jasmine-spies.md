@@ -22,7 +22,8 @@ updates:
   - date: 2023-03-28 05:00:00 +0200
     desc: Updated to Jasmine 4.3.0.
 package-versions:
-  jasmine: 4.3.0
+  - package: jasmine
+    version: 4.3.0
 ---
 
 Spies, the Jasmine implementation for mocks

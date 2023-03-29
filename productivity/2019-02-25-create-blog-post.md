@@ -126,7 +126,8 @@ todo:
     url: 
     desc: 
 package-versions:
-  moment: 5.2
+  - package: moment
+    version: 5.2
 redirect_from: /blog/
 ---
 

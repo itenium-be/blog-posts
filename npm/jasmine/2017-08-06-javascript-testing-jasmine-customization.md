@@ -27,7 +27,8 @@ toc:
     title: Customization
     icon: icon-javascript
 package-versions:
-  jasmine: 4.3.0
+  - package: jasmine
+    version: 4.3.0
 ---
 
 Make your Jasmine experience even more luscious with custom

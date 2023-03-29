@@ -23,7 +23,8 @@ updates:
   - date: 2019-01-18 00:00:00 +0200
     desc: await/async is pretty standard now. Added expectAsync examples.
 package-versions:
-  jasmine: 4.3.0
+  - package: jasmine
+    version: 4.3.0
 ---
 
 Need to test async code? No problem for Jasmine. 

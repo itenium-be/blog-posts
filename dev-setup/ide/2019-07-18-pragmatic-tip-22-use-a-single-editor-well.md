@@ -29,7 +29,8 @@ toc:
   title: Visual Studio Code
   icon:
 package-versions:
-  vscode: 1.36.0
+  - package: vscode
+    version: 1.36.0
 todo:
   - desc: "Record Macro's"
     url: https://github.com/Microsoft/vscode/issues/4490

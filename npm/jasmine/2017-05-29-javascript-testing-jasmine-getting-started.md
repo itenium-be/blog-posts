@@ -24,7 +24,8 @@ updates:
   - date: 2023-03-28 05:00:00 +0200
     desc: jasmine-ts is deprecated. Updated to Jasmine 4.3.0.
 package-versions:
-  jasmine: 4.3.0
+  - package: jasmine
+    version: 4.3.0
 ---
 
 Probably the most widely used JavaScript testing framework.

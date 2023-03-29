@@ -25,8 +25,10 @@ updates:
   - date: 2019-01-17 00:00:00 +0200
     desc: Added reporter plugins
 package-versions:
-  jasmine: 4.3.0
-  proxyquire: 2.1.3
+  - package: jasmine
+    version: 4.3.0
+  - package: proxyquire
+    version: 2.1.3
 ---
 
 What would we be without some extra plugins. There
