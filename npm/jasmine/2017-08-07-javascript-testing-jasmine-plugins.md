@@ -86,9 +86,7 @@ jasmine.getEnv().addReporter(new SpecReporter({
 }));
 ```
 
-## Other Reporters
-
-### Jasmine Reporters
+## Jasmine-Reporters
 
 A collection of reporters: JUnitXmlReporter, NUnitXmlReporter,
 AppVeyor, TapReporter, TeamCityReporter and TerminalReporter.
@@ -137,5 +135,16 @@ describe('fake the api call', function() {
   });
 });
 ```
+
+
+# VSCode Integration
+
+The Jest VSCode test runner got me thinking, this probably also exists for Jasmine.
+
+{% include github-stars.html url="hbenl/vscode-jasmine-test-adapter" desc="Jasmine Test Adapter for the VS Code Test Explorer" %}
+
+And [instructions for setting up a `launch.json` on Stackoverflow](https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code)
+
+
 
 [jasmine-spec-reporter]: https://github.com/bcaudan/jasmine-spec-reporter
