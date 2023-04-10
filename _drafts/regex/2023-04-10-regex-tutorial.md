@@ -2,15 +2,28 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Regular Expressions: Tutorial"
-date:   2018-03-28 00:00:00 +0200
+date:   2023-04-10 00:00:00 +0200
 desc: >
-    Regex tutorial
+  Regex tutorial
 categories: productivity
 tags: [regex,tutorial,cheat-sheet]
 series: regex
 toc:
-    title: Tutorial
+  title: Tutorial
 ---
+
+
+TODO: need more/better examples here
+
+EMPLI;TRAVI;PAIDD;PAIFD;REAVC;REMUI;ANNUC;MODUI;IMSTC;PREPN;TYPAC;BASEC;BASEV;INDEX;ORREI;JO99N;JFO9N;RESERVE;BASEV;;
+867;77;20211201;20211231;1;0235;2;01;0000000;gMMO;1;1;17,44;000000;90;2C;0{;000;174400;;
+867;77;20211201;20211231;2;0236;2;01;0000000;gMMO;1;1;17,44;000000;16;2C;0{;000;174400;;
+867;77;20211201;20211231;2;0236;2;05;0000000;gMMO;1;1;17,44;000000;16;0{;0{;000;174400;;
+
+^(\d+);(\d+);\d+;(\d+);(?:[^;]+;){8}([^;]+);.*
+$1;$2;$3;$4
+
+
 
 TODO: rename this post to "Cheat sheet"
 
