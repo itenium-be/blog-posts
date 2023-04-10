@@ -91,8 +91,16 @@ the context into account.
 ## Tooling
 
 Don't forget about tooling.
-Having direct feedback on what your regex is matching on your data set as you type it.. It's the best 😃  
+Having **direct feedback on what your regex is matching on your dataset as you type it**.. It's the best 😃  
 Any IDE worth its salt has this capability.
+
+Learn to work with **multiple cursors** in your IDE. It is a strong and capable companion to regex:  
+Why write the perfect find & replace regex when you can write a simplistic regex on the top of your
+head and handle the replacement details with multiple cursor trickery?
+
+You want to avoid falling into the trap of spending more time on your regex than you would spend doing it manually.
+
+![Manual vs Regex Time Trade-Off](/assets/blog-images/regex-time-trade-off.png "Manual vs Regex Time Trade-Off")
 
 
 ## Learning
@@ -132,7 +140,10 @@ Some examples (or [a full list](https://gist.github.com/CMCDragonkai/6c933f4a7d7
 - .NET has `(?#comment)`, Java has not. Java has `\Q...\E`, .NET has not
 
 
+<!--
+Naah, not funny enough
 ![Basically too many differences](/assets/blog-images/regex-hate.jpg "Basically too many differences")
+-->
 
 
 ## Inapplicability
@@ -160,7 +171,7 @@ And, he had become so fond of them (or something?) that all code he touched was 
 I mean, why keep `str.split('|')[0]` around when you can replace it with a regex, right.
 
 To top it off, all his regexes were needlessly long, most of them could be written in
-1/2 or even in 1/3 of his "style".
+1/3 or even in 1/2 of his "style".
 
 Which is how we fluently arrive at...
 
@@ -170,7 +181,7 @@ Which is how we fluently arrive at...
 
 ![Writing vs Reading RegEx](/assets/blog-images/regex-writing-vs-reading.png "Writing vs Reading RegEx")
 
-It's funny because it's true. Requirements change and well, good deciphering your own regex.  
+It's funny because it's true. Requirements change and well, good luck deciphering your own regex.  
 Or heaven forbids, one someone else wrote! 😱
 
 
