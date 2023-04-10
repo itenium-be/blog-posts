@@ -38,7 +38,7 @@ package-versions:
 {: .hide-from-excerpt}
 
 When you search "**Jasmine vs Jest**", you get a lot of high level comparisons
-which might be helpful when you have yet to write you first test.
+which might be helpful when you have yet to write your first test.
 This is no such article, this is the article that answers the question
 
 _What are the actual **syntax and API differences** between Jasmine and Jest?_
