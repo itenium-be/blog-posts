@@ -13,7 +13,7 @@ An `img` front matter which should point to existing file in itenium-website `as
 
 ## In itenium website project
 
-```
+```bash
 cd _posts
 git pull
 cd ..

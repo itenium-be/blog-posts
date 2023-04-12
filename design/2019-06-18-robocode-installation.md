@@ -25,7 +25,8 @@ interesting:
 toc:
   title: 💣 Installation
 package-versions:
-  robocode: 1.9.3.3
+  - package: robocode
+    version: 1.9.3.3
 redirect_from: /blog/productivity/robocode-installation/
 ---
 

@@ -29,7 +29,8 @@ toc:
   title: Visual Studio Code
   icon:
 package-versions:
-  vscode: 1.36.0
+  - package: vscode
+    version: 1.36.0
 todo:
   - desc: "Record Macro's"
     url: https://github.com/Microsoft/vscode/issues/4490
@@ -251,7 +252,7 @@ Custom shortcuts:
 ## Panels
 
 {% include kbd k="Control+J" l="View: Toggle Panel" %}
-{% include kbd k="Control+shift+Y" l="View: Debug Console" %}
+{% include kbd k="Control+Shift+Y" l="View: Debug Console" %}
 {% include kbd k="Control+ù" l="View: Toggle Integrated Terminal" oem="backtick" %}
 {% include kbd k="Control+Shift+U" l="View: Toggle Output" %}
 

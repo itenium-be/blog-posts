@@ -27,10 +27,14 @@ interesting:
 toc:
   title: 🎑 Vue.js
 package-versions:
-  vue: 2.6.6
-  vue-router: 3.0.1
-  vuex: 3.0.1
-  vue-cli: 3.5.3
+  - package: vue
+    version: 2.6.6
+  - package: vue-router
+    version: 3.0.1
+  - package: vuex
+    version: 3.0.1
+  - package: vue-cli
+    version: 3.5.3
 ---
 
 {% include github-stars.html url="vuejs/vue" desc="Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web." %}

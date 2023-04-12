@@ -20,11 +20,15 @@ interesting:
     desc: A whole bunch of generic custom matchers
   - git: mjeanroy/jasmine-utils
     desc: Set of custom matchers for Jasmine Test Framework
+updates:
+  - date: 2023-03-28 05:00:00 +0200
+    desc: Updated to Jasmine 4.3.0.
 toc:
     title: Customization
     icon: icon-javascript
 package-versions:
-  jasmine: 3.3.0
+  - package: jasmine
+    version: 4.3.0
 ---
 
 Make your Jasmine experience even more luscious with custom

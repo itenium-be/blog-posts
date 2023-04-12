@@ -17,8 +17,10 @@ toc:
     title: NSubstitute vs Moq
     icon: dot-circle-o
 package-versions:
-  NSubstitute: 2.0.3
-  Moq: 4.7.9
+  - package: NSubstitute
+    version: 2.0.3
+  - package: Moq
+    version: 4.7.9
 ---
 
 Comparing [NSubstitute][NSubstitute] syntax with [Moq][Moq],

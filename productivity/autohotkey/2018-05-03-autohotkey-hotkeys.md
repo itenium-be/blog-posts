@@ -25,8 +25,10 @@ interesting:
     git: babin101/DevKeyboard
   - desc: Morse code by Laszlo
     url: https://autohotkey.com/board/topic/15574-morse-find-hotkey-press-and-hold-patterns/
-last_modified_at: 2018-08-25 00:56:00 +0200
+last_modified_at: 2023-03-28 00:00:00 +0200
 updates:
+  - date: 2023-03-28 00:00:00 +0200
+    desc: "Added double keypress hotkey example"
   - date: 2018-08-25 00:56:00 +0200
 ---
 
@@ -274,6 +276,27 @@ return
 [`Input`](https://autohotkey.com/docs/commands/Input.htm) option `L1` is the maximum allowed length. (L1 -> L5)
 
 ## Double, triple and long key presses
+
+#### Simple double keypress
+
+Map a double `µ` keypress to a smiley.
+```autohotkey
+; File needs to be encoded in UTF8 BOM
+; for a binding of "µ" to work.
+$µ::
+    KeyWait, µ
+    KeyWait, µ, D T0.2
+    if ErrorLevel
+        ; No second µ keypress
+        SendInput µ
+    Else
+        ; Replace double keypress
+        ; with something else
+        SendInput 😀
+Return
+```
+
+#### The whole shebang
 
 ```autohotkey
 #c::

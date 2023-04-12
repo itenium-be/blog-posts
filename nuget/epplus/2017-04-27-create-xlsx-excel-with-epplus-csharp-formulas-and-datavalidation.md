@@ -16,7 +16,8 @@ toc:
     title: "Excel series: Part 2"
     icon: file-excel-o
 package-versions:
-  EPPlus: 4.1.0
+  - package: EPPlus
+    version: 4.1.0
 ---
 
 In case your users want to continue working with the Excels after generation.

@@ -26,7 +26,8 @@ todo:
  - desc: Use lerna to do the monorepo handling?
    url: https://github.com/lerna/lerna
 package-versions:
-  husky: 1.3.1
+  - package: husky
+    version: 1.3.1
 redirect_from: /blog/productivity/git-hooks-with-husky/
 ---
 

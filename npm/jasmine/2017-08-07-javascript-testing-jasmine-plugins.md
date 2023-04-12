@@ -20,11 +20,15 @@ toc:
     icon: icon-javascript
 last_modified_at: 2019-01-17 00:00:00 +0200
 updates:
+  - date: 2023-03-28 00:00:00 +0200
+    desc: "Colorblindness: added color configuration + added jasmine-reporters"
   - date: 2019-01-17 00:00:00 +0200
     desc: Added reporter plugins
 package-versions:
-  jasmine: 3.3.0
-  proxyquire: 1.8.0
+  - package: jasmine
+    version: 4.3.0
+  - package: proxyquire
+    version: 2.1.3
 ---
 
 What would we be without some extra plugins. There
@@ -36,12 +40,14 @@ are over 1000 Jasmine npm packages and we'll cover them all here.
 
 
 Or apparently just
-{% include github-stars.html url="thlorenz/proxyquire" %}
+{% include github-stars.html url="thlorenz/proxyquire" desc="Proxies nodejs require in order to allow overriding dependencies during testing." %}
 
 <br>
 and some custom reporters:  
-{% include github-stars.html url="onury/jasmine-console-reporter" %}
-{% include github-stars.html url="bcaudan/jasmine-spec-reporter" %}
+{% include github-stars.html url="bcaudan/jasmine-spec-reporter" desc="Real time console spec reporter for jasmine testing framework" %}
+{% include github-stars.html url="Marak/colors.js" desc="Color configuration for jasmine-spec-reporter" %}
+{% include github-stars.html url="larrymyers/jasmine-reporters" desc="Reporter classes for the jasmine test framework." %}
+
 
 <br>
 Other Jasmine plugins you might find useful:
@@ -50,50 +56,41 @@ Other Jasmine plugins you might find useful:
 {% include github-stars.html url="visionmedia/supertest" desc="Super-agent driven library for testing node.js HTTP servers using a fluent API." %}
 {% include github-stars.html url="jhnns/rewire" desc="Use `rewire('./file.js')` instead of `require()` and get a fresh copy each time" %}
 
-
-# Jasmine Console Reporter
-
-**Prettier output**
-```
-npm install jasmine-console-reporter --save-dev
-```
-
-Create a `spec/helpers/reporter.js` file with the following content:
-```
-const JasmineConsoleReporter = require('jasmine-console-reporter');
-const myReporter = new JasmineConsoleReporter({
-  colors: 1,           // (0|false)|(1|true)|2
-  cleanStack: 1,       // (0|false)|(1|true)|2|3
-  verbosity: 4,        // (0|false)|1|2|(3|true)|4
-  listStyle: 'indent', // "flat"|"indent"
-  timeUnit: 'ms',      // "ms"|"ns"|"s"
-  timeThreshold: { ok: 500, warn: 1000, ouch: 3000 }, // Object|Number
-  activity: false,     // boolean or string ("dots"|"star"|"flip"|"bouncingBar"|...)
-  emoji: true,
-  beep: true,
-});
-jasmine.getEnv().clearReporters();
-jasmine.getEnv().addReporter(myReporter);
-```
+# Reporters
 
 ## Jasmine Spec Reporter
 
-Alternatively, there is also [jasmine-spec-reporter][jasmine-spec-reporter]:  
-```
+Probably your goto console logger: [jasmine-spec-reporter][jasmine-spec-reporter]:  
+
+
+```sh
 npm install jasmine-spec-reporter --save-dev
 ```
 
 Usage:  
+
 ```js
 const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 
 jasmine.getEnv().clearReporters();
 jasmine.getEnv().addReporter(new SpecReporter({
   spec: {
-    displayPending: true
+    displayPending: true,
+    // See configuration.d.ts for more config
+    // Colors: https://github.com/Marak/colors.js
+    colors: {
+        failed: 'magenta',
+        prettyStacktraceError: 'magenta',
+    }
   }
 }));
 ```
+
+## Jasmine-Reporters
+
+A collection of reporters: JUnitXmlReporter, NUnitXmlReporter,
+AppVeyor, TapReporter, TeamCityReporter and TerminalReporter.
+
 
 # Proxyquire
 
@@ -138,5 +135,16 @@ describe('fake the api call', function() {
   });
 });
 ```
+
+
+# VSCode Integration
+
+The Jest VSCode test runner got me thinking, this probably also exists for Jasmine.
+
+{% include github-stars.html url="hbenl/vscode-jasmine-test-adapter" desc="Jasmine Test Adapter for the VS Code Test Explorer" %}
+
+And [instructions for setting up a `launch.json` on Stackoverflow](https://stackoverflow.com/questions/45036291/how-to-run-jasmine-tests-in-visual-studio-code)
+
+
 
 [jasmine-spec-reporter]: https://github.com/bcaudan/jasmine-spec-reporter

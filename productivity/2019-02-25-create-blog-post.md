@@ -48,6 +48,7 @@ Create a new file in a folder in `_posts`:
     - `npm`: On specific npm packages
 - `dev-setup`: PowerShell, git, CLI, IDE, ...
 - `design`: Software Design, Architecture. Currently no UI/UX Design.
+- `trends`: About itenium itself, IT Consultancy, Current Market Trends, ...
 
 
 # Front Matter
@@ -62,7 +63,7 @@ layout: post
 author: Wouter Van Schandevijl
 title: ""
 subTitle: ""
-date: 2019-05-
+date: 2023-04-
 desc: >
   
 bigimg: 1400x262
@@ -75,7 +76,7 @@ img:
   origin: 
   title: ""
   linkUrl: 
-categories: productivity | dotnet | javascript | dev-setup | design
+categories: productivity | dotnet | javascript | dev-setup | design | trends
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun]
 series: series-unique-name
 extras:
@@ -126,7 +127,8 @@ todo:
     url: 
     desc: 
 package-versions:
-  moment: 5.2
+  - package: moment
+    version: 5.2
 redirect_from: /blog/
 ---
 
@@ -285,17 +287,17 @@ Bootstrap 3: `.img-responsive`, `.img-rounded`, `.img-thumbnail`, `.img-circle`.
 
 ## Tables
 
-Can use emphasis and inline code blocks inside tabel cells.
+Can use emphasis and inline code blocks inside table cells.
 
 **table-code**
 
 ```md
 | Header1    | Header2                                                 | Remarks |
 |------------|---------------------------------------------------------|---------|
-|            | 
-|            | 
-|            | 
-|            | 
+|            |
+|            |
+|            |
+|            |
 {: .table-code}
 ```
 
@@ -303,9 +305,9 @@ Can use emphasis and inline code blocks inside tabel cells.
 | Header1    | Header2                                                 | Remarks |
 |------------|:-------------------------------------------------------:|--------:|
 | Left       | Center                                                  | Right   |
-|            | 
-|            | 
-|            | 
+|            |
+|            |
+|            |
 {: .table-code}
 
 
