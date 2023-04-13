@@ -92,10 +92,6 @@ So an interesting limitation was introduced somewhere in the versions between 8 
 
 **Parent components defined as a TypeScript template file in Vaadin version 22**:
 ```ts
-import {css, customElement, html, LitElement} from 'lit-element';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
-import '@vaadin/text-field/src/vaadin-text-field.js';
-
 @customElement('cred-vouch-design')
 export class CreditVouchDesign extends LitElement {
     static get styles() {
