@@ -1,19 +1,20 @@
 ---
 layout: post
 author: Onur Bugdayci
-title: "Translation Oopsie"
+title: "Vaadin: Translation Oopsie"
 subTitle: "A deep dive into an interesting translation issue"
 date: 2023-04-12
 categories: java
 tags: [war-story]
 img:
   url: vaadin.png
-  desc: Vaadin common logo
+  desc: Vaadin logo
 bigimg:
   url: vaadin-big.png
-  desc: Vaadin alternative logo with deer
+  desc: Vaadin alternative logo
 desc: >
-  A deep dive into fixing an interesting translation issue, that through some frustration and out-of-the-box SOLID thinking, ultimately made my team's lives easier
+  A deep dive into fixing a translation issue we stumbled upon while upgrading Vaadin that through
+  some frustration and out-of-the-box SOLID thinking, ultimately made my team's lives easier
 toc:
   icon: icon-java
   title: Translation Oopsie
@@ -47,43 +48,41 @@ This translateLayout method worked. Not great performance wise as a loop needed 
 **translateLayout method**:
 ```java
 public static void translateLayout(String mainComponentId, HasComponents layout) {
-        for (Component component : layout) {
-            translateComponent(mainComponentId, component);
-        }
-    }
+  for (Component component : layout) {
+    translateComponent(mainComponentId, component);
+  }
+}
 
 private static void translateComponent(String componentRoot, Component component) {
-        String componentId = retrieveComponentId(component);
-
-        if (Strings.isNotBlank(componentId)) {
-            setComponent(componentRoot, component, componentId);
-        }
-    }
+  String componentId = retrieveComponentId(component);
+  if (Strings.isNotBlank(componentId)) {
+    setComponent(componentRoot, component, componentId);
+  }
+}
 
 private static void setComponent(String componentRoot, Component component, String componentId) {
-        String componentClass = component.getClass().getSimpleName();
+  String componentClass = component.getClass().getSimpleName();
 
-        String translation = translate(componentRoot, componentClass, componentId, ComponentType.CAPTION);
-        if (translation != null) {
-            component.setCaption(translation);
-        }
+  String translation = translate(componentRoot, componentClass, componentId, ComponentType.CAPTION);
+  if (translation != null) {
+    component.setCaption(translation);
+  }
 
-        if (component instanceof AbstractComponent) {
-            String description = translate(componentRoot, componentClass, componentId, ComponentType.DESCRIPTION);
-            if (description != null) {
-                ((AbstractComponent) component).setDescription(description);
-            }
-        }
+  if (component instanceof AbstractComponent) {
+    String desc = translate(componentRoot, componentClass, componentId, ComponentType.DESCRIPTION);
+    if (desc != null) {
+        ((AbstractComponent) component).setDescription(desc);
+    }
+  }
 
-        if (component instanceof Label) {
-            String value = translate(componentRoot, componentClass, componentId, ComponentType.VALUE);
-            if (value != null) {
-                ((Label) component).setValue(value);
-            }
-        }
+  if (component instanceof Label) {
+    String value = translate(componentRoot, componentClass, componentId, ComponentType.VALUE);
+    if (value != null) {
+        ((Label) component).setValue(value);
+    }
+  }
 
-
-…etc
+  …etc
 }
 ```
 # The issue in the upgrade
@@ -94,30 +93,30 @@ So an interesting limitation was introduced somewhere in the versions between 8 
 ```ts
 @customElement('cred-vouch-design')
 export class CreditVouchDesign extends LitElement {
-    static get styles() {
-        return css`
+  static get styles() {
+    return css`
       :host {
-          display: block;
-          height: 100%;
-      }
-      `;
-    }
+        display: block;
+        height: 100%;
+    
+    `;
+  }
 
-    render() {
-        return html`
-            <vaadin-vertical-layout style="width: 100%; height: 100%; padding: var(--lumo-space-m);">
-                <vaadin-text-field label="IB" id="ibTextField" type="text" tabindex=""
-                                   style="width: 100%;"></vaadin-text-field>
-                <vaadin-text-field label="Bz" id="bzTextField" type="text" tabindex=""
-                                   style="width: 100%;"></vaadin-text-field>
-            </vaadin-vertical-layout>
-        `;
-    }
+  render() {
+    return html`
+      <vaadin-vertical-layout style="width: 100%; height: 100%; padding: var(--lumo-space-m);">
+        <vaadin-text-field label="IB" id="ibTextField" type="text" tabindex=""
+          style="width: 100%;"></vaadin-text-field>
+        <vaadin-text-field label="Bz" id="bzTextField" type="text" tabindex=""
+          style="width: 100%;"></vaadin-text-field>
+      </vaadin-vertical-layout>
+    `;
+  }
 
-    // Remove this method to render the contents of this view inside Shadow DOM
-    createRenderRoot() {
-        return this;
-    }
+  // Remove this method to render the contents of this view inside Shadow DOM
+  createRenderRoot() {
+    return this;
+  }
 }
 ```
 
@@ -133,19 +132,17 @@ Option 3 was the ideal way to fix this issue. The way we found to fix this issue
 **Custom translatable component**:
 ```java
 public class CustomCheckbox extends Checkbox implements TranslatableTitle {
+  private static final String TRANSLATION_TYPE = ".checkbox.";
 
-    private static final String TRANSLATION_TYPE = ".checkbox.";
+  public CustomCheckbox() {
+    getId().ifPresent(this::translateTitle);
+  }
 
-    public CustomCheckbox() {
-        getId().ifPresent(this::translateTitle);
-    }
-
-    @Override
-    public void translateTitle(String id) {
-        CustomComponentUtil.getParentName(this)
-                .ifPresent(parentName ->
-                        setLabel(getTranslation(parentName + TRANSLATION_TYPE + id + CAPTION_TRANSLATION_KEY)));
-    }
+  @Override
+  public void translateTitle(String id) {
+    String translation = getTranslation(parentName + TRANSLATION_TYPE + id + CAPTION_TRANSLATION_KEY)
+    CustomComponentUtil.getParentName(this).ifPresent(parentName -> setLabel(translation));
+  }
 }
 
 ```
