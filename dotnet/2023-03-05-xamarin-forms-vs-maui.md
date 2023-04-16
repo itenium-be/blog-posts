@@ -2,7 +2,7 @@
 layout: post
 author: Tim De Belder
 title: "Xamarin.Forms vs .NET MAUI"
-date: 2023-03-05 00:00:00
+date: 2023-04-16 00:00:00
 desc: >
   After 2 decades Xamarin.Forms becomes .NET MAUI. Why a new name? Is there really a big difference? We are going to look at the differences and similarities between them.
 bigimg:
@@ -13,16 +13,24 @@ img:
   url: xamarin-vs-maui-img.jpg
   desc: Picture by Olaf Val
   origin: https://unsplash.com/photos/UTk9cXzYWAg
-tags: [MAUI, DESKTOP-APP, MOBILE]
+categories: dotnet
+tags: []
 interesting:
   - url: https://devblogs.microsoft.com/dotnet/dotnet-maui-dotnet-7/
     desc: ".Net Maui and .NET 7 by David Ortinau"
 toc:
   title: XAMARIN vs MAUI
   icon: mobile
+package-versions:
+  - package: maui
+  - package: xamarin
 ---
 
-On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi-platform App UI). In this blogpost we will investigate the differences between Xamarin.Forms and its successor. What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.
+On the 8th of November 2022 .NET 7 was released, including .NET MAUI (.NET Multi-platform App UI). In this blogpost we will investigate the differences between Xamarin.Forms and its successor. 
+
+<!--more-->
+
+What is its purpose and how it evolved in the framework and platform it is now? What will the future bring for these two environments? We will end this blog post with the advantages of .Net Maui over Xamarin.Forms and the evolution of Xamarin.
 
 ## Xamarin
 
@@ -44,7 +52,7 @@ With the introduction of Xamarin and Xamarin.Forms out of the way, we can now lo
 
 The biggest difference is the project structure, as Xamarin.Forms has multiple projects .NET MAUI has only one project. As you can see in the underlying example.
 
-{% include post/image.html file="xamarin-vs-maui-project-tree.jpg" alt="project tree" title="" desc=".Net Maui and Xamarin project tree" maxWidth="360px" %}
+{% include post/image.html file="xamarin-vs-maui-project-tree.png" alt="Project tree" title="" desc=".Net Maui and Xamarin project tree" maxWidth="360px" %}
 
 ### More target platforms are supported
 
