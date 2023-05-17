@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Onur Bugdayci
+author: Onur Bugdayci and Van Schandevijl Wouter
 title: "What chart library to use in React?"
 subTitle: "A quick comparison of the most popular React Charting frameworks"
 date: 2023-05-17
@@ -51,7 +51,7 @@ having to do the same.
 {% include github-stars.html url="airbnb/visx" desc="A collection of reusable low-level visualization components. Built on d3" %}
 {% include github-stars.html url="plouc/nivo" desc="Nivo provides supercharged React components to easily build dataviz apps, built on d3." %}
 {% include github-stars.html url="FormidableLabs/victory" desc="A collection of components for building interactive data visualizations. Built on d3" %}
-{% include github-stars.html url="uber/react-vis" desc="A collection of components to render common data visualization charts" %}
+{% include github-stars.html url="uber/react-vis" desc="A collection of components to render common data visualization charts. Built on d3" %}
 {% include github-stars.html url="reactchartjs/react-chartjs-2" desc="React components for Chart.js, the most popular charting library" %}
 
 
@@ -59,6 +59,10 @@ having to do the same.
 Many are built using the very versatile [d3.js](https://d3js.org/) library:
 
 {% include github-stars.html url="d3/d3" desc="Bring data to life with SVG, Canvas and HTML. 📊📈🎉" %}
+
+
+<br>
+If you already used `Chart.js` before, you may want to choose for the `react-chartjs-2` wrapper:  
 {% include github-stars.html url="chartjs/Chart.js" desc="Simple HTML5 Charts using the canvas tag" %}
 
 
@@ -71,13 +75,30 @@ Many are built using the very versatile [d3.js](https://d3js.org/) library:
 | Recharts        | 4.52 MB      | 1,278,432        | Svg                 | MIT      | Very good     | 15:10 |
 | Visx            | 440 kB       | 363,002          | Svg                 | MIT      | Very good     | 28:58 |
 | Nivo            | 2.81 MB      | 296,292          | Svg / HTML / Canvas | MIT      | Good          | 28:31 |
-| Victory         | 2.95 MB      | 192,203          | Svg                 | Free     | Very good     | 11:10 |
+| Victory         | 2.95 MB      | 192,203          | Svg                 | MIT      | Very good     | 11:10 |
 | React-vis       | 1.80 MB      | 155,768          | Svg / Canvas        | MIT      | Ok            | 34:39 |
 | React-chartjs-2 | 4.88 MB      | 948,010          | Canvas              | MIT      | Ok            | 35:11 |
 {: .table-code}
 
 
-Data as on 19/04/2023.
+| Library         | Dependency | Commits             | Issues      |  Charts  | Storybook   | Docs
+|-----------------|:----------:|:-------------------:|:-----------:|:--------:|:-----------:|------
+| Recharts        | D3         | 2 days ago (2,254)  | 470 / 2220  | 11       | WIP         | [Examples](https://recharts.org/en-US/examples)
+| Visx            | D3         | 1 month ago (3,156) | 117 / 608   | 20+      | CodeSandbox | [Somewhat Interactive](https://airbnb.io/visx/gallery)
+| Nivo            | D3         | 4 days ago  (1,992) | 81 / 1393   | 20       | YES         | [Very Interactive](https://nivo.rocks/)
+| Victory         | D3         | last week   (8,429) | 240 / 1491  | 10       | NO          | [Gallery](https://formidable.com/open-source/victory/gallery)
+| React-vis       | D3         | 1 month ago (891)   | 306 / 511   | 10       | Yes         | [Gallery](https://uber.github.io/react-vis/examples/showcases/plots)
+| React-chartjs-2 | Chart.js   | 4 months ago (544)  | 52 / 665    | 15       | CodeSandbox | [Gallery](https://react-chartjs-2.js.org/examples)
+{: .table-code}
+
+
+Columns:  
+**Commits**: Last commit (total commits)  
+**Issues**: Open Issues / Closed Issues  
+**Charts**: Since many libraries offer composable components, the real amount of charts is practically infinite.
+The amount is an indication of how many are documented! 😃
+
+Data as of 19/04/2023.
 
 
 # Test Data Structure
@@ -160,7 +181,7 @@ For some reason the library makes the tooltip data object use properties that ha
 It assumes all data inserted are datum objects whereas in this case they are person objects. The documentation also neglects to mention this in their example.
 
 
-##### Example
+#### Example
 
 ![Visx line chart](/assets/blog-images/react-charting-visx.png "Visx: Line Chart")
 
@@ -230,7 +251,7 @@ so I needed to map my dataset to fit this mold. A simple setting for setting wha
 Big visual issue however as you can probably tell is that the values don't exactly show correctly on the x axis.
 
 
-##### Example
+#### Example
 
 ![Nivo line chart](/assets/blog-images/react-charting-nivo.png "Nivo: Line Chart")
 
@@ -277,7 +298,7 @@ Time: 11 minutes
 Usage was relatively easy, but it has the same limitation as the Nivo library because you also need to map your data properties to x and y. Also visually it doesn't look as pleasing as some of the other charts in this list.
 
 
-##### Example
+#### Example
 
 ![Victory line chart](/assets/blog-images/react-charting-victory.png "Victory: Line Chart")
 
@@ -322,7 +343,7 @@ The documentation did not really help either in this case.
 Also I needed to map the data properties to x and y as well again.
 
 
-##### Example
+#### Example
 
 ![React-vis line chart](/assets/blog-images/react-charting-react-vis.png "React-vis: Line Chart")
 
@@ -365,7 +386,7 @@ An annoying trait is that you have to split your dataset up in into a labels arr
 The end result does look nice however.
 
 
-##### Example
+#### Example
 
 ![React-chartjs-2 line chart](/assets/blog-images/react-charting-react-chartjs-2.png "React-chartjs-2: Line Chart")
 
@@ -419,7 +440,20 @@ export function ReactChartJS2() {
 
 
 
-# Conclusion - Recharts
+# Conclusion
+
+## Onur: Recharts
 
 First time was a charm, the first library **Recharts** did everything I wanted it to in a clear and convenient manner. 
 It's the only library where I didn't really have a complaint. It's easy to use and has very good documentation. 
+
+## Wouter: Nivo
+
+Disclaimer: I didn't actually implement the Line Charts.
+
+The out of the box experience of the Line Chart was, for me, really nice for Recharts, **Nivo** and React-ChartJS-2.  
+
+I was really impressed with the documentation of **Nivo**: a **very** interactive gallery plus a storybook implementation, just wow.
+The dev team also seems to be on top of things with 81 open issues and a whopping 1393 closed ones. It's the only library
+with a below v1 version though and has not yet gained as much traction (300k weekly downloads) compared to current leaders
+Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popularity of `Chart.js` itself.
