@@ -457,3 +457,10 @@ I was really impressed with the documentation of **Nivo**: a **very** interactiv
 The dev team also seems to be on top of things with 81 open issues and a whopping 1393 closed ones. It's the only library
 with a below v1 version though and has not yet gained as much traction (300k weekly downloads) compared to current leaders
 Recharts (1.5M) and React-chartjs-2 (950k), the latter which coasts of the popularity of `Chart.js` itself.
+
+
+## Deployed Demo App
+
+The `create-react-app` is [published at itenium.be](https://itenium.be/React-Charting/).
+
+![Demo App Overview](/assets/blog-images/react-charting-demo-app.png "Demo App Overview")
