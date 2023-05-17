@@ -99,7 +99,7 @@ Data as on 19/04/2023.
 
 How "easy" is to get a **Line Chart** working for each libary?
 
-
+Check out the [Github source](https://github.com/itenium-be/React-Charting) for working examples of these!
 
 
 
