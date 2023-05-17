@@ -37,6 +37,7 @@ package-versions:
     version: 5.2.0
 ---
 
+
 The question "What chart library to use in React?" came about when I had to actually find one to introduce in a project.
 As suggested by a colleague, I created this blog post with the results of my research, maybe saving others from
 having to do the same.
