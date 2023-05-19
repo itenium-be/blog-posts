@@ -20,7 +20,7 @@ extras:
   - githubproject: https://github.com/itenium-be/React-Charting
     githubtext: "Project with all the examples for the React chart libraries"
 toc:
-  icon: fa-react
+  icon: icon-reactjs
   title: Charts
 package-versions:
   - package: recharts
