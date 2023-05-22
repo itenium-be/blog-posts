@@ -11,6 +11,7 @@ img:
   origin: https://unsplash.com/photos/7MBgGXQ2Rqg
 categories: javascript
 tags: [cheat-sheet,regex]
+series: regex
 interesting:
   - git: aloisdg/awesome-regex
     desc: "A curated collection of awesome Regex libraries, tools, frameworks and software"

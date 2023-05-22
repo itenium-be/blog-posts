@@ -15,6 +15,7 @@ img:
   origin: https://unsplash.com/photos/ZsgPd6ovNag
 categories: dotnet
 tags: [cheat-sheet,regex]
+series: regex
 interesting:
   - url: http://blog.stevenlevithan.com/archives/balancing-groups
     desc: "Steven Levithan: Fun with .NET Regex Balancing Groups"
@@ -57,7 +58,7 @@ var commentedRegex = new Regex(@"
 - `RegexOptions.Compiled`: Increased startup time for decreased execution time.
 - `RegexOptions.IgnoreCase`.
 - `RegexOptions.ExplicitCapture`: Only explicitly named/numbered groups are captured. (Skip the `(?:…)`).
-- `RegexOptions.Multiline`: `^` and `$` match beginning of line.
+- `RegexOptions.Multiline`: `^` and `$` match beginning and end of line.
 - `RegexOptions.Singleline`: `.` matches `\n`.
 
 
