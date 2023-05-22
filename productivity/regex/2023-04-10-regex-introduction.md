@@ -26,7 +26,7 @@ interesting:
     url: https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
 ---
 
-You already know regex is a (very) useful skill? Skip to Part 2.
+You already know regex is a (very) useful skill? Skip to the [Tutorial](https://itenium.be/blog/productivity/regex-tutorial).
 If not, allow me to convince you...
 
 
