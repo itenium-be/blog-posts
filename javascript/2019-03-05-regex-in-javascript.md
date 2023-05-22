@@ -9,6 +9,10 @@ img:
   url: when-searching-regular-expressions-on-unsplash.jpg
   desc: Unsplash picture by Aga Putra
   origin: https://unsplash.com/photos/7MBgGXQ2Rqg
+bigimg:
+  url: regex-tutorial-big.png
+  desc: "Photo by Midjourney"
+  prompt: "text in an alien language with lots of weird characters and a human looking at it, puzzled --ar 2:1"
 categories: javascript
 tags: [cheat-sheet,regex]
 series: regex
@@ -19,8 +23,6 @@ interesting:
     desc: "RexEgg.com: The world's most tyrannosaurical regex tutorial"
   - url: http://2ality.com/2015/07/regexp-es6.html
     desc: "New regular expression features in ECMAScript 6 (7/2015)"
-  - git: tc39/proposal-string-matchall
-    desc: "Currently in Stage 3: Candidate (3/2019)"
   - url: https://regexr.com/
     desc: "regexr.com: Online, open source tool to learn, build, & test regexes"
   - url: https://regex101.com/
@@ -29,12 +31,12 @@ toc:
   title: JavaScript RegExp
   icon: icon-script
 todo:
-  - reason: Followup
-    url: http://github.com/tc39/proposal-string-matchall
-    desc: "Check if this got to Stage 4 yet"
   - reason: Too advanced
     url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     desc: "Replace also works with a function argument for capture side effects"
+updates:
+  - date: 2023-05-22 00:00:00 +0200
+    desc: "RegExp.prototype.matchAll was added in ES2020"
 ---
 
 A cheat sheet for the regex syntax in JavaScript.
@@ -144,17 +146,6 @@ const exec = /a(?<theB>b?)/.exec('0abaa');
 expect(exec).toEqual(match);
 ```
 
-**!! [RegExp.prototype.matchAll](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll) is "Under Construction" !!**  
-
-<!-- Fun aligning with " " (=U+2000, En Quad, &#8192;) -->
-
-🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 👷 👷 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
-🚧 👷 🚧  [proposal-string-matchAll](https://github.com/tc39/proposal-string-matchall) is a Stage 3 Candidate at the moment 🚧 👷 🚧
-
-🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 👷 👷 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
-
 ## RegExp.prototype.exec
 
 [RegExp.prototype.exec](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
@@ -177,6 +168,22 @@ globbing.exec(input);
 == null
 ```
 
+## RegExp.prototype.matchAll <small>(ES2020)</small>
+
+[RegExp.prototype.matchAll](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll)
+{: style="float: right"}
+
+Easier matching and grouping, plus avoiding the `while` loop necessary when using the "old" `exec`.
+
+```javascript
+const regex = /(a)(b2?)/g; // TypeError when not g(lobal)!
+const result = 'ab_ab2'.matchAll(regex);
+
+for (const match of result) {
+  // First match: ['ab', 'a', 'b', index: 0, input: 'ab_ab2', groups: undefined]
+  // Second match: ['ab2', 'a', 'b2', index: 3, input: 'ab_ab2', groups: undefined]
+}
+```
 
 
 
