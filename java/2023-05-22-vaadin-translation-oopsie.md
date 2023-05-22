@@ -3,7 +3,7 @@ layout: post
 author: Onur Bugdayci
 title: "Vaadin: Translation Oopsie"
 subTitle: "A deep dive into an interesting translation issue"
-date: 2029-04-12
+date: 2029-05-22
 categories: java
 tags: [war-story]
 img:
