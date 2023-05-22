@@ -114,6 +114,7 @@ match it against your input. Plus they explain the regex visually.
 
 - [RegExr](https://regexr.com/)
 - [RegEx101](https://regex101.com/)
+- [debuggex](https://www.debuggex.com/?flavor=javascript)
 
 
 **Mastering Regular Expressions**
