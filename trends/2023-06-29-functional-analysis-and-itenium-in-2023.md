@@ -3,7 +3,7 @@ layout: post
 author: Stéphane Vandenbulcke
 title:  "Functional Analysis @ itenium"
 subTitle: "Unleashing the Power of Functional Analysis: A Guide for Success"
-date:   2023-05-29
+date:   2023-06-29
 desc: >
   Unleashing the Power of Functional Analysis: A Guide for Success
 img:
