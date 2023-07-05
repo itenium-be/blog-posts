@@ -19,6 +19,9 @@ img:
   prompt: "a slack meme bot written by chatgpt"
 desc: >
   Can ChatGPT create a Slack Meme Bot?
+extras:
+  - githubproject: https://github.com/itenium-be/slack-meme-poster-ai
+    githubtext: "Some of the code that ChatGPT created"
 series: slack-meme-poster
 toc:
   icon: slack
