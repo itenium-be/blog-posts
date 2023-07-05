@@ -68,7 +68,7 @@ SyntaxError: invalid syntax
 Uhoh, still using Python 2.7 in 2023, let's quickly update my `$env:PATH`.
 
 
-The full script):
+The full script:
 
 ```py
 import os
@@ -306,8 +306,8 @@ Or how about this one:
 
 
 ChatGPT is not helping you by generating code you do not understand, it is just making
-debugging and future feature development that much harder, if it succeeded in producing something
-workable.
+debugging and future feature development that much harder, if it succeeded in
+producing something that works.
 
 
 ## The Good
@@ -315,7 +315,7 @@ workable.
 If you already know how to code and want to have 80% of your code generated for you,
 you may want to have a look at using ChatGPT. Just remember that:
 
-- It spits out random bugs, even in things that I got correct earlier (ex: "Image" -> "Random Image" in the Slack webhook payload)
+- It spits out random bugs, even in things that it got correct earlier (ex: "Image" -> "Random Image" in the Slack webhook payload)
 - It generates code and configuration that it does not actually use
 
 
