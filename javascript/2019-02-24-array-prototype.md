@@ -209,7 +209,7 @@ const newArr = arr.with(index, newValue);
 These functions operate in place.  
 Since ECMAScript 2023, some have non-mutating alternatives!
 
-## OrderBy = sort | toSorted
+## OrderBy = sort and toSorted
 
 - Use [toSorted][toSorted] if you need a new array for the sorted result.
 - **Without compareFn the array is sorted according to each character's Unicode code point value.**
