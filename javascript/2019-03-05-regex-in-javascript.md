@@ -16,6 +16,9 @@ bigimg:
 categories: javascript
 tags: [cheat-sheet,regex]
 series: regex
+extras:
+  - githubproject: https://github.com/itenium-be/ModernJS
+    githubtext: Jest UnitTests for all ECMAScript features since 2019
 interesting:
   - git: aloisdg/awesome-regex
     desc: "A curated collection of awesome Regex libraries, tools, frameworks and software"
@@ -34,12 +37,20 @@ todo:
   - reason: Too advanced
     url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     desc: "Replace also works with a function argument for capture side effects"
+last_modified_at: 2023-10-06 00:00:00 +0200
 updates:
-  - date: 2023-05-22 00:00:00 +0200
+  - date: 2023-10-06
+    desc: "Added ES2020 & ES2021 RegExp enhancements"
+  - date: 2023-05-22
     desc: "RegExp.prototype.matchAll was added in ES2020"
 ---
 
 A cheat sheet for the regex syntax in JavaScript.
+
+
+Should probably add a part on backreferences?
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences
+
 
 
 [MDN RegExp Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
@@ -47,8 +58,10 @@ A cheat sheet for the regex syntax in JavaScript.
 
 **TL&DR**
 ```javascript
-''.test(/^$/);
-'ok'.replace(/(.)(.)/g, '$2$1'); // $$, $&, $`, $'
+''.test(/^$/); // boolean
+'ok'.replace(/(o)(k)/g, '$2$1');
+// Other replacements:
+// $$ (literal), $& (all), $` (before), $' (after), $<name>
 
 const matchG = 'aaa'.match(/a/g);
 matchG == ['a', 'a', 'a'];
@@ -91,19 +104,22 @@ const didMatch = /a/.test('abc');
 [String.prototype.replace](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 {: style="float: right"}
 
-Without the `g` flag, only the first match is replaced. (which makes no difference in the example:)
+Without the `g` flag, only the first match is replaced. (which makes no difference in the example:)  
+ECMAScript2021 added [`replaceAll`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll): you can now replace all occurences without using a regex.
 
 ```javascript
-'dog The'.replace(/(dog) (The)/g, '$2 $1');
+'too  many  spaces'.replace(/  /g, ' ');
+'too  many  spaces'.replaceAll('  ', ' ');
 ```
 
 | Replacement   | Description
 |---------------|------------
 | `$$`          | A literal $
-| `$&`          | The matched string
 | ``$` ``       | Portion before the match
 | `$'`          | Portion after the match
+| `$&`          | The whole matched string
 | `$n`          | With `n < 100`: the nth captured group (!! 1 indexed !!)
+| `$<Name>`     | Named capturing group
 {: .table-code}
 
 
@@ -196,15 +212,16 @@ const rc = new RegExp('ab+c', 'i');
 
 **Available flags**:  
 
-| Flag       | Property    |  Remarks | StackOverflow
+| Flag       | Property                  |  Remarks | StackOverflow
 |------------|---------------------------------------------------------------------------------------------------
-| `i`        | [.ignoreCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase) | Case insensitive
-| `g`        | [.global](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global)     | Do not stop at first match but find all of them
-| `m`        | [.multiline](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline)  | `^` and `$` match beginning/end of each line (otherwise of entire string) | [StackOverflow](https://stackoverflow.com/questions/1979884/how-to-use-javascript-regex-over-multiple-lines)
-| `s`        | [.dotAll](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)     | `.` matches newlines. (ES2018)
-| `u`        | [.unicode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)    | `/^.$/u.test('😀')`
-| `y`        | [.sticky](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)     | Use `.lastIndex` to match at that specific index **only** (overwrites the `g` flag) | [StackOverflow](https://stackoverflow.com/questions/4542304/what-does-regex-flag-y-do)
-|            | [.flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags)      | Returns a string with the active flags
+| `i`        | [.ignoreCase][ignoreCase] | Case insensitive
+| `g`        | [.global][global]         | Do not stop at first match but find all of them
+| `m`        | [.multiline][multiline]   | `^` and `$` match beginning/end of each line (otherwise of entire string) | [StackOverflow](https://stackoverflow.com/questions/1979884/how-to-use-javascript-regex-over-multiple-lines)
+| `s`        | [.dotAll][dotAll]         | `.` matches newlines. (ES2018)
+| `u`        | [.unicode][unicode]       | `/^.$/u.test('😀')`
+| `y`        | [.sticky][sticky]         | Use `.lastIndex` to match at that specific index **only** (overwrites the `g` flag) | [StackOverflow](https://stackoverflow.com/questions/4542304/what-does-regex-flag-y-do)
+| `d`        | [.hasIndices][hasIndices] | Adds an `indices` property to the match object that contains the start/end indices of each capture group (2022)
+|            | [.flags][flags]           | Returns a string with the active flags
 {: .table-code}
 
 
@@ -264,3 +281,14 @@ regex.test(input); // Returns true. lastIndex is now 1
 regex.test(input); // Returns true. lastIndex is now 2
 regex.test(input); // Returns false. lastIndex is reset to 0
 ```
+
+
+
+[ignoreCase]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase
+[global]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global
+[multiline]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline
+[dotAll]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll
+[unicode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode
+[sticky]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky
+[hasIndices]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices
+[flags]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags
