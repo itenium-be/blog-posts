@@ -48,10 +48,6 @@ updates:
 A cheat sheet for the regex syntax in JavaScript.
 
 
-Should probably add a part on backreferences?
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences
-
-
 
 [MDN RegExp Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 {: style="float: right"}

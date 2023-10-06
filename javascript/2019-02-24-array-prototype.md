@@ -34,7 +34,7 @@ updates:
     desc: "More updates for ECMAScript 2023"
   - date: 2023-09-04
     desc: "Added flat and flatMap"
-  - date: 2023-03-08 00:00:00 +0200
+  - date: 2023-03-08
     desc: "Added Distinct, flatMap"
 ---
 
