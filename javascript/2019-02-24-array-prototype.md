@@ -12,6 +12,8 @@ tags: [cheat-sheet,tutorial]
 extras:
   - githubproject: https://github.com/itenium-be/Array.prototype
     githubtext: Github source code as UnitTests
+  - githubproject: https://github.com/itenium-be/ModernJS
+    githubtext: Jest UnitTests for all ECMAScript features since 2019
 interesting:
   - git: msn0/mdn-polyfills
     desc: "Include polyfills for your favourite functions that are not (yet) implemented by your browser(s)."
@@ -26,8 +28,12 @@ interesting:
 toc:
   title: Array.prototype
   icon: icon-javascript
-last_modified_at: 2023-03-08 00:00:00 +0200
+last_modified_at: 2023-10-06 00:00:00 +0200
 updates:
+  - date: 2023-10-06
+    desc: "More updates for ECMAScript 2023"
+  - date: 2023-09-04
+    desc: "Added flat and flatMap"
   - date: 2023-03-08 00:00:00 +0200
     desc: "Added Distinct, flatMap"
 ---
@@ -71,21 +77,23 @@ Do note that the deferred execution we know from Linq does not apply to `Array.p
 | Select()                        | <b>map</b>((cur, index, array): any)           | [map][map]
 | Where()                         | <b>filter</b>((cur): boolean)                  | [filter][filter]
 | Contains()                      | <b>includes</b>(value, fromIndex)              | [includes][includes]
-| FirstOrDefault()                | <b>find</b>((cur): boolean): undefined \| any  | [find][find] / [findLast][findLast]
+| FirstOrDefault()                | <b>find</b>((cur): boolean): undefined \| any  | [find][find] / [findIndex][findIndex]
+| LastOrDefault()                 | <b>findLast</b>((cur): boolean): undefined \| any | [findLast][findLast] / [findLastIndex][findLastIndex]
 | All()                           | <b>every</b>((cur): boolean): boolean          | [every][every]
 | Any()                           | <b>some</b>((cur): boolean): boolean           | [some][some]
 | Concat()                        | <b>concat</b>(arr: any[]): any[]               | [concat][concat]
 | Skip(start).Take(start - end)   | <b>slice</b>(start = 0, end = length-1)        | [slice][slice]
 | string.Join()                   | <b>join</b>(separator = ',')                   | [join][join]
 | Array.IndexOf()                 | <b>findIndex</b>((cur): boolean): -1 \| number | [findIndex][findIndex]
+| ElementAt()                     | <b>at(index)</b> (accepts negative indexes)    | [at][at]
 | Count()                         | <b>length</b>: number                          | [length][length]
-| SelectMany()                    | <b>flatMap</b>(fn)                             | [flatMap][flatMap]
+| SelectMany()                    | <b>flat(levels = 1)</b> / <b>flatMap</b>(fn)   | [flat][flat] / [flatMap][flatMap]
 | Distinct()                      | <b>filter</b>((el, i, arr) => arr.indexOf(el) === i)
 | Extension method                | forEach((cur): void): void                     | [forEach][forEach]
 | 
 | **Mutating in JS**              | These are [in place][in-place] operations      |
-| OrderBy()                       | <b>sort</b>((a, b): number)                    | [sort][sort]
-| Reverse()                       | reverse()                                      | [reverse][reverse]
+| OrderBy()                       | <b>sort</b>((a, b): number)                    | [sort][sort] / [toSorted][toSorted]
+| Reverse()                       | reverse()                                      | [reverse][reverse] / [toReversed][toReversed]
 |---------------------------------|------------------------------------------------|----------
 {: .table-code}
 
@@ -115,10 +123,10 @@ When mapping to an object without code block, you need to wrap your object betwe
 [0, 1].map(x => {value: x});
 // --> [undefined, undefined]
 
-// is the same as writing:
+// it is the same as writing:
 [0, 1].map(x => {
-    value: x; // No error, because JavaScript?
-    return undefined;
+  value: x; // No error, because JavaScript?
+  return undefined;
 });
 ```
 
@@ -164,7 +172,7 @@ const result = input.reduce((acc, cur) => {
     acc.odd.push(cur);
   }
   return acc;
-}, {even: [], odd: []);
+}, {even: [], odd: []});
 
 expect(result).toEqual({even: [0, 2], odd: [1, 3]});
 ```
@@ -184,18 +192,27 @@ expect(input.slice()).toEqual([...input]);
 slice(startIndex = 0, endIndex = length-1);
 ```
 
+### with
+
+Since 2023, there is also [`with`][with] which returns a new
+array where one item is replaced with a new value by index.
+
+```js
+const newArr = arr.with(index, newValue);
+```
 
 
 
 
 # Mutations
 
-These functions operate in place.
+These functions operate in place.  
+Since ECMAScript 2023, some have non-mutating alternatives!
 
-## OrderBy = sort
+## OrderBy = sort | toSorted
 
-- Do a [`slice()`][slice] first if you need a different array reference for the result of the sort.
-- Without compareFn the array is sorted according to each character's Unicode code point value.
+- Use [toSorted][toSorted] if you need a new array for the sorted result.
+- **Without compareFn the array is sorted according to each character's Unicode code point value.**
 - The compareFn should return a number:
     - `-1` (or any negative number): `a` comes **before** `b`
     - `0`: Equal
@@ -218,7 +235,7 @@ These functions operate in place.
 **C#**  
 - The signature is a bit different: `OrderBy(Func<TSource, TKey> keySelector, IComparer<TKey> comparer)`
 - `OrderBy` vs `OrderByDescending`: switch `a` and `b`...
-
+- JS doesn't have `ThenBy` chaining possibilities, you'll have to do this yourself.
 
 
 ## forEach
@@ -247,14 +264,14 @@ for (let itm of input) {
 
 ## Other mutators
 
-- [`reverse()`][reverse]
+- [`reverse()`][reverse]: There is now also [`toReversed()`][toReversed] (2023)
 - [`push(el1, [el2, ...])`][push]: Add element(s) at the end. Returns the new array length.
 - [`shift()`][shift]: Remove the first element at the start. Returns the removed element.
 - [`unshift(el, [el2, ...])`][unshift]: Add element(s) at the start. Returns the new array length.
 - [`splice(start, [deleteCount, [el1, [el2, ...]]])`][splice]
     - The swiss army knife: add and/or remove element(s)
     - Returns array of removed elements (or empty array)
-
+    - There is now also [toSpliced][toSpliced] (2023)
 
 
 
@@ -279,5 +296,12 @@ for (let itm of input) {
 [length]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
 [sort]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 [join]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+[flat]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
 [flatMap]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap
 [findLast]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast
+[toSorted]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted
+[at]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at
+[toReversed]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed
+[with]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with
+[toSpliced]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced
+[findLastIndex]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex
