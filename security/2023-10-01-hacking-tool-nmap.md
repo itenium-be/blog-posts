@@ -38,6 +38,9 @@ Before Trinity could take down the electric grid, she had to find an attack vect
 
 # What
 
+{% include github-stars.html url="nmap/nmap" desc="Github mirror of official SVN repository." %}
+
+
 A CLI tool to discover hosts and services on a computer network
 by sending packets and analyzing the responses.
 
