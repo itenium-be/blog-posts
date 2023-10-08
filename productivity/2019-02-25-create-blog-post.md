@@ -76,7 +76,7 @@ img:
   origin: 
   title: ""
   linkUrl: 
-categories: productivity | dotnet | javascript | dev-setup | design | trends
+categories: productivity | dotnet | javascript | dev-setup | design | trends | security
 tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun]
 series: series-unique-name
 extras:
