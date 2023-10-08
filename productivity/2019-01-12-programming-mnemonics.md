@@ -16,7 +16,7 @@ categories: productivity
 tags: [cheat-sheet]
 toc:
   title: Mnemonics
-  icon: fa-heartbeat
+  icon: heartbeat
 ---
 
 Mnemonics - helping developers remember intrinsics since 1973.
