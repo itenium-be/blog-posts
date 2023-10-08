@@ -25,7 +25,7 @@ interesting:
     desc: "Hydra docker image"
 toc:
   title: Hydra
-  icon: lock
+  icon: unlock-alt
 ---
 
 Show how easy it would be to gain unauthorized access to a system remotely.
