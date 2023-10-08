@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title: "Hacking Tool: Hydra"
+title: "Hacking Tool: hydra"
 subTitle: "Brute force login cracker"
 date: 2023-10-02
 desc: >
@@ -25,7 +25,7 @@ interesting:
     desc: "Hydra docker image"
 toc:
   title: Hydra
-  icon: fa-lock
+  icon: lock
 ---
 
 Show how easy it would be to gain unauthorized access to a system remotely.
@@ -84,4 +84,4 @@ A famous one is `rockyou.txt` (14M).
 
 Whenever you figure out that a certain protocol and user has a weak password,
 it's time to whip out Hydra! Check the Security Audit Blog during itenium's
-Security Bootcamp during the Hikvision hack!
+Security Bootcamp for such clue!

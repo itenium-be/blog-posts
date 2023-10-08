@@ -22,7 +22,7 @@ tags: [tutorial,hacking]
 series: security-bootcamp
 toc:
   title: nmap
-  icon: fa-eye
+  icon: eye
 package-versions:
   - package: nmap
     version: 5.2
