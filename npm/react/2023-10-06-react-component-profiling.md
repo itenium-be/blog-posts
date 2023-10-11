@@ -494,7 +494,7 @@ function callback(
 }
 
 const LongRendering = () => (
-  <Profiler id="unqiueId" onRender={callback}>
+  <Profiler id="uniqueId" onRender={callback}>
     <LongRenderingItem />
   </Profiler>
 )
