@@ -189,9 +189,9 @@ const LinkWithClaim = EnhanceWithClaim(Link);
 
 // Usage
 const CreateInvoiceLink = () => (
-  <Link claim="invoice-create" to="/invoices/create">
+  <LinkWithClaim claim="invoice-create" to="/invoices/create">
     Create Invoice
-  </Link>
+  </LinkWithClaim>
 )
 ```
 
@@ -200,7 +200,7 @@ which ended up doing the following for every of the hundreds
 of icons, buttons etc displayed.
 
 ```ts
-// Executed many, many times == performance impact!
+// I/O being executed many, many times == performance impact!
 const token = sessionStorage.getItem('jwt');
 ```
 
@@ -384,7 +384,7 @@ export const OpenedProjectMonthsList = ({ month }: OpenedProjectMonthsListProps)
 
 ## Introducing: memo
 
-When a `ProjectMonthListCollapsed` is rendered, it rarely changes anymore,
+When a `ProjectMonthListCollapsed` is rendered, its details don't change,
 so we can do some aggressive caching there, keeping the entire rendered
 component in the cache with [`React.memo(component, propsAreEqual?)`](https://react.dev/reference/react/memo).
 
@@ -470,7 +470,7 @@ const result = expensiveOp1()
 console.timeLog('timer1', 'result is', result)
 expensiveOp2()
 
-consoled.timeEnd('timer1')
+console.timeEnd('timer1')
 ```
 
 ## Profiler Component
@@ -541,5 +541,5 @@ function callback(id, phase, actualDuration) {
   - Tricky: useCallback also takes time; in my case it actually degraded performance
   - As always with perf optimizations --> **MEASURE** (the profiler is your friend)
 - **memo**: Components without props can be cached entirely
-- [**useWhyDidIUpdate**](https://github.com/itenium-be/React-ComponentProfiling/blob/master/snippets/useWhyDidYouUpdate.ts): part of many hooks-libraries (I didn't find it very usefull)
+- [**useWhyDidYouUpdate**](https://github.com/itenium-be/React-ComponentProfiling/blob/master/snippets/useWhyDidYouUpdate.ts): part of many hooks-libraries (I didn't find it very usefull)
 - [**useDebugValue**](https://react.dev/reference/react/useDebugValue): to be used in custom hooks (more for library developers IMO)
