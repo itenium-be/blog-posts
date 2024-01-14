@@ -21,16 +21,16 @@ publisher: O'Reilly Media, Inc.\
 pages: 99\
 ISBN: 9781098151249
 
-Kent Beck, who certainly isn't an unknown name in the sofware development world recently published this book, which is based upon his newsletter with the same name.
+Kent Beck, who certainly isn't an unknown name in the software development world recently published this book, which is based upon his newsletter with the same name.
 
 In this book, which is the start of a new series we dive into the world of tidyings which are small changes that do not alter the behaviour of our applications.
-These are similiar to refactorings, but smaller in scope and impact, or as described in the book "cute, fuzzy little refactorings that nobody could possibly hate on".
+These are similar to refactorings, but smaller in scope and impact, or as described in the book "cute, fuzzy little refactorings that nobody could possibly hate on".
 
 The "?" in the title is certainly not an error, it's not a how-to book but it offers us premises to makes us think and his insights are shared to help us define a framework. 
 
 ## About the book
 
-This book is the start of a new series, and we start of with tidying which he calls "the Pringles of software design" to facilitate future (behavioural) changes.
+This book is the start of a new series, and we start with tidying which he calls "the Pringles of software design" to facilitate future (behavioural) changes.
 
 It is split into 3 sections:
 
@@ -41,10 +41,10 @@ It is split into 3 sections:
 
 ### Tidyings
 
-Here Beck stars us of with some sample tidyings that make behavioural changes (features) in the future easier.\
-These small, easily reversible changes that do not need to be preemptively approved, and increase our enjoyment and produciviy while coding.
+Here Beck starts us of with some sample tidyings that make behavioural changes (features) in the future easier.\
+These small, easily reversible changes that do not need to be preemptively approved, and increase our enjoyment and productivity while coding.
 
-We're walked through 15 examples, some which may seem quite obvious but it never hurts to think about them, and what they actually mean.
+We're walked through 15 examples, some of which may seem quite obvious but it never hurts to think about them, and what they actually mean.
 
 Some examples:
 * reading order
@@ -80,7 +80,7 @@ And here's where we dive into metaphors from the financial market & option tradi
 * optionality
 * time/value of money
 * coupling & cohesion
-* capability of dealing with uncertainity and change
+* capability of dealing with uncertainty and change
 * reversible changes
 * ... 
 
