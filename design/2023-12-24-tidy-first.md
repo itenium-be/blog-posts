@@ -23,16 +23,13 @@ toc:
   icon: book
 ---
 
-# Book review: "Tidy first?"
-{: .hide-from-excerpt}
+Kent Beck, who certainly isn't an unknown name in the software development world recently published this book, which is based upon his newsletter with the same name.
 
 Price: €39.99 for the eBook  
 Publication date: October 2023  
 Publisher: O'Reilly Media, Inc.  
 Pages: 99  
 ISBN: 9781098151249
-
-Kent Beck, who certainly isn't an unknown name in the software development world recently published this book, which is based upon his newsletter with the same name.
 
 <!--more-->
 
