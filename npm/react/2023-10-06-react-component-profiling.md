@@ -271,10 +271,14 @@ const workDaysInMonthCache: {[month: string]: number} = {};
 
 The `IFeature` configures a grid and CRUD pages for a backend entity.
 
-It contains the data and currently active filters.  
+It contains the data and currently active filters. The problem here
+is that the `openMonths: string[]` filter is also part of the data
+of the `IFeature`.
+
 Because of how Redux works, the `openMonths: string[]` filter becomes a new
 array reference each time a projectMonth is opened/collapsed. This causes
-all months to be re-rendered instead of just the one being toggled.
+all months to be re-rendered instead of just the one being toggled
+because the filters object has changed.
 
 Furthermore, the expensive `IFeature` construction is not necessary
 when the projectMonth is collaped. Instead we can map directly to
