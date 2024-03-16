@@ -228,7 +228,7 @@ But you can continue playing until {{page.ctf-date.end}}, when the winners
 will be announced.
 
 Many of the flags found in the game are somehow encrypted
-with simple ciphers.
+with [simple ciphers](https://rumkin.com/tools/cipher/).
 
 Attempt to open the Vault by entering all your decrypted flags
 as passphrase and score Vault multipliers.
