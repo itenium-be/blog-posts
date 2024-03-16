@@ -25,8 +25,8 @@ toc:
   icon: eye
 
 competitor:
-  ceo: EVIL-CEO
-  company: EVIL-COMPETING-CONFERENCE
+  ceo: Alexander Cipher
+  company: ACME Coding Con
   zip: mitechcon-2024-sessions.zip
 ctf-date:
   start: thursday 21 March
