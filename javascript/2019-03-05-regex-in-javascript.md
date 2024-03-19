@@ -54,7 +54,7 @@ A cheat sheet for the regex syntax in JavaScript.
 
 **TL&DR**
 ```javascript
-''.test(/^$/); // boolean
+/^$/.test(''); // boolean
 'ok'.replace(/(o)(k)/g, '$2$1');
 // Other replacements:
 // $$ (literal), $& (all), $` (before), $' (after), $<name>
