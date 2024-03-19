@@ -448,7 +448,7 @@ Return
 ```
 
 The [`Pause`](https://autohotkey.com/docs/commands/Pause.htm) keyword would halt the current thread 
-while [`Suspend`](https://autohotkey.com/docs/commands/Suspend.htm) stops all hotkeys for triggering.
+while [`Suspend`](https://autohotkey.com/docs/commands/Suspend.htm) stops all hotkeys from triggering.
 
 Start a script with `Suspend, Permit` to have that hotkey still trigger
 even while the script is suspended.
