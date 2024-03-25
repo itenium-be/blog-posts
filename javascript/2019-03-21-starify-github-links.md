@@ -23,6 +23,10 @@ interesting:
 toc:
   title: Starifyication
   icon: icon-javascript
+last_modified_at: 2024-03-17 00:00:00 +0200
+updates:
+  - date: 2024-03-17 00:00:00 +0200
+    desc: Fix for Google layout. Updated to manifest.json v3.
 ---
 
 A [free and open source Chrome Extension](https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig)
