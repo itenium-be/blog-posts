@@ -34,6 +34,12 @@ package-versions:
 toc:
   title: .NET Testing Frameworks
   icon: dot-circle-o
+
+socials:
+  youtube:
+  linkedin:
+  instagram:
+  twitter:
 ---
 
 
