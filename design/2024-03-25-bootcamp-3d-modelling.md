@@ -55,7 +55,7 @@ copied over and over!
 As true developers this was easily accepted, and so we got to work!
 
 
-# Dinner
+# Lunch
 
 
 {% include post/image.html file="bootcamp-3dmodelling-dinner.png" alt="" title="" desc="Taking a break after all that building and constructing!" maxWidth="500px" %}
@@ -63,7 +63,7 @@ As true developers this was easily accepted, and so we got to work!
 
 ## Finishing Touches
 
-After dinner, there were additional demos on some more advanced Unreal Engine functionality:
+After lunch, there were additional demos on some more advanced Unreal Engine functionality:
 make it all look even better by playing with light, fog, elevations and finish up the landscape
 with terrain and foliage assets.
 
