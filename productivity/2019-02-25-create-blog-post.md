@@ -92,6 +92,11 @@ interesting:
 toc:
   title: 
   icon: icon-javascript | dot-circle-o (net) | icon-shell (ps1) | eye-slash (c#) | icon-angular | windows | icon-git | car (ahk) | icon-mssql | file-excel-o | icon-mongodb
+socials:
+  youtube:
+  linkedin:
+  instagram:
+  twitter:
 ---
 
 {: .hide-from-excerpt}
