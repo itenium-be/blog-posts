@@ -28,6 +28,9 @@ interesting:
 toc:
   icon: icon-reactjs
   title: Component Profiling
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_react-component-profiling-activity-7187027631463145472-sc57?utm_source=share&utm_medium=member_desktop"
+  twitter: "https://twitter.com/itenium_be/status/1781261551279677493"
 package-versions:
   - package: react
     version: 18.2.0
