@@ -21,6 +21,10 @@ tags: [book-review]
 toc:
   title: Tidy First!
   icon: book
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_book-review-tidy-first-activity-7186302489632157698-8244?utm_source=share&utm_medium=member_desktop"
+  instagram: "https://www.instagram.com/p/C528RS4xlGa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  twitter: "https://twitter.com/itenium_be/status/1780536759085879442"
 ---
 
 Kent Beck, who certainly isn't an unknown name in the software development world recently published this book, which is based upon his newsletter with the same name.
