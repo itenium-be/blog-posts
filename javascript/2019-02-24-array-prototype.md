@@ -28,7 +28,7 @@ interesting:
 toc:
   title: Array.prototype
   icon: icon-javascript
-last_modified_at: 2023-10-06 00:00:00 +0200
+last_modified_at: 2024-06-01 00:00:00 +0200
 updates:
   - date: 2023-10-06
     desc: "More updates for ECMAScript 2023"
@@ -36,6 +36,8 @@ updates:
     desc: "Added flat and flatMap"
   - date: 2023-03-08
     desc: "Added Distinct, flatMap"
+  - date: 2024-06-01
+    desc: "Added Object.groupBy"
 ---
 
 The [`Array.prototype`][prototype] functions have been available for a long time but
@@ -85,9 +87,10 @@ Do note that the deferred execution we know from Linq does not apply to `Array.p
 | Skip(start).Take(start - end)   | <b>slice</b>(start = 0, end = length-1)        | [slice][slice]
 | string.Join()                   | <b>join</b>(separator = ',')                   | [join][join]
 | Array.IndexOf()                 | <b>findIndex</b>((cur): boolean): -1 \| number | [findIndex][findIndex]
-| ElementAt()                     | <b>at(index)</b> (accepts negative indexes)    | [at][at]
+| ElementAt()                     | <b>at</b>(index) (accepts negative indexes)    | [at][at]
 | Count()                         | <b>length</b>: number                          | [length][length]
-| SelectMany()                    | <b>flat(levels = 1)</b> / <b>flatMap</b>(fn)   | [flat][flat] / [flatMap][flatMap]
+| SelectMany()                    | <b>flat</b>(levels = 1) / <b>flatMap</b>(fn)   | [flat][flat] / [flatMap][flatMap]
+| GroupBy()                       | <b>Object.groupBy</b>(arr, groupFn)            | [groupBy][groupBy]
 | Distinct()                      | <b>filter</b>((el, i, arr) => arr.indexOf(el) === i)
 | Extension method                | forEach((cur): void): void                     | [forEach][forEach]
 | 
@@ -175,6 +178,26 @@ const result = input.reduce((acc, cur) => {
 }, {even: [], odd: []});
 
 expect(result).toEqual({even: [0, 2], odd: [1, 3]});
+```
+
+Since 2024, JS has a dedicated `Object.groupBy`:
+
+```js
+const socks = [
+  { name: 'JavaScript', type: 'lang' },
+  { name: 'Angular', type: 'package' },
+  { name: 'React', type: 'package' },
+];
+
+const grouped = Object.groupBy(socks, sock => sock.type);
+
+expect(grouped).toEqual({
+  lang: [{ name: 'JavaScript', type: 'lang' }],
+  package: [
+    { name: 'Angular', type: 'package' },
+    { name: 'React', type: 'package' },
+  ]
+})
 ```
 
 
@@ -305,3 +328,4 @@ for (let itm of input) {
 [with]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with
 [toSpliced]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced
 [findLastIndex]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex
+[groupBy]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy
