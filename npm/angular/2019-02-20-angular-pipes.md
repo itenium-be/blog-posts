@@ -19,25 +19,26 @@ extras:
 interesting:
   - url: https://angular.io/generated/live-examples/pipes/stackblitz.html
     desc: Live examples from the official docs
-  - url: "https://angular.io/guide/pipes"
+  - url: "https://angular.dev/guide/pipes#built-in-pipes"
     desc: Official Angular Pipes docs
-  - url: https://angular.io/api?type=pipe
-    desc: Official API docs
-  - url: https://github.com/angular/angular/issues/25461
-    desc: "Issue: Currency Pipe: Be able to set/change the default currency"
 toc:
   title: Angular Pipes
   icon: icon-angular
 package-versions:
   - package: angular
-    version: 7.2.5
+    version: 18
+
+last_modified_at: 2024-06-01 00:00:00 +0200
+updates:
+  - date: 2024-06-01 00:00:00 +0200
+    desc: "Update to Angular v18: locale configuration, i18n pipes, updated official doc links etc"
 ---
 
 **Pipes**: Chainable, declarative display-value transformations to use in your Html.
 {: .notice}
 
 This post covers:  
-- All Builtin Angular pipes (json, async, string, array)
+- All Builtin Angular pipes (json, async, string, array, i18n)
 - How to install different locales (currency, decimal, date, percent)
 - How to generate, implement and test your custom pipes
 - Some examples of custom pipes ([ngx-pipes](https://github.com/danrevah/ngx-pipes) and [angular-pipes](https://github.com/fknop/angular-pipes))
@@ -63,7 +64,7 @@ Quick object dump with the **impure JsonPipe**.
 An impure pipe is called often, as often as every keystroke or mouse-move.
 {: .notice--info}
 
-[JsonPipe API](https://angular.io/api/common/JsonPipe)
+[JsonPipe API](https://angular.dev/api/common/JsonPipe)
 {: style="float: right"}
 
 Example usage:  
@@ -75,8 +76,9 @@ Example usage:
 ```
 
 Inject in a Component:  
-```
-import { CurrencyPipe } from '@angular/common';
+
+```ts
+import { CurrencyPipe, formatCurrency } from '@angular/common';
 
 @Component({
   providers: [CurrencyPipe]
@@ -84,15 +86,18 @@ import { CurrencyPipe } from '@angular/common';
 export class AppComponent {
   constructor(private cp: CurrencyPipe) {
     this.cp.transform(450.657, 'EUR', 'symbol', '0.2-2', 'fr'); // 450,66 €
+
+    // Use the formatCurrency instead! (formatDate, formatNumber, ...)
+    formatCurrency(450.657, 'fr', 'EUR', 'symbol', '0.2-2');
   }
 }
 ```
 
 ## String Casing Pipes
 
-[UpperCasePipe](https://angular.io/api/common/UpperCasePipe)
-, [LowerCasePipe](https://angular.io/api/common/LowerCasePipe)
-and [TitleCasePipe](https://angular.io/api/common/TitleCasePipe).
+[UpperCasePipe](https://angular.dev/api/common/UpperCasePipe)
+, [LowerCasePipe](https://angular.dev/api/common/LowerCasePipe)
+and [TitleCasePipe](https://angular.dev/api/common/TitleCasePipe).
 
 ```html
 {% raw %}lowercase => {{ 'LOWERCASE' | lowercase }}
@@ -109,10 +114,10 @@ Used by **DatePipe**, **CurrencyPipe**, **DecimalPipe** and **PercentPipe**.
 
 ### Setup
 
-[Official i18n docs](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app)
+[Official i18n docs](https://angular.dev/guide/i18n)
 {: style="float: right"}
 
-Angular comes with the `en-US` locale only.
+By default, Angular comes with the `en-US` locale only.
 Import a different locale in your `app.module.ts`:
 
 ```typescript
@@ -123,20 +128,42 @@ import localeFr from '@angular/common/locales/fr';
 registerLocaleData(localeFr, 'fr');
 
 @NgModule({
-  providers: [{provide: LOCALE_ID, useValue: 'fr'}],
+  providers: [
+    {provide: DEFAULT_CURRENCY_CODE, useValue: 'EUR'}, // default: USD
+    {provide: LOCALE_ID, useValue: 'fr'}, // default: en-US
+    // default dateFormat: mediumDate
+    // default timezone: user local system timezone
+    {provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: {dateFormat: 'MM/dd/yy', timezone: '-1200'}},
+  ],
 })
 export class AppModule { }
+```
+
+Or without module:
+
+```ts
+import { ApplicationConfig } from '@angular/core';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    {provide: LOCALE_ID, useValue: 'fr'},
+    {provide: DEFAULT_CURRENCY_CODE, useValue: 'EUR'},
+    {provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: {dateFormat: 'MM/dd/yy', timezone: '-1200'}},
+  ]
+};
+
+bootstrapApplication(AppComponent, appConfig);
 ```
 
 
 
 ### CurrencyPipe
 
-[CurrencyPipe API](https://angular.io/api/common/CurrencyPipe)
+[CurrencyPipe API](https://angular.dev/api/common/CurrencyPipe)
 {: style="float: right"}
 
-Default currency is `$`, this can as of yet not be set globally.
-Consider using a [Money](https://martinfowler.com/eaaCatalog/money.html) class instead.
+Outside html templates, use [`formatCurrency()`](https://angular.dev/api/common/formatCurrency) instead!
+
 
 ```html
 {% raw %}<!-- Signature -->
@@ -157,10 +184,12 @@ Parameters:
 Parameters `digitsInfo` and `locale` work exactly the same for DecimalPipe and PercentPipe.
 
 
-[DecimalPipe API](https://angular.io/api/common/DecimalPipe)
+[DecimalPipe API](https://angular.dev/api/common/DecimalPipe)
 {: style="float: right"}
 
 ### DecimalPipe
+
+Outside html templates, use [`formatNumber()`](https://angular.dev/api/common/formatNumber) instead!
 
 
 ```html
@@ -171,10 +200,12 @@ Parameters `digitsInfo` and `locale` work exactly the same for DecimalPipe and P
 025.1230 => {{ 25.123 | number:'3.4-4'}}{% endraw %}
 ```
 
-[PercentPipe API](https://angular.io/api/common/PercentPipe)
+[PercentPipe API](https://angular.dev/api/common/PercentPipe)
 {: style="float: right"}
 
 ### PercentPipe
+
+Use [`formatPercent()`](https://angular.dev/api/common/formatPercent) outside templates.
 
 ```html
 {% raw %}<!-- Signature -->
@@ -187,10 +218,15 @@ Parameters `digitsInfo` and `locale` work exactly the same for DecimalPipe and P
 
 ### DatePipe
 
-[DatePipe API](https://angular.io/api/common/DatePipe)
+[DatePipe API](https://angular.dev/api/common/DatePipe)
 {: style="float: right"}
 
-Works on a `Date`, a number (ms since UTC epoch), or an [ISO string](https://www.w3.org/TR/NOTE-datetime)
+Works on a `Date`, a number (ms since UTC epoch), or an [ISO string](https://www.w3.org/TR/NOTE-datetime)  
+Use [`formatDate()`](https://angular.dev/api/common/formatDate) outside templates instead!
+
+All functions like `getLocaleDayNames` etc have been deprecated in favor of using [`Intl`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
+
+
 
 ```html
 {% raw %}<!-- Signature -->
@@ -222,7 +258,7 @@ More options for the format:
 
 ## Array Pipes
 
-[SlicePipe API](https://angular.io/api/common/SlicePipe)
+[SlicePipe API](https://angular.dev/api/common/SlicePipe)
 {: style="float: right"}
 
 ### SlicePipe <small>(Impure)</small>
@@ -245,7 +281,7 @@ More options for the format:
 
 ### KeyValuePipe <small>(Impure)</small>
 
-[KeyValuePipe API](https://angular.io/api/common/KeyValuePipe)
+[KeyValuePipe API](https://angular.dev/api/common/KeyValuePipe)
 {: style="float: right"}
 
 Works on Objects and Maps.
@@ -282,10 +318,15 @@ The output would be:
 
 ## AsyncPipe <small>(Impure)</small>
 
-[AsyncPipe API](https://angular.io/api/common/AsyncPipe)
+[AsyncPipe API](https://angular.dev/api/common/AsyncPipe)
 {: style="float: right"}
 
 Returns the last emitted value. Unsubscribes automatically in `ngOnDestroy`.
+
+I typically **always** use the `AsyncPipe` instead of `.subscribe()` in TS.  
+Do keep track on your DevTools Network Tab though, make sure you are not
+performing the same http call multiple times when rendering a component!
+
 
 ```html
 {% raw %}Time: {{ time$ | async }}
@@ -302,9 +343,49 @@ Returns the last emitted value. Unsubscribes automatically in `ngOnDestroy`.
 Where `time$` is an Observable or a Promise. Ex:
 ```typescript
 export class AppComponent {
-  time$ = new Observable<string>(observer => {
-    setInterval(() => observer.next(new Date().toString()), 1000);
-  });
+  time$ = interval(1000).pipe(
+    map(() => new Date().toString())
+  )
+}
+```
+
+
+## i18n Pipes
+
+[I18nPluralPipe API](https://angular.dev/api/common/I18nPluralPipe)
+{: style="float: right"}
+
+### I18nPluralPipe
+
+
+Display "1 item" but "2 items", check the
+structure [here](https://unicode-org.github.io/icu/userguide/format_parse/messages/#complex-argument-types).
+
+
+```ts
+{% raw %}{{ some_number | i18nPlural: pluralItemsMap }}{% endraw %}
+
+const pluralItemsMap = {
+  '=0': 'zero items',
+  '=1': 'one item',
+  'other': '# items',
+}
+```
+
+[I18nSelectPipe API](https://angular.dev/api/common/I18nSelectPipe)
+{: style="float: right"}
+
+### I18nSelectPipe
+
+
+
+```ts
+{% raw %}{{ 'F' | i18nSelect: genderMap }}{% endraw %}
+
+const genderMap = {
+  'M': 'Mr',
+  'F': 'Ms',
+  'X': 'Mx',
 }
 ```
 
@@ -316,7 +397,7 @@ Create your own pipes for displaying values relevant in your application domain.
 
 ## Creation
 
-Use [`ng generate`](https://angular.io/cli/generate#pipe)
+Use [`ng generate`](https://angular.dev/cli/generate/pipe)
 
 ```powershell
 ng g pipe <name> options
@@ -343,7 +424,7 @@ export class HoursPipe implements PipeTransform {
   transform(value: Date, showHours = true, showMinutes = true): string {
     value = new Date(value);
     if (showMinutes) {
-        return value.getHours() + ':' + value.getMinutes();
+      return value.getHours() + ':' + value.getMinutes();
     }
     return value.getHours() + 'h';
   }
@@ -480,7 +561,7 @@ This is one project with such collection.
 {% include github-stars.html url="danrevah/ngx-pipes" %}
 
 
-```cmd
+```sh
 npm install ngx-pipes --save
 ```
 
@@ -521,7 +602,7 @@ Pretty much the same collection of pipes in this project.
 {% include github-stars.html url="fknop/angular-pipes" %}
 
 
-```cmd
+```sh
 npm install angular-pipes --save
 ```
 
