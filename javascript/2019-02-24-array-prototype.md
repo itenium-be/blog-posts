@@ -23,6 +23,8 @@ interesting:
     desc: "es6-features.org: Overview and Comparison"
   - url: https://stackoverflow.com/a/200614/540352
     desc: "StackOverflow: Jon Skeet on why there is no forEach in Linq"
+  - git: morelinq/MoreLINQ
+    desc: "Extensions to LINQ to Objects"
   - url: https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
     desc: "MooTools: Why Contains is called includes in JavaScript"
 toc:
@@ -213,6 +215,17 @@ expect(input.slice()).toEqual([...input]);
 
 // Signature
 slice(startIndex = 0, endIndex = length-1);
+```
+
+### C# Ranges
+
+```c#
+var array = new[] { 1, 2, 3, 4, 5 };
+
+Assert.Equal(new[] { 3, 4 }, array[2..^1]);
+Assert.Equal(new[] { 1, 2 }, array[..^3]);
+Assert.Equal(new[] { 3, 4, 5 }, array[2..]);
+Assert.Equal(new[] { 1, 2, 3, 4, 5 }, array[..]);
 ```
 
 ### with
