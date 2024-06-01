@@ -32,14 +32,14 @@ toc:
   icon: icon-javascript
 last_modified_at: 2024-06-01 00:00:00 +0200
 updates:
+  - date: 2024-06-01
+    desc: "Added Object.groupBy"
   - date: 2023-10-06
     desc: "More updates for ECMAScript 2023"
   - date: 2023-09-04
     desc: "Added flat and flatMap"
   - date: 2023-03-08
     desc: "Added Distinct, flatMap"
-  - date: 2024-06-01
-    desc: "Added Object.groupBy"
 ---
 
 The [`Array.prototype`][prototype] functions have been available for a long time but
