@@ -249,7 +249,7 @@ package 😭
 - Docker
 - Cloud Sync (Dropbox, GDrive, ...)
 
-After that I basically do everyting with Docker
+After that I basically do everything with Docker
 but if you want some ready-made packages that
 are not in the official listing, be sure to
 checkout [SynoCommunity](https://synocommunity.com/).
