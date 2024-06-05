@@ -125,7 +125,7 @@ git mv -f OldFileNameCase newfilenamecase
 
 When the remote url changes for all your repositories.
 
-```ps1
+```powershell
 $paths = Get-ChildItem "c:\git-repos" | ? { $_.PSIsContainer }
 foreach ($path in $paths) {
     $gitPath = Join-Path $path.FullName "\.git"
@@ -147,7 +147,7 @@ foreach ($path in $paths) {
 
 From your current branch.
 
-```ps1
+```powershell
 function Create-PullRequest() {
   $baseUrl = git remote get-url origin
 
