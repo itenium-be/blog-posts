@@ -18,8 +18,10 @@ toc:
   title: Git Recipes
   icon: icon-git
 redirect_from: /blog/productivity/exotic-git-recipes
-last_modified_at: 2019-12-29 00:00:00 +0200
+last_modified_at: 2024-06-05 00:00:00 +0200
 updates:
+  - date: 2024-06-05 00:00:00 +0200
+    desc: git filter-repo and Create-PullRequest for Github
   - date: 2019-12-30 00:00:00 +0200
     desc: PS scripts to remap remote urls & create a PR
 ---
@@ -123,7 +125,7 @@ git mv -f OldFileNameCase newfilenamecase
 
 When the remote url changes for all your repositories.
 
-```ps
+```ps1
 $paths = Get-ChildItem "c:\git-repos" | ? { $_.PSIsContainer }
 foreach ($path in $paths) {
     $gitPath = Join-Path $path.FullName "\.git"
@@ -145,17 +147,22 @@ foreach ($path in $paths) {
 
 From your current branch.
 
-```ps
+```ps1
 function Create-PullRequest() {
-	$urlTemplate += "{base-url}/pullrequestcreate?sourceRef={source-branch}&targetRef={target-branch}"
+  $baseUrl = git remote get-url origin
 
-	$baseUrl = git remote get-url origin
-	$sourceBranch = git rev-parse --abbrev-ref HEAD
-	# $targetBranch = "develop"
-	$targetBranch = "master"
+  if ($baseUrl -match 'github.com') {
+    $urlTemplate += "{base-url}/compare/{target-branch}...{source-branch}"
+  } else {
+    $urlTemplate += "{base-url}/pullrequestcreate?sourceRef={source-branch}&targetRef={target-branch}"
+  }
 
-	git push -u origin $sourceBranch
-	start $urlTemplate.Replace("{base-url}", $baseUrl).Replace("{source-branch}", [uri]::EscapeDataString($sourceBranch)).Replace("{target-branch}", $targetBranch)
+  $sourceBranch = git rev-parse --abbrev-ref HEAD
+  # $targetBranch = "develop"
+  $targetBranch = "master"
+
+  git push -u origin $sourceBranch
+  start $urlTemplate.Replace("{base-url}", $baseUrl).Replace("{source-branch}", [uri]::EscapeDataString($sourceBranch)).Replace("{target-branch}", $targetBranch)
 }
 
 Set-Alias pr Create-PullRequest
