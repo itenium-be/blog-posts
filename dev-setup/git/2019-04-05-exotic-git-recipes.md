@@ -45,7 +45,23 @@ tell me why a particular algorithm was written the way it was.
 Turns out git allows you to have your cake and eat it too!
 
 ```bash
+# DEPRECATED!!
 git filter-branch --prune-empty --subdirectory-filter src master
+```
+
+These days you get a deprecation warning when using `filter-branch`
+and are pointed to a third party package instead:
+
+{% include github-stars.html url="newren/git-filter-repo" desc="Quickly rewrite git repository history (filter-branch replacement)" %}
+
+[git-filter-repo(1) docs](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html)
+
+
+```sh
+# Requires git >= 2.24.0 and Python >= 3.5
+pip3 install git-filter-repo
+git filter-repo -h
+git filter-repo --path src --subdirectory-filter src
 ```
 
 
