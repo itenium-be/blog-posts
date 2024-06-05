@@ -9,6 +9,9 @@ img:
   url: git-snippets.jpg
   origin: https://unsplash.com/photos/Bb_X4JgSqIM
   desc: Photo by Brine Blum
+bigimg:
+  url: exotic-git-recipes-big.png
+  prompt: "exotic git recipes"
 categories: dev-setup
 tags: [git]
 interesting:
