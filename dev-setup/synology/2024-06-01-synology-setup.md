@@ -279,6 +279,9 @@ scp -P 22 -r ~/.common.gitconfig userName@192.168.1.x:~/
 
 # NAS
 git config --global include.path "~/.common.gitconfig"
+
+# Overwrite your Windows autocrlf=true:
+git config --global core.autocrlf false
 ```
 
 You could also opt to create a symbolic link from your Cloud Sync `.gitconfig`.
