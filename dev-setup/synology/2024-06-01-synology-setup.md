@@ -35,9 +35,9 @@ package-versions:
     version: 7.1.1
 socials:
   youtube:
-  linkedin:
-  instagram:
-  twitter:
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7209133171496419329-iujd?utm_source=share&utm_medium=member_desktop"
+  instagram: "https://www.instagram.com/p/C8ZKXMMN7xw/"
+  twitter: "https://x.com/itenium_be/status/1803367207801397760"
 ---
 
 You've got yourself a brand new Synology.
