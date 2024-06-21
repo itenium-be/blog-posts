@@ -27,6 +27,10 @@ updates:
     desc: git filter-repo and Create-PullRequest for Github
   - date: 2019-12-30 00:00:00 +0200
     desc: PS scripts to remap remote urls & create a PR
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7207321110223142913-Zw-p?utm_source=share&utm_medium=member_desktop"
+  instagram: "https://www.instagram.com/p/C8MSU3ctO3I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  twitter: "https://x.com/itenium_be/status/1801555213997760528"
 ---
 
 Some git commands and scripts that come in handy from time to time.
