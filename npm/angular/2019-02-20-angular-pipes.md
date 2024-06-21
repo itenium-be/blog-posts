@@ -32,6 +32,10 @@ last_modified_at: 2024-06-01 00:00:00 +0200
 updates:
   - date: 2024-06-01 00:00:00 +0200
     desc: "Update to Angular v18: locale configuration, i18n pipes, updated official doc links etc"
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7206596365081006080-Mx8L?utm_source=share&utm_medium=member_desktop"
+  instagram: "https://www.instagram.com/p/C8HI0IKN7u_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  twitter: "https://x.com/itenium_be/status/1800830536849535138"
 ---
 
 **Pipes**: Chainable, declarative display-value transformations to use in your Html.
