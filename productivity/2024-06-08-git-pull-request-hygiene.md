@@ -175,9 +175,18 @@ function isLoggedIn() {
 Earlier this week I deleted an HTML file
 which contained local test run results.
 
-Deleting such files is not enough, create a PR
-to add the folder to your `.gitignore` so that
+Typically everything that is generated should not be committed
+as it can just be re-generated on the fly!  
+There are exceptions, for example a `package-lock.json` is
+generated but is used by a CI/CD pipeline to make sure
+new `npm install`s the exact same thing.
+
+Deleting such files is not enough though, create a PR
+to add the file/folder to your `.gitignore` so that
 this can never happen again!
+
+When in doubt whether you should `.gitignore` something,
+google it!
 
 
 ## Avoid Superfluous Changes
