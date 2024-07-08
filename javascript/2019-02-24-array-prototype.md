@@ -7,6 +7,10 @@ desc: >
   A guide on learning JavaScript `Array.prototype` by comparing it to C# Linq.
 img:
   url: Array.prototype.png
+bigimg:
+  url: Array.prototype-big.png
+  prompt: "array prototype"
+  origin: Midjourney
 categories: javascript
 tags: [cheat-sheet,tutorial]
 extras:
@@ -308,6 +312,14 @@ for (let itm of input) {
     - The swiss army knife: add and/or remove element(s)
     - Returns array of removed elements (or empty array)
     - There is now also [toSpliced][toSpliced] (2023)
+
+
+# Linq for ages 5 and up
+
+Thanks [Wim De Cleen](https://x.com/bewidec/status/935573858136051713) (and Martin Fowler)
+for this amazing diagram, I love it!
+
+![Explain LINQ to a 5 year old](/assets/blog-images/Array.prototype-fowler-diagrams.jpg "Explain LINQ to a 5 year old"){: .img-responsive}
 
 
 
