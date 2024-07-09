@@ -38,6 +38,7 @@ socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7209133171496419329-iujd?utm_source=share&utm_medium=member_desktop"
   instagram: "https://www.instagram.com/p/C8ZKXMMN7xw/"
   twitter: "https://x.com/itenium_be/status/1803367207801397760"
+  facebook: "https://www.facebook.com/share/p/dcJqP1zB3srdaBrh/"
 ---
 
 You've got yourself a brand new Synology.

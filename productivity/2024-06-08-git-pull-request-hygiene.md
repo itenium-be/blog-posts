@@ -27,6 +27,7 @@ socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7208408389125636097-udXv?utm_source=share&utm_medium=member_desktop"
   instagram: "https://www.instagram.com/p/C8UAttYt_T2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   twitter: "https://x.com/itenium_be/status/1802642409953649139"
+  facebook: "https://www.facebook.com/share/p/asAAaFYJo4yjc4VB/"
 ---
 
 It seems that pretty much everyone is using

@@ -36,6 +36,7 @@ socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7206596365081006080-Mx8L?utm_source=share&utm_medium=member_desktop"
   instagram: "https://www.instagram.com/p/C8HI0IKN7u_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   twitter: "https://x.com/itenium_be/status/1800830536849535138"
+  facebook: "https://www.facebook.com/itenium.be/posts/pfbid0312ohftRC9KEjqU2yvXzSQh45mGQduqiNzcSJALuu8r2EiRkeJDggotQSjQhyhML8l"
 ---
 
 **Pipes**: Chainable, declarative display-value transformations to use in your Html.

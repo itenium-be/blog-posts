@@ -31,6 +31,7 @@ socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7207321110223142913-Zw-p?utm_source=share&utm_medium=member_desktop"
   instagram: "https://www.instagram.com/p/C8MSU3ctO3I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   twitter: "https://x.com/itenium_be/status/1801555213997760528"
+  facebook: "https://www.facebook.com/itenium.be/posts/pfbid034j5NjXD1c9jY5cFWu3qf3V1vyBkyESdrsBqFL4nD8JwUKQ1fEJQfjGGKNLUHotFBl"
 ---
 
 Some git commands and scripts that come in handy from time to time.
