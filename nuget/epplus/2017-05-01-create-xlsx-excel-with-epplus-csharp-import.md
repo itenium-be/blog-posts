@@ -35,7 +35,10 @@ using (var package = new ExcelPackage())
 		new {Name = "B", Value = 2},
 		new {Name = "C", Value = 3},
 	};
-	sheet.Cells["A1"].LoadFromCollection(data);
+	bool generateHeaders = true;
+	sheet.Cells["A1"].LoadFromCollection(data, generateHeaders);
+
+	// Overwrite headers with something fancier
 	sheet.Cells["A1"].SetHeaders("Name", "Value");
 	package.SaveAs(new FileInfo(@""));
 }
