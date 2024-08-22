@@ -35,11 +35,10 @@ toc:
   title: Docker + Mongo
   icon: icon-mongodb
 socials:
-  youtube: ""
-  linkedin: ""
-  instagram: ""
-  twitter: ""
-  facebook: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-itenium2-keeponlearning-activity-7231963696757944320-StZp?utm_source=share&utm_medium=member_desktop"
+  instagram: "https://www.instagram.com/p/C-7YXiAt0Af/"
+  twitter: "https://x.com/itenium_be/status/1826197579496919217"
+  facebook: "https://www.facebook.com/share/p/QQDdPbr5xfpqsHyq/?mibextid=oFDknk"
 ---
 
 How to load some initial data after spinning up a mongo
