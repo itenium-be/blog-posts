@@ -22,14 +22,17 @@ interesting:
 toc:
   title: Git Hooks
   icon: icon-git
-todo:
- - desc: Use lerna to do the monorepo handling?
-   url: https://github.com/lerna/lerna
 package-versions:
   - package: husky
     version: 1.3.1
-redirect_from: /blog/productivity/git-hooks-with-husky/
 ---
+
+
+**Update for Husky v9**  
+A lot has changed in Husky since this blog post.
+See the [2024 update of this article](https://itenium.be/blog/dev-setup/git-hooks-with-husky-v9) instead!
+{: .notice}
+
 
 Avoid pushing changes that break the build with githooks and Husky.
 
@@ -111,7 +114,7 @@ exit $hasBuildErrors
 
 More control with `.huskyrc.js` and environment variables.
 
-```
+```js
 const tasks = arr => arr.join(' && ');
 
 module.exports = {
