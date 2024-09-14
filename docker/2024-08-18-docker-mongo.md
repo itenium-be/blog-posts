@@ -34,6 +34,10 @@ extras:
 toc:
   title: Docker + Mongo
   icon: icon-mongodb
+last_modified_at: 2024-09-14 00:00:00 +0200
+updates:
+  - date: 2024-09-14 00:00:00 +0200
+    desc: Added mongo-secure
 socials:
   linkedin: "https://www.linkedin.com/posts/itenium_itenium-itenium2-keeponlearning-activity-7231963696757944320-StZp?utm_source=share&utm_medium=member_desktop"
   instagram: "https://www.instagram.com/p/C-7YXiAt0Af/"
@@ -49,7 +53,11 @@ If you want to follow the examples:
 ```sh
 git clone https://github.com/itenium-be/Docker-Mongo
 cd Docker-Mongo
-docker compose up -d
+docker compose up -d --build
+
+# After fiddling, force re-creating the mongos:
+docker compose down -v
+docker compose up -d --build
 ```
 
 <!--more-->
@@ -171,6 +179,8 @@ mongoimport --db $MONGO_INITDB_DATABASE \
 
 
 ```sh
+# With mongo-js-load the name of the container
+# And jsapp the database name
 docker exec -it mongo-js-load mongosh \
   --username mongoadmin \
   --password pwd \
@@ -239,6 +249,91 @@ Inside the container check [`/etc/mongod.conf.orig`](https://www.mongodb.com/doc
 |          |                    | /opt/homebrew/etc/mongod.conf (Apple M1 processors)
 | Windows  | MSI                | \<install directory\>\bin\mongod.cfg
 {: .table-code}
+
+
+# Security
+
+Get into the `mongosh` without credentials and then do
+everything in the shell itself.
+
+See [User Management Methods](https://www.mongodb.com/docs/manual/reference/method/js-user-management/)
+in the mongo docs for more!
+
+```js
+docker exec -it mongo-secure mongosh
+
+use admin
+db.auth("mongoadmin", "pwd")
+
+use otherDb
+db.createUser({
+  user: 'otherDbReader',
+  pwd: 'pwd',
+  roles: [{
+    role: 'read',
+    db: 'otherDb'
+  }]
+})
+```
+
+## With Initial Load
+
+In a `js` file. Mongo 6 supports `process.env`:
+
+```js
+db.createUser({
+  user: 'user2',
+  pwd: process.env.USER2_PWD,
+  roles: [{
+    role: 'read',
+    db: 'someDb'
+  }]
+})
+```
+
+Before mongo 6, use a `sh` file instead:
+
+```sh
+mongosh <<EOF
+use $MONGO_INITDB_DATABASE
+db.createUser({
+  user: '$OTHER_USER',
+  pwd: '$OTHER_PWD',
+  roles: [{
+    role: 'read',
+    db: '$MONGO_INITDB_DATABASE'
+  }]
+})
+EOF
+```
+
+
+## Roles
+
+The official docs for
+[Built-In Roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/#std-label-built-in-roles).
+
+| Role       | Description                                             
+|------------|---------------------------------------------------------
+|            | **Database User Roles**
+| read       | Read data on all non-system collections (+ [`system.js`][systemjs])
+| readWrite  | Can modify all collections from the `read` role
+|            | **Database Administration Roles**
+| dbAdmin    | Schema-related tasks, indexing and gathering statistics
+| userAdmin  | Create and modify roles and users on the current db. Can grant any privilege to any user, including themselves (indirectly provides `superuser` to the db/cluster)
+| dbOwner    | Combines readWrite, dbAdmin and userAdmin
+| backup     | Minimal privileges for backing up data
+| restore    | Minimal privileges for restoring backups
+{: .table-code}
+
+Other roles:  
+- `readAnyDatabase`: the same as the roles above, but for all databases (also exists for `readWrite`, `dbAdmin` and `userAdmin`)
+- `clusterAdmin`: clusterManager + clusterMonitor + hostManager (+ dropDatabase action)
+- `enableSharding`: Enable sharding for a collection nad modify existing shard keys
+- `root`: global superuser access: xxxAnyDatabase + clusterAdmin + backup/restore
+
+
+[systemjs]: https://www.mongodb.com/docs/manual/reference/system-collections/#mongodb-data--database-.system.js
 
 
 # Synology
