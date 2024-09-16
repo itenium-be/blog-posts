@@ -26,11 +26,10 @@ toc:
   title: Frontend Track Setup
   icon: icon-javascript
 socials:
-  youtube:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
-  facebook: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7237037256333565954-ie53"
+  instagram: "https://www.instagram.com/p/C_fbgjPN04J/"
+  twitter: "https://x.com/itenium_be/status/1831271037679386647"
+  facebook: "https://www.facebook.com/share/p/L2NYz9vvJNfJ1uYy/?mibextid=oFDknk"
 ---
 
 Q: How do you install Node?  
