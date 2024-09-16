@@ -24,7 +24,12 @@ extras:
     githubtext: "The code from this blog post as xUnit tests"
 toc:
   title: 🎁 Keep It Simple
-  icon: 
+  icon:
+socials:
+  linkedIn: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7240298396052312064-PnP3"
+  instagram: "https://www.instagram.com/p/C_2muHtNNw5/"
+  twitter: "https://x.com/itenium_be/status/1834532573394931816"
+  facebook: "https://www.facebook.com/share/p/emS3YtJeu9hbehat/?mibextid=oFDknk"
 ---
 
 I picked up a UserStory to make a small adjustment.
