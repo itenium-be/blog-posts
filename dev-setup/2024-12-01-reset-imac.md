@@ -32,7 +32,7 @@ socials:
 A friend got himself a second-hand iMac but couldn't log in
 because he didn't have the Apple Account credentials.
 
-![Please fix my computer meme](/assets/blog-images/reset-mac-3.png "Me with computer science degree as Jessica Jones and relative looking at me to fix their computer as Killgrave meme"){: .img-responsive}
+![Me with computer science degree as Jessica Jones and relative looking at me to fix their computer as Killgrave meme](/assets/blog-images/reset-mac-3.png){: .img-responsive}
 
 <!--more-->
 
@@ -76,8 +76,8 @@ At that point you can also kill the old user.
 
 Best not to tell anyone you are in IT 😃
 
-![Please fix my computer meme](/assets/blog-images/reset-mac-2.jpg "Relatives asking if this is free tech support for live once I got my computer science degree meme")
+![Relatives asking if this is free tech support for live once I got my computer science degree meme](/assets/blog-images/reset-mac-2.jpg)
 
 More memes!!
 
-![Please fix my computer meme](/assets/blog-images/reset-imac-1.jpg "Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel")
+![Kick-Ass movie meme: daughter asks can you fix my computern, Nicolas Cage shoots her in the next panel](/assets/blog-images/reset-imac-1.jpg)
