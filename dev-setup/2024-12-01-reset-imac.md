@@ -21,7 +21,7 @@ categories: dev-setup
 tags: [tutorial]
 toc:
   title: iMac Reset
-  icon: icon-apple
+  icon: apple
 socials:
   linkedin: ""
   instagram: ""
