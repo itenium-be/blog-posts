@@ -23,10 +23,9 @@ toc:
   title: iMac Reset
   icon: apple
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
-  facebook: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7270029618747768834-m8LQ"
+  twitter: "https://x.com/itenium_be/status/1864263447937941639"
+  facebook: "https://www.facebook.com/share/p/19KXXPqViY/"
 ---
 
 A friend got himself a second-hand iMac but couldn't log in
