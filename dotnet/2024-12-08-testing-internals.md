@@ -18,7 +18,7 @@ img:
   origin: Midjourney
   prompt: "testing the internals"
 categories: dotnet
-tags: [net,testing]
+tags: [testing]
 extras:
   - githubproject: https://github.com/itenium-be/DotNetUnitTestFrameworks
     githubtext: "Example UnitTests in NUnit, xUnit and MSTest"

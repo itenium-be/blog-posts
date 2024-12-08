@@ -18,7 +18,7 @@ img:
   origin: Midjourney
   prompt: "a thorough audit"
 categories: dotnet
-tags: [net,tutorial,sql]
+tags: [tutorial,sql]
 extras:
   - githubproject: https://github.com/itenium-be/DbAuditWithEF
     githubtext: "SQL Server & EntityFramework Core: how to audit"
