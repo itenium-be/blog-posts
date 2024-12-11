@@ -28,10 +28,9 @@ toc:
   title: SQL Training
   icon: icon-mssql
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
-  facebook: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7254793912874070016-qDrS"
+  twitter: "https://x.com/itenium_be/status/1849028067395576032"
+  facebook: "https://www.facebook.com/share/p/15MhAMnTZU/"
 ---
 
 This month our QA TechEvent was "SQL Training". Goal was to score most points by solving
