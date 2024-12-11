@@ -27,6 +27,10 @@ interesting:
 toc:
   title: Git Hooks
   icon: icon-git
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7247183964853932035-NLY2"
+  twitter: "https://x.com/itenium_be/status/1841417878219739299"
+  facebook: "https://www.facebook.com/share/p/15mEFmRE5J/"
 package-versions:
   - package: husky
     version: 9.1.5
