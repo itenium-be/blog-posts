@@ -29,9 +29,9 @@ toc:
   title: Db Auditing
   icon: dot-circle-o
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7256620837301104641-nAEq"
+  facebook: "https://www.facebook.com/share/p/1Ditb9saSa/"
+  twitter: "https://x.com/itenium_be/status/1850855168616579360"
 ---
 
 Keeping track of database changes in SQL Server with EntityFramework,
