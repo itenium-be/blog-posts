@@ -112,7 +112,7 @@ The track is mandatory in the new syntax.
 
 ## Old Syntax
 
-Need to import `NgSwitch` and `NgSwitchCase` from `@angular/common`.
+Need to import `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` from `@angular/common`.
 
 ```html
 <div [ngSwitch]="aNumber">
