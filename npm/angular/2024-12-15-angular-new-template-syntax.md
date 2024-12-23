@@ -53,9 +53,9 @@ added to the `imports` array of a standalone component.
 Need to import `NgIf` from `@angular/common`.
 
 ```html
-<div *ngIf="boolVar; else boolFalse">
+<span *ngIf="boolVar; else boolFalse">
   TRUE
-</div>
+</span>
 <ng-template #boolFalse>
   FALSE
 </ng-template>
@@ -79,7 +79,7 @@ Need to import `NgFor` from `@angular/common`.
 
 ```html
 <span *ngFor="let el of elements; index as i; first as isFirst">
-  {% raw %}{{ i }}: {{ el }} (first={{isFirst}}){% endraw %}
+  {% raw %}{{ i }}: {{ el.desc }} (first={{isFirst}}){% endraw %}
 </span>
 ```
 
@@ -103,8 +103,8 @@ trackElFn(index: number, el: T) {
 The track is mandatory in the new syntax.
 
 ```html
-@for(el of elements; track element; let index = $index; let first = $first) {
-  {% raw %}{{ index }}: {{ el }}{% endraw %}
+@for(el of elements; track el.id; let i = $index; let isFirst = $first) {
+  {% raw %}{{ i }}: {{ el.desc }} (first={{isFirst}}){% endraw %}
 }
 ```
 
@@ -140,9 +140,9 @@ This was previously not possible out of the box but the
 same could be achieved with an `ngIf`:
 
 ```html
-<div *ngIf="randomObs$ | async as randomNr">
+<span *ngIf="randomObs$ | async as randomNr">
   Nr = {% raw %}{{ randomNr }}{% endraw %}
-</div>
+</span>
 ```
 
 
@@ -152,4 +152,5 @@ Don't forget the ending `;`!
 
 ```html
 @let randomNr = randomObs$ | async;
+Nr = {% raw %}{{ randomNr }}{% endraw %}
 ```
