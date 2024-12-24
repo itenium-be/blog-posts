@@ -31,9 +31,9 @@ toc:
   title: Template Syntax
   icon: icon-angular
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-itdevelopment-activity-7275827773707829248-edGh"
+  facebook: "https://www.facebook.com/share/p/186FgZJHrW/"
+  twitter: "https://x.com/itenium_be/status/1870061737682018670"
 ---
 
 Compared to other SPA frameworks, Angular really made it quite
