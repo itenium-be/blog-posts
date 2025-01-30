@@ -20,6 +20,8 @@ extras:
   - githubproject: https://github.com/itenium-be/ModernJS
     githubtext: Jest UnitTests for all ECMAScript features since 2019
 interesting:
+  - url: https://www.smashingmagazine.com/2024/08/history-future-regular-expressions-javascript/
+    desc: "Regexes Got Good: The History And Future Of Regular Expressions In JavaScript"
   - git: aloisdg/awesome-regex
     desc: "A curated collection of awesome Regex libraries, tools, frameworks and software"
   - url: https://www.rexegg.com/
@@ -37,8 +39,10 @@ todo:
   - reason: Too advanced
     url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     desc: "Replace also works with a function argument for capture side effects"
-last_modified_at: 2023-10-06 00:00:00 +0200
+last_modified_at: 2025-01-30 00:00:00 +0200
 updates:
+  - date: 2025-01-30
+    desc: "Added ES2024 //v flag (UnicodeSets)"
   - date: 2023-10-06
     desc: "Added ES2020 & ES2021 RegExp enhancements"
   - date: 2023-05-22
@@ -215,13 +219,44 @@ const rc = new RegExp('ab+c', 'i');
 | `m`        | [.multiline][multiline]   | `^` and `$` match beginning/end of each line (otherwise of entire string) | [StackOverflow](https://stackoverflow.com/questions/1979884/how-to-use-javascript-regex-over-multiple-lines)
 | `s`        | [.dotAll][dotAll]         | `.` matches newlines. (ES2018)
 | `u`        | [.unicode][unicode]       | `/^.$/u.test('😀')`
+| `v`        | [.unicodeSets][unicodeS]  | `/^\p{RGI_Emoji}$/v.test('👨‍👩‍👧‍👦')` (ES2024)
 | `y`        | [.sticky][sticky]         | Use `.lastIndex` to match at that specific index **only** (overwrites the `g` flag) | [StackOverflow](https://stackoverflow.com/questions/4542304/what-does-regex-flag-y-do)
 | `d`        | [.hasIndices][hasIndices] | Adds an `indices` property to the match object that contains the start/end indices of each capture group (2022)
 |            | [.flags][flags]           | Returns a string with the active flags
 {: .table-code}
 
 
+## UnicodeSets
 
+The `v` flag doesn't just bring stuff like `p{RGI_Emoji}` but also extensions to character classes.  
+Checkout [v8.dev](https://v8.dev/features/regexp-v-flag) for a whole bunch of additional examples.
+
+### Substraction with `--`
+
+```js
+// Only non-ascii numbers
+/^[\p{Decimal_Number}--[0-9]]+$/v.test('012'); // false
+/^[\p{Decimal_Number}--[0-9]]+$/v.test('١𝟜३'); // true
+
+// Only consonants
+/^[[a-z]--[aeoiu]]$/v.test('q'); // true
+```
+
+### Intersection with `&&`
+
+```js
+// Only Arabic numbers
+/^[\p{Script=Arabic}&&\p{Decimal_Number}]+$/v.test('١٢٣');
+
+// Only Greek letters
+/[\p{Script=Greek}&&\p{Letter}]/v.test('λ'); // true
+/[\p{Script=Greek}&&\p{Letter}]/v.test('΄') // false
+/[\p{Script=Greek}]/v.test("΄"); // true
+
+// Only ascii symbols
+/[\p{Symbol}&&\p{ASCII}]/v.test('✓'); // false
+/[\p{Symbol}]/v.test('✓'); // true
+```
 
 
 # Less Common
@@ -285,6 +320,7 @@ regex.test(input); // Returns false. lastIndex is reset to 0
 [multiline]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline
 [dotAll]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll
 [unicode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode
+[unicodeS]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicodeSets
 [sticky]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky
 [hasIndices]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices
 [flags]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags
