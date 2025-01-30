@@ -170,8 +170,10 @@ public interface IAudit
 public class Audit
 {
   public DateTime CreatedOn { get; set; }
+  [StringLength(50)]
   public string CreatedBy { get; set; } = "";
   public DateTime? ModifiedOn { get; set; }
+  [StringLength(50)]
   public string? ModifiedBy { get; set; }
 }
 ```
