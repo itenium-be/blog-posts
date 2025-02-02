@@ -9,11 +9,19 @@ img:
   url: mnemonics-xkcd.png
   desc: "XKCD Presents: Some New Science Mnemonics"
   origin: https://xkcd.com/992/
+bigimg:
+  url: mnemonics-big.png
+  prompt: "mnemonics"
+  origin: Midjourney
 interesting:
   - desc: "XKCD Presents: Some New Science Mnemonics"
     url: "https://xkcd.com/992/"
 categories: productivity
 tags: [cheat-sheet]
+last_modified_at: 2025-02-02 00:00:00 +0200
+updates:
+  - date: 2025-02-02 00:00:00 +0200
+    desc: There vs Their
 toc:
   title: Mnemonics
   icon: heartbeat
@@ -99,8 +107,9 @@ To remember the value of pi:
 > (The number of letters in each word equals the numerals in pi = 3.1415927)
 
 
+# Other
 
-# Even for tar
+## Even for tar
 
 Even for tar one exists, as the following IRC conversation illustrates:
 
@@ -110,3 +119,10 @@ Even for tar one exists, as the following IRC conversation illustrates:
 <bucketmouse> just think with a german accent
 <bucketmouse> XTRACT ZE FILES
 ```
+
+## English
+
+Not really a programming mnemonic but Simon posted it,
+and I liked it too much to not add it here 😀
+
+![There vs Their](/assets/blog-images/mnemonics-there-their.png "There vs Their")
