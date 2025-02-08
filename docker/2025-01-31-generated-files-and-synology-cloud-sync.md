@@ -50,16 +50,17 @@ getting synced alright, but the generated files were not!?
 
 <!--more-->
 
+# In CloudSync Folder
 
-# Synology Configuration
+## Synology Configuration
 
-## Enable NFS
+### Enable NFS
 
 Steps: Control Panel > File Services > NFS > Enable
 
 ![Enabling NFS v4 on Synology](/assets/blog-images/synology-docker-cloud-sync-1-enable-nfs.png "Enabling NFS v4 on Synology"){: .img-responsive}
 
-## Enable NFS on Shared Drive
+### Enable NFS on Shared Drive
 
 - Control Panel > Shared Folder > right Click "workspace" > Edit > NFS Permissions
   - Create > Hostname or IP: 127.0.0.1 > Save
@@ -67,9 +68,9 @@ Steps: Control Panel > File Services > NFS > Enable
 ![Enabling NFS on Synology Shared Folder](/assets/blog-images/synology-docker-cloud-sync-2-nfs-for-cloud-sync-share.png "Enabling NFS on Synology Shared Folder"){: .img-responsive}
 
 
-# The Code
+## The Code
 
-## compose.yaml
+### compose.yaml
 
 Requires an `.env` file with with: `SYNC_DIR=/volume1/CloudSyncedFolder/shared-with-3rd-party`
 
@@ -96,14 +97,14 @@ volumes:
       device: ":${SYNC_DIR}"
 ```
 
-## Other files
+### Other files
 
 [Minimal CRON job setup](https://github.com/itenium-be/synology-cloud-sync-vs-docker)
 - Dockerfile: Copies `sh` files to the container and runs start.sh
 - start.sh: Calls `crontab` to run create-file.sh and starts the deamon
 - create-file.sh: `touch /export/export.csv`
 
-# NFWhat?
+## NFWhat?
 
 NFS or [Network File System](https://en.wikipedia.org/wiki/Network_File_System),
 a distributed file system protocol which allows you to access files over a network
@@ -112,3 +113,41 @@ the standard on Linux systems.
 
 Thanks to NFS we get proper `inotify` events and CloudSync picks up our files.
 Crisis averted!
+
+
+# Outside CloudSync Folder
+
+It might not be possible to create the files directly into the folder that
+CloudSync is active on.
+
+The easy solution would be to create a symbolic link to the CloudSync folder;
+but, of course, that doesn't work.
+
+```sh
+ln -s /volume1/Projects/GeneratedFiles /volume1/Dropbox/GeneratedProjectFiles
+```
+
+## Scheduled rsync Task
+
+An easy solution here is creating a recurring task to run `rsync`.
+
+- Synology DSM
+- Control Panel > Services > Task Scheduler
+- Create > Scheduled Task > User-defined script
+  - General: Set a task name
+  - Schedule: I kept the default of a daily sync
+  - Task Settings > Run command
+
+```sh
+rsync -av --delete /volume1/Projects/GeneratedFiles /volume1/Dropbox
+```
+
+This will create a folder `GeneratedFiles` in `/volume1/Dropbox`.
+
+rsync options:
+- `-a`: Archive mode to preserve file attributes (permissions, timestamps etc)
+- `-v`: Verbose output. You'll have to select a folder for the output in Task Scheduler > Settings to actually see the output.
+- `--delete`: If your Docker container also deletes files
+- `--chown=CloudSync:CloudSync`: I didn't have to change ownership for CloudSync to pick up the files
+
+Of course you could also just add this to the `docker-compose` 😀
