@@ -78,7 +78,7 @@ exports of the Toolkit: `createSlice` and `configureStore`.
 - `createSlice`: each top level object of your store is typically a slice
 - `createAsyncThunk`: add this one, and you can do everything you could with the old Redux
 
-<!-- [Part 2: createSlice and configureStore]({% post_url npm/reduxjs-toolkit/2025-02-08-reduxjs-toolkit-createSlice %}) -->
+<!-- [Part 2: createSlice and configureStore]({ post_url npm/reduxjs-toolkit/2025-02-08-reduxjs-toolkit-createSlice }) -->
 
 Part 2: createSlice and configureStore is under constuction!
 
