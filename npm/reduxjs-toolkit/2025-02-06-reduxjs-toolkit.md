@@ -74,27 +74,42 @@ while (almost) not having to think about immutability anymore!
 Okay, now that we're Immer experts, let's look at the two most important
 exports of the Toolkit: `createSlice` and `configureStore`.
 
+- `createSlice`: each top level object of your state is typically a slice
 - `configureStore`: abstracts away the horror that was `createStore`
-- `createSlice`: each top level object of your store is typically a slice
-- `createAsyncThunk`: add this one, and you can do everything you could with the old Redux
 
-<!-- [Part 2: createSlice and configureStore]({ post_url npm/reduxjs-toolkit/2025-02-08-reduxjs-toolkit-createSlice }) -->
-
-Part 2: createSlice and configureStore is under constuction!
+[Part 2: createSlice and configureStore]({% post_url npm/reduxjs-toolkit/2025-02-08-reduxjs-toolkit-createSlice %})
 
 
 # Not yet written
 
 Parts of this series that are not yet written 😀
 
-## RTK Query
+## createAsyncThunk
 
-A much higher level of abstraction.
+With the already added redux-thunk, `createAsyncThunk` is the helper function for
+all your API call needs.
+
+Part 3: createAsyncThunk
+
+# TypeScript
+
+Keeping everything entirely type-safe.
+
+Part 4: TypeScript
 
 ## Reselect
 
 More batteries included.
 
-## And more
+Part 5: createSelector
+
+## RTK Query
+
+A much higher level of abstraction.
+
+Part 6: createApi
+
+## And more?
 
 Listener middleware? EntityAdapters?
+What is Redux & Redux best practices?
