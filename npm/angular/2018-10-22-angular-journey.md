@@ -19,6 +19,8 @@ interesting:
     url: https://www.typescriptlang.org/
   - desc: SemVer
     url: https://semver.org/
+  - desc: "Angular: The Documentary | An origin story"
+    url: https://www.youtube.com/watch?v=cRC9DlH45lA
 toc:
   title: Angular Road Trip
   icon: icon-angular
@@ -84,7 +86,3 @@ I’m still glad I can work with Angular every day.
 - Angular-CLI gets you going within seconds. You can have a basic shell application built with the Angular framework and thus starting point for your newest project.
 <br/>
 All in all it's just a great framework for modern web applications and most of the time a joy to work with :)
-
-
-
-
