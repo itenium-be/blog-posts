@@ -26,6 +26,10 @@ extras:
 package-versions:
   - package: "@reduxjs/toolkit"
     version: 2.5.0
+  - package: redux
+    version: 5.0.1
+  - package: react-redux
+    version: 9.2.0
 toc:
   title: ReduxJS/Toolkit
   icon: icon-reactjs
@@ -80,18 +84,21 @@ exports of the Toolkit: `createSlice` and `configureStore`.
 [Part 2: createSlice and configureStore]({% post_url npm/reduxjs-toolkit/2025-02-08-reduxjs-toolkit-createSlice %})
 
 
+# createAsyncThunk
+
+On top of the included redux-thunk package, `createAsyncThunk` is the helper function for
+all your API call needs.
+
+Coming from "legacy Redux", this is the last basic piece of ReduxJS/Toolkit!
+
+[Part 3: createAsyncThunk]({% post_url npm/reduxjs-toolkit/2025-02-13-reduxjs-toolkit-createAsyncThunk %})
+
+
 # Not yet written
 
 Parts of this series that are not yet written 😀
 
-## createAsyncThunk
-
-With the already added redux-thunk, `createAsyncThunk` is the helper function for
-all your API call needs.
-
-Part 3: createAsyncThunk
-
-# TypeScript
+## TypeScript
 
 Keeping everything entirely type-safe.
 

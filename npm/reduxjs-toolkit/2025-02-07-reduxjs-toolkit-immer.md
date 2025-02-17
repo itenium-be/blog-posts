@@ -36,7 +36,7 @@ socials:
 
 {% include github-stars.html url="immerjs/immer" desc="Create the next immutable state by mutating the current one" %}
 
-Immer is the solution the ReduxJS/Toolkit has adopted: it allows you to write reducers
+Immer is the solution the ReduxJS/Toolkit has adopted to enforce pure reducers: it allows you to write reducers
 while (almost) not having to think about immutability anymore!
 
 Awards!? 🏆🥇
