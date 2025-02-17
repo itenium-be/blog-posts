@@ -94,15 +94,17 @@ Coming from "legacy Redux", this is the last basic piece of ReduxJS/Toolkit!
 [Part 3: createAsyncThunk]({% post_url npm/reduxjs-toolkit/2025-02-13-reduxjs-toolkit-createAsyncThunk %})
 
 
-# Not yet written
-
-Parts of this series that are not yet written 😀
-
-## TypeScript
+# TypeScript
 
 Keeping everything entirely type-safe.
 
-Part 4: TypeScript
+[Part 4: TypeScript]({% post_url npm/reduxjs-toolkit/2025-02-17-reduxjs-toolkit-typescript %})
+
+
+
+# Not yet written
+
+Parts of this series that are not yet written 😀
 
 ## Reselect
 

@@ -290,32 +290,3 @@ and [autoBatchEnhancer](https://redux-toolkit.js.org/api/autoBatchEnhancer).
 | **Applied via?**             | `middleware` | `enhancers`    |
 | **Example**                  | Action logger| DevTools       |
 {: .table-code}
-
-
-# TypeScript Support
-
-You don't want to be using `useDispatch`, `useSelector` etc directly
-in your code. Instead they are wrapped so that you can enjoy complete
-type safety!
-
-```ts
-import { useDispatch, useSelector } from "react-redux";
-
-export type AppDispatch = typeof store.dispatch;
-export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
-
-export type RootState = ReturnType<typeof store.getState>;
-export const useAppSelector = useSelector.withTypes<RootState>();
-
-
-// Wrapping createAsyncThunk
-// https://redux-toolkit.js.org/usage/usage-with-typescript#defining-a-pre-typed-createasyncthunk
-import { Action, createAsyncThunk, ThunkAction } from "@reduxjs/toolkit";
-export type AppThunk<ThunkReturnType = void> = ThunkAction<ThunkReturnType, RootState, unknown, Action>;
-export const createAppAsyncThunk = createAsyncThunk.withTypes<{state: RootState, dispatch: AppDispatch}>();
-
-
-// Wrapping reselect createSelector
-import { createSelector } from "@reduxjs/toolkit";
-const createAppSelector = createSelector.withTypes<RootState>();
-```
