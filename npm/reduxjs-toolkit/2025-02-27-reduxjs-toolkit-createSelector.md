@@ -76,7 +76,7 @@ const TodosDoneCount = () => {
 }
 ```
 
-Every time `TodosDoneCount` renders, it will execute the inputSelectors; in this case
+Every time the root state changes, it will execute the inputSelectors; in this case
 `state.todos` and `state.user.id`. If the returned references have not changed, the memoized
 count is returned, otherwise the combiner is executed.
 
@@ -132,7 +132,7 @@ const selectTodos = createSelector(
     (_, needle: string) => needle,
     (_, __, caseSensitive: boolean) => caseSensitive
   ],
-  (todos, needle, caseSensitive) => { /* magic here */}
+  (todos, needle, caseSensitive) => { /* magic here */ }
 )
 ```
 
@@ -189,7 +189,7 @@ export const selectMyTodosCompletedCount = createSelector(
 
 [`weakMapMemoize`](https://reselect.js.org/api/weakMapMemoize)
 is the new default since v5 and provides a dynamic cache size
-by default.
+out of the box.
 
 
 ### unstable_autotrackMemoize (experimental)
@@ -230,10 +230,6 @@ const todoSlice = createSlice({
       return state.find(todo => todo.id === id);
     },
   },
-
-  name: 'todoActionPrefix',
-  // The slice reducer's location, used by 'slice.selectors'. Defaults to `name`.
-  reducerPath: 'todos',
 });
 
 export const { selectTodo } = todoSlice.selectors;
@@ -283,7 +279,7 @@ This will re-execute when the `done` property toggles even though
 it has no impact on the actual result.
 
 ```ts
-import { createSelector } from 'reselect'
+import { createSelector } from "reselect";
 
 const selectTodoDescriptionsReselect = createSelector(
   [state => state.todos],
@@ -295,14 +291,14 @@ With `proxy-memoize`, this would not be the case as due to the proxy,
 it figures only text is actually relevant for selector.
 
 ```ts
-import { memoize } from 'proxy-memoize'
+import { memoize } from "proxy-memoize";
 
 const selectTodoDescriptionsProxy = memoize(state =>
   state.todos.map(todo => todo.text)
 )
 ```
 
-For this reason the ReduxJS/Toolkit officially encourages considering using proxy-memoize as a viable alternative to Reselect.
+For this reason **the ReduxJS/Toolkit officially encourages consideringusing proxy-memoize as a viable alternative to Reselect.**
 
 
 
@@ -310,4 +306,4 @@ For this reason the ReduxJS/Toolkit officially encourages considering using prox
 
 {% include github-stars.html url="toomuchdesign/re-reselect" desc="Enhance Reselect selectors with deeper memoization and cache management." %}
 
-As of Reselect v5, what you'd need this library for can now achieved with Reselect natively.
+As of Reselect v5, what you'd need this library for can now achieved with Reselect `createSelectorOptions` natively.
