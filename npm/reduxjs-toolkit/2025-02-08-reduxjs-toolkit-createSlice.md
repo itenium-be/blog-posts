@@ -78,7 +78,7 @@ export const todoSlice = createSlice({
   },
 
 
-  // We'll get into more detail in Part 3: createAsyncThunk
+  // We'll get into more detail in Part 4: createAsyncThunk
   extraReducers: builder => {
     // This is where we would handle the pending, fulfilled and rejected actions
     // from a createAsyncThunk
@@ -90,7 +90,7 @@ export const todoSlice = createSlice({
   },
 
 
-  // We'll get into more detail in Part 5: createSelector
+  // We'll get into more detail in Part 6: createSelector
   selectors: {
     selectTodo: (state, id: number): Todo | undefined => {
       return state.find(x => x.id === id);
@@ -104,7 +104,8 @@ export const { selectTodo } = todoSlice.selectors;
 
 ## Dispatching an action
 
-See Part 4: TypeScript for how to create the `useAppDispatch` hook.
+See [Part 5: TypeScript]({% post_url npm/reduxjs-toolkit/2025-02-17-reduxjs-toolkit-typescript %})
+for how to create the `useAppDispatch` hook.
 
 ```ts
 import { addTodo } from "./todoSlice";
