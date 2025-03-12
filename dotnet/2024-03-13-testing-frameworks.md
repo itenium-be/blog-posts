@@ -19,8 +19,8 @@ img:
 categories: dotnet
 tags: [testing,cheat-sheet]
 interesting:
-  - git: fluentassertions/fluentassertions
-    desc: "Extension methods to fluently assert the outcome of .NET tests"
+  - git: shouldly/shouldly
+    desc: "Should testing for .NET—the way assertions should be!"
 extras:
   - githubproject: https://github.com/itenium-be/DotNetUnitTestFrameworks
     githubtext: "Example UnitTests in NUnit, xUnit and MSTest"
