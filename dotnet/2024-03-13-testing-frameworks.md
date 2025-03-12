@@ -26,11 +26,15 @@ extras:
     githubtext: "Example UnitTests in NUnit, xUnit and MSTest"
 package-versions:
   - package: NUnit
-    version: 4.1.0
+    version: 4.3.2
   - package: xUnit
-    version: 2.7.0
+    version: 2.9.3
   - package: MSTest.TestFramework
-    version: 3.2.2
+    version: 3.8.2
+last_modified_at: 2025-03-12 00:00:00 +0200
+updates:
+  - date: 2025-03-12 00:00:00 +0200
+    desc: Updated to latest versions. Added SoftAssertions, Throws derived, ...
 toc:
   title: .NET Testing Frameworks
   icon: dot-circle-o
@@ -94,6 +98,9 @@ Setup in xUnit doesn't work with Attributes!
 xUnit injects the same `XUnitTestsFixture` to the constructor
 before running each `[Fact]`.
 
+It's also possible to do setup/teardown for all tests within classes decorated with a
+`CollectionAttribute` with `ICollectionFixture<T>`, see [shared-context](https://xunit.net/docs/shared-context)
+for more info.
 
 ```c#
 public class XUnitTestsFixture : IDisposable
@@ -207,37 +214,50 @@ Assert.AreEqual(true, actual);
 
 ```c#
 Action sut = () => throw new Exception("cause");
-Func<Task> asyncSut = () => Task.CompletedTask;
+Func<Task> asyncSut = () => throw new Exception("cause");
 
 // NUnit
 var ex = Assert.Throws<Exception>(() => sut(), "failure message");
 Assert.That(ex.Message, Is.EqualTo("cause"));
 
-Assert.DoesNotThrowAsync(() => asyncSut());
+var ex2 = Assert.ThrowsAsync<Exception>(() => asyncSut());
+Assert.That(ex2.Message, Is.EqualTo("cause"));
 
 
 // xUnit
 var ex = Assert.Throws<Exception>(sut);
 Assert.Equal("cause", ex.Message);
 
-Assert.ThrowsAsync<Exception>(() => asyncSut());
+var ex2 = await Assert.ThrowsAsync<Exception>(() => asyncSut());
+Assert.Equal("cause", ex2.Message);
 
 
 // MSTest
-// via Attribute
-[TestMethod]
-[ExpectedException(typeof(Exception))]
-public void Exceptions() {}
+// DEPRECATED: ExpectedExceptionAttribute(typeof(Exception))
+// DEPRECATED: ThrowsException<T>()
+var ex = Assert.ThrowsExactly<Exception>(sut);
+Assert.AreEqual("cause", ex.Message);
 
-// Via code
-Assert.ThrowsExceptionAsync<Exception>(asyncSut);
+var ex2 = await Assert.ThrowsExactlyAsync<Exception>(asyncSut);
+Assert.AreEqual("cause", ex2.Message);
 ```
+
+### Exact vs Derived
+
+The above assertions expect the exceptions to be of exactly the type
+provided. If you do not want a failure when the actual type is a
+derived type:
+
+- xUnit: `Assert.ThrowsAny(Async)<T>`
+- NUnit: `Assert.Catch(Async)<T>`
+- MSTest: `Assert.Throws(Async)<T>`
+
 
 ## Collections
 
 | NUnit                    | xUnit               | MSTest    | Notes
 |--------------------------|---------------------|-----------|------
-| Is.Empty                 | Empty               |
+| Is.Empty                 | Empty               | Assert.IsEmpty
 | Is.EqualTo               | Equal               | CollectionAssert.AreEqual      | Same order
 | Is.EquivalentTo          | Equivalent          | CollectionAssert.AreEquivalent | Allow different order
 | Has.Some.EqualTo()       | Contains            | CollectionAssert.Contains
@@ -245,7 +265,7 @@ Assert.ThrowsExceptionAsync<Exception>(asyncSut);
 | Is.Ordered.Descending    |                     |
 | Is.All.GreaterThan(1)    | All(col, x => Assert.True(x > 1)) |
 | Has.None.Null            | All                 | CollectionAssert.AllItemsAreNotNull
-| Has.Exactly(3).Items     |                     |
+| Has.Exactly(3).Items     |                     | Assert.HasCount
 | Is.SubsetOf              |                     | CollectionAssert.IsSubsetOf
 | Is.Unique                |                     | CollectionAssert.AllItemsAreUnique
 {: .table-code}
@@ -295,6 +315,30 @@ Assert.That(actual, Is.AtMost(0));
 
 // MSTest: N/A
 ```
+
+## Soft Assertions
+
+A test stops running as soon as an assertion fails. But sometimes it is handy
+that all assertions still run so that you have more context to pinpoint the exact
+problem. Both xUnit and NUnit have a mecanism to do this.
+
+```c#
+// xUnit
+Assert.Multiple(
+  () => Assert.NotEqual(12, 24),
+  () => Assert.NotNull("Hello world")
+);
+
+// NUnit
+using (Assert.EnterMultipleScope())
+{
+  Assert.That(12, Is.Not.EqualTo(24));
+  Assert.That("Hello world", Is.Null);
+}
+```
+
+Before NUnit 4.2 the syntax was:
+[`Assert.Multiple(() => { /* assertions */ })`](https://docs.nunit.org/articles/nunit/writing-tests/assertions/multiple-asserts.html)
 
 
 ## NUnit Only
