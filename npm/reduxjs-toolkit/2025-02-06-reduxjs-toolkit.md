@@ -34,9 +34,9 @@ toc:
   title: ReduxJS/Toolkit
   icon: icon-reactjs
 socials:
-  linkedin: ""
-  facebook: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-redux-reduxtoolkit-ugcPost-7308080110954250240-sjyB"
+  facebook: "https://www.facebook.com/share/v/16EDHoZ7Tw/"
+  twitter: "https://x.com/itenium_be/status/1902314229035888906"
 ---
 
 {% include github-stars.html url="reduxjs/redux-toolkit" desc="The official, opinionated, batteries-included toolset for efficient Redux development" %}
