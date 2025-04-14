@@ -1,26 +1,26 @@
 ---
 layout: post
 author: Wouter Van Schandevijl
-title: "Checking Security on your Controllers"
-subTitle: "Make sure your controller action methods are properly secured"
+title: "UnitTest: Check Security on your Controllers"
+subTitle: "Make sure your controller action methods are properly secured, automatically, on your CI"
 date: 2025-04-14
 desc: >
   Ensure that each Controller or all its Action Methods are properly
   secured with AllowAnonymous or Authorize Attributes with an
   automated integration test.
 bigimg:
-  url: -big.png
-  prompt: ""
+  url: controller-security-big.png
+  prompt: "A clean, modern flat illustration of a padlock icon subtly integrated into a C# controller file, soft white background with muted pastel blue and gray tones, minimal UI outlines, simple line art, lots of negative space, Scandinavian design aesthetic, ultra-minimal, vector style"
   origin: Midjourney
 img:
-  url: .png
-  origin: Midjourney
-  prompt: ""
+  url: controller-security.png
+  origin: Reve
+  prompt: "A comic book scene where a superhero (wearing a C# emblem) throws [Authorize] shields at rogue controller methods, cartoon villains named 'Anonymous Access' dodge them, bright bold colors, halftone patterns, comic panels with 'BOOM' and 'SECURED!' captions, playful and energetic, comic book art style"
 categories: dotnet
 tags: [testing,war-story]
 extras:
   - githubproject: https://github.com/itenium-be/DotNet-Controller-Security-Check
-    githubtext: "Source code, variations and tests for test"
+    githubtext: "Source code, variations and tests for the tests"
 toc:
   title: Controller Security
   icon: dot-circle-o
@@ -43,25 +43,25 @@ version, with some possible variations.
 
 # TL&DR
 
-```c#
+```csharp
 Type[] controllerTypes = typeof(YourController).Assembly.GetTypes()
   .Where(t => t.GetCustomAttributes(typeof(ApiControllerAttribute), true).Any())
   .ToArray();
 
 var missingAuthActions = new List<string>();
-foreach (Type controllerType in controllerTypes)
+foreach (Type controller in controllerTypes)
 {
   // If the entire Controller has Authorize/AllowsAnonymous attribute, just move on
-  bool controllerHasAuthorize = controllerType.GetCustomAttributes(typeof(AuthorizeAttribute), true).Any();
-  if (controllerHasAuthorize)
+  bool ctlHasAuthorize = controller.GetCustomAttributes(typeof(AuthorizeAttribute), true).Any();
+  if (ctlHasAuthorize)
     continue;
 
-  bool controllerHasAllowAnonymous = controllerType.GetCustomAttributes(typeof(AllowAnonymousAttribute), true).Any();
-  if (controllerHasAllowAnonymous)
+  bool ctlHasAllowAnon = controller.GetCustomAttributes(typeof(AllowAnonymousAttribute), true).Any();
+  if (ctlHasAllowAnon)
     continue;
 
   // NonAction methods do not represent an endpoint, and thus need no security check
-  var methods = controllerType
+  var methods = controller
     .GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly)
     .Where(m => !m.GetCustomAttributes(typeof(NonActionAttribute), true).Any());
 
@@ -71,15 +71,15 @@ foreach (Type controllerType in controllerTypes)
     bool hasAllowAnonymous = method.GetCustomAttributes(typeof(AllowAnonymousAttribute), true).Any();
     if (!hasAllowAnonymous && !hasAuthorize)
     {
-      missingAuthActions.Add($"{controllerType.Name}.{method.Name}");
+      missingAuthActions.Add($"{controller.Name}.{method.Name}");
     }
   }
 }
 
 if (missingAuthActions.Any())
 {
-  var sortedMethods = missingAuthActions.OrderBy(x => x);
-  Assert.Fail($"The following actions are missing [Authorize] attribute:\n{string.Join("\n", sortedMethods)}");
+  var sortedMethods = string.Join("\n", missingAuthActions.OrderBy(x => x));
+  Assert.Fail($"The following actions are missing [Authorize] attribute:\n{sortedMethods}");
 }
 ```
 
@@ -92,7 +92,7 @@ Maybe you want to remove the code allowing `[AllowAnonymous]` or something...
 
 The code above checks for the presence of `[ApiController]` but your mileage may vary:
 
-```c#
+```csharp
 // Controllers have [ApiController] attribute
 .Where(t => t.GetCustomAttributes(typeof(ApiControllerAttribute), true).Any())
 
@@ -108,7 +108,7 @@ The code above checks for the presence of `[ApiController]` but your mileage may
 In a blatant violation of the [Interface Segregation Principle (ISP)](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 some of our controllers implemented an interface but only implemented a few of the methods, with all others just doing a:
 
-```c#
+```csharp
 throw new NotImplementedException();
 ```
 
@@ -120,7 +120,7 @@ I would've spent a lot of time on this otherwise 🔥
 This doesn't catch all variations (ex: `var ex = new NotImplementedException(); throw ex;`)
 but was good enough for our code-base.
 
-```c#
+```csharp
 public static bool MethodThrowsNotImplementedException(MethodInfo method)
 {
   byte[]? methodBody = method.GetMethodBody()?.GetILAsByteArray();
@@ -156,7 +156,7 @@ Also note the `public partial class Program` addition so that we can reference P
 from the test. This is probably not necessary if you have nicely split your startup code
 instead of just dumping everything in Program.cs 😉
 
-```c#
+```csharp
 app.MapGet("/unsecured", () => "Stormy");
 app.MapGet("/secured", () => "Sunny").RequireAuthorization();
 app.MapGet("/anonymous", () => "Cloudy").AllowAnonymous();
@@ -171,7 +171,7 @@ public partial class Program { }
 
 ## The Test
 
-```c#
+```csharp
 var factory = new WebApplicationFactory<Program>().WithWebHostBuilder(builder =>
 {
   builder.ConfigureTestServices(services => { /* Mock services as needed */ });
@@ -191,6 +191,7 @@ foreach (var endpoint in endpointDataSource.Endpoints)
 
 if (unsecured.Any())
 {
-  Assert.Fail($"Add .RequireAuthorization() or .AllowAnonymous() to the following endpoints: \n{string.Join(", ", unsecured)}");
+  var lst = string.Join("\n", unsecured);
+  Assert.Fail($"Missing RequireAuthorization/AllowAnonymous for endpoints:\n{lst}");
 }
 ```
