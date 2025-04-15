@@ -40,10 +40,14 @@ updates:
 toc:
   title: .NET Testing Frameworks
   icon: dot-circle-o
-socials:
-  linkedin: "https://www.linkedin.com/posts/itenium_net-testing-frameworks-activity-7188839330306510849-j-T2?utm_source=share&utm_medium=member_desktop"
+socials_OLD:
+  linkedin: "https://www.linkedin.com/posts/itenium_net-testing-frameworks-activity-7188839330306510849-j-T2"
   instagram: "https://www.instagram.com/p/C6I94pCseXN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   twitter: "https://twitter.com/itenium_be/status/1783073550317813769"
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-dotnet-testingframeworks-activity-7317849390721757184-pZXq"
+  facebook: "https://www.facebook.com/share/p/1DAUQUcr1E/"
+  twitter: "https://x.com/itenium_be/status/1912083620451262755"
 ---
 
 
