@@ -33,10 +33,9 @@ toc:
   title: CloudSync
   icon: server
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
-  facebook: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_synology-cloudsync-not-picking-up-files-generated-activity-7315675047791132672-WYVr"
+  twitter: "https://x.com/itenium_be/status/1909909186873380974"
+  facebook: "https://www.facebook.com/share/p/15c7bpza67/"
 ---
 
 We needed to generate some files and share them with a third party.
