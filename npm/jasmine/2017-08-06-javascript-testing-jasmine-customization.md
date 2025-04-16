@@ -190,4 +190,4 @@ it('has its own jasmine.getEnv()', function() {
 ```
 
 
-[github-matchersUtil]: https://github.com/jasmine/jasmine/blob/master/src/core/matchers/matchersUtil.js
+[github-matchersUtil]: https://github.com/jasmine/jasmine/blob/main/src/core/matchers/matchersUtil.js

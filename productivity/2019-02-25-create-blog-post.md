@@ -172,7 +172,7 @@ Add API links:
 - `toc`.`icon`:
     - Do not prefix with fa to use [font-awewome](https://fontawesome.com/icons)
     - Any from [font-mfizz](http://fizzed.com/oss/font-mfizz)
-    - Site has also loaded a set from [FlatIcon](https://itenium.be/vendor/flat-icon/flaticon.html)
+    - Site has also loaded a set from FlatIcon
 - `updates`: Add only substantial updates
     - The last x updates will be displayed on the blog
     - `last_modified_at`: Because Liquid

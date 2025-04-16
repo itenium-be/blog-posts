@@ -50,11 +50,11 @@ chmod -R 755 memes_dir
 ## Cron Job
 
 The `Dockerfile` copies the `job` folder with the Node program to the docker container
-and then runs `start.sh` which schedules running `slack-meme-poster.js` and starts the Cron daemon. 
+and then runs `start.sh` which schedules running `meme-poster.js` and starts the Cron daemon. 
 
 ### Slack Meme Poster
 
-The `slack-meme-poster.js` selects a random file from your `MEMES_DIR` and moves it to
+The `meme-poster.js` selects a random file from your `MEMES_DIR` and moves it to
 a `already-sent` subfolder to make sure no meme is ever posted twice.
 
 It then sends the meme url to Slack using the WebHook and 🎉, meme posted!
@@ -62,7 +62,7 @@ It then sends the meme url to Slack using the WebHook and 🎉, meme posted!
 
 # Make it your own
 
-[Configure the actual Slack message](https://github.com/itenium-be/slack-meme-poster/blob/master/job/post-meme.js)
+[Configure the actual Slack message](https://github.com/itenium-be/slack-meme-poster/blob/master/job/post-slack.js)
 
 - `messageToPostWithMeme`: A simple string sent along with the meme
 - Configure the entire Slack message using the Slack [Block Kit Builder](https://app.slack.com/block-kit-builder/)

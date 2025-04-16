@@ -29,7 +29,7 @@ I'm working on or learning about, solutions to problems I've struggled with and 
 
 <!--more-->
 
-The intention is to actively work and log on Andrew Hunt's and Dave Thomas' "[Pragmatic Tips](http://pragprog.com/the-pragmatic-programmer/extracts/tips)",
+The intention is to actively work and log on Andrew Hunt's and Dave Thomas' "[Pragmatic Tips](https://pragprog.com/tips)",
 a set of 70 tips, each designed to help you become a better programmer as presented in their 
 – already much appraised – book "The Pragmatic Programmer".
 

@@ -15,7 +15,7 @@ bigimg:
 img:
   url: macropad.jpg
   desc: "The End Goal"
-  origin: Michiel
+  by: Michiel
   title: ""
 categories: dev-setup
 tags: [fun,tech-talk]

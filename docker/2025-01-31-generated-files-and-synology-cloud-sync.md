@@ -100,7 +100,7 @@ volumes:
 
 [Minimal CRON job setup](https://github.com/itenium-be/synology-cloud-sync-vs-docker)
 - Dockerfile: Copies `sh` files to the container and runs start.sh
-- start.sh: Calls `crontab` to run create-file.sh and starts the deamon
+- start.sh: Calls `crontab` to run create-file.sh and starts the daemon
 - create-file.sh: `touch /export/export.csv`
 
 ## NFWhat?
