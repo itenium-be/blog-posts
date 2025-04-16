@@ -174,4 +174,4 @@ Other helpers available in an `it`:
 
 
 
-[jasmine-matchers]: https://github.com/jasmine/jasmine/blob/master/src/core/matchers
+[jasmine-matchers]: https://github.com/jasmine/jasmine/blob/main/src/core/matchers

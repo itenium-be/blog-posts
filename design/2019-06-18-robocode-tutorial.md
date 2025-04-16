@@ -118,7 +118,7 @@ The best way to debug your robot is, of course battling others!
 - [Super Sample Bots](http://robowiki.net/wiki/Category:Super_Sample_Bots): The next step.
 - [How to download other Robots](http://robowiki.net/wiki/Robocode/Learning_from_Robots)
 - [Some Super Robots](http://robowiki.net/wiki/Robocode/Downloading_Robots#Robots_to_download)
-- [Open Source Robots](http://www.robowiki.net/wiki/Category:Open_Source_Bots)
+- [Open Source Robots](https://robowiki.net/wiki/Category:Open_Source_Bots)
 
 
 # Learning Resources

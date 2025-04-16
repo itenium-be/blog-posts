@@ -582,20 +582,20 @@ import { NgPipesModule } from 'ngx-pipes';
 ```
 
 **String:**
-[shorten](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/string/shorten.ts)
-, [slugify](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/string/slugify.ts)
-, [lpad](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/string/lpad.ts)
-, [camelize](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/string/camelize.ts)
+[shorten](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/string/shorten.ts)
+, [slugify](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/string/slugify.ts)
+, [lpad](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/string/lpad.ts)
+, [camelize](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/string/camelize.ts)
 
 **Array:**
-[unique](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/array/unique.ts)
-, [tail](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/array/tail.ts)
-, [flatten](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/array/flatten.ts)
-, [every](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/array/every.ts)
+[unique](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/array/unique.ts)
+, [tail](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/array/tail.ts)
+, [flatten](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/array/flatten.ts)
+, [every](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/array/every.ts)
 , ...
 
 **Other:**
-[isGreaterThan](https://github.com/danrevah/ngx-pipes/blob/master/src/pipes/boolean/is-greater-than.ts)
+[isGreaterThan](https://github.com/danrevah/ngx-pipes/blob/master/src/ng-pipes/pipes/boolean/is-greater-than.ts)
 , ...
 
 

@@ -16,7 +16,6 @@ bigimg:
 img:
   url: CQRS-Ramble.png
   desc: "If all you have is a hammer..."
-  origin: https://unsplash.com/photos/9cRDDvhpBRw
   title: "A Loving Relationship"
 categories: design
 tags: [war-story]

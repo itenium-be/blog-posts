@@ -11,7 +11,6 @@ bigimg:
 img:
   url: valueobjects.jpg
   desc: "Photo by Seth Macey"
-  origin: https://unsplash.com/photos/QZBcFvQFmCs
 categories: design
 tags: [war-story]
 interesting:
@@ -112,7 +111,7 @@ getting duplicated by different programmers or even for different UserStories.
 
 Some of these helper methods would be much better off being members of a `ValueObject`
 instead. We get better IDE discoverability and rather than having to pass some or all properties of an entity into an algorithm,
-we invoke a well-named method on the ValueObject in true [TellDontAsk](https://pragprog.com/articles/tell-dont-ask) style.
+we invoke a well-named method on the ValueObject in true [TellDontAsk](https://martinfowler.com/bliki/TellDontAsk.html) style.
 
 And isn't that what Object Oriented Design is all about? 😇
 

@@ -149,7 +149,7 @@ console.log('Modify data directly from the console with `vm.product = "Shoes";`'
 
 # Templates
 
-[Interpolations guide](https://vuejs.org/guide/syntax.html#Interpolations)
+[Interpolations guide](https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation)
 {: .title-url}
 
 #### Displaying values:  
@@ -165,7 +165,7 @@ console.log('Modify data directly from the console with `vm.product = "Shoes";`'
 Prefer `computed` properties over doing string formatting in the templates directly
 as they will only be re-evaluated when a relevant dependency changes.
 
-[Computed Properties guide](https://vuejs.org/guide/computed.html)
+[Computed Properties guide](https://vuejs.org/guide/essentials/computed.html#computed-properties)
 {: .title-url}
 Usage computed property: `{% raw %}<h1>{{ title }}</h1>{% endraw %}`:
 
@@ -183,7 +183,7 @@ new Vue({
 
 ## Attributes
 
-[Attributes guide](https://vuejs.org/guide/syntax.html#Attributes)
+[Attributes guide](https://vuejs.org/api/built-in-directives.html#v-bind)
 {: .title-url}
 Binding to attribute with `v-bind` directive:  
 ```html
@@ -216,7 +216,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 ```
 
 
-[Conditional Rendering guide](https://vuejs.org/guide/conditional.html)
+[Conditional Rendering guide](https://vuejs.org/guide/essentials/conditional.html#conditional-rendering)
 {: .title-url}
 ## Conditions
 ```html
@@ -252,7 +252,7 @@ Shorthands: `:src`, `:alt`, `:title`, `:class`, `:style`, `:disabled`
 
 
 
-[Lists guide](https://vuejs.org/guide/list.html)
+[Lists guide](https://vuejs.org/guide/essentials/list.html#list-rendering)
 {: .title-url}
 ## Looping
 ```html
@@ -279,7 +279,7 @@ Like `v-if` you can use a template to render a block of multiple elements.
 
 
 
-[Events guide](https://vuejs.org/guide/events.html)
+[Events guide](https://vuejs.org/guide/essentials/event-handling.html#event-handling)
 {: .title-url}
 ## Events
 ```html
@@ -289,7 +289,7 @@ Like `v-if` you can use a template to render a block of multiple elements.
 ```
 
 #### Event Modifiers
-- `@keyup.enter`: `.enter` is called a [Key Modifier](https://vuejs.org/guide/events.html#Key-Modifiers)
+- `@keyup.enter`: `.enter` is called a [Key Modifier](https://vuejs.org/guide/essentials/event-handling.html#key-modifiers)
 - Modifiers are stackable: `.mod1.mod2`
 - `@keyup.page-down="onPageDown"`
 - `.prevent` == `event.preventDefault()`
@@ -311,7 +311,7 @@ Like `v-if` you can use a template to render a block of multiple elements.
 
 # Components
 
-[Components guide](https://vuejs.org/guide/components.html)
+[Components guide](https://vuejs.org/guide/essentials/component-basics.html#components-basics)
 {: .title-url}
 
 #### Usage
@@ -405,7 +405,7 @@ new Vue({
 
 Slots, like React `props.children` or Angular `ng-content`.
 
-[Slots guide](https://vuejs.orgguide/components-slots.html)
+[Slots guide](https://vuejs.org/guide/components/slots.html#slots)
 {: .title-url}
 
 #### Usage
@@ -439,7 +439,7 @@ Vue.component('alert-box', {
 
 # Forms
 
-[Forms guide](https://vuejs.org/guide/forms.html)
+[Forms guide](https://vuejs.org/guide/essentials/forms.html#form-input-bindings)
 {: .title-url}
 
 #### Html
@@ -521,7 +521,7 @@ Reuse of `<input>` elements could lead to strange behavior.
 ```
 
 
-[Using v-model on Components](https://vuejs.org/guide/components.html#Using-v-model-on-Components)
+[Using v-model on Components](https://vuejs.org/guide/components/v-model.html#component-v-model)
 {: .title-url}
 
 ## Custom Model Binding

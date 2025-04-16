@@ -10,7 +10,6 @@ bigimg:
 img:
   url: ava.jpg
   desc: Photo by Marco Secchi
-  origin: https://unsplash.com/photos/yjq31QGOnSY
 categories: javascript
 tags: [testing,tutorial]
 interesting:
@@ -58,9 +57,7 @@ AVA runs automatically ignore:
 
 Checkout the [recipes](https://github.com/avajs/ava#recipes) for examples when working with 
 [TypeScript](https://github.com/avajs/ava/blob/master/docs/recipes/typescript.md),
-[Flow](https://github.com/avajs/ava/blob/master/docs/recipes/flow.md),
 [Babel](https://github.com/avajs/ava/blob/master/docs/recipes/babel.md),
-[React](https://github.com/avajs/ava/blob/master/docs/recipes/react.md),
 [Vue.js](https://github.com/avajs/ava/blob/master/docs/recipes/vue.md),
 Debugging with [Chrome DevTools](https://github.com/avajs/ava/blob/master/docs/recipes/debugging-with-chrome-devtools.md)
 and [WebStorm](https://github.com/avajs/ava/blob/master/docs/recipes/debugging-with-webstorm.md)

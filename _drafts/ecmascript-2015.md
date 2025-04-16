@@ -12,10 +12,6 @@ img:
 interesting:
   - desc: "Kangax Compat Tables"
     url: http://kangax.github.io/compat-table/
-  - desc: "Overview and Comparison of all new features in ES2015 (ES6)"
-    url: http://es6-features.org/
-  - desc: ""
-    url: 
 series: ecmascript-versions
 toc:
     title: ECMAScript2015 (ES6)

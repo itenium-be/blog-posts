@@ -253,8 +253,8 @@ That being said, the browser extensions are available for pretty much all browse
 [Lightshot]: https://chromewebstore.google.com/detail/lightshot-screenshot-tool/mbniclmhobmnbdlbpiphghaielnnpgdp
 [JSONVue]: https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=en
 [JSONVue-Repo]: https://github.com/gildas-lormeau/JSONVue
-[Wappalyzer]: https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en
-[Wappalyzer-Repo]: https://github.com/tunetheweb/wappalyzer
+[Wappalyzer]: https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg
+[Wappalyzer-Repo]: https://github.com/projectdiscovery/wappalyzergo
 [Web-Dev]: https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm
 [Web-Dev-Repo]: https://github.com/chrispederick/web-developer/
 [ModHeader]: https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj

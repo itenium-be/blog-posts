@@ -12,7 +12,6 @@ bigimg:
   origin: https://unsplash.com/photos/NEc3YEN1FFw
 img:
   url: git-hooks-husky.jpg
-  origin: https://unsplash.com/photos/jY_2XG-6HU0
   desc: Photo by Simon Rae
 categories: dev-setup
 tags: [git]
