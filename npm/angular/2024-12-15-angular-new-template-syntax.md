@@ -40,7 +40,7 @@ Compared to other SPA frameworks, Angular really made it quite
 cumbersome to do simple things like an if/else to show/hide
 certain UI parts.
 
-The new syntax is so much more succint, it gets rid of excess
+The new syntax is so much more succinct, it gets rid of excess
 html tags, is easier to remember and it doesn't need to be
 added to the `imports` array of a standalone component.
 
@@ -89,7 +89,7 @@ Available "special" variables:
 - first & last
 
 Adding `trackBy: trackElFn` is optional
-and is only needed when you are running into performace issues.
+and is only needed when you are running into performance issues.
 
 ```ts
 trackElFn(index: number, el: T) {

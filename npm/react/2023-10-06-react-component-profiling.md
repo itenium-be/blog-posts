@@ -74,7 +74,7 @@ The [React Developer Tools](https://chrome.google.com/webstore/detail/react-deve
 
 ### Interesting Settings
 
-Filter the output once it becomes unwieldly in the <i class="fa fa-cog" style="color: #59616C"></i> settings modal:
+Filter the output once it becomes unwieldy in the <i class="fa fa-cog" style="color: #59616C"></i> settings modal:
 
 - `Components > Hide components where...`: custom result filtering based on DOM type (ex: div), name, ...
 - `Profiler > Hide commits below x ms`: ignore very fast renders (ex: rerenders for tooltips)
@@ -239,7 +239,7 @@ This greatly improved performance (6s -> 360ms) which is good enough.
 
 # The Meaty Part
 
-There is another screen and performace there is... disastrous.
+There is another screen and performance there is... disastrous.
 
 - Everything is re-rendered whenever a projectMonth gets collapsed/opened.
     - Opening more and more projectMonths gets slower and slower.
@@ -284,7 +284,7 @@ all months to be re-rendered instead of just the one being toggled
 because the filters object has changed.
 
 Furthermore, the expensive `IFeature` construction is not necessary
-when the projectMonth is collaped. Instead we can map directly to
+when the projectMonth is collapsed. Instead we can map directly to
 `CollapsedProjectMonthBadgeTotals`, which doesn't include any inner loops.
 
 
@@ -451,7 +451,7 @@ when opening/closing just one and caching expensive Redux selects.
 
 ### Unexpected Side-Effect
 
-The overal structure and code quality has improved due the refactorings
+The overall structure and code quality has improved due the refactorings
 needed to realize the performance targets.
 
 - More components with finer grained purpose resulted in a clearer component hierarchy
@@ -548,5 +548,5 @@ function callback(id, phase, actualDuration) {
   - Tricky: useCallback also takes time; in my case it actually degraded performance
   - As always with perf optimizations --> **MEASURE** (the profiler is your friend)
 - **memo**: Components without props can be cached entirely
-- [**useWhyDidYouUpdate**](https://github.com/itenium-be/React-ComponentProfiling/blob/master/snippets/useWhyDidYouUpdate.ts): part of many hooks-libraries (I didn't find it very usefull)
+- [**useWhyDidYouUpdate**](https://github.com/itenium-be/React-ComponentProfiling/blob/master/snippets/useWhyDidYouUpdate.ts): part of many hooks-libraries (I didn't find it very useful)
 - [**useDebugValue**](https://react.dev/reference/react/useDebugValue): to be used in custom hooks (more for library developers IMO)

@@ -329,7 +329,7 @@ The official docs for
 Other roles:  
 - `readAnyDatabase`: the same as the roles above, but for all databases (also exists for `readWrite`, `dbAdmin` and `userAdmin`)
 - `clusterAdmin`: clusterManager + clusterMonitor + hostManager (+ dropDatabase action)
-- `enableSharding`: Enable sharding for a collection nad modify existing shard keys
+- `enableSharding`: Enable sharding for a collection and modify existing shard keys
 - `root`: global superuser access: xxxAnyDatabase + clusterAdmin + backup/restore
 
 

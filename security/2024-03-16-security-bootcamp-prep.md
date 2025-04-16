@@ -67,7 +67,7 @@ It's possible to play in a team!
 
 # Start Playing
 
-At the start of the conference we will communicatie how to:
+At the start of the conference we will communicate how to:
 
 - Connect to our network
 - The URL of the Portal
@@ -192,7 +192,7 @@ If you are unsure how to get started
 ## In-Game Blogs
 
 As part of the Security Bootcamp, two (vulnerable) Wordpress
-blogs are spinned up, visit them from the Portal for more useful information:
+blogs are spun up, visit them from the Portal for more useful information:
 
 **The Hacker's Toolkit Blog** contains posts on hacking tools and general info on JWT, Capturing Flags and more
 
@@ -217,7 +217,7 @@ Other things that score points:
 - The API key of another player not in your team
 - The JWT token of another player not in your team
 
-Check the blog post in the The Hacker's Toolkit Blog ingame for more info!
+Check the blog post in The Hacker's Toolkit Blog in-game for more info!
 
 
 ## The Vault
@@ -235,4 +235,4 @@ as passphrase and score Vault multipliers.
 
 Beware, incorrectly decrypted flags will cost points!
 
-Check the blog post in the The Hacker's Toolkit Blog ingame for more info!
+Check the blog post in The Hacker's Toolkit Blog in-game for more info!

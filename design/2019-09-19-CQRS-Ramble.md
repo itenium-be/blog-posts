@@ -68,7 +68,7 @@ architecture, even when doing so late in the development life cycle.
 In his entire article on CQRS, this is the only sentence that Martin has put in bold.
 
 Unfortunately developers like the latest and greatest very much and CQRS has, for many organizations
-and teams been put forward as the defacto standard architecture.
+and teams been put forward as the de facto standard architecture.
 
 There is of course that one project where it makes a lot of sense but let's be realistic,
 most of us are working on enterprise applications which are all pretty much CRUD.
@@ -372,7 +372,7 @@ A simple diagram explaining the flow for a typical CRUD operation:
 where in the project folder structure to create which class goes a long way
 getting new devs and juniors onboard.
 
-If you end up using the the domain inheritance thing, (generated?) printouts
+If you end up using the domain inheritance thing, (generated?) printouts
 for the important entity types so you can piece things together more easily are a good
 workaround for properties being "all over the place".
 

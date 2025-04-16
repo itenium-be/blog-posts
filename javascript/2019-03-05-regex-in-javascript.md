@@ -105,7 +105,7 @@ const didMatch = /a/.test('abc');
 {: style="float: right"}
 
 Without the `g` flag, only the first match is replaced. (which makes no difference in the example:)  
-ECMAScript2021 added [`replaceAll`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll): you can now replace all occurences without using a regex.
+ECMAScript2021 added [`replaceAll`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll): you can now replace all occurrences without using a regex.
 
 ```javascript
 'too  many  spaces'.replace(/  /g, ' ');
@@ -231,7 +231,7 @@ const rc = new RegExp('ab+c', 'i');
 The `v` flag doesn't just bring stuff like `p{RGI_Emoji}` but also extensions to character classes.  
 Checkout [v8.dev](https://v8.dev/features/regexp-v-flag) for a whole bunch of additional examples.
 
-### Substraction with `--`
+### Subtraction with `--`
 
 ```js
 // Only non-ascii numbers

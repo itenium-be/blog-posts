@@ -82,7 +82,7 @@ These are the reason this series is posted under the productivity category.
 
 ## Example
 
-Whenever I fix a bug that was the result of an error that might have happened in other places aswell,
+Whenever I fix a bug that was the result of an error that might have happened in other places as well,
 I might use a regex to find those, even if the other code contains different variable names,
 code style etc it would still find them - at least if the regex was written in a way that takes
 the context into account.
@@ -138,7 +138,7 @@ works perfectly in your IDE but not from your application.
 Some examples (or [a full list](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816)):
 - Features not implemented. ex: named capture groups in JS (since added in [ECMAScript 2018](https://github.com/tc39/proposal-regexp-named-groups))
 - `\b` vs `<|>` for example in Visual Studio
-- Different behavior of 'small' syntax errors. ex: throwing vs silently continueing
+- Different behavior of 'small' syntax errors. ex: throwing vs silently continuing
 - .NET has `(?#comment)`, Java has not. Java has `\Q...\E`, .NET has not
 
 

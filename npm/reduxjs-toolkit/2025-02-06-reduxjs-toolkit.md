@@ -42,7 +42,7 @@ socials:
 {% include github-stars.html url="reduxjs/redux-toolkit" desc="The official, opinionated, batteries-included toolset for efficient Redux development" %}
 
 This first post is context and can basically be ignored.  
-The remainder of the series are no-nonsense pretty detailed explainations on how to start using
+The remainder of the series are no-nonsense pretty detailed explanations on how to start using
 ReduxJS/Toolkit, assuming you're basically already a "legacy" Redux expert but don't want to read the
 gazillion pages that is the [default documentation](https://redux.js.org/introduction/getting-started).
 {: .notice--info}

@@ -71,7 +71,7 @@ Steps: Control Panel > File Services > NFS > Enable
 
 ### compose.yaml
 
-Requires an `.env` file with with: `SYNC_DIR=/volume1/CloudSyncedFolder/shared-with-3rd-party`
+Requires an `.env` file with: `SYNC_DIR=/volume1/CloudSyncedFolder/shared-with-3rd-party`
 
 ```yaml
 version: "3"

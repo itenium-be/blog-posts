@@ -86,7 +86,7 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 ```
 
 Starting from .NET Framework 4.5, default cultures can be set for all new and all existing
-threads in the AppDomain that have not explicitely set their `CurrentThread.CurrentCulture`.
+threads in the AppDomain that have not explicitly set their `CurrentThread.CurrentCulture`.
 
 ```c#
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");

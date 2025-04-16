@@ -105,7 +105,7 @@ He does a magnificent job of clearly conveying these concepts, which helps us br
 The book contains some very useful insights, and the small bite-sized sections made it an enjoyable, educative read whilst sipping some tea.
 
 While the "what" section might contain a lot of "obvious" things, a refresher never hurts and they are always approached from multiple angles.  
-This also makes it an easier recommendation, compared to certain more opiniated books.
+This also makes it an easier recommendation, compared to certain more opinionated books.
 
 The "when" & "why" section are where the real meat was for me.  
 In the finalle Ken put a lot of effort into the value (or lack thereof) of doing these changes and gives insights into bridging certain gaps/phrasing towards business-owners to discuss the buy-in.

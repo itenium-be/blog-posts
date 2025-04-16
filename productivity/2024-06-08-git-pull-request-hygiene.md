@@ -196,7 +196,7 @@ google it!
 
 ## Avoid Superfluous Changes
 
-These are changes that typically happen automatially on a save
+These are changes that typically happen automatically on a save
 and means that someone has a different linter installed,
 or that they are running their linter with different settings 😲
 
@@ -311,7 +311,7 @@ So either delete the file, or, even better,
 actually write some tests for it!! Especially
 as is the case here,
 [writing tests for an Angular Pipe](https://itenium.be/blog/javascript/angular-pipes/#testing)
-is very straight-forward!
+is very straightforward!
 
 Another thing the code generator seems to be
 doing from time to time, re-order statements:
@@ -333,7 +333,7 @@ Keep your PR short & sweet, a mere glance through all
 changed files will spot almost all these things.
 
 It allows **you** to fix them instead getting comments from
-the PR reviewer, that I would say are a bit embarassing,
+the PR reviewer, that I would say are a bit embarrassing,
 especially when it happens time and time again...
 
 

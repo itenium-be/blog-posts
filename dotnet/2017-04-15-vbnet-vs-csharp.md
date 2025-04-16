@@ -721,7 +721,7 @@ Dim nowNodeText = nowNode.Value
 
 
 
-Convertion troubles
+Conversion troubles
 -------------------
 While there are some online converters, they are not at all up to date, or very smart.
 - [Carlosag converter][converter-carlosag]
@@ -759,7 +759,7 @@ Lambda syntax like `o.Where(Function(x As Integer) x < 0)` isn't going to win an
 C#'s `o.Where((int x) => x < 0)`... But at least it's there :)
 
 I'm probably a *little* biased towards C# because of the more succinct syntax and because the vast majority of
-online examples are written in C# while the free convertion tools are severly lacking.
+online examples are written in C# while the free conversion tools are severely lacking.
 
 
 It's perhaps worth mentioning that VB.NET and Resharper are not on the best of terms.

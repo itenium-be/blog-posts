@@ -14,7 +14,7 @@ bigimg:
 img:
   url: bootcamp-3dmodelling-winner.png
   desc: "Competition Winner (Alexander)"
-  origin: Alexander
+  by: Alexander
 categories: design
 tags: [fun]
 interesting:

@@ -372,7 +372,7 @@ await Assert.That(actual).IsLessThan(0);
 
 A test stops running as soon as an assertion fails. But sometimes it is handy
 that all assertions still run so that you have more context to pinpoint the exact
-problem. Both xUnit and NUnit have a mecanism to do this.
+problem. Both xUnit and NUnit have a mechanism to do this.
 
 ```c#
 // xUnit

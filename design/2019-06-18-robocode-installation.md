@@ -103,7 +103,7 @@ New Project:
 - Add a new Java Class with Superclass: `robocode.Robot`.
 
 Be sure your final robot is [packaged](http://robowiki.net/wiki/Robocode/Package_Robot)!
-A `*` appears ingame next to a robot's name if it is a development version.
+A `*` appears in-game next to a robot's name if it is a development version.
 
 
 #### Robocode UI

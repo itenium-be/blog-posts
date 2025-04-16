@@ -12,7 +12,7 @@ bigimg:
   origin: Midjourney
 img:
   url: bootcamp-home-automation.png
-  origin: Wouter
+  by: Wouter
   desc: "Self powering socket!!"
 categories: productivity
 extras:

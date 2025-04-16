@@ -267,7 +267,7 @@ sudo synoshare --add Dropbox "Dropbox Cloud Sync" /volume1/Dropbox "" "users" ""
 
 ## Git
 
-### Configuation
+### Configuration
 
 ```sh
 git config --global user.name ""

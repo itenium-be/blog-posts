@@ -186,7 +186,7 @@ select name from countries where name not like ('% %')
 and name like all (array['%a%', '%e%', '%i%', '%o%', '%u%'])
 ```
 
-But I was suprised no one solved this with a good old regex!?
+But I was surprised no one solved this with a good old regex!?
 It would most definitely have won the "leanest query" award!
 
 ```sql

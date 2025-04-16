@@ -89,7 +89,7 @@ Notable exceptions are: `\<` and `\>`, `[a-Z]`, `\Q\E`. Your mileage may vary.
 Shorthands can be inversed by capitalizing them: `\D` (not a digit)
 
 Also `\v` (vertical tab), `\f` (form feed).  
-Inside a character clas `\b` matches backspace.
+Inside a character class `\b` matches backspace.
 
 # Modifiers
 
