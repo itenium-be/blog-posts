@@ -29,9 +29,9 @@ toc:
   title: Immer
   icon: lock
 socials:
-  linkedin: ""
-  facebook: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-immerjs-activity-7318574145129107457-3vYT"
+  facebook: "https://www.facebook.com/share/p/1ATNvsSBTn/"
+  twitter: "https://x.com/itenium_be/status/1912808370014236938"
 ---
 
 {% include github-stars.html url="immerjs/immer" desc="Create the next immutable state by mutating the current one" %}
