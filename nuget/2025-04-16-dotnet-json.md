@@ -140,7 +140,7 @@ public class StringFloatConverter : JsonConverter
 {
   public override bool CanConvert(Type objectType) => objectType == typeof(float);
 
-  public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+  public override object ReadJson(JsonReader reader, Type objType, object value, JsonSerializer serializer)
   {
     if (reader.TokenType == JsonToken.String)
       return float.Parse((string)reader.Value);
