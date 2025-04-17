@@ -298,7 +298,7 @@ const selectTodoDescriptionsProxy = memoize(state =>
 )
 ```
 
-For this reason **the ReduxJS/Toolkit officially encourages consideringusing proxy-memoize as a viable alternative to Reselect.**
+For this reason **the ReduxJS/Toolkit officially encourages you to consider using proxy-memoize as a viable alternative to Reselect.**
 
 
 
