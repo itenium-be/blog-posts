@@ -41,7 +41,15 @@ One of the Redux Style Guide "Strongly Recommended" rules is
 Keep the actual data in the Redux store as minimal as possible, and derive additional values from that state as needed.
 {: .notice--info}
 
-Keeping all that efficient is where `createSelector` comes into play.
+Another strongly recommended rule is
+[Normalize Complex Nested/Relational State](https://redux.js.org/style-guide/#normalize-complex-nestedrelational-state)
+
+Many applications need to cache complex data in the store. That data is often received in a nested form from an API,
+or has relations between different entities in the data (such as a blog that contains Users, Posts, and Comments).
+{: .notice--info}
+
+Of course your components are interested in those derived values and in the nested data. Keeping those calculations
+and recombining the data efficient is where `createSelector` comes into play.
 
 <!--more-->
 
