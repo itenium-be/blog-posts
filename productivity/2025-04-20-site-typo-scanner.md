@@ -117,4 +117,4 @@ Let's use the same steps mechanism it used on me to run a potentially disastrous
 
 ✅ 1. AI hallucinates some dependency that looks real.  
 ✅ 2. A malicious party registers this dependency and puts malware in it.  
-✅ 3. An unexpecting developer runs the command and 💥
+✅ 3. An unsuspecting developer runs the command and 💥
