@@ -23,8 +23,6 @@ interesting:
     desc: "Include polyfills for your favourite functions that are not (yet) implemented by your browser(s)."
   - url: http://2ality.com/
     desc: "2ality.com: Blogging on ES proposals"
-  - url: http://es6-features.org
-    desc: "es6-features.org: Overview and Comparison"
   - url: https://stackoverflow.com/a/200614/540352
     desc: "StackOverflow: Jon Skeet on why there is no forEach in Linq"
   - git: morelinq/MoreLINQ
