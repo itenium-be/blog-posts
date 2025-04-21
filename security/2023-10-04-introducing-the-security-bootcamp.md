@@ -9,15 +9,12 @@ desc: >
   with our full day immersive workshop.
 bigimg:
   url: hacking-bootcamp-big.png
-  desc: ""
   origin: Midjourney
   prompt: "a security bootcamp"
 img:
   url: hacking-bootcamp.png
-  desc: ""
   origin: Midjourney
-  title: ""
-  prompt: 
+  prompt: "a security bootcamp"
 categories: security
 tags: [hacking]
 series: security-bootcamp

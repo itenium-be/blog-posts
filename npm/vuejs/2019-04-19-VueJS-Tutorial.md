@@ -12,7 +12,6 @@ bigimg:
 img:
   url: vue-tutorial.jpg
   desc: "What a Vue!"
-  origin: https://unsplash.com/photos/-GwHS2piM_U
 imgtitle: Photo by Fezbot2000
 categories: javascript
 tags: [tutorial]
