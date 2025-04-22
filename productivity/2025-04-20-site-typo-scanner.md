@@ -101,7 +101,7 @@ gem install siteinspector
 siteinspector https://itenium.be
 ```
 
-## AI Typosquatting
+## AI Slopsquatting
 
 ```
 ERROR:  Could not find a valid gem 'siteinspector' (>= 0) in any repository
@@ -112,7 +112,7 @@ That's right, the gem doesn't exist. And `site-inspector` is something different
 
 {% include github-stars.html url="benbalter/site-inspector" desc="Ruby Gem to sniff information about a domain's technology and capabilities." %}
 
-It **typosquat** me; an emerging danger of AI!  
+It was a potential **slopsquat** attack; an emerging danger of AI!  
 Let's use the same steps mechanism it used on me to run a potentially disastrous command to illustrate.
 
 ✅ 1. AI hallucinates some dependency that looks real.  
