@@ -28,9 +28,9 @@ toc:
   title: ReduxJS/Toolkit
   icon: icon-reactjs
 socials:
-  linkedin: ""
-  facebook: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-reduxtoolkit-activity-7320386104673685506-al3B"
+  facebook: "https://www.facebook.com/share/p/15zuwPc5zG/"
+  twitter: "https://x.com/itenium_be/status/1914620340963074396"
 ---
 
 The legacy Redux `createStore` could make a grown man cry, and probably has.
