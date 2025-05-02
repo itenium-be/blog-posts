@@ -29,9 +29,10 @@ toc:
   title: createAsyncThunk
   icon: icon-reactjs
 socials:
-  linkedin: ""
-  facebook: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-reduxtoolkit-activity-7323647627009429504-q0pP"
+  facebook: "https://www.facebook.com/share/p/1LfAF12rs5/"
+  twitter: "https://x.com/itenium_be/status/1917881844881657955"
+  instagram: "https://www.instagram.com/p/DJG1fzMColG/"
 ---
 
 `createAsyncThunk` generates promise lifecycle action types, which you
