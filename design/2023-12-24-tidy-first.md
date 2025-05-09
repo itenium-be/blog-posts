@@ -85,7 +85,7 @@ And as always align with your team.
 
 ## Theory
 
-This was my favourite section. We've diven into the what & when, but what's the why? Which is certainly a question one can expect when tidying.  
+This was my favourite section. We've dived into the what & when, but what's the why? Which is certainly a question one can expect when tidying.  
 Often there can be certain challenges if one cannot properly convey the reasoning for this activity, after all why are you doing this?  
 What's the value for the product owner?
 
