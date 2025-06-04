@@ -25,9 +25,10 @@ toc:
   title: Controller Security
   icon: dot-circle-o
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-dotnetdev-activity-7335968914746580992-pQ_Q"
+  instagram: "https://www.instagram.com/p/DKeYiXlM0Nu/"
+  twitter: "https://x.com/itenium_be/status/1930203155444236447"
+  facebook: "https://www.facebook.com/share/p/1EkqY1Aqoy/"
 ---
 
 Adding the `[AllowAnonymous]` or `[Authorize("policy")]` whenever a new Controller
