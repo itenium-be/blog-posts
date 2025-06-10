@@ -35,9 +35,10 @@ package-versions:
   - package: System.Text.Json
     version: 9.0.4
 socials:
-  linkedin: ""
-  facebook: ""
-  twitter: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-keeponlearning-dotnet-activity-7338143179109552129-gndY"
+  facebook: "https://www.facebook.com/share/p/1Fw4WtFiNL/"
+  twitter: "https://x.com/itenium_be/status/1932377417504424443"
+  instagram: "https://www.instagram.com/p/DKt1V0OBejS/"
 ---
 
 {% include github-stars.html url="JamesNK/Newtonsoft.Json" desc="" %}
