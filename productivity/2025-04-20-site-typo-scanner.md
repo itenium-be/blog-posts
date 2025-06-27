@@ -25,11 +25,10 @@ tags: [tutorial]
 toc:
   title: 🕵️ TypeScanner
 socials:
-  linkedin: ""
-  instagram: ""
-  twitter: ""
-  facebook: ""
-  youtube: ""
+  linkedin: "https://www.linkedin.com/posts/itenium_webdev-techfails-aisafety-activity-7343216566253068288-r4uz"
+  instagram: "https://www.instagram.com/p/DLR4efpPiqW/"
+  twitter: "https://x.com/itenium_be/status/1937450793621176389"
+  facebook: "https://www.facebook.com/share/p/1FyVQGVfyv/"
 ---
 
 While moving some todos from one location to another I came across "Check Site Inspector"
