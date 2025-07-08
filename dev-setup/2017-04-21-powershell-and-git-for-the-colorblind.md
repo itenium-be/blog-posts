@@ -36,7 +36,7 @@ PowerShell
 
 List current colors
 
-```powershell
+```ps1
 function Show-Colors() {
   Write-Host "Available Colors:"
   $colors = [Enum]::GetValues([ConsoleColor])
@@ -67,7 +67,7 @@ Show-Colors
 
 With just changing how Errors are displayed, everything is readable, for me, with Cmder.
 
-```powershell
+```ps1
 $host.PrivateData.ErrorBackgroundColor = 'Red'
 $host.PrivateData.ErrorForegroundColor = 'Yellow' # or: "DarkMagenta"
 ```
@@ -87,14 +87,14 @@ $GitPromptSettings
 
 My changes
 
-```powershell
+```ps1
 $global:GitPromptSettings.WorkingForegroundColor = [ConsoleColor]::Yellow
 $global:GitPromptSettings.BranchForegroundColor = [ConsoleColor]::Green
 ```
 
 Get possible colors  
 
-```powershell
+```ps1
 [ConsoleColor].GetEnumNames()
 ```
 
@@ -105,7 +105,7 @@ Get possible colors
 
 Some breaking changes...  
 
-```powershell
+```ps1
 $GitPromptSettings.DefaultPromptPath.ForegroundColor = 'White'
 
 $GitPromptSettings.LocalWorkingStatusSymbol.ForegroundColor = 'Yellow'
@@ -118,7 +118,7 @@ $GitPromptSettings.BranchBehindAndAheadStatusSymbol.ForegroundColor = 'Yellow'
 
 Colors are interpreted with  
 
-```powershell
+```ps1
 System.Drawing.ColorTranslator.FromHtml()
 ```
 
@@ -131,7 +131,7 @@ Git
 
 List current colors
 
-```powershell
+```ps1
 git config --list | Where-Object {$_ -Like "color*"}
 ```
 
