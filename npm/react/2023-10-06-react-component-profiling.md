@@ -77,7 +77,7 @@ The [React Developer Tools](https://chrome.google.com/webstore/detail/react-deve
 Filter the output once it becomes unwieldy in the <i class="fa fa-cog" style="color: #59616C"></i> settings modal:
 
 - `Components > Hide components where...`: custom result filtering based on DOM type (ex: div), name, ...
-- `Profiler > Hide commits below x ms`: ignore very fast renders (ex: rerenders for tooltips)
+- `Profiler > Hide commits below x ms`: ignore very fast renders (ex: re-renders for tooltips)
 
 
 # Using the Profiler
@@ -218,7 +218,7 @@ There are several mitigations:
 
 - **Pagination** <i class="fa fa-check-circle" style="color: #AFE1AF"></i> Implemented!
 - **Partial data load** <small>(only load last year worth of data in memory at startup)</small> <i class="fa fa-check-circle" style="color: #AFE1AF"></i> Implemented!
-- **Debouncing**: Useful when filtering the grids, only start a rerender when the user is done entering the filter criteria
+- **Debouncing**: Useful when filtering the grids, only start a re-render when the user is done entering the filter criteria
 - **Virtualization & Infinite Scroll**: A grid can display an "infinite" amount of rows and still be performant!
 - **Suspense & useDeferredValue**: Not relevant here because all data is already in memory
 
@@ -322,7 +322,7 @@ import { createSelector } from 'reselect';
 
 export const createFullProjectMonthsSelector = () => createSelector(
   // Select required store data
-  // Rerenders happen when these references change
+  // Re-renders happen when these references change
   (state: ConfacState) => state.projectsMonth,
   (state: ConfacState) => state.projects,
   (state: ConfacState) => state.consultants,

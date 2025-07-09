@@ -551,7 +551,7 @@ new Vue({
 Vue.js has wrapped array functions so that they are reactive:  
 `push`, `pop`, `shift`, `unshift`, `splice`, `sort`, `reverse`
 
-Assigning a new array will reuse DOM elements if possible on the rerender.
+Assigning a new array will reuse DOM elements if possible on the re-render.
 
 It **will not detect `this.items[0] = 'newVal'`**. If you must, use:  
 ```javascript
