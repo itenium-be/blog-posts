@@ -86,7 +86,7 @@ Notable exceptions are: `\<` and `\>`, `[a-Z]`, `\Q\E`. Your mileage may vary.
 | \Q...\E   | Literal sequence | Ex: `\Qlite[]ral\E`
 {: .table-code}
 
-Shorthands can be inversed by capitalizing them: `\D` (not a digit)
+Shorthands can be inverted by capitalizing them: `\D` (not a digit)
 
 Also `\v` (vertical tab), `\f` (form feed).  
 Inside a character class `\b` matches backspace.
