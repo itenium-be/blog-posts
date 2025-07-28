@@ -29,6 +29,11 @@ extras:
 toc:
   icon: icon-shell
   title: LightGBM Installation
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_dotnet-machinelearning-dockerstruggles-activity-7351913817586425857-ke2j"
+  twitter: "https://x.com/itenium_be/status/1943611265777021175"
+  instagram: "https://www.instagram.com/p/DMPrjwkuOoy/"
+  facebook: "https://www.facebook.com/share/p/1BEoHvQYHw/"
 ---
 
 {% include github-stars.html url="dotnet/machinelearning" desc="ML.NET is an open source and cross-platform machine learning framework for .NET." %}
