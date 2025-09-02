@@ -65,3 +65,9 @@ If you prefer something that is more actively maintained/developed:
 ## If you just need to read
 
 {% include github-stars.html url="ExcelDataReader/ExcelDataReader" desc="Lightweight C# library for reading Excel files" %}
+
+## Low Level
+
+Very low level and verbose. What EPPlus and ClosedXML use under the hood.
+
+{% include github-stars.html url="dotnet/Open-XML-SDK" desc="Open XML SDK by Microsoft." %}
