@@ -44,8 +44,11 @@ EPPlus is a pretty solid tool and you probably don't need any of the additional
 fluff they're adding in the now paid version. Use these to circumvent the official
 EPPlus misleading "Deprecated" notice.
 
-{% include github-stars.html url="rimland/EPPlus" desc="Most stars but no activity" %}
-{% include github-stars.html url="visualon/epplus" desc="Actively maintained (ex .NET 8 support) but no new features" %}
+{% include github-stars.html url="rimland/EPPlus" desc="Most stars but no activity in the last 5 years" %}
+{% include github-stars.html url="visualon/epplus" desc="Actively maintained up till .NET 8 support but deprecated since May 28, 2025" %}
+
+One thing that I did stumble upon with the classic EPPlus is that it has a dependency on `System.Drawing.Common`
+which only works on Windows. The non-free version has removed this dependency.
 
 
 # Alternatives
