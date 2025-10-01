@@ -2,11 +2,6 @@ Blog posts
 ==========
 for [https://itenium.be]
 
-Jasmine with Node  
---> Skip the jasmine-ts package?  
---> Switch node-ts with ts-node!!!  
-Script: `ts-node node_modules/jasmine/bin/jasmine`
-
 [Instructions on how to create a post and what is available](https://itenium.be/blog/productivity/create-blog-post/)
 
 [Github pages supported plugins](https://pages.github.com/versions)
@@ -29,13 +24,3 @@ A new post will be published when:
 - `last_modified_at` frontmatter needs to be kept in sync manually because sorting on `(updates | last).date` turned out to not be very easy.
 - A `autohotkey` code block makes a notice appear about DynaRun
 - Posts with first tag "meta" are not included in the search results (`blog/search.json`)
-
-
-TODO
-----
-
-- Share on Twitter / Facebook
-- Include tweet?
-- [html proofer](https://github.com/gjtorikian/html-proofer)
-- related posts
-- create a list of books that I found really good?
