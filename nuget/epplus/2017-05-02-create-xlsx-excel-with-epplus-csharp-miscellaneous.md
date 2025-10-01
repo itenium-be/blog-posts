@@ -24,7 +24,7 @@ package-versions:
 See [some alternatives](/blog/dotnet/epplus-pay-to-play/) if that is a dealbreaker for you!
 {: .notice--danger}
 
-**We now have a blog series on an alternative Excel package [ClosedXML](/blog/dotnet/create-xlsx-excel-with-closedxml-miscellaneous)**  
+**We now have a blog series on an alternative Excel package [ClosedXML](/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-miscellaneous)**  
 Which is basically on equal footing with EPPlus.
 {: .notice--info}
 
