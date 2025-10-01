@@ -2,63 +2,56 @@
 layout: post
 author: Wouter Van Schandevijl
 title:  "Excel formulas cheat sheet"
-date:   2018-03-28 20:00:00 +0200
+date:   2025-10-02
 desc: >
-  Companion to the EPPlus series, specifically to Part 2: Formulas.  
-  Covering the EPPlus syntax and implemented functions.
+  Supported Excel formula functions in ClosedXML.
 img:
-  url: excel-math.jpg
-  desc: "Photo by Roman Mager"
-  origin: https://unsplash.com/photos/5mZ_M06Fc9g
+  url: closedxml-functions2.png
+  prompt: "a wizard casting glowing spells in the shape of formulas IF, DATE, COUNTIF, floating symbols swirling around, fantasy illustration, dramatic lighting --ar 6:5"
+  origin: Midjourney
+bigimg:
+  url: closedxml-functions-big.png
+  prompt: "an illuminated manuscript showing magical runes shaped like Excel formulas, monks scribbling COUNTIF and CONCATENATE in the margins, high detail, satirical medieval art --ar 700:131"
+  origin: Midjourney
 categories: dotnet
 tags: [excel,cheat-sheet]
-series: epplus
+series: closedxml
 extras:
-  - githubproject: https://github.com/itenium-be/EPPlusTutorial
+  - githubproject: https://github.com/itenium-be/ClosedXMLTutorial
 toc:
-  title: "Excel series: Part 5"
+  title: "Excel series: Part 4"
   icon: file-excel-o
 interesting:
   - desc: "Official documentation: list of all Excel functions"
     url: https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188
 ---
 
-**Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.**  
-See [some alternatives](/blog/dotnet/epplus-pay-to-play/) if that is a dealbreaker for you!
-{: .notice--danger}
 
-**We now have a blog series on an alternative Excel package [ClosedXML](/blog/dotnet/excel-formulas-cheat-sheet-closedxml)**  
-Which is basically on equal footing with EPPlus.
-{: .notice--info}
+Companion to the ClosedXML series, specifically to Part 2: Formulas.  
+Covering the ClosedXML syntax and implemented functions.
+
+See the [ClosedXML example code](https://github.com/itenium-be/ClosedXMLTutorial)
+for  of all the functions as UnitTests.
+
 
 <!--more-->
-
-<br>
-<hr>
-<br>
-
-# That's fine!
-
-Companion to the EPPlus series, specifically to Part 2: Formulas.  
-Covering the EPPlus syntax and implemented functions.
 
 # Basics
 
 Add a formula with:  
 
-```
-var package = new ExcelPackage();
-var sheet = package.Workbook.Worksheets.Add("Formulas")
-sheet.Cells["A1"].Formula = "A$5";
-sheet.Cells["D5"].FormulaR1C1 = "RC[-2]*RC[-1]";
+```c#
+using var workbook = new XLWorkbook();
+var sheet = workbook.Worksheets.Add("StringManipulation");
+sheet.Cell("A1").FormulaA1 = "A$5";
+sheet.Cell("D5").FormulaR1C1 = "RC[-2]*RC[-1]";
 ```
 
-A few EPPlus specific gotchas:  
-- Do not start .Formula with =
+A few ClosedXML specific gotchas:  
+- Formulas may start with =
 - Use English function names
 - Use , as function parameter separator
-
-
+- A function that is [not implemented](https://docs.closedxml.io/en/latest/features/functions.html) can be set but the value cannot be read
 
 # String manipulation
 
@@ -80,26 +73,34 @@ All string indexes start from 1.
 | str1 & str2                              | str1 + str2
 | FIND(str, needle)                        | str.IndexOf(needle) + 1                   | Case sensitive
 | SEARCH(str, needle)                      | Case insensitive FIND
+| ISTEXT
 {: .table-code}
 
 
 # Numbers & Math
 
-| Function                                 | Meaning                                   
-|------------------------------------------|-------------------------------------------
-| VALUE(str)                               | decimal.Parse(str)
-| FLOOR(number, significance)              | Or INT, ROUNDDOWN, TRUNC
-| CEILING(number, significance)            | Or ROUNDUP
-| ROUND(number, significance)
+| Function                                        | Meaning                                   
+|-------------------------------------------------|-------------------------------------------
+| VALUE(str)                                      | decimal.Parse(str)
+| ROUNDDOWN(number, num_digits)                   | Or TRUNC
+| INT(number)                                     | Math.Floor
+| ROUNDUP(number, num_digits)                     | 
+| ROUND(number, num_digits)                       | 
+| FLOOR(number, significance)                     | The closest multiple of "significance"
+| CEILING(number, significance)                   | The closest multiple of "significance"
 | ISNUMBER, ISEVEN, ISODD
 | MAX, MIN
-| COUNT(range)                             | Counts all numeric cell values
-| COUNTA(range)                            | Counts all non empty cell values
+| COUNT(range)                                    | Counts all numeric cell values
+| COUNTA(range)                                   | Counts all non empty cell values
 | COUNTBLANK(range)
 | COUNTIF(range, criteria)
-| COUNTIFS(range, criteria, range2, crit2) | 
-| SUM, SUMIF, SUMIFS
-| AVERAGE, AVERAGEIF, AVERAGEIFS
+| COUNTIFS(range, criteria, range2, crit2)        | All the ranges must be the same size.
+|                                                 | Counts if all the conditions are true
+| SUM, SUMIF
+| SUMIFS(sum_range, range1, crit1, range2, crit2) | All the ranges must be the same size.
+| AVERAGE(range)
+| AVERAGEIF(range, criteria)                      | Not implemented
+| AVERAGEIFS(avg_range, range1, crit1, ...)       | Not implemented
 {: .table-code}
 
 ## CountIf, SumIf, AverageIf
@@ -163,27 +164,29 @@ Filtered-out rows are always excluded.
 
 # Date & Time
 
-| Function                                 | C#                                        
-|------------------------------------------|-------------------------------------------
-| DATE(year, month, day)                   | new DateTime(year, month, day)
-| TODAY                                    | DateTime.Now.Date
-| NOW                                      | DateTime.Now
-| DATE(date)                               | date.Date
-| Also: MONTH, YEAR, TIME, HOUR, MINUTE, SECOND
-| WEEKNUM                                  | Week of year. Also: ISOWEEKNUM
-| WEEKDAY                                  | Day of week index (sunday=0)
+| Function                                    | C# / Info                                 
+|---------------------------------------------|-------------------------------------------
+| DATE(year, month, day)                      | new DateTime(year, month, day)
+| TIME(hour, min, sec)
+| TODAY                                       | DateTime.Today
+| NOW                                         | DateTime.Now
+| YEAR, MONTH, DAY
+| HOUR, MINUTE, SECOND
+| WEEKNUM                                     | Week of year. Also: ISOWEEKNUM
+| WEEKDAY                                     | Day of week index (sunday=0)
 | 
 | Calculations:  
-| TODAY() - 2                              | DateTime.Now.Date.Subtract(TimeSpan.FromDays(2))
-| NOW() + "2:00"                           | DateTime.Now.Add(TimeSpan.FromHours(2))
-| DAYS360(date1, date2)                    | Difference in days
-| YEARFRAC(date1, date2)                   | Difference in years (including fractional part)
-| EDATE(date, nrOfMonths)                  | Add nrOfMonths to date
-| EOMONTHS(date, 0)                        | Returns the last day of the date month
-| EOMONTHS(date, -2)                       | Returns the last day of the month of (date - 2 months)
+| TODAY() - 2                                 | DateTime.Now.Date.Subtract(TimeSpan.FromDays(2))
+| NOW() + "2:00"                              | DateTime.Now.Add(TimeSpan.FromHours(2))
+| DAYS360(date1, date2)                       | Difference in days
+| YEARFRAC(date1, date2)                      | Difference in years (including fractional part)
+| EDATE(date, nrOfMonths)                     | Add nrOfMonths to date
+| EOMONTHS(date, 0)                           | Returns the last day of the date month
+| EOMONTHS(date, -2)                          | Returns the last day of the month of (date - 2 months)
 | WORKDAY(date, workDaysToAdd, holidaysRange) | Add working days to date. holidaysRange is optional
+| DATEDIF(date1, date2, unit)                 | Unit: Y, M, D, MD (Ignore YM), YM (Ignore Y), YD (Ignore Y)
+| NETWORKDAYS(date1, date2, [holidays])       | Working days between dates (excluding optional holidays)
 {: .table-code}
-
 
 
 # Boolean logic
@@ -201,7 +204,7 @@ Filtered-out rows are always excluded.
 
 ## Or, And, Not
 
-```
+```vb
 ' Check if cell is blank
 IF(OR(ISBLANK(A1), TRIM(A1)=""), 1, 0)
 
