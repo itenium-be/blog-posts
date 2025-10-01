@@ -20,12 +20,29 @@ package-versions:
     version: 4.1.0
 ---
 
+
+**Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.**  
+See [some alternatives](/blog/dotnet/epplus-pay-to-play/) if that is a dealbreaker for you!
+{: .notice--danger}
+
+**We now have a blog series on an alternative Excel package [ClosedXML](/blog/dotnet/create-xlsx-excel-with-closedxml-csharp-formulas-and-datavalidation)**  
+Which is basically on equal footing with EPPlus.
+{: .notice--info}
+
+
+<!--more-->
+
+<br>
+<hr>
+<br>
+
+# That's fine!
+
 In case your users want to continue working with the Excels after generation.
 
 Not a problem for EPPlus. Instead of calculating values and writing them to
 an excel, leverage the power of Excel formulas.
 
-<!--more-->
 
 # Formulas
 
@@ -78,7 +95,7 @@ using (var package = new ExcelPackage())
 ```
 
 ## SUBTOTAL
-SUBTOTAL(9,...), as apposed to using SUM directly, will not include other subtotals in their calculation.
+SUBTOTAL(9,...), as opposed to using SUM directly, will not include other subtotals in their calculation.
 
 ```vba
 SUBTOTAL(FUNC_NUM,ref1,[ref2],...)

@@ -11,7 +11,7 @@ img:
   origin: ChatGPT
 bigimg:
   url: closedxml-big.png
-  prompt: ""
+  prompt: "a medieval newspaper headline illustration reading 'EPPlus is dead', old king replaced by new king, comic book style, bold colors, playful exaggeration --ar 800:131"
   origin: Midjourney
 series: closedxml
 extras:
@@ -136,7 +136,12 @@ Assert.That(ranger.RangeAddress, Is.EqualTo(sameRanger.RangeAddress));
 //sheet.Range("A:B") // Two columns
 
 // Linq
-var l = sheet.Range("A1:A5").Cells().Where(cell => cell.HasComment);
+// Not so performant to use standard linq
+sheet.Range("A1:A5").Cells().Where(cell => cell.HasComment);
+
+// Better to use the ClosedXML specific functions
+// Also: RowsUsed, FirstColumnUsed, ...
+sheet.Range("A1:A5").Cells(cell => cell.HasComment);
 var usedBold = sheet.CellsUsed(x => x.Style.Font.Bold);
 
 // Dimensions used
@@ -311,6 +316,9 @@ sheet0.SheetView.FreezeRows(1);
 sheet0.SheetView.FreezeColumns(4);
 
 sheet0.Column(1).Hide();
+
+// Copy to same/other workbook:
+sheet1.CopyTo(workbook, "Copy");
 
 // workbook.SaveAs(Stream / string);
 // Overload to validate & evaluate formulas
