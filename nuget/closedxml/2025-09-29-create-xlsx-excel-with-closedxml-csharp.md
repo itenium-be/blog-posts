@@ -80,6 +80,7 @@ Assert.That(firstCell.GetString(), Is.EqualTo("will it work?"));
 var moneyCell = sheet.Cell("A3");
 moneyCell.Style.NumberFormat.Format = "$#,##0.00";
 // Or use a predefined style
+// See: https://github.com/closedxml/closedxml/wiki/NumberFormatId-Lookup-Table
 moneyCell.Style.NumberFormat.NumberFormatId = (int)XLPredefinedFormat.Number.Precision2WithSeparator;
 moneyCell.Value = 1500.25M;
 
@@ -98,9 +99,12 @@ someCells.Style.Font.Bold = true;
 someCells.Style.Font.SetFontColor(XLColor.Ivory);
 Assert.That(XLColor.Ivory, Is.EqualTo(XLColor.FromColor(Color.Ivory)));
 // XLColor also has static methods FromArgb, FromHtml, FromKnownColor etc
+// See: https://github.com/closedxml/closedxml/wiki/ClosedXML-Predefined-Colors
 someCells.Style.Fill.SetPatternType(XLFillPatternValues.Solid);
 someCells.Style.Fill.BackgroundColor = XLColor.Navy;
 
+// Full control over filtering
+// See: https://docs.closedxml.io/en/latest/features/autofilter.html
 int lastCol = sheet.ColumnsUsed().Last().ColumnNumber();
 sheet.Range(1, 1, 1, lastCol).SetAutoFilter();
 
@@ -132,6 +136,7 @@ var sameRanger = sheet.Range(2, 1, 5, 3);
 Assert.That(ranger.RangeAddress, Is.EqualTo(sameRanger.RangeAddress));
 
 //sheet.Cells("A1,A4") // Just A1 and A4
+//sheet.Ranges("A1,A4") // Same, but as a range
 //sheet.Row(1) // A row
 //sheet.Range("A:B") // Two columns
 
@@ -219,7 +224,7 @@ var sheet = workbook.Worksheets.Add("Styling");
 
 // Cells with style
 sheet.Cell("A1").Value = "Bold and proud";
-sheet.Cell("A1").Style.Font.FontName = "Arial";
+sheet.Cell("A1").Style.Font.FontName = "Stencil";
 sheet.Cell("A1").Style.Font.Bold = true;
 sheet.Cell("A1").Style.Font.FontColor = XLColor.Green;
 
@@ -309,7 +314,9 @@ sheet0.TabSelected = true;
 sheet0.Visibility = XLWorksheetVisibility.Hidden;
 
 sheet0.ActiveCell = sheet0.Cell("A5"); // or:
-sheet0.Cell("A5").Select();
+sheet0.Cell("A5").SetActive();
+// Can only have one active cell but multiple can be selected
+// sheet0.Cell("A5").Select();
 
 // Freezing
 sheet0.SheetView.FreezeRows(1);

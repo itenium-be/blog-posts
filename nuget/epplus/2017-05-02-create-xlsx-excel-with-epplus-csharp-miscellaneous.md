@@ -20,12 +20,26 @@ package-versions:
     version: 4.1.0
 ---
 
+**Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.**  
+See [some alternatives](/blog/dotnet/epplus-pay-to-play/) if that is a dealbreaker for you!
+{: .notice--danger}
+
+**We now have a blog series on an alternative Excel package [ClosedXML](/blog/dotnet/create-xlsx-excel-with-closedxml-miscellaneous)**  
+Which is basically on equal footing with EPPlus.
+{: .notice--info}
+
+<!--more-->
+
+<br>
+<hr>
+<br>
+
+
 # Miscellaneous features
-{: .hide-from-excerpt}
+
 
 EPPlus can do a whole lot more for you. This post covers some interesting stuff that didn't really fit anywhere else.
 
-<!--more-->
 
 ```c#
 // Set workbook properties like title, author, company, ...

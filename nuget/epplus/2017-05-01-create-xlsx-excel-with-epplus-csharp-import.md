@@ -20,6 +20,24 @@ package-versions:
     version: 4.1.0
 ---
 
+
+**Version 4.5.3.3 is the last version of EPPlus you can use without a license for commercial use.**  
+See [some alternatives](/blog/dotnet/epplus-pay-to-play/) if that is a dealbreaker for you!
+{: .notice--danger}
+
+**We now have a blog series on an alternative Excel package [ClosedXML](/blog/dotnet/create-xlsx-excel-with-closedxml-csharp)**  
+Which is basically on equal footing with EPPlus.
+{: .notice--info}
+
+<!--more-->
+
+<br>
+<hr>
+<br>
+
+# That's fine!
+
+
 # IEnumerable objects
 {: .hide-from-excerpt}
 
@@ -44,7 +62,6 @@ using (var package = new ExcelPackage())
 }
 ```
 
-<!--more-->
 
 Which would result in the following xlsx.
 
