@@ -21,6 +21,9 @@ series: reduxjs-toolkit
 extras:
   - githubproject: https://github.com/itenium-be/reduxjs-toolkit
     githubtext: "Check todoSelectors.ts to see the examples in action"
+interesting:
+  - url: "https://itenium.be/blog/javascript/react-component-profiling/"
+    desc: "React Component Profiling also goes into some detail with Reselect for performance optimalizations"
 package-versions:
   - package: reselect
     version: 5.1.1
