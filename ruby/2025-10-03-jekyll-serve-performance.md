@@ -44,7 +44,7 @@ was really simple, really. And was committed in the README as a TODO over 3 year
 Upgrading Jekyll from v3.9.0 to 4.2.2 already brought this
 reload times down from **20s to 12s**.
 
-When update the `Gemfile`, I also had to upgrade a few:
+After updating the `Gemfile`, I also had to upgrade a few other gems:
 
 ```txt
 gem "jekyll", "4.2.2"
@@ -109,7 +109,7 @@ In the copied `_config_dev.yml` I removed all the gems in
 `group :jekyll_plugins do`.
 
 This however only reduced the reload time by 0.5s which wasn't worth
-it for me as I'd have to keep two config.ymls into sync.
+it for me as I'd have to keep two config.ymls in sync.
 
 ## Limit Posts
 
