@@ -63,21 +63,19 @@ layout: post
 author: Wouter Van Schandevijl
 title: ""
 subTitle: ""
-date: 2023-04-
+date: 2025-10-
 desc: >
   
 bigimg: 1400x262
-  url: 
-  desc: ""
-  origin: 
+  url: -big.png
+  prompt: ""
+  origin: Midjourney
 img:
-  url: 
-  desc: ""
-  origin: 
-  title: ""
-  linkUrl: 
-categories: productivity | dotnet | javascript | dev-setup | design | trends | security
-tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun,hacking,book-review]
+  url: .png
+  prompt: ""
+  origin: Midjourney
+categories: productivity | dotnet | javascript | dev-setup | design | trends | security | docker | databases | ruby
+tags: [powershell,autohotkey,sql,angular,testing,excel,git,cheat-sheet,tutorial,windows,product,war-story,regex,debugging,meta,tech-talk,pragmatic-tips,fun,hacking,book-review,synology,mongo]
 series: series-unique-name
 extras:
   - githubproject: https://github.com/itenium-be/
@@ -92,6 +90,9 @@ interesting:
 toc:
   title: 
   icon: icon-javascript | dot-circle-o (net) | icon-shell (ps1) | eye-slash (c#) | icon-angular | windows | icon-git | car (ahk) | icon-mssql | file-excel-o | icon-mongodb
+package-versions:
+  - package: 
+    version: 
 socials:
   youtube: ""
   linkedin: ""
@@ -132,9 +133,6 @@ todo:
   - reason: Followup|
     url: 
     desc: 
-package-versions:
-  - package: moment
-    version: 5.2
 redirect_from: /blog/
 ---
 
