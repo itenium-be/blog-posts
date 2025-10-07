@@ -41,8 +41,8 @@ was really simple, really. And was committed in the README as a TODO over 3 year
 
 # Upgrade Jekyll
 
-Upgrading Jekyll from v3.9.0 to 4.2.2 already brought this
-reload times down from **20s to 12s**.
+Upgrading Jekyll from v3.9.0 to 4.2.2 already brought the
+reload time down from **20s to 12s**.
 
 After updating the `Gemfile`, I also had to upgrade a few other gems:
 
