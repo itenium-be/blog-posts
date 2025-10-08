@@ -39,14 +39,6 @@ can be found in the GitHub project.
 
 <!--more-->
 
-# MIT Licensed
-
-I used to be a big fan of EPPlus but since it is no longer free,
-this aims to be a pretty much 1 to 1 conversion of our EPPlus blog series.
-
-If you're migrating, AI is pretty good at converting EPPlus code to ClosedXML,
-for most (simple) use cases, it just works!
-
 # ClosedXML
 
 {% include github-stars.html url="ClosedXML/ClosedXML" desc="ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files." %}
@@ -55,14 +47,44 @@ for most (simple) use cases, it just works!
 Install-Package ClosedXML
 ```
 
-It's basically provides a more intuitive and user-friendly interface compared to
+It basically provides a more intuitive and user-friendly interface compared to
 the [OpenXML API](https://github.com/dotnet/Open-XML-SDK) it's built on top off. Hence the name ;)
 
-# Basic Usage
+## MIT Licensed
+
+I used to be a big fan of EPPlus but since it is no longer free,
+this aims to be a pretty much 1 to 1 conversion of our EPPlus blog series.
+
+If you're migrating, AI is pretty good at converting EPPlus code to ClosedXML,
+for most (simple) use cases, it just works!
+
+
+# Documentation
+
+Documentation is a bit in limbo. The **Github wiki** contains most examples but
+they are not always up to date, as for some things the API has changed slightly.
+
+The **ReadTheDocs** is the new documentation and while it does go into a lot more detail
+for some particularities, it does not cover everything and has a lot less examples.
 
 - [Github Wiki](https://github.com/closedxml/closedxml/wiki): Lots of example code here
+  - [Validation](https://github.com/closedxml/closedxml/wiki/Data-Validation): `cell.DataValidation` ⮕ `cell.CreateDataValidation()`
+  - [Comments](https://github.com/closedxml/closedxml/wiki/Styles-Alignment): `cell.Comment` ⮕ `cell.CreateComment()`
 - [Read the docs](https://docs.closedxml.io/en/latest/): Newer documentation, more details but less examples
 
+There is also the [`ClosedXML.Examples`](https://github.com/ClosedXML/ClosedXML/tree/develop/ClosedXML.Examples) console project in the source code.
+
+```ps1
+git clone https://github.com/closedxml/closedxml
+cd closedxml
+dotnet run --project ClosedXML.Examples --framework net8.0
+```
+
+This creates all the example Excels in `ClosedXML.Examples/bin/Debug/net8.0/Created`,
+you can then compare the code with the actual output and go from there!
+
+
+# Basic Usage
 
 ```c#
 using ClosedXML.Excel;
@@ -111,6 +133,31 @@ sheet.Range(1, 1, 1, lastCol).SetAutoFilter();
 sheet.ColumnsUsed().AdjustToContents();
 workbook.SaveAs("basicUsage.xslx");
 ```
+
+## Fluent Syntax
+
+At first I didn't quite understand why there were both properties and "setter functions"
+for so many things. It is a bit overkill but it does allow the following code:
+
+```c#
+someRange.Style.Fill.BackgroundColor = XLColor.FromHtml("#F0F4FF");
+someRange.Style.Border.RightBorder = XLBorderStyleValues.Thin;
+someRange.Style.Border.RightBorderColor = XLColor.FromHtml("#D4D4D4");
+```
+
+To also be written like:
+
+```c#
+someRange.Style
+  .Fill.SetBackgroundColor(XLColor.FromHtml("#F0F4FF"))
+  .Border.SetRightBorder(XLBorderStyleValues.Thin)
+  .Border.SetRightBorderColor(XLColor.FromHtml("#D4D4D4"));
+```
+
+
+Which does look better! 😃
+
+
 
 # Examples
 
@@ -348,6 +395,42 @@ public static class Extensions
     workbook.SaveAs(memoryStream);
     memoryStream.Seek(0, SeekOrigin.Begin);
     return new FileStreamResult(memoryStream, ContentType) { FileDownloadName = fileName };
+  }
+}
+```
+
+# Extension Methods
+
+Just some handy tidbits.
+
+```c#
+public static class ExcelExtensions
+{
+  public static IXLDataValidation SetDropdownList(this IXLCell cell, IEnumerable<string> options)
+  {
+    var validation = cell.CreateDataValidation();
+    validation.AllowedValues = XLAllowedValues.List;
+    validation.InCellDropdown = true;
+    validation.IgnoreBlanks = true;
+    // ATTN: must start/end with a double quote (")
+    validation.List($"\"{string.Join(",", options)}\"");
+    return validation;
+  }
+
+  public static IXLCell SetHyperlink(this IXLCell cell, string url, string text, string? tooltip = null)
+  {
+    cell.SetValue(text).SetHyperlink(new XLHyperlink(url, tooltip));
+    return cell;
+  }
+
+  public static IXLStyle SetNumberFormatId(this IXLNumberFormat nf, XLPredefinedFormat.Number format)
+  {
+    return nf.SetNumberFormatId((int)format);
+  }
+
+  public static IXLStyle SetNumberFormatId(this IXLNumberFormat nf, XLPredefinedFormat.DateTime format)
+  {
+    return nf.SetNumberFormatId((int)format);
   }
 }
 ```
