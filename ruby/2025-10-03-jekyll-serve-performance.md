@@ -82,6 +82,40 @@ bundle exec jekyll serve --incremental
 bundle exec jekyll serve -I
 ```
 
+## Caveat
+
+The `--incremental` will only update file(s) that have actually changed.
+This means that a new post will not appear in your blog post listing /
+home page because **that** file has not changed...
+
+To force an update:
+
+```ps1
+touch blog/index.html
+```
+
+Which works on my Windows system because of this function:
+
+```ps1
+function touch($file) {
+	if (Test-Path $file) {
+		(Get-ChildItem $file).LastWriteTime = Get-Date
+	} else {
+		$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+		$path = Get-Location
+		$path = Join-Path -Path $path -ChildPath $file
+		[System.IO.File]::WriteAllText($path, "", $Utf8NoBomEncoding)
+	}
+}
+```
+
+For pages like that, you can automate this by adding to the front matter:
+
+```yaml
+regenerate: true
+```
+
+
 ## Windows Directory Monitor
 
 {% include github-stars.html url="Maher4Ever/wdm" desc="A threaded directories monitor for Windows." %}
