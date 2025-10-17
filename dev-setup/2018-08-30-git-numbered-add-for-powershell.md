@@ -8,6 +8,10 @@ desc: >
   Despair no more for <code>Git-NumberedAdd</code> is here!
 img:
   url: git-add-numbered-add.jpg
+bigimg:
+  url: git-add-numbered-add-big.png
+  origin: Midjourney
+  prompt: "Chibi-style programmer surrounded by floating numbered files, little Git logos dancing around, cute terminal screens showing staged files, exaggerated expressions, whimsical, colorful, fun, humorous coding scene, high detail, cartoon style"
 categories: dev-setup
 tags: [git,powershell,product]
 extras:
@@ -25,14 +29,23 @@ interesting:
 toc:
   title: Numbered Add
   icon: icon-git
-last_modified_at: 2020-01-16 00:00:00 +0200
+last_modified_at: 2025-10-17 00:00:00 +0200
 updates:
+  - date: 2025-10-17 00:00:00 +0200
+    desc: "v1.2: Fixes for git 2.26+ and PowerShell 7+"
   - date: 2020-01-16 00:00:00 +0200
     desc: "Published to the PowerShell Gallery"
   - date: 2020-01-12 00:00:00 +0200
     desc: More actions and utilities + bugfixes
 redirect_from: /blog/productivity/git-numbered-add-for-powershell/
 ---
+
+**🎉🎉 October 2025 update: v1.2**  
+There have been changes in both git (v2.26+) and PowerShell (v7+) that broke
+`Git-NumberedAdd`, it has been a long time coming but, the fixes are finally available in the PSGallery 😅
+{: .notice--info}
+
+<br>
 
 After copying file paths from `git status` output and pasting them after a `git add` quite a few times
 by now, I've written a small [PowerShell script](https://github.com/itenium-be/Git-NumberedAdd)
@@ -42,7 +55,7 @@ to manipulate the working directory and staging area with fabricated indexes.
 
 # PowerShell Gallery
 
-Now available on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Git-NumberedAdd/1.1)!
+Now available on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Git-NumberedAdd)!
 
 ```ps
 Install-Module -Name Git-NumberedAdd
