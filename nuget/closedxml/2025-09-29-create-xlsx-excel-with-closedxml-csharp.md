@@ -28,6 +28,11 @@ toc:
 package-versions:
   - package: ClosedXML
     version: 0.105.0
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_itenium-closedxml-epplus-activity-7383441535905845248-P8Kw"
+  instagram: "https://www.instagram.com/p/DPvsqZTj689/"
+  facebook: "https://www.facebook.com/share/p/15WHhfPQQB/" 
+  twitter: "https://x.com/itenium_be/status/1977675714716450840"
 ---
 
 Quick tutorial about creating xlsx Excels with
