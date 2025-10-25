@@ -6,7 +6,7 @@ date:   2019-03-07 00:00:00
 desc: >
   Automatically add Github stars badges to all Github project links.
   Runs automatically on google, stackoverflow and github. Activate with
-  Control + Alt + G on any other webpage.
+  Alt + Shift + S on any other webpage.
 img:
   url: starify-github-links.png
   origin: https://github.com/sindresorhus/awesome-nodejs#mad-science
@@ -29,6 +29,11 @@ updates:
     desc: Fix for Google layout. Updated to manifest.json v3.
 ---
 
+The Starify-GitHub-Links Chrome extension is no more! 🎉
+Long live "Starify Links" because we're now adding links to, well, everything! 🌟✨🤩
+See the [new blog post]({% post_url javascript/2025-10-23-starify-links %})
+{: .notice--info}
+
 A [free and open source Chrome Extension](https://chrome.google.com/webstore/detail/kpficnopciffopkhjpckhkgmnlakcmig)
 that adds Github stars badges to all links on a web page.
 
@@ -43,7 +48,7 @@ that adds Github stars badges to all links on a web page.
 Runs automatically on certain pages like Google search results, StackExchange questions,
 on Github itself and on Package Manager registries.
 
-{% include kbd k="Control+Alt+G" l="Activate on any other page" %}
+{% include kbd k="Alt+Shift+S" l="Activate on any other page" %}
 
 
 # More Examples
@@ -75,9 +80,6 @@ const activateDirectlyOn = [
   /^https:\/\/(www.)?google\..*\/search/, 'https://www.bing.com',
   'https://github.com', 'https://www.npmjs.com/package', 'https://www.nuget.org/packages',
 ];
-
-// Otherwise wait for Control + Alt + G:
-const isTheHotkey = e => e.ctrlKey && e.altKey && e.code === 'KeyG';
 
 // Shoutout to Shields.io for kindly providing the badges!
 const badgeUrl = 'https://img.shields.io/github/stars/{userName}/{repoName}.svg?style=social&label=Star';
