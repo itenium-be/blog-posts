@@ -65,7 +65,7 @@ And then apply the changes with `bundle update`.
 There probably isn't much you have to do when [upgrading from v3 to v4](https://jekyllrb.com/docs/upgrading/3-to-4/).
 
 - `ruby -v` needs to be >=2.7.0
-- {% raw %}`{{ site.baseurl }}/{% post_url some-post.md %}` -> `{% post_url some-post.md %}`{% endraw %}
+- {% raw %}`{{ site.baseurl }}/{% post_url some-post %}` -> `{% post_url some-post %}`{% endraw %}
 
 
 
