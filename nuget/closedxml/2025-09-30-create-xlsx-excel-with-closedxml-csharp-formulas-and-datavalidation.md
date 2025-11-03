@@ -26,6 +26,11 @@ toc:
 package-versions:
   - package: ClosedXML
     version: 0.105.0
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_csharp-closedxml-dotnet-activity-7386340617238528001--8tk"
+  instagram: "https://www.instagram.com/p/DQETBc4jZFl/"
+  facebook: "https://www.facebook.com/share/p/1Cyidzkda6/" 
+  twitter: "https://x.com/itenium_be/status/1980574827132920156"
 ---
 
 In case your users want to continue working with the Excels after generation.
