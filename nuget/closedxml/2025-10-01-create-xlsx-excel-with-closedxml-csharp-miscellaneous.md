@@ -23,6 +23,11 @@ toc:
 package-versions:
   - package: ClosedXML
     version: 0.105.0
+socials:
+  linkedin: "https://www.linkedin.com/posts/itenium_csharp-closedxml-dotnet-activity-7389979637579411456-rHyS"
+  instagram: "https://www.instagram.com/p/DQeJ2TPjXVw/"
+  facebook: "https://www.facebook.com/share/p/16XQJRAtcN/" 
+  twitter: "https://x.com/itenium_be/status/1984213813445464457"
 ---
 
 
