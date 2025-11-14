@@ -103,6 +103,14 @@ or maybe just because once I get started, I just can't seem to stop myself 😀
 ![The Result - Starify All The Links](/assets/blog-images/starify-all-links.png)
 
 
+# Thanks Shields.io
+
+The badges are provided by [shields.io](https://shields.io/).
+
+For the GitHub badges if you ever see "[Unable to select next GitHub token from pool](https://github.com/badges/shields/issues/11496)"
+help them out by authorizing their [OAuth Application](https://img.shields.io/github-auth).
+
+
 # Thanks Claude
 
 I had to do some things before starting all that because the current code base
@@ -127,15 +135,17 @@ As soon as I asked it for some actual functional implementation, it fell short; 
 I'm not sure if it would be able to figure it out eventually, as at that point I just took over
 and coded those parts myself.
 
-The configuration screen was a great success for Claude, it pretty much built it
+
+## Generated Options Page
+
+The configuration screens were a great success for Claude, it pretty much built it
 without me doing any work, and all that in about 10-15 prompts.
+
+This is what it generated for configuring the badges!
+
+![Configure all badges options screen](/assets/blog-images/starify-links-options.png "Configure all the badges!"){: .img-responsive}
 
 But then when I was starting to trust it and just gave it a pretty big prompt and went for coffee,
 I came back to "_API Error: 400 due to tool use concurrency issues. Run /rewind to recover the conversation._"
 While `/rewind` no longer exists, a simple "_You failed. Can you try to continue where you left off?_" was all it
 took to get it back on track!
-
-
-# What's Next
-
-I ran out of Claude tokens so the `directActivation` options screen is still WIP 😀
