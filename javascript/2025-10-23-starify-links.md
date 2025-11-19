@@ -130,6 +130,7 @@ The things that Claude did for me:
 - I introduced some design to allow badges other than repository links
   - After that Claude managed to add other badges with me just providing the link to the shields.io badge url
   - It didn't work for all the badges, but it did work straight away for almost all of them
+  - Update: I went back in history and asked Claude to introduce the necessary design -- and it generated something very much like what I did manually!
 
 As soon as I asked it for some actual functional implementation, it fell short; the implementations were naive.
 I'm not sure if it would be able to figure it out eventually, as at that point I just took over
