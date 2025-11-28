@@ -19,7 +19,7 @@ img:
 categories: productivity
 tags: [war-story,tech-talk]
 interesting:
-  - url: https://www.europeanwomenintech.com/
+  - url: https://europeanwomenintech.eu
     desc: "European Women in Technology"
 toc:
   title: 👒👠 European Women in Tech

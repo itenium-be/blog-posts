@@ -20,7 +20,7 @@ img:
 categories: trends
 tags: [war-story,tech-talk]
 interesting:
-  - url: https://www.europeanwomenintech.com/
+  - url: https://europeanwomenintech.eu
     desc: "European Women in Technology"
 toc:
   title: 👒👠 European Women in Tech
@@ -32,7 +32,7 @@ toc:
 {: .hide-from-excerpt.notice}
 
 
-In the ever-evolving world of technology, the [European Women in Tech](https://europeanwomenintech.com/) in Amsterdam shed light on some crucial insights and perspectives. From the wise words of Elisabeth Theophille, who emphasized the importance of embracing change and enjoying the journey, to the valuable lessons learned from industry leaders like Heineken, Ikea, and ING, the event provided a unique opportunity to explore the complexities of digital transformation and AI.
+In the ever-evolving world of technology, the [European Women in Tech](https://europeanwomenintech.eu) in Amsterdam shed light on some crucial insights and perspectives. From the wise words of Elisabeth Theophille, who emphasized the importance of embracing change and enjoying the journey, to the valuable lessons learned from industry leaders like Heineken, Ikea, and ING, the event provided a unique opportunity to explore the complexities of digital transformation and AI.
 
 This blog post delves into the key takeaways from the event, highlighting the importance of responsible AI, organizational transformation, the role of data-driven decision-making, and Ikea's contribution to the realm of Explainable AI.
 
