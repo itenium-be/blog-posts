@@ -70,7 +70,7 @@ on Github itself and on Package Manager registries.
 Fork the project and modify the source if you want different behavior because... Well there isn't
 some sort of settings page :)
 
-Find these variables at the top of [`github-stars.user.js`](https://github.com/itenium-be/github-stars-links/blob/master/github-stars.user.js):
+Find these variables at the top of [`github-stars.user.js`](https://github.com/itenium-be/github-stars-links/blob/v1.7/github-stars.user.js):
 
 ```javascript
 // Execute directly on pages matching one of these:
