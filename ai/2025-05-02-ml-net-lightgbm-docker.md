@@ -55,7 +55,7 @@ libgomp.so.1: cannot open shared object file: No such file or directory
 {: .notice--danger}
 
 It's a conscious decision by the team to not include LightGBM by default,
-and that makes perfect since it is a 1gig dependency which is only
+and that makes perfect sense since it is a 1gig dependency which is only
 used when using that trainer.
 
 # Installing LightGBM
