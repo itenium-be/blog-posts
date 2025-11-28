@@ -83,13 +83,20 @@ If you already used `Chart.js` before, you may want to choose for the `react-cha
 
 | Library         | Dependency | Commits             | Issues      |  Charts  | Storybook   | Docs
 |-----------------|:----------:|:-------------------:|:-----------:|:--------:|:-----------:|------
-| Recharts        | D3         | 2 days ago (2,254)  | 470 / 2220  | 11       | WIP         | [Examples](https://recharts.org/en-US/examples)
-| Visx            | D3         | 1 month ago (3,156) | 117 / 608   | 20+      | CodeSandbox | [Somewhat Interactive](https://airbnb.io/visx/gallery)
-| Nivo            | D3         | 4 days ago  (1,992) | 81 / 1393   | 20       | YES         | [Very Interactive](https://nivo.rocks/)
-| Victory         | D3         | last week   (8,429) | 240 / 1491  | 10       | NO          | [Gallery](https://formidable.com/open-source/victory/gallery)
-| React-vis       | D3         | 1 month ago (891)   | 306 / 511   | 10       | Yes         | [Gallery](https://uber.github.io/react-vis/examples/showcases/plots)
-| React-chartjs-2 | Chart.js   | 4 months ago (544)  | 52 / 665    | 15       | CodeSandbox | [Gallery](https://react-chartjs-2.js.org/examples)
+| Recharts        | D3         | 2 days ago (2,254)  | 470 / 2220  | 11       | WIP         | [Examples][0]
+| Visx            | D3         | 1 month ago (3,156) | 117 / 608   | 20+      | CodeSandbox | [Somewhat Interactive][1]
+| Nivo            | D3         | 4 days ago  (1,992) | 81 / 1393   | 20       | YES         | [Very Interactive][2]
+| Victory         | D3         | last week   (8,429) | 240 / 1491  | 10       | NO          | [Gallery][3]
+| React-vis       | D3         | 1 month ago (891)   | 306 / 511   | 10       | Yes         | [Gallery][4]
+| React-chartjs-2 | Chart.js   | 4 months ago (544)  | 52 / 665    | 15       | CodeSandbox | [Gallery][5]
 {: .table-code}
+
+[0]: https://recharts.github.io/?p=/en-US/examples
+[1]: https://airbnb.io/visx/gallery
+[2]: https://nivo.rocks/
+[3]: https://formidable.com/open-source/victory/gallery
+[4]: https://uber.github.io/react-vis/examples/showcases/plots
+[5]: https://react-chartjs-2.js.org/examples
 
 
 Columns:  
