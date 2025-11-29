@@ -435,4 +435,4 @@ await Assert.That(3).IsLessThan(5).Or.IsGreaterThan(10);
 ```
 
 **TUnit**: For more complicated AND/OR logic, check
-[AssertionGroup.For](https://thomhurst.github.io/TUnit/docs/tutorial-assertions/assertion-groups)
+[AssertionGroup.For](https://tunit.dev/docs/assertions/assertion-groups/)

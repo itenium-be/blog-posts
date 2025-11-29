@@ -118,7 +118,7 @@ was, well, just the one js file.
 
 The things that Claude did for me:
 - After I renamed the file to `.ts`, it adjusted the `gulpfile` to convert it to `.js`
-  - I did the typescript typings myself, but I'm guessing that Claude could have done this for me too!
+  - I did the Typescript types myself, but I'm guessing that Claude could have done this for me too!
 - Split the single source file into many files
   - It chose rollup and configured it for me
 - Turned my hardcoded shortcut into a configurable `chrome://extensions/shortcuts`
