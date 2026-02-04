@@ -19,6 +19,45 @@ toc:
 ---
 
 
+Separate articles for this stuff..
+
+Also an article:
+- initial load to setup users
+- use secrets instead of environment variables: https://docs.docker.com/compose/use-secrets/
+
+
+
+# UI
+
+Desktop Apps: Compass, Robo 3T, Studio 3T
+
+Or via Docker
+- Adminer
+- Mongoclient
+- https://hub.docker.com/_/mongo-express / https://github.com/mongo-express/mongo-express-docker
+- https://www.mongodb.com/products/tools/vs-code
+
+--> other?
+
+
+
+
+
+# Backup
+
+```sh
+docker exec some-mongo sh -c 'exec mongodump -d <database_name> --archive' > /volum1/backups/all-collections.archive
+```
+
+--> and then also reload!
+
+
+vs mongoimport / mongoexport ?
+
+
+
+
+
 
 <!--more-->
 

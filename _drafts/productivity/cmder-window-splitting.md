@@ -7,6 +7,11 @@ categories: productivity
 tags: [powershell,cmder]
 ---
 
+TODO: this is so outdated
+--> start with a blog post on "choosing your console!"
+--> I need to upgrade to Windows11 before doing this... to compare along the "new" cmd
+
+
 https://github.com/cmderdev/cmder -> read docs!
 
 <!--more-->
